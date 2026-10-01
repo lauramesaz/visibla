@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Visibla — SEO con agentes de IA para clínicas</title>
+<meta name="description" content="Visibla posiciona tu clínica en Google con agentes de IA que publican contenido todos los días. Diagnóstico SEO gratis.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0c0e11;
+  --ink-2:#2a2f36;
+  --muted:#6b7480;
+  --line:#e6e9ed;
+  --paper:#ffffff;
+  --mist:#f5f6f8;
+  --steel:#7d93ab;        /* azul grisáceo: el único acento */
+  --steel-soft:#c4d1de;
+  --steel-deep:#3d5266;
+  --r:22px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Geist',system-ui,sans-serif;background:var(--paper);color:var(--ink);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.mono{font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+
+/* grano */
+.grain::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.07;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:50;transition:background .3s,border-color .3s;border-bottom:1px solid transparent}
+nav.solid{background:rgba(255,255,255,.75);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-color:var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:500;font-size:18px;letter-spacing:-.02em}
+.logo i{width:22px;height:22px;border-radius:50%;border:1.5px solid currentColor;position:relative;display:block}
+.logo i::after{content:"";position:absolute;inset:5px;border-radius:50%;background:currentColor}
+.links{display:flex;gap:30px;font-size:14px;color:var(--ink-2)}
+.links a:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;gap:8px;height:44px;padding:0 20px;border-radius:999px;background:var(--ink);color:#fff;font-size:14px;font-weight:500;border:0;cursor:pointer;transition:transform .2s,background .2s;font-family:inherit}
+.btn:hover{transform:translateY(-1px);background:#000}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}
+nav .btn{height:38px;font-size:13px}
+
+/* HERO */
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden;
+  background:linear-gradient(180deg,#e9edf1 0%,#dfe5eb 55%,#f5f6f8 100%)}
+.blob{position:absolute;border-radius:50%;filter:blur(80px);opacity:.9;animation:drift 18s ease-in-out infinite alternate}
+.b1{width:620px;height:620px;background:var(--steel);left:-160px;top:20%}
+.b2{width:520px;height:520px;background:#9fb4c9;right:-140px;top:8%;animation-delay:-6s}
+.b3{width:560px;height:420px;background:#5e7690;left:30%;top:34%;opacity:.75;animation-delay:-11s}
+@keyframes drift{to{transform:translate(60px,-40px) scale(1.08)}}
+.frost{position:absolute;inset:0;backdrop-filter:blur(30px);-webkit-backdrop-filter:blur(30px);background:rgba(255,255,255,.18)}
+.hero-in{position:relative;z-index:2;padding:120px 24px 80px;max-width:900px}
+.touch{position:relative;width:96px;height:96px;margin:0 auto;display:grid;place-items:center}
+.touch span{position:absolute;inset:0;border-radius:50%;background:rgba(255,255,255,.35);border:1px solid rgba(255,255,255,.7);animation:pulse 3s ease-out infinite}
+.touch b{width:54px;height:54px;border-radius:50%;background:#fff;box-shadow:0 10px 40px rgba(61,82,102,.35);position:relative;z-index:1}
+@keyframes pulse{0%{transform:scale(.7);opacity:1}100%{transform:scale(1.6);opacity:0}}
+.stem{width:1px;height:110px;margin:0 auto 34px;background:linear-gradient(#fff,rgba(255,255,255,0))}
+.hero h1{font-weight:400;font-size:clamp(44px,7.4vw,96px);line-height:.98;letter-spacing:-.045em;color:#fff;text-shadow:0 2px 30px rgba(40,55,70,.18)}
+.hero p.sub{margin:26px auto 0;max-width:560px;font-size:18px;line-height:1.5;color:#26303a}
+.audit{margin:40px auto 0;max-width:560px;display:flex;gap:8px;padding:8px;border-radius:999px;background:rgba(255,255,255,.55);border:1px solid rgba(255,255,255,.8);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);box-shadow:0 20px 60px rgba(61,82,102,.18)}
+.audit input{flex:1;min-width:0;border:0;background:transparent;padding:0 18px;font:inherit;font-size:15px;color:var(--ink);outline:none}
+.audit input::placeholder{color:#5d6773}
+.hero .mono.hint{margin-top:16px;color:#3a4652}
+.result{max-width:560px;margin:18px auto 0;text-align:left;background:rgba(255,255,255,.75);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid #fff;border-radius:var(--r);padding:22px 24px;display:none;color:var(--ink)}
+.result.on{display:block;animation:up .5s ease}
+.row{display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid var(--line);font-size:14px}
+.row:last-of-type{border:0}
+.bar{width:120px;height:6px;border-radius:9px;background:var(--line);overflow:hidden}
+.bar i{display:block;height:100%;background:var(--steel-deep);width:0;transition:width 1.2s ease}
+.result .btn{margin-top:16px;width:100%;justify-content:center}
+@keyframes up{from{opacity:0;transform:translateY(10px)}}
+
+/* SECCIONES */
+section{padding:130px 0;position:relative}
+.eyebrow{display:inline-block;padding:6px 12px;border:1px solid var(--line);border-radius:999px;color:var(--muted);margin-bottom:24px}
+h2{font-weight:400;font-size:clamp(36px,5vw,64px);letter-spacing:-.04em;line-height:1.02}
+h2 em{font-style:normal;color:var(--steel)}
+.center{text-align:center}
+.lead{font-size:18px;line-height:1.55;color:var(--muted);max-width:520px}
+
+/* TABS + CARDS (impacto) */
+.tabs{display:inline-flex;gap:4px;padding:5px;border:1px solid var(--line);border-radius:14px;margin:40px auto 0;flex-wrap:wrap;justify-content:center}
+.tab{padding:9px 16px;border-radius:10px;font-size:14px;color:var(--ink-2);background:none;border:0;cursor:pointer;font-family:inherit;transition:.2s}
+.tab.on{background:var(--ink);color:#fff}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:48px;text-align:left}
+.card{position:relative;min-height:300px;padding:26px;border-radius:var(--r);background:var(--mist);border:1px solid var(--line);display:flex;flex-direction:column;overflow:hidden;transition:transform .4s,box-shadow .4s,color .4s}
+.card::before{content:"";position:absolute;inset:-20%;background:radial-gradient(circle at 30% 70%,var(--steel-deep),transparent 55%),radial-gradient(circle at 75% 30%,#9aaec2,transparent 50%),#59697a;filter:blur(30px);opacity:0;transition:opacity .5s}
+.card>*{position:relative}
+.card:hover{transform:translateY(-6px);box-shadow:0 30px 60px rgba(30,40,55,.18);color:#fff}
+.card:hover::before{opacity:1}
+.card:hover .src,.card:hover p{color:rgba(255,255,255,.85)}
+.card .num{font-size:56px;font-weight:300;letter-spacing:-.05em;line-height:1}
+.card h3{font-weight:500;font-size:20px;margin-top:14px;letter-spacing:-.02em}
+.card p{margin-top:8px;font-size:14.5px;line-height:1.5;color:var(--muted)}
+.card .src{margin-top:auto;padding-top:24px;font-size:12px;color:#97a0aa}
+.chip{align-self:flex-start;font-size:11px;padding:4px 9px;border-radius:7px;background:#fff;color:var(--steel-deep);border:1px solid var(--line);margin-bottom:22px}
+
+/* OSCURO — cómo funciona */
+.dark{background:var(--ink);color:#fff;overflow:hidden}
+.dark .glow{position:absolute;width:900px;height:900px;border-radius:50%;background:radial-gradient(circle,rgba(125,147,171,.55),transparent 60%);left:-300px;top:-200px;filter:blur(40px)}
+.dark .eyebrow{border-color:rgba(255,255,255,.15);color:rgba(255,255,255,.6)}
+.dark .lead{color:rgba(255,255,255,.6)}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:end}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:80px}
+.step{padding:30px;border-radius:var(--r);background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.09);backdrop-filter:blur(10px)}
+.step .mono{color:var(--steel-soft)}
+.step h3{font-weight:400;font-size:26px;letter-spacing:-.03em;margin:40px 0 10px}
+.step p{color:rgba(255,255,255,.6);font-size:15px;line-height:1.55}
+
+/* PANEL */
+.panel{margin-top:70px;border-radius:28px;padding:14px;background:linear-gradient(160deg,#dfe6ed,#f3f5f7);border:1px solid var(--line)}
+.screen{background:#fff;border-radius:18px;border:1px solid var(--line);padding:28px;display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.screen .top{grid-column:1/-1;display:flex;justify-content:space-between;align-items:center;padding-bottom:16px;border-bottom:1px solid var(--line)}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#3fb27f;margin-right:8px;box-shadow:0 0 0 4px rgba(63,178,127,.15)}
+.kpi{padding:20px;border-radius:14px;background:var(--mist)}
+.kpi .mono{color:var(--muted);font-size:10px}
+.kpi b{display:block;font-weight:400;font-size:40px;letter-spacing:-.04em;margin-top:14px}
+.kpi small{color:var(--steel-deep);font-size:13px}
+.chart{grid-column:1/3;padding:20px;border-radius:14px;background:var(--mist);height:220px;display:flex;flex-direction:column}
+.chart svg{flex:1;width:100%}
+.feed{grid-column:3/5;padding:20px;border-radius:14px;background:var(--mist);font-size:14px}
+.feed li{list-style:none;display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid var(--line)}
+.feed li:last-child{border:0}
+.feed span{color:var(--muted);white-space:nowrap;font-size:12px}
+
+/* CASO */
+.case{display:grid;grid-template-columns:1.1fr 1fr;gap:16px;margin-top:60px}
+.case-hero{border-radius:var(--r);min-height:420px;padding:36px;color:#fff;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden;
+  background:radial-gradient(circle at 20% 90%,#3d5266,transparent 55%),radial-gradient(circle at 90% 10%,#a9bccf,transparent 55%),#59697a}
+.case-hero h3{font-weight:400;font-size:40px;letter-spacing:-.04em;line-height:1.05;max-width:420px}
+.case-stats{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.cs{border-radius:var(--r);background:var(--mist);border:1px solid var(--line);padding:26px;display:flex;flex-direction:column;justify-content:space-between;min-height:200px}
+.cs b{font-weight:300;font-size:52px;letter-spacing:-.05em}
+.cs p{color:var(--muted);font-size:14px;line-height:1.45}
+
+/* PLANES */
+.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:60px;text-align:left}
+.plan{border-radius:var(--r);border:1px solid var(--line);padding:32px;display:flex;flex-direction:column;gap:22px}
+.plan.feat{background:var(--ink);color:#fff;border-color:var(--ink);position:relative;overflow:hidden}
+.plan.feat::before{content:"";position:absolute;width:420px;height:420px;right:-160px;top:-180px;border-radius:50%;background:radial-gradient(circle,rgba(125,147,171,.6),transparent 65%)}
+.plan>*{position:relative}
+.plan h3{font-weight:400;font-size:28px;letter-spacing:-.03em}
+.plan .for{color:var(--muted);font-size:14px;margin-top:6px}
+.plan.feat .for{color:rgba(255,255,255,.6)}
+.plan ul{list-style:none;display:grid;gap:12px;font-size:15px}
+.plan li{display:flex;gap:10px}
+.plan li::before{content:"";flex:none;width:16px;height:16px;margin-top:2px;border-radius:50%;background:var(--steel-soft);box-shadow:inset 0 0 0 4px #fff}
+.plan.feat li::before{box-shadow:inset 0 0 0 4px var(--ink)}
+.plan .btn{margin-top:auto;justify-content:center}
+.plan.feat .btn{background:#fff;color:var(--ink)}
+
+/* CTA */
+.cta{margin:0 24px 24px;border-radius:32px;text-align:center;padding:140px 24px;overflow:hidden;position:relative;color:#fff;background:#1a2129}
+.cta .blob{opacity:.7}
+.cta h2{position:relative;z-index:2}
+.cta p{position:relative;z-index:2;color:rgba(255,255,255,.7);margin:20px auto 36px;max-width:460px;font-size:18px;line-height:1.5}
+.cta .btn{position:relative;z-index:2;background:#fff;color:var(--ink);height:52px;padding:0 28px;font-size:15px}
+footer{padding:40px 0 50px;color:var(--muted);font-size:13px}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .9s ease,transform .9s ease}
+.reveal.in{opacity:1;transform:none}
+
+@media (max-width:900px){
+  .links{display:none}
+  .cards,.steps,.plans,.case,.case-stats,.split{grid-template-columns:1fr}
+  .screen{grid-template-columns:1fr 1fr}
+  .chart,.feed{grid-column:1/-1}
+  section{padding:90px 0}
+  .split{gap:20px}
+}
+@media (max-width:520px){
+  .audit{flex-direction:column;border-radius:22px}
+  .audit input{height:46px}
+  .audit .btn{justify-content:center}
+  .screen{padding:16px}
+  .kpi b{font-size:30px}
+}
+@media (max-width:600px){
+  .wrap{padding:0 20px}
+  section{padding:80px 0}
+  h2 br{display:none}
+  .hero-in{padding:110px 20px 70px}
+  .touch{width:76px;height:76px}.touch b{width:42px;height:42px}
+  .stem{height:70px;margin-bottom:26px}
+  .hero p.sub{font-size:16px}
+  .card{min-height:0}
+  .steps{margin-top:50px}
+  .step h3{margin-top:26px}
+  .case-hero{min-height:300px;padding:28px}
+  .case-hero h3{font-size:30px}
+  .cs{min-height:160px;padding:22px}
+  .cs b{font-size:42px}
+  .feed li{flex-direction:column;gap:2px}
+  .plan{padding:26px}
+  .cta{margin:0 12px 12px;padding:100px 20px;border-radius:26px}
+  nav .btn{padding:0 14px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<nav id="nav">
+  <div class="wrap">
+    <a href="#" class="logo"><i></i>Visibla</a>
+    <div class="links">
+      <a href="#impacto">Por qué SEO</a>
+      <a href="#como">Cómo funciona</a>
+      <a href="#caso">Casos</a>
+      <a href="#planes">Planes</a>
+    </div>
+    <a href="#contacto" class="btn">Agendar llamada</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero grain">
+  <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+  <div class="frost"></div>
+  <div class="hero-in">
+    <div class="touch"><span></span><b></b></div>
+    <div class="stem"></div>
+    <h1>Que Google<br>encuentre tu clínica</h1>
+    <p class="sub">Agentes de IA que escriben y publican contenido para tu clínica todos los días. Tú atiendes pacientes; nosotros hacemos que lleguen.</p>
+    <form class="audit" id="audit">
+      <input type="text" id="url" placeholder="tuclinica.com" aria-label="Dirección de tu web">
+      <button class="btn" type="submit">Diagnóstico gratis →</button>
+    </form>
+    <div class="mono hint">Resultado en 10 segundos · sin registro</div>
+    <div class="result" id="result">
+      <div class="mono" style="color:var(--muted);margin-bottom:6px" id="rtitle">Diagnóstico</div>
+      <div class="row">Velocidad en celular<div class="bar"><i data-w="58"></i></div></div>
+      <div class="row">Contenido para Google<div class="bar"><i data-w="22"></i></div></div>
+      <div class="row">Ficha en Google Maps<div class="bar"><i data-w="64"></i></div></div>
+      <div class="row">Reseñas visibles<div class="bar"><i data-w="41"></i></div></div>
+      <a class="btn" href="#contacto">Ver el informe completo con un asesor</a>
+    </div>
+  </div>
+</header>
+
+<!-- IMPACTO -->
+<section id="impacto" class="center">
+  <div class="wrap">
+    <span class="eyebrow mono reveal">Ser visible importa</span>
+    <h2 class="reveal">Tus pacientes ya te buscan.<br><em>¿Te están encontrando?</em></h2>
+    <div class="tabs reveal" id="tabs">
+      <button class="tab on" data-t="0">Google</button>
+      <button class="tab" data-t="1">Reseñas</button>
+      <button class="tab" data-t="2">Contenido</button>
+    </div>
+    <div class="cards" id="cards"></div>
+  </div>
+</section>
+
+<!-- CÓMO FUNCIONA -->
+<section id="como" class="dark grain">
+  <div class="glow"></div>
+  <div class="wrap" style="position:relative">
+    <div class="split">
+      <div>
+        <span class="eyebrow mono reveal">Cómo funciona</span>
+        <h2 class="reveal">Un equipo de agentes<br>trabajando por tu clínica<br>cada mañana.</h2>
+      </div>
+      <p class="lead reveal">Investigan qué buscan tus pacientes, escriben, un revisor humano-IA quita lo que suena a robot, y se publica solo. Todos los días.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><div class="mono">01 — Semana 1</div><h3>Revisamos tu clínica</h3><p>Tu web, tu ficha de Google, tus reseñas y a tu competencia. Sabemos en qué estás perdiendo pacientes.</p></div>
+      <div class="step reveal"><div class="mono">02 — Desde el día 8</div><h3>El agente publica</h3><p>Un artículo nuevo al día sobre lo que tus pacientes preguntan, con tu tono y revisado antes de salir.</p></div>
+      <div class="step reveal"><div class="mono">03 — Cada mes</div><h3>Ves a los pacientes llegar</h3><p>Un panel simple: cuántas personas te encontraron y cuántas escribieron por WhatsApp.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PANEL -->
+<section>
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow mono reveal">Tu panel</span>
+      <h2 class="reveal">Todo claro, <em>en una sola pantalla.</em></h2>
+    </div>
+    <div class="panel reveal">
+      <div class="screen">
+        <div class="top"><div style="font-weight:500">Clínica ejemplo · Septiembre</div><div class="mono" style="color:var(--muted)"><span class="dot"></span>Agente activo</div></div>
+        <div class="kpi"><div class="mono">Artículos publicados</div><b>30</b><small>1 por día</small></div>
+        <div class="kpi"><div class="mono">Visitas desde Google</div><b>4.812</b><small>↑ 1.240 vs agosto</small></div>
+        <div class="kpi"><div class="mono">Contactos WhatsApp</div><b>57</b><small>↑ 12 vs agosto</small></div>
+        <div class="kpi"><div class="mono">Calificación Google</div><b>4,9</b><small>★★★★★</small></div>
+        <div class="chart">
+          <div class="mono" style="color:var(--muted);font-size:10px">Visitas desde Google · 6 meses</div>
+          <svg viewBox="0 0 400 140" preserveAspectRatio="none">
+            <defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7d93ab" stop-opacity=".35"/><stop offset="1" stop-color="#7d93ab" stop-opacity="0"/></linearGradient></defs>
+            <path d="M0,125 C60,120 90,112 140,100 S230,70 280,52 S360,22 400,12 L400,140 L0,140Z" fill="url(#g)"/>
+            <path d="M0,125 C60,120 90,112 140,100 S230,70 280,52 S360,22 400,12" fill="none" stroke="#3d5266" stroke-width="2"/>
+          </svg>
+        </div>
+        <div class="feed">
+          <div class="mono" style="color:var(--muted);font-size:10px;margin-bottom:6px">Publicado esta semana</div>
+          <ul>
+            <li>¿Cuánto dura la recuperación de una lipo? <span>hoy</span></li>
+            <li>Várices en el embarazo: qué hacer <span>ayer</span></li>
+            <li>Botox vs. ácido hialurónico <span>hace 2 días</span></li>
+            <li>Lipedema: señales para no ignorar <span>hace 3 días</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CASO -->
+<section id="caso" style="padding-top:0">
+  <div class="wrap">
+    <span class="eyebrow mono reveal">Caso real</span>
+    <h2 class="reveal">Clínica Seravena,<br><em>Medellín.</em></h2>
+    <div class="case">
+      <div class="case-hero grain reveal">
+        <div class="mono" style="color:rgba(255,255,255,.75)">Lipedema · venas · obesidad</div>
+        <h3>De una web quieta a un blog que publica solo cada mañana.</h3>
+      </div>
+      <div class="case-stats">
+        <div class="cs reveal"><div class="mono" style="color:var(--muted)">Google</div><b>4,9★</b><p>Calificación de pacientes reales</p></div>
+        <div class="cs reveal"><div class="mono" style="color:var(--muted)">WhatsApp</div><b>+55</b><p>Contactos al mes desde la web y anuncios</p></div>
+        <div class="cs reveal"><div class="mono" style="color:var(--muted)">Contenido</div><b>1/día</b><p>Artículos publicados por el agente desde julio</p></div>
+        <div class="cs reveal"><div class="mono" style="color:var(--muted)">Medición</div><b>100%</b><p>Cada clic a WhatsApp queda registrado</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PLANES -->
+<section id="planes" class="center" style="padding-top:0">
+  <div class="wrap">
+    <span class="eyebrow mono reveal">Planes</span>
+    <h2 class="reveal">Elige qué tan <em>visible</em> quieres ser.</h2>
+    <div class="plans">
+      <div class="plan reveal">
+        <div><h3>Presencia</h3><div class="for">Para clínicas que están empezando en Google</div></div>
+        <ul><li>Diagnóstico completo</li><li>Ficha de Google Maps optimizada</li><li>8 artículos al mes</li><li>Informe mensual</li></ul>
+        <a href="#contacto" class="btn ghost">Agendar llamada</a>
+      </div>
+      <div class="plan feat reveal">
+        <div class="mono" style="color:var(--steel-soft)">Más elegido</div>
+        <div><h3>Crecimiento</h3><div class="for">Para llenar la agenda con pacientes de Google</div></div>
+        <ul><li>Todo lo de Presencia</li><li>1 artículo al día con agente IA</li><li>Mapa de calor de tu web</li><li>Medición de contactos por WhatsApp</li><li>Panel en vivo</li></ul>
+        <a href="#contacto" class="btn">Agendar llamada</a>
+      </div>
+      <div class="plan reveal">
+        <div><h3>Dominio</h3><div class="for">Para ser la primera opción de tu ciudad</div></div>
+        <ul><li>Todo lo de Crecimiento</li><li>Páginas por tratamiento y ciudad</li><li>Gestión de reseñas</li><li>Google Ads conectado al SEO</li></ul>
+        <a href="#contacto" class="btn ghost">Agendar llamada</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta grain" id="contacto">
+  <div class="blob b1" style="left:-200px;top:10%"></div><div class="blob b2" style="right:-200px;top:30%"></div>
+  <div class="frost" style="background:rgba(12,14,17,.35)"></div>
+  <h2>Hagamos visible<br>tu clínica.</h2>
+  <p>Una llamada de 20 minutos. Te mostramos qué buscan tus pacientes y cuántos se están yendo con tu competencia.</p>
+  <a class="btn" href="https://wa.me/570000000000?text=Hola%20Visibla,%20quiero%20mi%20diagn%C3%B3stico" target="_blank" rel="noopener">Escribir por WhatsApp →</a>
+</div>
+
+<footer>
+  <div class="wrap">
+    <a href="#" class="logo" style="font-size:15px;color:var(--ink)"><i style="width:18px;height:18px"></i>Visibla</a>
+    <div>SEO con agentes de IA para clínicas · Colombia · © 2026</div>
+  </div>
+</footer>
+
+<script>
+// nav sólido al bajar
+const nav=document.getElementById('nav');
+addEventListener('scroll',()=>nav.classList.toggle('solid',scrollY>40),{passive:true});
+
+// tarjetas por pestaña (datos con fuente)
+const data=[
+ [{c:'Clics',n:'27,6%',t:'Se van al primer resultado',p:'Más de una cuarta parte de las personas hace clic en el primer resultado orgánico de Google.',s:'Backlinko, análisis de 4 millones de búsquedas (2023)'},
+  {c:'Página 2',n:'0,6%',t:'Llegan a la segunda página',p:'Casi nadie pasa de la primera página. Si no estás ahí, no existes.',s:'Backlinko (2023)'},
+  {c:'Pacientes',n:'77%',t:'Buscan antes de agendar',p:'La mayoría de pacientes usa un buscador antes de reservar una cita médica.',s:'Google / Compete, The Digital Journey to Wellness'}],
+ [{c:'Confianza',n:'98%',t:'Leen reseñas de negocios locales',p:'Antes de elegir, casi todos revisan qué dicen otros clientes.',s:'BrightLocal, Local Consumer Review Survey (2023)'},
+  {c:'Maps',n:'1º',t:'El mapa sale antes que las webs',p:'En búsquedas como "clínica cerca de mí", Google muestra primero el mapa con reseñas.',s:'Resultados de Google, búsquedas locales'},
+  {c:'Calificación',n:'4,9',t:'El número que decide',p:'Una buena calificación visible convierte una búsqueda en una conversación por WhatsApp.',s:'Caso Seravena'}],
+ [{c:'Ritmo',n:'365',t:'Artículos al año',p:'Nuestro agente publica uno cada día. Cada artículo es una puerta nueva para que te encuentren.',s:'Método Visibla'},
+  {c:'Humano',n:'2',t:'Revisiones antes de publicar',p:'Un revisor quita lo que suena a robot y otro verifica lo médico. Nada sale sin pasar el filtro.',s:'Método Visibla'},
+  {c:'Preguntas',n:'∞',t:'Lo que tus pacientes preguntan',p:'Cada duda que te hacen en consulta es una búsqueda en Google. La respondemos antes que tu competencia.',s:'Método Visibla'}]
+];
+const cards=document.getElementById('cards');
+function render(i){
+  cards.innerHTML=data[i].map(d=>`<div class="card"><span class="chip">${d.c}</span><div class="num">${d.n}</div><h3>${d.t}</h3><p>${d.p}</p><div class="src">↳ ${d.s}</div></div>`).join('');
+  [...cards.children].forEach((c,k)=>{c.style.opacity=0;c.style.transform='translateY(14px)';setTimeout(()=>{c.style.transition='opacity .6s, transform .6s, box-shadow .4s, color .4s';c.style.opacity=1;c.style.transform='none'},80*k)});
+}
+render(0);
+document.getElementById('tabs').addEventListener('click',e=>{
+  const b=e.target.closest('.tab');if(!b)return;
+  document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('on',t===b));
+  render(+b.dataset.t);
+});
+
+// diagnóstico de muestra
+document.getElementById('audit').addEventListener('submit',e=>{
+  e.preventDefault();
+  const u=document.getElementById('url').value.trim()||'tu clínica';
+  const r=document.getElementById('result');
+  document.getElementById('rtitle').textContent='Diagnóstico rápido · '+u.replace(/^https?:\/\//,'');
+  r.classList.add('on');
+  r.querySelectorAll('.bar i').forEach(i=>{i.style.width=0;setTimeout(()=>i.style.width=i.dataset.w+'%',150)});
+});
+
+// aparición al bajar
+const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.15});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
