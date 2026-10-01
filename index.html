@@ -167,6 +167,75 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
 .reveal{opacity:0;transform:translateY(24px);transition:opacity .9s ease,transform .9s ease}
 .reveal.in{opacity:1;transform:none}
 
+
+/* ===== MOVIMIENTO ===== */
+.progress{position:fixed;top:0;left:0;height:2px;width:100%;transform-origin:0 50%;transform:scaleX(0);background:var(--steel-deep);z-index:60}
+nav{transition:background .3s,border-color .3s,transform .45s cubic-bezier(.2,.7,.2,1)}
+nav.hide{transform:translateY(-100%)}
+.spot{position:absolute;width:520px;height:520px;border-radius:50%;left:0;top:0;pointer-events:none;z-index:1;
+  background:radial-gradient(circle,rgba(255,255,255,.55),transparent 60%);transform:translate(-50%,-50%);opacity:0;transition:opacity .6s}
+.hero:hover .spot{opacity:1}
+/* entrada del hero */
+.hero h1 .w{display:inline-block;opacity:0;filter:blur(14px);transform:translateY(30px);animation:wIn 1.1s cubic-bezier(.2,.7,.2,1) forwards}
+@keyframes wIn{to{opacity:1;filter:blur(0);transform:none}}
+.touch{opacity:0;transform:translateY(-30px) scale(.6);animation:dropIn 1s .1s cubic-bezier(.3,1.4,.5,1) forwards}
+@keyframes dropIn{to{opacity:1;transform:none}}
+.stem{transform:scaleY(0);transform-origin:top;animation:grow 1s .6s ease forwards}
+@keyframes grow{to{transform:scaleY(1)}}
+.hero .sub,.audit,.hero .hint{opacity:0;transform:translateY(20px);animation:fadeUp 1s ease forwards}
+.hero .sub{animation-delay:1.1s}.audit{animation-delay:1.3s}.hero .hint{animation-delay:1.5s}
+@keyframes fadeUp{to{opacity:1;transform:none}}
+.scroll-cue{position:absolute;bottom:26px;left:50%;width:22px;height:36px;margin-left:-11px;border:1.5px solid rgba(38,48,58,.35);border-radius:12px;z-index:2;opacity:0;animation:fadeUp 1s 2s forwards}
+.scroll-cue::after{content:"";position:absolute;left:50%;top:7px;width:3px;height:7px;margin-left:-1.5px;border-radius:2px;background:#26303a;animation:cue 1.8s infinite}
+@keyframes cue{0%{opacity:0;transform:translateY(0)}30%{opacity:1}100%{opacity:0;transform:translateY(12px)}}
+.audit input:focus{outline:none}
+.audit:focus-within{box-shadow:0 0 0 4px rgba(125,147,171,.35),0 20px 60px rgba(61,82,102,.18)}
+/* cinta de búsquedas */
+.marquee{overflow:hidden;border-block:1px solid var(--line);padding:22px 0;background:#fff;-webkit-mask:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent);mask:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent)}
+.track{display:flex;gap:14px;width:max-content;animation:slide 45s linear infinite}
+.marquee:hover .track{animation-play-state:paused}
+.q{display:flex;align-items:center;gap:10px;padding:10px 18px;border-radius:999px;background:var(--mist);border:1px solid var(--line);font-size:14px;color:var(--ink-2);white-space:nowrap}
+.q::before{content:"";width:12px;height:12px;border-radius:50%;border:1.5px solid var(--steel);box-shadow:4px 4px 0 -3px var(--steel)}
+@keyframes slide{to{transform:translateX(-50%)}}
+/* aparición escalonada */
+.reveal{transition-delay:var(--d,0s)}
+.reveal.blur{filter:blur(10px)}.reveal.blur.in{filter:none;transition:opacity 1s ease,transform 1s ease,filter 1s ease}
+/* tarjetas con inclinación */
+.tilt{transform-style:preserve-3d;will-change:transform}
+.card .num,.card h3{transition:transform .5s}
+.card:hover .num{transform:translateX(4px)}
+/* pasos: número que brilla */
+.step{transition:border-color .4s,background .4s,transform .5s}
+.step:hover{border-color:rgba(196,209,222,.35);background:rgba(255,255,255,.07);transform:translateY(-6px)}
+.step .line{height:1px;background:rgba(255,255,255,.12);margin-top:22px;position:relative;overflow:hidden}
+.step .line::after{content:"";position:absolute;inset:0;background:var(--steel-soft);transform:scaleX(0);transform-origin:left;transition:transform 1.2s cubic-bezier(.2,.7,.2,1) var(--d,0s)}
+.step.in .line::after{transform:scaleX(1)}
+/* panel */
+.chart .ln{stroke-dasharray:600;stroke-dashoffset:600;transition:stroke-dashoffset 2.2s cubic-bezier(.4,0,.2,1) .3s}
+.chart .ar{opacity:0;transition:opacity 1.2s 1.4s}
+.chart .pt{opacity:0;transition:opacity .4s 2.4s}
+.panel.in .ln{stroke-dashoffset:0}.panel.in .ar,.panel.in .pt{opacity:1}
+.pt circle:last-child{animation:ping 2s 2.6s infinite;transform-origin:400px 12px;transform-box:fill-box}
+@keyframes ping{0%{transform:scale(1);opacity:.6}100%{transform:scale(3);opacity:0}}
+.feed li{opacity:0;transform:translateX(-10px);transition:opacity .6s,transform .6s}
+.panel.in .feed li{opacity:1;transform:none}
+.typing{color:var(--steel-deep)}
+.typing .caret{display:inline-block;width:1.5px;height:1em;background:var(--steel-deep);vertical-align:-2px;margin-left:2px;animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.dot{animation:breathe 2.4s ease-in-out infinite}
+@keyframes breathe{50%{box-shadow:0 0 0 8px rgba(63,178,127,0)}}
+/* caso */
+.case-hero{background-size:180% 180%;animation:sheen 14s ease-in-out infinite alternate}
+@keyframes sheen{to{background-position:100% 100%}}
+.case-hero h3{transition:transform .8s}
+.cs,.plan{transition:transform .5s cubic-bezier(.2,.7,.2,1),box-shadow .5s}
+.cs:hover,.plan:hover{transform:translateY(-6px);box-shadow:0 24px 50px rgba(30,40,55,.1)}
+.btn .ar{display:inline-block;transition:transform .3s}
+.btn:hover .ar{transform:translateX(4px)}
+/* cta */
+.cta h2 .w{display:inline-block;opacity:0;transform:translateY(40px);transition:opacity 1s,transform 1s cubic-bezier(.2,.7,.2,1)}
+.cta.in h2 .w{opacity:1;transform:none}
+
 @media (max-width:900px){
   .links{display:none}
   .cards,.steps,.plans,.case,.case-stats,.split{grid-template-columns:1fr}
@@ -202,11 +271,28 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
   .cta{margin:0 12px 12px;padding:100px 20px;border-radius:26px}
   nav .btn{padding:0 14px}
 }
-@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+@media (min-width:601px) and (max-width:900px){
+  .cards,.steps,.plans{grid-template-columns:1fr 1fr}
+  .case-stats{grid-template-columns:1fr 1fr}
+  .cards .card:last-child:nth-child(odd),.plans .plan:last-child{grid-column:1/-1}
+}
+@media (max-width:380px){
+  .hero h1{font-size:40px}
+  h2{font-size:32px}
+  nav .btn{font-size:12px;height:34px;padding:0 12px}
+  .logo{font-size:16px}
+  .tab{padding:8px 12px;font-size:13px}
+  .screen{grid-template-columns:1fr}
+  .kpi b{font-size:34px}
+  .card .num{font-size:46px}
+}
+@media (hover:none){.spot{display:none}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal,.hero h1 .w,.touch,.hero .sub,.audit,.hero .hint,.cta h2 .w,.feed li{opacity:1!important;transform:none!important;filter:none!important}.stem{transform:none}.chart .ln{stroke-dashoffset:0}.chart .ar,.chart .pt{opacity:1}}
 </style>
 </head>
 <body>
 
+<div class="progress" id="progress"></div>
 <nav id="nav">
   <div class="wrap">
     <a href="#" class="logo"><i></i>Visibla</a>
@@ -224,14 +310,15 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
 <header class="hero grain">
   <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
   <div class="frost"></div>
+  <div class="spot" id="spot"></div>
   <div class="hero-in">
     <div class="touch"><span></span><b></b></div>
     <div class="stem"></div>
-    <h1>Que Google <br>encuentre tu clínica</h1>
+    <h1 id="h1">Que Google <br>encuentre tu clínica</h1>
     <p class="sub">Agentes de IA que escriben y publican contenido para tu clínica todos los días. Tú atiendes pacientes; nosotros hacemos que lleguen.</p>
     <form class="audit" id="audit">
       <input type="text" id="url" placeholder="tuclinica.com" aria-label="Dirección de tu web">
-      <button class="btn" type="submit">Diagnóstico gratis →</button>
+      <button class="btn" type="submit">Diagnóstico gratis <span class="ar">→</span></button>
     </form>
     <div class="mono hint">Resultado en 10 segundos · sin registro</div>
     <div class="result" id="result">
@@ -243,13 +330,16 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
       <a class="btn" href="#contacto">Ver el informe completo con un asesor</a>
     </div>
   </div>
+  <a href="#impacto" class="scroll-cue" aria-label="Bajar"></a>
 </header>
+
+<div class="marquee" aria-hidden="true"><div class="track" id="track"></div></div>
 
 <!-- IMPACTO -->
 <section id="impacto" class="center">
   <div class="wrap">
     <span class="eyebrow mono reveal">Ser visible importa</span>
-    <h2 class="reveal">Tus pacientes ya te buscan. <br><em>¿Te están encontrando?</em></h2>
+    <h2 class="reveal blur">Tus pacientes ya te buscan. <br><em>¿Te están encontrando?</em></h2>
     <div class="tabs reveal" id="tabs">
       <button class="tab on" data-t="0">Google</button>
       <button class="tab" data-t="1">Reseñas</button>
@@ -266,14 +356,14 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
     <div class="split">
       <div>
         <span class="eyebrow mono reveal">Cómo funciona</span>
-        <h2 class="reveal">Un equipo de agentes <br>trabajando por tu clínica <br>cada mañana.</h2>
+        <h2 class="reveal blur">Un equipo de agentes <br>trabajando por tu clínica <br>cada mañana.</h2>
       </div>
       <p class="lead reveal">Investigan qué buscan tus pacientes, escriben, un revisor humano-IA quita lo que suena a robot, y se publica solo. Todos los días.</p>
     </div>
     <div class="steps">
-      <div class="step reveal"><div class="mono">01 — Semana 1</div><h3>Revisamos tu clínica</h3><p>Tu web, tu ficha de Google, tus reseñas y a tu competencia. Sabemos en qué estás perdiendo pacientes.</p></div>
-      <div class="step reveal"><div class="mono">02 — Desde el día 8</div><h3>El agente publica</h3><p>Un artículo nuevo al día sobre lo que tus pacientes preguntan, con tu tono y revisado antes de salir.</p></div>
-      <div class="step reveal"><div class="mono">03 — Cada mes</div><h3>Ves a los pacientes llegar</h3><p>Un panel simple: cuántas personas te encontraron y cuántas escribieron por WhatsApp.</p></div>
+      <div class="step reveal"><div class="mono">01 — Semana 1</div><div class="line"></div><h3>Revisamos tu clínica</h3><p>Tu web, tu ficha de Google, tus reseñas y a tu competencia. Sabemos en qué estás perdiendo pacientes.</p></div>
+      <div class="step reveal"><div class="mono">02 — Desde el día 8</div><div class="line"></div><h3>El agente publica</h3><p>Un artículo nuevo al día sobre lo que tus pacientes preguntan, con tu tono y revisado antes de salir.</p></div>
+      <div class="step reveal"><div class="mono">03 — Cada mes</div><div class="line"></div><h3>Ves a los pacientes llegar</h3><p>Un panel simple: cuántas personas te encontraron y cuántas escribieron por WhatsApp.</p></div>
     </div>
   </div>
 </section>
@@ -283,7 +373,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
   <div class="wrap">
     <div class="center">
       <span class="eyebrow mono reveal">Tu panel</span>
-      <h2 class="reveal">Todo claro, <em>en una sola pantalla.</em></h2>
+      <h2 class="reveal blur">Todo claro, <em>en una sola pantalla.</em></h2>
     </div>
     <div class="panel reveal">
       <div class="screen">
@@ -296,13 +386,15 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
           <div class="mono" style="color:var(--muted);font-size:10px">Visitas desde Google · 6 meses</div>
           <svg viewBox="0 0 400 140" preserveAspectRatio="none">
             <defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7d93ab" stop-opacity=".35"/><stop offset="1" stop-color="#7d93ab" stop-opacity="0"/></linearGradient></defs>
-            <path d="M0,125 C60,120 90,112 140,100 S230,70 280,52 S360,22 400,12 L400,140 L0,140Z" fill="url(#g)"/>
-            <path d="M0,125 C60,120 90,112 140,100 S230,70 280,52 S360,22 400,12" fill="none" stroke="#3d5266" stroke-width="2"/>
+            <path class="ar" d="M0,125 C60,120 90,112 140,100 S230,70 280,52 S360,22 400,12 L400,140 L0,140Z" fill="url(#g)"/>
+            <path d="M0,125 C60,120 90,112 140,100 S230,70 280,52 S360,22 400,12" fill="none" stroke="#3d5266" stroke-width="2" class="ln" vector-effect="non-scaling-stroke"/>
+            <g class="pt"><circle cx="400" cy="12" r="4" fill="#3d5266"/><circle cx="400" cy="12" r="4" fill="#3d5266"/></g>
           </svg>
         </div>
         <div class="feed">
           <div class="mono" style="color:var(--muted);font-size:10px;margin-bottom:6px">Publicado esta semana</div>
           <ul>
+            <li class="typing"><b id="typed" style="font-weight:400"></b><i class="caret"></i><span>escribiendo…</span></li>
             <li>¿Cuánto dura la recuperación de una lipo? <span>hoy</span></li>
             <li>Várices en el embarazo: qué hacer <span>ayer</span></li>
             <li>Botox vs. ácido hialurónico <span>hace 2 días</span></li>
@@ -318,7 +410,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
 <section id="caso" style="padding-top:0">
   <div class="wrap">
     <span class="eyebrow mono reveal">Caso real</span>
-    <h2 class="reveal">Clínica Seravena, <br><em>Medellín.</em></h2>
+    <h2 class="reveal blur">Clínica Seravena, <br><em>Medellín.</em></h2>
     <div class="case">
       <div class="case-hero grain reveal">
         <div class="mono" style="color:rgba(255,255,255,.75)">Lipedema · venas · obesidad</div>
@@ -338,7 +430,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
 <section id="planes" class="center" style="padding-top:0">
   <div class="wrap">
     <span class="eyebrow mono reveal">Planes</span>
-    <h2 class="reveal">Elige qué tan <em>visible</em> quieres ser.</h2>
+    <h2 class="reveal blur">Elige qué tan <em>visible</em> quieres ser.</h2>
     <div class="plans">
       <div class="plan reveal">
         <div><h3>Presencia</h3><div class="for">Para clínicas que están empezando en Google</div></div>
@@ -364,9 +456,9 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
 <div class="cta grain" id="contacto">
   <div class="blob b1" style="left:-200px;top:10%"></div><div class="blob b2" style="right:-200px;top:30%"></div>
   <div class="frost" style="background:rgba(12,14,17,.35)"></div>
-  <h2>Hagamos visible <br>tu clínica.</h2>
+  <h2 id="ctah">Hagamos visible <br>tu clínica.</h2>
   <p>Una llamada de 20 minutos. Te mostramos qué buscan tus pacientes y cuántos se están yendo con tu competencia.</p>
-  <a class="btn" href="https://wa.me/570000000000?text=Hola%20Visibla,%20quiero%20mi%20diagn%C3%B3stico" target="_blank" rel="noopener">Escribir por WhatsApp →</a>
+  <a class="btn" href="https://wa.me/570000000000?text=Hola%20Visibla,%20quiero%20mi%20diagn%C3%B3stico" target="_blank" rel="noopener">Escribir por WhatsApp <span class="ar">→</span></a>
 </div>
 
 <footer>
@@ -414,6 +506,80 @@ document.getElementById('audit').addEventListener('submit',e=>{
   r.classList.add('on');
   r.querySelectorAll('.bar i').forEach(i=>{i.style.width=0;setTimeout(()=>i.style.width=i.dataset.w+'%',150)});
 });
+
+
+// ===== MOVIMIENTO =====
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const fine=matchMedia('(hover:hover) and (pointer:fine)').matches;
+
+// palabras del título del hero y del cierre
+function splitWords(el,base,step){
+  el.innerHTML=el.innerHTML.split(/(<br>)/).map(part=>part==='<br>'?part:part.split(' ').filter(Boolean).map(w=>`<span class="w">${w}</span>`).join(' ')).join(' ');
+  el.querySelectorAll('.w').forEach((w,i)=>{w.style.animationDelay=(base+i*step)+'s';w.style.transitionDelay=(base+i*step)+'s'});
+}
+splitWords(document.getElementById('h1'),.35,.09);
+splitWords(document.getElementById('ctah'),0,.08);
+
+// cinta de búsquedas reales de pacientes
+const qs=['lipo en medellín precio','botox cerca de mí','tratamiento de várices','mejor clínica estética','ácido hialurónico labios','qué es el lipedema','depilación láser bogotá','cirujano plástico recomendado','manchas en la cara tratamiento','clínica de venas'];
+document.getElementById('track').innerHTML=[...qs,...qs].map(q=>`<span class="q">${q}</span>`).join('');
+
+// barra de progreso + menú que se esconde al bajar
+const bar=document.getElementById('progress');let lastY=0;
+addEventListener('scroll',()=>{
+  const y=scrollY,h=document.documentElement.scrollHeight-innerHeight;
+  bar.style.transform=`scaleX(${h>0?y/h:0})`;
+  nav.classList.toggle('hide',y>lastY&&y>400);lastY=y;
+},{passive:true});
+
+// luz que sigue al mouse en el hero
+const hero=document.querySelector('.hero'),spot=document.getElementById('spot');
+if(fine&&!reduce){hero.addEventListener('pointermove',e=>{const r=hero.getBoundingClientRect();spot.style.left=(e.clientX-r.left)+'px';spot.style.top=(e.clientY-r.top)+'px'});
+  // las manchas se mueven un poco con el mouse
+  const blobs=hero.querySelectorAll('.blob');
+  hero.addEventListener('pointermove',e=>{const x=e.clientX/innerWidth-.5,y=e.clientY/innerHeight-.5;blobs.forEach((b,i)=>b.style.translate=`${x*(i+1)*30}px ${y*(i+1)*30}px`)});
+}
+
+// aparición escalonada entre hermanos
+document.querySelectorAll('.steps,.case-stats,.plans,.case').forEach(g=>[...g.querySelectorAll(':scope > .reveal')].forEach((el,i)=>el.style.setProperty('--d',(i*.12)+'s')));
+
+// números que cuentan
+function countUp(el){
+  if(el.dataset.done)return;el.dataset.done=1;
+  const m=el.textContent.match(/^([^\d]*)([\d.,]+)(.*)$/);if(!m||reduce)return;
+  const raw=m[2],dec=(raw.split(',')[1]||'').length,val=parseFloat(raw.replace(/\./g,'').replace(',','.'));
+  const fmt=v=>v.toLocaleString('es-CO',{minimumFractionDigits:dec,maximumFractionDigits:dec});
+  const t0=performance.now(),dur=1600;
+  (function tick(t){const p=Math.min((t-t0)/dur,1),e=1-Math.pow(1-p,4);el.textContent=m[1]+fmt(val*e)+m[3];if(p<1)requestAnimationFrame(tick)})(t0);
+}
+const cio=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){countUp(x.target);cio.unobserve(x.target)}}),{threshold:.6});
+function watchNums(){document.querySelectorAll('.kpi b,.cs b,.card .num').forEach(n=>cio.observe(n))}
+watchNums();
+new MutationObserver(watchNums).observe(cards,{childList:true});
+
+// el agente "escribiendo" en el panel
+const titles=['¿El botox duele? Lo que nadie te cuenta','Lipo vs. lipotransferencia: diferencias','5 señales de que tienes várices'];
+const typed=document.getElementById('typed');let ti=0;
+function typeNext(){const t=titles[ti++%titles.length];let i=0;
+  (function step(){typed.textContent=t.slice(0,++i);if(i<t.length)setTimeout(step,45+Math.random()*50);else setTimeout(()=>{(function del(){typed.textContent=typed.textContent.slice(0,-1);if(typed.textContent)setTimeout(del,18);else setTimeout(typeNext,400)})()},2200)})();}
+const panel=document.querySelector('.panel');
+const pio=new IntersectionObserver(es=>{if(es[0].isIntersecting){panel.querySelectorAll('.feed li').forEach((li,i)=>li.style.transitionDelay=(.4+i*.15)+'s');reduce?typed.textContent=titles[0]:setTimeout(typeNext,900);pio.disconnect()}},{threshold:.3});
+pio.observe(panel);
+
+// cierre
+const cta=document.getElementById('contacto');
+new IntersectionObserver((es,o)=>{if(es[0].isIntersecting){cta.classList.add('in');o.disconnect()}},{threshold:.3}).observe(cta);
+
+// inclinación 3D suave en tarjetas (solo con mouse)
+if(fine&&!reduce){
+  document.addEventListener('pointermove',e=>{
+    const c=e.target.closest('.card,.plan,.cs');
+    document.querySelectorAll('.tilting').forEach(x=>{if(x!==c){x.classList.remove('tilting');x.style.transform=''}});
+    if(!c)return;const r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;
+    c.classList.add('tilting');c.style.transition='transform .15s, box-shadow .4s, color .4s';
+    c.style.transform=`perspective(900px) rotateX(${-y*6}deg) rotateY(${x*6}deg) translateY(-6px)`;
+  });
+}
 
 // aparición al bajar
 const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.15});
