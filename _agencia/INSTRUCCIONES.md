@@ -65,6 +65,7 @@ El propio blog es la prueba del producto: si Visibla posiciona su blog, demuestr
 - Estructura: párrafo de entrada que responde la pregunta en 2–3 frases (para fragmento destacado y para IA) → H2 claros (5–8) → pasos accionables → FAQ de 3–5 preguntas reales (en la cabecera `faq`, NO en el cuerpo).
 - Al menos 1 tabla o lista de pasos cuando aporte.
 - **Enlaces internos:** 2–4 a otras guías publicadas (`/blog/<slug>/`) con texto ancla descriptivo + 1 a la home (`/`) o a `/#como`. Solo enlaces que EXISTAN (mira `_agencia/articulos/`).
+- **Páginas de venta:** si el tema toca una especialidad o ciudad que tiene página de venta en `_agencia/paginas/` (mira los slugs), enlázala UNA vez con texto natural (ej. "cómo trabajamos con clínicas estéticas" → `/agencia-seo-clinicas-esteticas/`). No escribas artículos que compitan con esas páginas (keyword "agencia SEO + especialidad/ciudad").
 - **Enlaces externos:** 2–5 a fuentes de autoridad (Google, estudios, normas). Van en el texto Y en `fuentes`.
 - **Local:** 1 de cada 3 artículos con foco de ciudad colombiana (ver `temas.md`). Hablar de esa ciudad con datos reales (barrios con clínicas, búsquedas típicas), no cambiar solo el nombre de la ciudad. Nada de páginas puerta copiadas.
 - **No canibalizar:** antes de escribir, lee títulos y keywords de `_agencia/articulos/`. Si ya hay uno que apunta a la misma keyword, elige otro tema o propone actualizar ese.

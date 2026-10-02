@@ -122,3 +122,39 @@ footer a{text-decoration:underline;text-underline-offset:3px}
 }
 @media (max-width:380px){nav .btn{font-size:12px;height:34px;padding:0 12px}.lead{font-size:17px}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+/* PIE con enlaces a páginas */
+.foot-links{display:flex;gap:48px;flex-wrap:wrap;margin-top:28px;padding-top:24px;border-top:1px solid var(--line)}
+.foot-links>div{display:flex;flex-direction:column;gap:8px}
+.foot-links .mono{color:var(--steel-deep);margin-bottom:4px}
+.foot-links a{text-decoration:none}
+.foot-links a:hover{color:var(--ink)}
+
+/* PÁGINAS DE VENTA */
+.lp-head{padding-bottom:90px}
+.lp-head h1{font-size:clamp(36px,5.6vw,64px)}
+.lp-ctas{display:flex;gap:10px;flex-wrap:wrap;margin-top:30px}
+.lp-ctas .btn.ghost{background:rgba(255,255,255,.55);backdrop-filter:blur(10px)}
+.lp-sec{padding-top:70px;padding-bottom:10px}
+.lp-k{color:var(--steel-deep);margin-bottom:18px}
+.lp-h2{font-size:clamp(28px,3.6vw,42px);font-weight:400;letter-spacing:-.035em;line-height:1.1;margin-bottom:30px;max-width:680px}
+.lp-grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.lp-grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.lp-card,.lp-step{padding:26px;border-radius:var(--r);background:var(--mist);border:1px solid var(--line)}
+.lp-n{color:var(--steel-deep)}
+.lp-card h3,.lp-step h3,.lp-inc h3{font-weight:500;font-size:20px;letter-spacing:-.02em;margin-top:14px;line-height:1.25}
+.lp-card p,.lp-step p,.lp-inc p{margin-top:8px;font-size:15px;line-height:1.55;color:var(--muted)}
+.lp-step .mono{color:var(--steel-deep)}
+.lp-inc{padding:24px 26px;border-radius:var(--r);border:1px solid var(--line)}
+.lp-inc h3{margin-top:0}
+.lp-caso{display:block;position:relative;overflow:hidden;border-radius:var(--r);padding:40px 36px;color:#fff;
+  background:radial-gradient(circle at 20% 80%,var(--steel-deep),transparent 60%),radial-gradient(circle at 85% 20%,#8fa5bb,transparent 55%),#2b3846;transition:transform .4s}
+.lp-caso:hover{transform:translateY(-4px)}
+.lp-caso .mono{color:rgba(255,255,255,.7)}
+.lp-caso h3{font-size:clamp(24px,3vw,34px);font-weight:400;letter-spacing:-.03em;margin-top:12px;max-width:720px;line-height:1.15}
+.lp-stats{display:flex;gap:40px;flex-wrap:wrap;margin-top:28px}
+.lp-stats b{display:block;font-size:44px;font-weight:300;letter-spacing:-.04em}
+.lp-stats span{font-size:13px;color:rgba(255,255,255,.75);max-width:180px;display:block}
+.lp-more{display:inline-block;margin-top:26px;font-size:14px;border-bottom:1px solid rgba(255,255,255,.5)}
+@media (max-width:900px){.lp-grid3,.lp-grid2{grid-template-columns:1fr}}
+@media (max-width:600px){.lp-sec{padding-top:50px}.lp-caso{padding:30px 22px}.lp-stats{gap:22px}.foot-links{gap:28px}}

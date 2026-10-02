@@ -89,8 +89,9 @@ NAV = """<div class="progress" id="progress"></div>
 FOOTER = """<footer>
   <div class="wrap">
     <a href="/" class="logo" style="font-size:15px;color:var(--ink)"><i style="width:18px;height:18px"></i>Visibla</a>
-    <div>SEO con agentes de IA para clínicas · Colombia · © {anio} · <a href="/blog/">Guías</a></div>
+    <div>SEO con agentes de IA para clínicas · Colombia · © {anio} · <a href="/blog/">Guías</a> · <a href="/diagnostico/">Diagnóstico gratis</a></div>
   </div>
+  {{links}}
 </footer>"""
 
 JS = """<script>
@@ -299,8 +300,22 @@ def bloque_home(arts):
 <!--BLOG:FIN-->"""
 
 
+def enlaces_footer(pags):
+    grupos = [("Especialidades", "especialidad"), ("Ciudades", "ciudad"), ("Casos", "caso")]
+    cols = []
+    for nombre, tipo in grupos:
+        items = [p for p in pags if p["tipo"] == tipo]
+        if items:
+            cols.append(f'<div><div class="mono">{nombre}</div>' + "".join(
+                f'<a href="{p["ruta"]}">{e(p.get("corto") or p["h1"])}</a>' for p in items) + "</div>")
+    return f'<div class="wrap foot-links">{"".join(cols)}</div>' if cols else ""
+
+
 def main():
+    global FOOTER
+    import paginas
     arts = cargar()
+    FOOTER = FOOTER.replace("{{links}}", enlaces_footer(paginas.cargar(RAIZ)))
     for a in arts:
         d = RAIZ / "blog" / a["slug"]
         d.mkdir(parents=True, exist_ok=True)
@@ -313,9 +328,15 @@ def main():
         h = re.sub(r"<!--BLOG:INICIO-->.*?<!--BLOG:FIN-->", lambda _: bloque_home(arts), h, flags=re.S)
         home.write_text(h, encoding="utf-8")
 
+    pags = paginas.generar(RAIZ, arts, sys.modules[__name__])
+    if "<!--PAGINAS:INICIO-->" in h:
+        h = re.sub(r"<!--PAGINAS:INICIO-->.*?<!--PAGINAS:FIN-->", lambda _: "<!--PAGINAS:INICIO-->" + enlaces_footer(pags) + "<!--PAGINAS:FIN-->", h, flags=re.S)
+        home.write_text(h, encoding="utf-8")
+
     hoy = date.today().isoformat()
     ult = max([a["modificado"] for a in arts] or [hoy])
-    urls = [(f"{DOMINIO}/", ult), (f"{DOMINIO}/blog/", ult)] + [(f"{DOMINIO}/blog/{a['slug']}/", a["modificado"]) for a in arts]
+    urls = [(f"{DOMINIO}/", ult), (f"{DOMINIO}/blog/", ult)] + [(f"{DOMINIO}/blog/{a['slug']}/", a["modificado"]) for a in arts] + \
+        [(DOMINIO + p["ruta"], p["modificado"]) for p in pags] + [(f"{DOMINIO}/diagnostico/", ult)]
     (RAIZ / "sitemap.xml").write_text(
         '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
         "".join(f"  <url><loc>{u}</loc><lastmod>{m}</lastmod></url>\n" for u, m in urls) + "</urlset>\n", encoding="utf-8")
@@ -323,9 +344,10 @@ def main():
     (RAIZ / "llms.txt").write_text(
         "# Visibla\n\n> Agencia de SEO con agentes de IA para clínicas en Colombia. Publica contenido diario revisado, "
         "cuida la ficha de Google y las reseñas, y mide los contactos por WhatsApp. Contacto: WhatsApp +57 320 363 8223.\n\n"
-        f"- [Inicio]({DOMINIO}/)\n- [Guías de SEO para clínicas]({DOMINIO}/blog/)\n\n## Guías\n\n" +
+        f"- [Inicio]({DOMINIO}/)\n- [Guías de SEO para clínicas]({DOMINIO}/blog/)\n- [Diagnóstico SEO gratis]({DOMINIO}/diagnostico/)\n\n## Servicios y casos\n\n" +
+        "".join(f"- [{p['h1']}]({DOMINIO}{p['ruta']}): {p['meta']}\n" for p in pags) + "\n## Guías\n\n" +
         "".join(f"- [{a['titulo']}]({DOMINIO}/blog/{a['slug']}/): {a['resumen']}\n" for a in arts), encoding="utf-8")
-    print(f"OK · {len(arts)} artículos · sitemap con {len(urls)} URLs")
+    print(f"OK · {len(arts)} artículos · {len(pags)} páginas · sitemap con {len(urls)} URLs")
 
 
 if __name__ == "__main__":

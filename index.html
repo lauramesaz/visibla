@@ -292,6 +292,10 @@ nav.hide{transform:translateY(-100%)}
 @media (hover:none){.spot{display:none}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal,.hero h1 .w,.touch,.hero .sub,.audit,.hero .hint,.cta h2 .w,.feed li{opacity:1!important;transform:none!important;filter:none!important}.stem{transform:none}.chart .ln{stroke-dashoffset:0}.chart .ar,.chart .pt{opacity:1}}
 
+.foot-links{display:flex;gap:48px;flex-wrap:wrap;margin-top:28px;padding-top:24px;border-top:1px solid var(--line)}
+.foot-links>div{display:flex;flex-direction:column;gap:8px}
+.foot-links .mono{color:var(--steel-deep);margin-bottom:4px}
+.foot-links a:hover{color:var(--ink)}
 /* GUÍAS (bloque generado por _agencia/build.py) */
 .guias{padding:120px 0}
 .guias-h{font-size:clamp(30px,4vw,46px);font-weight:400;letter-spacing:-.04em;line-height:1.08;margin:14px 0 40px;max-width:640px}
@@ -340,7 +344,7 @@ nav.hide{transform:translateY(-100%)}
       <input type="text" id="url" placeholder="tuclinica.com" aria-label="Dirección de tu web">
       <button class="btn" type="submit">Diagnóstico gratis <span class="ar">→</span></button>
     </form>
-    <div class="mono hint">Resultado en 10 segundos · sin registro</div>
+    <div class="mono hint">Resultado en menos de un minuto · sin registro</div>
     <div class="result" id="result">
       <div class="mono" style="color:var(--muted);margin-bottom:6px" id="rtitle">Diagnóstico</div>
       <div class="row">Velocidad en celular<div class="bar"><i data-w="58"></i></div></div>
@@ -514,8 +518,9 @@ nav.hide{transform:translateY(-100%)}
 <footer>
   <div class="wrap">
     <a href="#" class="logo" style="font-size:15px;color:var(--ink)"><i style="width:18px;height:18px"></i>Visibla</a>
-    <div>SEO con agentes de IA para clínicas · Colombia · © 2026</div>
+    <div>SEO con agentes de IA para clínicas · Colombia · © 2026 · <a href="/blog/">Guías</a> · <a href="/diagnostico/">Diagnóstico gratis</a></div>
   </div>
+  <!--PAGINAS:INICIO--><div class="wrap foot-links"><div><div class="mono">Especialidades</div><a href="/agencia-seo-clinicas-esteticas/">Clínicas estéticas</a><a href="/seo-cirujanos-plasticos/">Cirugía plástica</a><a href="/seo-dermatologos/">Dermatología</a><a href="/seo-odontologos/">Odontología</a></div><div><div class="mono">Ciudades</div><a href="/agencia-seo-clinicas-barranquilla/">Barranquilla</a><a href="/agencia-seo-clinicas-bogota/">Bogotá</a><a href="/agencia-seo-clinicas-cali/">Cali</a><a href="/agencia-seo-clinicas-pereira/">Pereira</a></div><div><div class="mono">Casos</div><a href="/casos/seravena/">Clínica Seravena</a></div></div><!--PAGINAS:FIN-->
 </footer>
 
 <script>
@@ -547,15 +552,12 @@ document.getElementById('tabs').addEventListener('click',e=>{
   render(+b.dataset.t);
 });
 
-// diagnóstico de muestra
+// diagnóstico real: lleva a /diagnostico/ con la web escrita
 document.getElementById('audit').addEventListener('submit',e=>{
   e.preventDefault();
-  const u=document.getElementById('url').value.trim()||'tu clínica';
-  const r=document.getElementById('result');
-  document.getElementById('rtitle').textContent='Diagnóstico rápido · '+u.replace(/^https?:\/\//,'');
-  r.classList.add('on');
-  document.getElementById('informe').href='https://wa.me/573203638223?text='+encodeURIComponent('Hola Visibla, quiero el informe completo de mi web: '+u);
-  r.querySelectorAll('.bar i').forEach(i=>{i.style.width=0;setTimeout(()=>i.style.width=i.dataset.w+'%',150)});
+  const u=document.getElementById('url').value.trim();
+  location.href='/diagnostico/'+(u?'?url='+encodeURIComponent(u):'');
+});
 });
 
 

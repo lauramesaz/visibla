@@ -1,0 +1,83 @@
+{
+  "tipo": "caso",
+  "fecha": "2026-10-02",
+  "modificado": "2026-10-02",
+  "corto": "Clínica Seravena",
+  "titulo": "Caso Clínica Seravena: SEO con agentes de IA en Medellín",
+  "meta": "Una clínica de lipedema y várices en Medellín publica un artículo al día con agentes de IA desde julio de 2026. Qué se montó, qué se mide y qué aprendimos.",
+  "kicker": "Caso real",
+  "keyword": "caso seo clínica medellín",
+  "h1": "Seravena publica un artículo al día en Google sin que nadie en la clínica escriba",
+  "sub": "Una clínica de lipedema, venas y obesidad en Medellín con más de 65 artículos desde el 14 de julio de 2026, foco local y cada clic a WhatsApp medido.",
+  "wa": "Hola Visibla, vi el caso Seravena y quiero algo así para mi clínica",
+  "dolores": [
+    {
+      "t": "Una web quieta",
+      "p": "Las páginas de servicios estaban, pero escribir un texto nuevo cada semana no cabía en la agenda de nadie. Google tenía poco nuevo que mostrar sobre várices o lipedema."
+    },
+    {
+      "t": "El peso de los anuncios",
+      "p": "Los anuncios de Google traían pacientes, pero solo mientras se pagan. El reto era sumar una segunda puerta que siguiera abierta aunque la campaña se pausara."
+    },
+    {
+      "t": "Respuestas sin publicar",
+      "p": "Los médicos contestan las mismas preguntas en consulta y por WhatsApp. Ese conocimiento no estaba en la web, donde otra paciente lo podría encontrar."
+    }
+  ],
+  "contexto": "<p>Seravena es una clínica de Medellín que atiende lipedema, venas (várices y arañitas) y obesidad. Desde el 14 de julio de 2026 su blog publica un artículo nuevo cada mañana, escrito y revisado por un equipo de agentes de IA. Al 2 de octubre de 2026 ya lleva más de 65 artículos, todos pensados para la paciente que busca en Google desde Medellín.</p>\n<h2>El reto</h2>\n<p>La web ya tenía sus páginas de lipedema, várices y equipo médico. El reto era el de muchas clínicas: que la web no dependiera de que alguien sacara tiempo para escribir, y que las respuestas que los médicos dan todos los días en consulta quedaran publicadas donde la paciente las busca. Mientras tanto, los anuncios de Google seguían haciendo el trabajo de traer gente.</p>\n<h2>Qué se montó: un equipo de agentes que publica cada mañana</h2>\n<p>En lugar de contratar a un redactor que entregue cuatro artículos al mes, armamos una cadena de agentes de IA con un rol cada uno:</p>\n<ol>\n<li><strong>Investiga</strong> qué buscan de verdad las pacientes en Medellín (dudas sobre síntomas, EPS o particular, qué llevar a la primera cita).</li>\n<li><strong>Escribe</strong> el borrador con el tono de la clínica.</li>\n<li><strong>Edita</strong> y quita todo lo que suena a robot.</li>\n<li><strong>Verifica lo médico</strong>: cada afirmación de salud se revisa antes de salir.</li>\n<li><strong>Califica el SEO</strong>: título, palabra clave, enlaces internos, preguntas frecuentes.</li>\n<li><strong>Publica</strong> en la web sin que nadie de la clínica tenga que subir nada.</li>\n</ol>\n<p>El resultado se ve en el <a href=\"https://www.clinicaseravena.com/blog/\">blog de Seravena</a>. Algunos títulos reales:</p>\n<ul>\n<li><a href=\"https://www.clinicaseravena.com/blog/primera-cita-varices-medellin\">Primera cita por várices en Medellín: qué llevar y qué te van a preguntar</a></li>\n<li><a href=\"https://www.clinicaseravena.com/blog/como-elegir-clinica-lipedema-medellin\">Cómo elegir una clínica de lipedema en Medellín: qué preguntar antes de decidir</a></li>\n<li><a href=\"https://www.clinicaseravena.com/blog/varices-eps-o-particular\">Várices por EPS o particular: diferencias reales en Colombia</a></li>\n<li><a href=\"https://www.clinicaseravena.com/blog/lipedema-vs-linfedema\">Lipedema vs linfedema: diferencias claras</a></li>\n<li><a href=\"https://www.clinicaseravena.com/blog/escleroterapia-vs-laser\">Escleroterapia vs láser para várices en Colombia</a></li>\n</ul>\n<p>Fíjate en el patrón. Son preguntas que una paciente le haría a la recepcionista antes de agendar. Si la respuesta está en la web de la clínica, la paciente la lee ahí y el botón de WhatsApp le queda a un toque.</p>\n<h2>Foco en Medellín y páginas por servicio</h2>\n<p>Un artículo sobre várices compite con todo internet. Uno que habla de la primera cita por várices en Medellín compite con muchas menos clínicas. Por eso todos los artículos llevan foco local, y además se crearon páginas de servicio por ciudad que hoy están en línea: <a href=\"https://www.clinicaseravena.com/varices-medellin\">tratamiento de várices en Medellín</a>, <a href=\"https://www.clinicaseravena.com/escleroterapia-medellin\">escleroterapia en Medellín</a> y <a href=\"https://www.clinicaseravena.com/eco-doppler-venoso-medellin\">eco doppler venoso en Medellín</a>.</p>\n<p>Cada artículo enlaza a la página de servicio que le corresponde. Así, quien llega leyendo sobre piernas hinchadas tiene a un clic la página donde puede pedir su valoración.</p>\n<h2>Medir el clic a WhatsApp, no solo las visitas</h2>\n<p>A una clínica no le sirven las visitas si nadie escribe. En Seravena todos los botones de WhatsApp de la web, también los del blog, abren el chat con un mensaje ya escrito: \"Hola Seravena, vengo de la página web y quiero agendar una cita\". La recepción sabe de dónde viene ese paciente sin preguntar.</p>\n<p>Además, cada clic a WhatsApp queda medido como conversión en Google, y la web tiene instalado un mapa de calor (Microsoft Clarity) que muestra por dónde se mueven las pacientes, hasta dónde bajan y en qué botón tocan.</p>\n<table>\n<thead><tr><th>Qué se hizo</th><th>Para qué sirve</th></tr></thead>\n<tbody>\n<tr><td>Un artículo al día desde el 14-jul-2026</td><td>Responder en Google las dudas reales antes de la cita</td></tr>\n<tr><td>Foco Medellín en cada texto</td><td>Competir en búsquedas locales, donde hay menos clínicas peleando</td></tr>\n<tr><td>Páginas de servicio por ciudad</td><td>Que quien busca \"várices Medellín\" aterrice en una página para agendar</td></tr>\n<tr><td>Clic a WhatsApp medido</td><td>Saber cuántas personas escriben, no solo cuántas leen</td></tr>\n<tr><td>Mapa de calor (Clarity)</td><td>Ver qué partes de la web se leen y cuáles se ignoran</td></tr>\n</tbody>\n</table>\n<h2>Resultados, con su letra pequeña</h2>\n<p>Seravena recibe alrededor de 55 contactos por WhatsApp al mes medidos entre la web y los anuncios de Google; en septiembre de 2026 fueron 57. Ese número suma las dos fuentes, así que no lo atribuimos solo al SEO. Lo que sí es del trabajo orgánico: más de 65 artículos publicados en menos de tres meses, todos con foco en Medellín, y una ficha de Google con calificación de 4,9 que respalda lo que la paciente lee en el blog.</p>\n<h2>Lo que aprendimos</h2>\n<p><strong>El SEO tarda.</strong> Un artículo publicado hoy puede tardar semanas o meses en aparecer bien en Google. Por eso la pauta siguió activa mientras el blog crecía.</p>\n<p><strong>Hubo que humanizar.</strong> Los primeros textos estaban correctos pero sonaban a máquina: frases redondas, cierres de póster, listas por todo. Agregamos un agente cuyo único trabajo es cazar esas huellas y reescribirlas antes de publicar.</p>\n<p><strong>Lo médico no se negocia.</strong> En una clínica vascular, un dato mal dicho sobre trombosis o sobre un tratamiento es un problema serio. La revisión de cada afirmación de salud es un paso obligatorio de la cadena, y si un dato no se puede confirmar, se borra.</p>\n<h2>Qué significa para tu clínica</h2>\n<p>Si tienes una clínica en Medellín, Bogotá o Pereira, el método es el mismo: escuchar lo que tus pacientes preguntan, contestarlo en tu web todos los días con foco en tu ciudad y medir quién termina escribiendo. Cambian los temas. Una clínica estética hablará de toxina o de manchas; una de fisioterapia, de lumbalgia o de rodilla. Si quieres ver la teoría completa, la tienes en nuestra <a href=\"/blog/seo-para-clinicas/\">guía de SEO para clínicas</a> y en <a href=\"/blog/como-aparecer-en-google-maps-clinica/\">cómo aparecer en Google Maps con tu clínica</a>.</p>\n<p>Un paso para hoy: abre la web de tu clínica y busca cuándo fue el último texto nuevo que publicaste. Si fue hace más de un mes, escríbenos por WhatsApp y te mostramos qué temas te están buscando en tu ciudad.</p>",
+  "incluye": [
+    {
+      "t": "Blog diario con agentes de IA",
+      "p": "Investigan, escriben, editan, verifican lo médico, califican el SEO y publican cada mañana desde el 14 de julio de 2026."
+    },
+    {
+      "t": "Foco Medellín en cada artículo",
+      "p": "Temas como la primera cita por várices en Medellín o cómo elegir clínica de lipedema en la ciudad, no textos genéricos."
+    },
+    {
+      "t": "Páginas de servicio por ciudad",
+      "p": "Várices, escleroterapia y eco doppler venoso en Medellín, enlazadas desde los artículos para que la paciente pase de leer a agendar."
+    },
+    {
+      "t": "WhatsApp con mensaje prellenado y medido",
+      "p": "Cada botón abre el chat con un mensaje que dice que la persona viene de la web, y el clic cuenta como conversión en Google."
+    },
+    {
+      "t": "Mapa de calor con Microsoft Clarity",
+      "p": "Muestra por dónde navegan las pacientes y en qué botones tocan, para corregir lo que no funciona."
+    }
+  ],
+  "guias": [
+    "seo-para-clinicas",
+    "como-aparecer-en-google-maps-clinica",
+    "agencia-seo-clinicas-medellin"
+  ],
+  "faq": [
+    {
+      "q": "¿Cuánto tardó en verse el efecto?",
+      "a": "El blog arrancó el 14 de julio de 2026 y al 2 de octubre ya tenía más de 65 artículos. El SEO tarda meses en madurar, por eso Seravena mantuvo sus anuncios de Google mientras tanto y medimos los contactos sumando ambas fuentes, sin atribuirlos solo al blog."
+    },
+    {
+      "q": "¿El contenido lo revisa alguien antes de salir?",
+      "a": "Sí. En la cadena hay un verificador que revisa cada afirmación médica y la borra si no se puede confirmar, y otro agente que quita lo que suena a robot antes de publicar."
+    },
+    {
+      "q": "¿La clínica tuvo que escribir algo?",
+      "a": "No escribe los artículos. Lo que sí aporta la clínica es conocimiento: sus servicios, su forma de hablar y las preguntas que más le hacen los pacientes. Con eso los agentes trabajan solos y publican cada mañana."
+    },
+    {
+      "q": "¿Esto sirve para mi especialidad?",
+      "a": "El método es el mismo para estética, dermatología, odontología, fisioterapia o nutrición: responder lo que tus pacientes buscan en tu ciudad y medir quién escribe por WhatsApp. Cambian los temas y la revisión médica se ajusta a tu área."
+    }
+  ],
+  "fuentes": [
+    {
+      "t": "Clínica Seravena · Sitio web",
+      "u": "https://www.clinicaseravena.com/"
+    },
+    {
+      "t": "Clínica Seravena · Blog",
+      "u": "https://www.clinicaseravena.com/blog/"
+    }
+  ]
+}

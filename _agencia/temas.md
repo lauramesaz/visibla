@@ -31,25 +31,25 @@
 | 8 | SEO para cirujanos plásticos en Colombia | seo cirujano plástico | SEO por especialidad | pendiente |
 | 9 | Cómo medir cuántos pacientes llegan por WhatsApp desde tu web | medir clics whatsapp web | Medición y resultados | pendiente |
 | 10 | Publicidad de servicios de salud en Colombia: qué dice la norma | publicidad servicios de salud colombia | Normas y ética | pendiente |
-| 11 | ★ SEO para clínicas en Bogotá: cómo competir en una ciudad saturada | seo clínicas bogotá | SEO por ciudad | pendiente |
+| 11 | ★ SEO para clínicas en Bogotá: cómo competir en una ciudad saturada | seo clínicas bogotá | SEO por ciudad | descartado (lo cubre la página de venta /agencia-seo-clinicas-bogota/; enlazarla) |
 | 12 | Blog para clínicas: 40 ideas de artículos que tus pacientes ya buscan | ideas de blog para clínicas | Contenido y blog | pendiente |
 | 13 | Cómo aparecer en las respuestas de ChatGPT y en los resúmenes con IA de Google | aparecer en chatgpt clínica | IA y buscadores | pendiente |
 | 14 | SEO para odontólogos y clínicas dentales | seo para odontólogos | SEO por especialidad | pendiente |
 | 15 | Ficha de Google de tu clínica: los 12 campos que casi nadie llena bien | perfil de empresa de google clínica | Google Maps y reseñas | pendiente |
 | 16 | SEO vs. Google Ads para clínicas: cuándo conviene cada uno | seo vs google ads | Medición y resultados | pendiente |
-| 17 | ★ SEO para clínicas en Cali | seo clínicas cali | SEO por ciudad | pendiente |
+| 17 | ★ SEO para clínicas en Cali | seo clínicas cali | SEO por ciudad | descartado (lo cubre la página de venta /agencia-seo-clinicas-cali/; enlazarla) |
 | 18 | Cómo responder reseñas negativas de pacientes (sin romper el secreto profesional) | responder reseñas negativas pacientes | Google Maps y reseñas | pendiente |
 | 19 | SEO para dermatólogos | seo para dermatólogos | SEO por especialidad | pendiente |
 | 20 | Google Search Console para dueños de clínica: lo único que necesitas mirar | search console para principiantes | Medición y resultados | pendiente |
 | 21 | ¿Se puede escribir el blog de la clínica con IA sin que Google lo castigue? | contenido con ia google | IA y buscadores | pendiente |
 | 22 | Velocidad de la web en celular: por qué te cuesta pacientes | velocidad web celular | SEO local | pendiente |
-| 23 | ★ SEO para clínicas en Barranquilla | seo clínicas barranquilla | SEO por ciudad | pendiente |
+| 23 | ★ SEO para clínicas en Barranquilla | seo clínicas barranquilla | SEO por ciudad | descartado (lo cubre la página de venta /agencia-seo-clinicas-barranquilla/; enlazarla) |
 | 24 | SEO para clínicas vasculares y de várices (caso Seravena) | seo clínica vascular | SEO por especialidad | pendiente |
 | 25 | Habeas data y formularios de la web de tu clínica | habeas data clínica | Normas y ética | pendiente |
 | 26 | Páginas de servicio que convierten: cómo escribir la página de cada tratamiento | página de servicio clínica | Contenido y blog | pendiente |
 | 27 | "Cerca de mí": cómo ganar las búsquedas de tu barrio | búsquedas cerca de mí | SEO local | pendiente |
 | 28 | SEO para fisioterapeutas y centros de rehabilitación | seo fisioterapia | SEO por especialidad | pendiente |
-| 29 | ★ SEO para clínicas en Pereira y el Eje Cafetero | seo clínicas pereira | SEO por ciudad | pendiente |
+| 29 | ★ SEO para clínicas en Pereira y el Eje Cafetero | seo clínicas pereira | SEO por ciudad | descartado (lo cubre la página de venta /agencia-seo-clinicas-pereira/; enlazarla) |
 | 30 | Cuánto vale un paciente nuevo: la cuenta que todo dueño de clínica debe hacer | valor de un paciente | Medición y resultados | pendiente |
 | 31 | Doctoralia, directorios y menciones: cuáles sí ayudan al SEO | directorios médicos seo | SEO local | pendiente |
 | 32 | SEO para nutricionistas y clínicas de obesidad | seo nutricionista | SEO por especialidad | pendiente |
