@@ -305,7 +305,7 @@ nav.hide{transform:translateY(-100%)}
       <a href="#caso">Casos</a>
       <a href="#planes">Planes</a>
     </div>
-    <a href="#contacto" class="btn">Agendar llamada</a>
+    <a href="https://wa.me/573203638223?text=Hola%20Visibla%2C%20quiero%20agendar%20una%20llamada" target="_blank" rel="noopener" class="btn">Agendar llamada</a>
   </div>
 </nav>
 
@@ -330,7 +330,7 @@ nav.hide{transform:translateY(-100%)}
       <div class="row">Contenido para Google<div class="bar"><i data-w="22"></i></div></div>
       <div class="row">Ficha en Google Maps<div class="bar"><i data-w="64"></i></div></div>
       <div class="row">Reseñas visibles<div class="bar"><i data-w="41"></i></div></div>
-      <a class="btn" href="#contacto">Ver el informe completo con un asesor</a>
+      <a class="btn" id="informe" href="https://wa.me/573203638223?text=Hola%20Visibla%2C%20quiero%20el%20informe%20completo%20de%20mi%20web" target="_blank" rel="noopener">Ver el informe completo con un asesor</a>
     </div>
   </div>
   <a href="#impacto" class="scroll-cue" aria-label="Bajar"></a>
@@ -438,18 +438,18 @@ nav.hide{transform:translateY(-100%)}
       <div class="plan reveal">
         <div><h3>Presencia</h3><div class="for">Para clínicas que están empezando en Google</div></div>
         <ul><li>Diagnóstico completo</li><li>Ficha de Google Maps optimizada</li><li>8 artículos al mes</li><li>Informe mensual</li></ul>
-        <a href="#contacto" class="btn ghost">Agendar llamada</a>
+        <a href="https://wa.me/573203638223?text=Hola%20Visibla%2C%20me%20interesa%20el%20plan%20Presencia" target="_blank" rel="noopener" class="btn ghost">Agendar llamada</a>
       </div>
       <div class="plan feat reveal">
         <div class="mono" style="color:var(--steel-soft)">Más elegido</div>
         <div><h3>Crecimiento</h3><div class="for">Para llenar la agenda con pacientes de Google</div></div>
         <ul><li>Todo lo de Presencia</li><li>1 artículo al día con agente IA</li><li>Mapa de calor de tu web</li><li>Medición de contactos por WhatsApp</li><li>Panel en vivo</li></ul>
-        <a href="#contacto" class="btn">Agendar llamada</a>
+        <a href="https://wa.me/573203638223?text=Hola%20Visibla%2C%20me%20interesa%20el%20plan%20Crecimiento" target="_blank" rel="noopener" class="btn">Agendar llamada</a>
       </div>
       <div class="plan reveal">
         <div><h3>Dominio</h3><div class="for">Para ser la primera opción de tu ciudad</div></div>
         <ul><li>Todo lo de Crecimiento</li><li>Páginas por tratamiento y ciudad</li><li>Gestión de reseñas</li><li>Google Ads conectado al SEO</li></ul>
-        <a href="#contacto" class="btn ghost">Agendar llamada</a>
+        <a href="https://wa.me/573203638223?text=Hola%20Visibla%2C%20me%20interesa%20el%20plan%20Dominio" target="_blank" rel="noopener" class="btn ghost">Agendar llamada</a>
       </div>
     </div>
   </div>
@@ -461,7 +461,7 @@ nav.hide{transform:translateY(-100%)}
   <div class="frost" style="background:rgba(12,14,17,.35)"></div>
   <h2 id="ctah">Hagamos visible <br>tu clínica.</h2>
   <p>Una llamada de 20 minutos. Te mostramos qué buscan tus pacientes y cuántos se están yendo con tu competencia.</p>
-  <a class="btn" href="https://wa.me/570000000000?text=Hola%20Visibla,%20quiero%20mi%20diagn%C3%B3stico" target="_blank" rel="noopener">Escribir por WhatsApp <span class="ar">→</span></a>
+  <a class="btn" href="https://wa.me/573203638223?text=Hola%20Visibla%2C%20quiero%20mi%20diagn%C3%B3stico%20SEO%20gratis" target="_blank" rel="noopener">Escribir por WhatsApp <span class="ar">→</span></a>
 </div>
 
 <footer>
@@ -507,6 +507,7 @@ document.getElementById('audit').addEventListener('submit',e=>{
   const r=document.getElementById('result');
   document.getElementById('rtitle').textContent='Diagnóstico rápido · '+u.replace(/^https?:\/\//,'');
   r.classList.add('on');
+  document.getElementById('informe').href='https://wa.me/573203638223?text='+encodeURIComponent('Hola Visibla, quiero el informe completo de mi web: '+u);
   r.querySelectorAll('.bar i').forEach(i=>{i.style.width=0;setTimeout(()=>i.style.width=i.dataset.w+'%',150)});
 });
 
