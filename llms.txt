@@ -1,0 +1,13 @@
+# Visibla
+
+> Agencia de SEO con agentes de IA para clínicas en Colombia. Publica contenido diario revisado, cuida la ficha de Google y las reseñas, y mide los contactos por WhatsApp. Contacto: WhatsApp +57 320 363 8223.
+
+- [Inicio](https://posicion-seo.com/)
+- [Guías de SEO para clínicas](https://posicion-seo.com/blog/)
+
+## Guías
+
+- [SEO para clínicas: la guía completa para salir en Google](https://posicion-seo.com/blog/seo-para-clinicas/): Todo lo que un dueño de clínica en Colombia necesita para que los pacientes lo encuentren en Google: ficha y reseñas, web, páginas de servicio, blog, enlaces, medición por WhatsApp, tiempos reales e IA.
+- [SEO para clínicas estéticas: llena la agenda sin pauta](https://posicion-seo.com/blog/seo-clinicas-esteticas/): Tus pacientes no buscan "clínica estética": buscan botox, depilación láser o ácido hialurónico en su barrio. Así se arma una web que les responda y te llene la agenda sin vivir de la pauta.
+- [Cómo aparecer en Google Maps con tu clínica: guía 2026](https://posicion-seo.com/blog/como-aparecer-en-google-maps-clinica/): Los pasos reales para que tu clínica salga en Google Maps: reclamar o crear la ficha, verificarla, llenarla como Google pide y medir si te llegan llamadas.
+- [Agencia SEO para clínicas en Medellín: qué buscar y evitar](https://posicion-seo.com/blog/agencia-seo-clinicas-medellin/): Las preguntas, los entregables y las señales de alerta para contratar una agencia SEO para tu clínica en Medellín sin perder plata ni la ficha de Google.

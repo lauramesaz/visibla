@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://posicion-seo.com/sitemap.xml
