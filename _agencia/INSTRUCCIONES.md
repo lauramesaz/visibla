@@ -58,7 +58,8 @@ El propio blog es la prueba del producto: si Visibla posiciona su blog, demuestr
 ## 4. SEO de cada artículo
 
 - **Una keyword principal** por artículo (en `keyword`), con intención de dueño de clínica. Ej.: "seo para clínicas estéticas", "cómo aparecer en google maps clínica", "agencia seo clínicas medellín".
-- Keyword en: título (al inicio si suena natural), primer párrafo, al menos un H2, meta descripción y slug.
+- Keyword en: título (al inicio si suena natural), H1 (en el blog el H1 es el título), primer párrafo, al menos un H2, meta descripción y slug.
+- Título: máximo 60 caracteres en total. Si con " | Visibla" pasa de 60, `build.py` quita la marca solo.
 - Título ≤ 60 caracteres (sin contar " | Visibla"). Meta 140–158 caracteres, con beneficio claro.
 - Slug corto, en minúsculas, sin tildes ni palabras vacías: `seo-clinicas-esteticas`.
 - 1.200–2.000 palabras. Profundidad > relleno.

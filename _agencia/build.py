@@ -101,6 +101,8 @@ addEventListener('scroll',()=>{const h=document.documentElement;bar.style.transf
 
 
 def cabeza(titulo, meta, url, extra=""):
+    if titulo.endswith(" | Visibla") and len(titulo) > 60:
+        titulo = titulo[:-len(" | Visibla")]  # Google corta los títulos de más de ~60 caracteres
     return f"""<!DOCTYPE html>
 <html lang="es-CO">
 <head>
@@ -115,7 +117,8 @@ def cabeza(titulo, meta, url, extra=""):
 <meta property="og:url" content="{url}">
 <meta property="og:site_name" content="Visibla">
 <meta property="og:locale" content="es_CO">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="{DOMINIO}/og.png">
+<meta name="twitter:card" content="summary_large_image">
 {FONTS}
 <link rel="stylesheet" href="/blog/blog.css">
 {extra}
@@ -180,7 +183,8 @@ def pagina_articulo(a, todos):
          "description": a["meta"], "datePublished": a["fecha"], "dateModified": a["modificado"],
          "inLanguage": "es-CO", "mainEntityOfPage": url,
          "author": {"@type": "Organization", "name": "Equipo Visibla", "url": DOMINIO + "/"},
-         "publisher": {"@type": "Organization", "name": "Visibla", "url": DOMINIO + "/"},
+         "publisher": {"@type": "Organization", "name": "Visibla", "url": DOMINIO + "/", "logo": {"@type": "ImageObject", "url": DOMINIO + "/og.png"}},
+         "image": DOMINIO + "/og.png",
          "about": a.get("keyword", a["categoria"])},
         {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": "Inicio", "item": DOMINIO + "/"},
@@ -264,6 +268,7 @@ def pagina_listado(arts):
   </div>
 </header>
 <main class="wrap listado">
+  <h2 class="lp-k mono" style="margin-bottom:14px">Todas las guías de SEO para clínicas</h2>
   <div class="tabs" id="tabs">{chips}</div>
   <div class="grid" id="posts">
 {chr(10).join(tarjeta(a) for a in arts)}
@@ -290,7 +295,7 @@ def bloque_home(arts):
 <section class="guias" id="guias">
   <div class="wrap">
     <div class="mono" style="color:var(--steel-deep)">Guías para clínicas</div>
-    <h2 class="guias-h">Lo que aprendemos posicionando clínicas, gratis.</h2>
+    <h2 class="guias-h">Guías de SEO para clínicas: lo que aprendemos posicionándolas.</h2>
     <div class="guias-grid">
 {chr(10).join(tarjeta(a) for a in arts[:3])}
     </div>

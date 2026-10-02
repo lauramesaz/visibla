@@ -5,7 +5,7 @@ Fuente: _agencia/paginas/<slug>.json → salida /<slug>/index.html (o /casos/<sl
 Campos del JSON:
   tipo        "especialidad" | "ciudad" | "caso"
   titulo      <title> (≤ 60 car.)          meta     descripción (140–158 car.)
-  kicker      texto pequeño sobre el H1      h1       titular de venta
+  kicker      texto pequeño sobre el H1      h1       titular: EMPIEZA con la palabra clave ("Agencia SEO para clínicas en X: …"), ≤ 75 car.
   sub         1–2 frases bajo el H1          keyword  palabra clave principal
   wa          mensaje de WhatsApp prellenado
   dolores     [{"t","p"}] ×3  lo que le pasa hoy al lector
