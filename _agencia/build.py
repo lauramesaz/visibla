@@ -32,8 +32,9 @@ CAMPOS = ["titulo", "meta", "fecha", "categoria", "lectura", "resumen"]
 
 FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com">\n'
          '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n'
-         '<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600'
-         '&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">')
+         '<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&display=swap">\n'
+         '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&display=swap" media="print" onload="this.media=\'all\'">\n'
+         '<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&display=swap"></noscript>')
 
 
 def wa(texto):

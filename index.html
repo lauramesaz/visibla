@@ -17,7 +17,9 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"ProfessionalService","@id":"https://posicion-seo.com/#org","name":"Visibla","alternateName":"Visibla, agencia SEO para clínicas","url":"https://posicion-seo.com/","image":"https://posicion-seo.com/og.png","logo":"https://posicion-seo.com/og.png","description":"Agencia de SEO con agentes de IA para clínicas en Colombia: contenido diario, ficha de Google y reseñas, y medición de contactos por WhatsApp.","telephone":"+57 320 363 8223","areaServed":{"@type":"Country","name":"Colombia"},"knowsAbout":["SEO para clínicas","SEO local","Google Business Profile","Marketing de contenidos médicos"],"contactPoint":{"@type":"ContactPoint","telephone":"+57 320 363 8223","contactType":"sales","availableLanguage":"es"}},{"@type":"WebSite","@id":"https://posicion-seo.com/#web","url":"https://posicion-seo.com/","name":"Visibla","inLanguage":"es-CO","publisher":{"@id":"https://posicion-seo.com/#org"}}]}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&display=swap"></noscript>
 <style>
 :root{
   --ink:#0c0e11;
@@ -305,6 +307,15 @@ nav.hide{transform:translateY(-100%)}
 .foot-links>div{display:flex;flex-direction:column;gap:8px}
 .foot-links .mono{color:var(--steel-deep);margin-bottom:4px}
 .foot-links a:hover{color:var(--ink)}
+.faq-home h2{max-width:720px}
+.faq-list{margin-top:36px;max-width:820px}
+.faq-list details{border-top:1px solid var(--line);padding:20px 0}
+.faq-list details:last-child{border-bottom:1px solid var(--line)}
+.faq-list summary{cursor:pointer;font-size:18px;font-weight:500;list-style:none;display:flex;justify-content:space-between;gap:16px}
+.faq-list summary::-webkit-details-marker{display:none}
+.faq-list summary::after{content:"+";color:var(--steel-deep);font-weight:300;font-size:22px;line-height:1}
+.faq-list details[open] summary::after{content:"–"}
+.faq-list p{margin-top:10px;font-size:16px;line-height:1.65;color:var(--muted);max-width:720px}
 /* GUÍAS (bloque generado por _agencia/build.py) */
 .guias{padding:120px 0}
 .guias-h{font-size:clamp(30px,4vw,46px);font-weight:400;letter-spacing:-.04em;line-height:1.08;margin:14px 0 40px;max-width:640px}
@@ -321,6 +332,7 @@ nav.hide{transform:translateY(-100%)}
 .post .when{margin-top:auto;padding-top:22px;color:#97a0aa;font-size:10.5px}
 @media (max-width:900px){.guias-grid{grid-template-columns:1fr}.guias{padding:90px 0}}
 </style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Qué hace una agencia SEO para clínicas?", "acceptedAnswer": {"@type": "Answer", "text": "Hace que tu clínica aparezca cuando los pacientes buscan tus tratamientos en Google: cuida tu ficha de Google y tus reseñas, mejora tu web y publica contenido que responde lo que preguntan tus pacientes. En Visibla ese contenido lo producen agentes de IA cada mañana, con revisión antes de publicar."}}, {"@type": "Question", "name": "¿Cuánto tarda en notarse el SEO en una clínica?", "acceptedAnswer": {"@type": "Answer", "text": "Se mide en meses, no en semanas, y depende de tu ciudad y de cuánta competencia tengas. Nadie puede garantizar el primer lugar en Google, y desconfía de quien lo prometa. Lo que sí te damos desde el primer mes es un panel con cuántas personas te encuentran y cuántas escriben por WhatsApp."}}, {"@type": "Question", "name": "¿Quién escribe los artículos de mi clínica?", "acceptedAnswer": {"@type": "Answer", "text": "Un equipo de agentes de IA: uno investiga y escribe, otro edita, otro quita lo que suena a robot, otro verifica cada dato y otro califica el SEO. Solo se publica lo que pasa todos los filtros. Tú no tienes que escribir nada."}}, {"@type": "Question", "name": "¿Sirve si ya invierto en Instagram o en Google Ads?", "acceptedAnswer": {"@type": "Answer", "text": "Sí, se complementan. Los anuncios traen pacientes mientras pagas; el contenido que se publica en tu web sigue trabajando aunque pauses la pauta, y muchos pacientes que te ven en redes te buscan en Google antes de escribirte."}}, {"@type": "Question", "name": "¿Trabajan con clínicas fuera de Medellín?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. Trabajamos de forma remota con clínicas de toda Colombia: Bogotá, Cali, Barranquilla, Pereira, Bucaramanga, Cartagena y más."}}, {"@type": "Question", "name": "¿Cuánto cuesta?", "acceptedAnswer": {"@type": "Answer", "text": "Depende del plan (Presencia, Crecimiento o Dominio) y de tu clínica. Escríbenos por WhatsApp al 320 363 8223 y te lo contamos con tu diagnóstico."}}]}</script>
 </head>
 <body>
 
@@ -333,6 +345,7 @@ nav.hide{transform:translateY(-100%)}
       <a href="#como">Cómo funciona</a>
       <a href="#caso">Casos</a>
       <a href="#planes">Planes</a>
+      <a href="#preguntas">Preguntas</a>
       <a href="/blog/">Guías</a>
     </div>
     <a href="https://wa.me/573203638223?text=Hola%20Visibla%2C%20quiero%20agendar%20una%20llamada" target="_blank" rel="noopener" class="btn">Agendar llamada</a>
@@ -485,6 +498,14 @@ nav.hide{transform:translateY(-100%)}
   </div>
 </section>
 
+<section id="preguntas" style="padding-top:0">
+  <div class="wrap faq-home">
+    <span class="eyebrow mono reveal">Preguntas</span>
+    <h2 class="reveal blur">Preguntas frecuentes sobre <em>SEO para clínicas</em>.</h2>
+    <div class="faq-list"><details class="reveal"><summary>¿Qué hace una agencia SEO para clínicas?</summary><p>Hace que tu clínica aparezca cuando los pacientes buscan tus tratamientos en Google: cuida tu ficha de Google y tus reseñas, mejora tu web y publica contenido que responde lo que preguntan tus pacientes. En Visibla ese contenido lo producen agentes de IA cada mañana, con revisión antes de publicar.</p></details><details class="reveal"><summary>¿Cuánto tarda en notarse el SEO en una clínica?</summary><p>Se mide en meses, no en semanas, y depende de tu ciudad y de cuánta competencia tengas. Nadie puede garantizar el primer lugar en Google, y desconfía de quien lo prometa. Lo que sí te damos desde el primer mes es un panel con cuántas personas te encuentran y cuántas escriben por WhatsApp.</p></details><details class="reveal"><summary>¿Quién escribe los artículos de mi clínica?</summary><p>Un equipo de agentes de IA: uno investiga y escribe, otro edita, otro quita lo que suena a robot, otro verifica cada dato y otro califica el SEO. Solo se publica lo que pasa todos los filtros. Tú no tienes que escribir nada.</p></details><details class="reveal"><summary>¿Sirve si ya invierto en Instagram o en Google Ads?</summary><p>Sí, se complementan. Los anuncios traen pacientes mientras pagas; el contenido que se publica en tu web sigue trabajando aunque pauses la pauta, y muchos pacientes que te ven en redes te buscan en Google antes de escribirte.</p></details><details class="reveal"><summary>¿Trabajan con clínicas fuera de Medellín?</summary><p>Sí. Trabajamos de forma remota con clínicas de toda Colombia: Bogotá, Cali, Barranquilla, Pereira, Bucaramanga, Cartagena y más.</p></details><details class="reveal"><summary>¿Cuánto cuesta?</summary><p>Depende del plan (Presencia, Crecimiento o Dominio) y de tu clínica. Escríbenos por WhatsApp al 320 363 8223 y te lo contamos con tu diagnóstico.</p></details></div>
+  </div>
+</section>
+
 <!--BLOG:INICIO-->
 <section class="guias" id="guias">
   <div class="wrap">
@@ -566,7 +587,6 @@ document.getElementById('audit').addEventListener('submit',e=>{
   e.preventDefault();
   const u=document.getElementById('url').value.trim();
   location.href='/diagnostico/'+(u?'?url='+encodeURIComponent(u):'');
-});
 });
 
 
