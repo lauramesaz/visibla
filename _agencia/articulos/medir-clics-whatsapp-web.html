@@ -1,0 +1,96 @@
+<!--
+{
+  "titulo": "Cómo medir los clics a WhatsApp desde tu web",
+  "meta": "Cómo medir los clics a WhatsApp desde tu web con Google Analytics 4 y Search Console, sin pagar ninguna herramienta nueva ni tocar el código.",
+  "fecha": "2026-10-03",
+  "modificado": "2026-10-03",
+  "categoria": "Medición y resultados",
+  "keyword": "medir clics whatsapp web",
+  "lectura": 6,
+  "resumen": "Google Analytics ya cuenta los clics a tu botón de WhatsApp aunque no hayas configurado nada. Esta guía te muestra dónde mirarlos, cómo separarlos de los que trae la pauta y qué pedirle cada mes a quien maneje tu web.",
+  "faq": [
+    {"q": "¿Necesito pagar una herramienta para medir los clics a WhatsApp de mi web?", "a": "No. Si tu web tiene instalado Google Analytics 4 con la medición mejorada activada (viene así por defecto), ya está contando esos clics como un evento de salida. Lo único gratis que falta es Google Search Console, para saber si esa visita vino de una búsqueda en Google."},
+    {"q": "¿Por qué Analytics ya me muestra clics a WhatsApp si nunca configuré nada?", "a": "Porque un enlace a wa.me lleva a un dominio distinto al de tu web, y la medición mejorada de Google Analytics 4 registra automáticamente todo clic que saca al visitante de tu sitio. No hace falta escribir código para que empiece a contarlos."},
+    {"q": "¿Cómo sé si esos contactos de WhatsApp vienen de Google y no de Instagram o de la pauta?", "a": "En Analytics, el campo de origen y medio de la sesión distingue entre google / organic (vino de una búsqueda sin pagar), google / cpc (vino de un anuncio) e instagram u otros. Cruza ese dato con los clics a WhatsApp antes de decir que el SEO trajo un contacto."},
+    {"q": "¿Cuántos clics a WhatsApp al mes es un buen número para una clínica?", "a": "No hay un número único: depende del tamaño de la clínica, la ciudad y cuánta gente visita la web. Sirve más comparar tu propio mes contra el anterior que compararte con otra clínica."},
+    {"q": "Si cambio de agencia, ¿pierdo el historial de clics a WhatsApp?", "a": "No, si la cuenta de Google Analytics está a nombre de tu clínica y no de la agencia. Revisa en Administrador quién es el propietario de la propiedad antes de firmar con cualquiera."}
+  ],
+  "fuentes": [
+    {"t": "Google Analytics · Eventos de medición mejorada", "u": "https://support.google.com/analytics/answer/9216061?hl=es"},
+    {"t": "Google Analytics · [GA4] Medir los clics de salida de un sitio web", "u": "https://support.google.com/analytics/answer/13566436?hl=es"},
+    {"t": "Google Search Console · Informe de rendimiento de la Búsqueda", "u": "https://support.google.com/webmasters/answer/7576553?hl=es-419"},
+    {"t": "Google Analytics · [GA4] Cómo configurar Analytics para un sitio web", "u": "https://support.google.com/analytics/answer/9304153?hl=es"}
+  ]
+}
+-->
+<p>Para medir los clics a WhatsApp desde la web de tu clínica no necesitas contratar nada nuevo: si ya tienes Google Analytics 4 instalado, está contando esos clics desde el primer día, sin que lo hayas pedido. Lo que falta es saber dónde mirarlos, separarlos de los que trae la pauta y entender qué te dicen de verdad sobre pacientes nuevos.</p>
+
+<p>Esta guía es para el dueño o la gerente que ya tiene su número de WhatsApp puesto en la web y quiere saber si funciona, no para quien recién va a ponerlo. Si todavía estás armando la base de tu SEO, empieza por la <a href="/blog/seo-para-clinicas/">guía completa de SEO para clínicas</a> y vuelve aquí cuando tengas tráfico que medir.</p>
+
+<h2>Por qué contar clics a WhatsApp importa más que contar posiciones</h2>
+
+<p>Porque una posición en Google no paga arriendo. Un clic a WhatsApp es la señal más cercana que tienes a un paciente que de verdad está considerando agendar. Puedes salir de primero para una búsqueda y no recibir un solo mensaje si la página no convence, o salir más abajo y recibir varios si la página responde justo lo que esa persona quería saber.</p>
+
+<p>Por eso en Visibla medimos así para las clínicas con las que trabajamos: Google Search Console para saber cuánta gente llega desde Google, un mapa de calor con Microsoft Clarity para ver cómo navegan esa visita, y una conversión separada para el clic en WhatsApp.</p>
+
+<h2>Lo que Google Analytics 4 ya mide sin que actives nada</h2>
+
+<p>Si tu propiedad de Analytics tiene la medición mejorada encendida (viene activada por defecto en cualquier propiedad nueva), ya está registrando un evento llamado "click" cada vez que alguien toca un enlace que lo saca de tu dominio. Un botón de WhatsApp casi siempre apunta a wa.me o a api.whatsapp.com, así que cuenta como salida y queda registrado solo.</p>
+
+<p>Ese evento trae, entre otros datos, el dominio al que apuntaba el enlace y la URL completa del enlace. Con eso puedes filtrar y quedarte solo con los clics que fueron a WhatsApp, sin mezclar los que fueron a tu Instagram o a Google Maps.</p>
+
+<h2>Paso a paso para medir los clics a WhatsApp en tu web</h2>
+
+<ol>
+<li><strong>Entra a Informes y luego a Interacción &gt; Eventos.</strong> Busca el evento llamado "click" en la lista; ahí están todos los clics de salida, no solo los de WhatsApp.</li>
+<li><strong>Abre una exploración en blanco</strong> (menú Explorar, plantilla en blanco) y arma una tabla con la dimensión del dominio del enlace y la métrica "recuento de eventos", filtrando el nombre del evento a "click".</li>
+<li><strong>Quédate con las filas de wa.me o api.whatsapp.com.</strong> Ese número es tu total de clics a WhatsApp en el período que elegiste.</li>
+<li><strong>Agrega la página de entrada como segunda dimensión</strong> para ver si los clics salen más de la home, de una página de tratamiento o del blog.</li>
+</ol>
+
+<p>La primera vez que lo revisas suele aparecer un número más alto del que esperabas, porque Analytics lleva semanas o meses contando esos clics sin que nadie entrara a mirarlos.</p>
+
+<h2>Un error común: contar cada clic como un paciente nuevo</h2>
+
+<p>Un clic a WhatsApp no es lo mismo que un paciente nuevo. Dentro de esos clics hay pacientes que ya tienes preguntando por una cita y personas que escriben solo por curiosidad. También hay clics dobles de la misma persona que entró dos veces a comparar precios. Tratar el número de clics como si fuera el número de pacientes agendados hace que un mes real de 30 contactos se vea como un fracaso frente a una meta de 60 que nunca tuvo base.</p>
+
+<p>Un ejemplo real con cifras es el de Clínica Seravena, en Medellín. Su web y sus anuncios de Google generan juntos alrededor de 55 contactos por WhatsApp al mes, con 57 en septiembre de 2026. Esa cifra mezcla lo que trae la pauta y lo que trae el SEO; no se puede repartir el mérito solo mirando el total de clics. Si corres pauta además de SEO, el paso siguiente es obligatorio.</p>
+
+<h2>Separar lo que llega gratis de lo que llega pagado</h2>
+
+<p>En Analytics, cada sesión trae un origen y un medio. Las que dicen google / organic llegaron desde una búsqueda sin que pagaras por el clic; las que dicen google / cpc vinieron de un anuncio. Antes de atribuirle un contacto de WhatsApp al trabajo de SEO, filtra por ese campo y quédate solo con las sesiones orgánicas.</p>
+
+<p>Google Search Console complementa esa mirada. Su informe de rendimiento muestra cuántos clics e impresiones recibió tu web en los resultados de búsqueda, con qué palabras y en qué posición promedio. Search Console solo ve resultados orgánicos, así que no mezcla nada de pauta. Cruzar ambos informes es lo que te permite decir, con algo de seguridad, cuántos contactos trajo el SEO y cuántos trajo lo que pagaste.</p>
+
+<h2>Cómo marcar cada botón de WhatsApp para saber cuál funciona</h2>
+
+<p>Puede que tu web tenga más de un botón de WhatsApp: uno flotante, uno en el encabezado y otro al final de cada página de tratamiento. Analytics puede distinguirlos si cada botón tiene un identificador distinto en el código, algo tan simple como un atributo id o class diferente por botón. Pídele eso a quien maneje tu web: no cambia cómo se ve el botón, solo deja una etiqueta para que Analytics la lea.</p>
+
+<p>Con esa etiqueta puedes comparar, por ejemplo, si el botón flotante que sigue al visitante por toda la página convierte más que el del encabezado, que solo se ve arriba. Con ese dato puedes decidir, por ejemplo, si quitas el botón del encabezado porque casi nadie lo toca o si lo dejas porque de ahí sale una parte real de los contactos.</p>
+
+<div class="nota"><strong>Haz esto hoy (10 minutos):</strong> entra a tu cuenta de Google Analytics, ve a Administrador &gt; Flujos de datos &gt; tu sitio y revisa que el interruptor de "Medición mejorada" esté activado. Si lo está, abre Informes &gt; Tiempo real y toca tú mismo tu botón de WhatsApp desde el celular: en unos segundos debe aparecer el evento "click" en la pantalla.</div>
+
+<h2>Si todavía no tienes Analytics instalado en tu web</h2>
+
+<p>Entonces nada de lo anterior se está midiendo todavía, y es el primer paso antes de cualquier otra cosa. Crear una cuenta de Google Analytics 4 y pegar su código en tu web toma menos de media hora si quien maneja tu web sigue la guía oficial de configuración, y no cuesta nada. Una vez instalado, la medición mejorada arranca sola y en un par de días ya tienes los primeros clics de salida registrados.</p>
+
+<p>Si tu web la maneja un proveedor externo, pídele acceso de administrador a la cuenta de Analytics con tu propio correo desde el primer día. Es el mismo cuidado que conviene tener con la ficha de Google Maps: que la cuenta quede a tu nombre desde el primer día, no a nombre de quien te la instaló.</p>
+
+<h2>Qué pedirle cada mes a tu equipo o a tu agencia</h2>
+
+<p>Pide números que puedas revisar tú mismo, no solo un resumen en una diapositiva. Esta tabla sirve de guía para la conversación mensual:</p>
+
+<table>
+<thead>
+<tr><th>Qué pedir</th><th>Dónde se ve</th><th>Qué te dice</th></tr>
+</thead>
+<tbody>
+<tr><td>Clics al botón de WhatsApp, por página y por origen</td><td>Google Analytics 4, exploración de eventos de salida</td><td>Cuántas conversaciones empezó la web y desde dónde</td></tr>
+<tr><td>Clics e impresiones orgánicas, con las búsquedas exactas</td><td>Google Search Console, informe de rendimiento</td><td>Si el SEO está trayendo visitas y con qué palabras</td></tr>
+<tr><td>Sesiones por origen y medio (organic, cpc, social)</td><td>Google Analytics 4, informe de adquisición</td><td>Qué canal trae cada contacto, para no repartir mal el mérito</td></tr>
+</tbody>
+</table>
+
+<p>Si te entregan solo posiciones de palabras sueltas sin estos tres datos, falta la mitad del informe. Puedes enlazar esta tabla con lo que ya cubrimos sobre <a href="/blog/agencia-seo-clinicas-medellin/">qué entregables pedirle a una agencia SEO</a> antes de firmar.</p>
+
+<p>Lo último: si decides cambiar de agencia, revisa primero que la propiedad de Analytics esté a nombre de tu clínica, con tu propio correo como administrador principal. Así el historial de clics a WhatsApp se queda contigo, no con quien se va. Para la ficha de Google Maps aplica la misma lógica, explicada en la guía de <a href="/blog/como-aparecer-en-google-maps-clinica/">cómo aparecer en Google Maps con tu clínica</a>. Y si quieres ver cómo armamos esta medición completa para una clínica, <a href="/#como">así trabajamos en Visibla</a>.</p>
