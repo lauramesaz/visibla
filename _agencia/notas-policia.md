@@ -16,3 +16,5 @@
 - 2026-10-02 · Superlativo sin fuente que suena a folleto · "estética es el nicho de salud con más competencia en redes" · Si no hay cifra enlazada, describir lo que se ve sin rankear ("muchas clínicas ponen toda la energía en Instagram").
 - 2026-10-02 · Frase de cierre triunfalista · "Ahí una clínica pequeña sí puede ganar." · Explicar el porqué en vez de animar ("donde hay menos clínicas peleando el mismo espacio").
 - 2026-10-02 · Afirmar cómo actúa Google sin fuente · "Google las detecta como contenido duplicado" · Hablar del efecto en el lector o enlazar la ayuda oficial de Google.
+- 2026-10-04 · CTA de WhatsApp escrito a mano en el cuerpo · "Si prefieres que alguien revise esto por ti, puedes pedir el diagnóstico gratis por WhatsApp." · No escribir el CTA: build.py ya lo agrega dos veces. Si quieres enlazar el método, usa /#como con texto como "el método de Visibla".
+- 2026-10-04 · Cierre de párrafo con frase vaga tipo eslogan · "para quedar del lado correcto" · Decir en concreto qué significa quedar del lado correcto (el paso o el criterio), no dejarlo en frase genérica.

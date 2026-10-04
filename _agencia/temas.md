@@ -27,7 +27,7 @@
 | 4 | Cuánto tarda el SEO en dar pacientes (expectativas reales) | cuánto tarda el seo | Medición y resultados | pendiente |
 | 5 | ★ Agencia SEO para clínicas en Medellín: qué buscar y qué evitar | agencia seo clínicas medellín | SEO por ciudad | publicado 2026-10-02 |
 | 6 | Cómo conseguir más reseñas en Google sin violar las reglas | conseguir reseñas google clínica | Google Maps y reseñas | pendiente |
-| 7 | Qué es YMYL y por qué Google es más exigente con las webs de salud | ymyl salud | Contenido y blog | pendiente |
+| 7 | Qué es YMYL y por qué Google es más exigente con las webs de salud | ymyl salud | Contenido y blog | publicado 2026-10-04 |
 | 8 | SEO para cirujanos plásticos en Colombia | seo cirujano plástico | SEO por especialidad | pendiente |
 | 9 | Cómo medir cuántos pacientes llegan por WhatsApp desde tu web | medir clics whatsapp web | Medición y resultados | publicado 2026-10-03 |
 | 10 | Publicidad de servicios de salud en Colombia: qué dice la norma | publicidad servicios de salud colombia | Normas y ética | pendiente |

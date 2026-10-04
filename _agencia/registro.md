@@ -2,6 +2,7 @@
 
 | Fecha | Qué se hizo | Slug | Nota SEO | Humanidad | Estado |
 |---|---|---|---|---|---|
+| 2026-10-04 | Guía nueva: YMYL en salud: qué le exige Google a la web de tu clínica | ymyl-salud | 91 | 10/10 | publicado |
 | 2026-10-03 | Guía nueva: Cómo medir los clics a WhatsApp desde tu web | medir-clics-whatsapp-web | 93 | 9/10 | publicado |
 | 2026-10-02 | Lanzamiento (a mano) | agencia-seo-clinicas-medellin | 90 | 9/10 | publicado |
 | 2026-10-02 | Lanzamiento (a mano) | seo-clinicas-esteticas | 91 | 9/10 | publicado |
