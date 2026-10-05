@@ -18,3 +18,4 @@
 - 2026-10-02 · Afirmar cómo actúa Google sin fuente · "Google las detecta como contenido duplicado" · Hablar del efecto en el lector o enlazar la ayuda oficial de Google.
 - 2026-10-04 · CTA de WhatsApp escrito a mano en el cuerpo · "Si prefieres que alguien revise esto por ti, puedes pedir el diagnóstico gratis por WhatsApp." · No escribir el CTA: build.py ya lo agrega dos veces. Si quieres enlazar el método, usa /#como con texto como "el método de Visibla".
 - 2026-10-04 · Cierre de párrafo con frase vaga tipo eslogan · "para quedar del lado correcto" · Decir en concreto qué significa quedar del lado correcto (el paso o el criterio), no dejarlo en frase genérica.
+- 2026-10-05 · Variante de "no solo… sino también" con dos puntos en vez de "sino" · "no solo es un riesgo legal: también es..." · Cuenta como el mismo vicio aunque no use la palabra "sino". Máximo 1 por artículo igual que la forma clásica.

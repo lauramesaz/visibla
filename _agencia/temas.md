@@ -30,7 +30,7 @@
 | 7 | Qué es YMYL y por qué Google es más exigente con las webs de salud | ymyl salud | Contenido y blog | publicado 2026-10-04 |
 | 8 | SEO para cirujanos plásticos en Colombia | seo cirujano plástico | SEO por especialidad | pendiente |
 | 9 | Cómo medir cuántos pacientes llegan por WhatsApp desde tu web | medir clics whatsapp web | Medición y resultados | publicado 2026-10-03 |
-| 10 | Publicidad de servicios de salud en Colombia: qué dice la norma | publicidad servicios de salud colombia | Normas y ética | pendiente |
+| 10 | Publicidad de servicios de salud en Colombia: qué dice la norma | publicidad servicios de salud colombia | Normas y ética | publicado 2026-10-05 |
 | 11 | ★ SEO para clínicas en Bogotá: cómo competir en una ciudad saturada | seo clínicas bogotá | SEO por ciudad | descartado (lo cubre la página de venta /agencia-seo-clinicas-bogota/; enlazarla) |
 | 12 | Blog para clínicas: 40 ideas de artículos que tus pacientes ya buscan | ideas de blog para clínicas | Contenido y blog | pendiente |
 | 13 | Cómo aparecer en las respuestas de ChatGPT y en los resúmenes con IA de Google | aparecer en chatgpt clínica | IA y buscadores | pendiente |
