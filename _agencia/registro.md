@@ -2,6 +2,7 @@
 
 | Fecha | Qué se hizo | Slug | Nota SEO | Humanidad | Estado |
 |---|---|---|---|---|---|
+| 2026-10-06 | Guía nueva: SEO para clínica vascular: cómo llenar tu agenda | seo-clinica-vascular | 92 | 9/10 | publicado |
 | 2026-10-05 | Guía nueva: Publicidad de servicios de salud en Colombia: qué dice la norma | publicidad-servicios-salud-colombia | 93 | 10/10 | publicado |
 | 2026-10-04 | Guía nueva: YMYL en salud: qué le exige Google a la web de tu clínica | ymyl-salud | 91 | 10/10 | publicado |
 | 2026-10-03 | Guía nueva: Cómo medir los clics a WhatsApp desde tu web | medir-clics-whatsapp-web | 93 | 9/10 | publicado |

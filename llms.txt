@@ -20,6 +20,7 @@
 
 ## Guías
 
+- [SEO para clínica vascular: cómo llenar tu agenda](https://posicion-seo.com/blog/seo-clinica-vascular/): Qué escribe en Google alguien con várices o piernas pesadas antes de llegar a una clínica vascular, y cómo construir el contenido que lo lleva hasta tu WhatsApp.
 - [Publicidad de servicios de salud en Colombia: la norma](https://posicion-seo.com/blog/publicidad-servicios-salud-colombia/): Antes de publicar un anuncio, un post con un paciente o una promoción en Instagram, tu clínica tiene dos normas que cumplir: la ética médica y la ley del consumidor. Esto es lo que dicen de verdad y lo que puedes revisar hoy.
 - [YMYL en salud: qué le exige Google a la web de tu clínica](https://posicion-seo.com/blog/ymyl-salud/): Google trata la web de tu clínica distinto a la de una tienda de ropa: es contenido YMYL, el que puede afectar la salud de alguien. Esto es lo que eso significa y lo que tienes que mostrar para que confíen en tu página.
 - [Cómo medir los clics a WhatsApp desde tu web](https://posicion-seo.com/blog/medir-clics-whatsapp-web/): Google Analytics ya cuenta los clics a tu botón de WhatsApp aunque no hayas configurado nada. Esta guía te muestra dónde mirarlos, cómo separarlos de los que trae la pauta y qué pedirle cada mes a quien maneje tu web.
