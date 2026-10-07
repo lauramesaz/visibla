@@ -24,7 +24,7 @@
 | 1 | ★ SEO para clínicas: la guía completa para que te encuentren en Google (PILAR) | seo para clínicas | Contenido y blog | publicado 2026-10-02 |
 | 2 | Cómo aparecer en Google Maps si tienes una clínica | cómo aparecer en google maps clínica | Google Maps y reseñas | publicado 2026-10-02 |
 | 3 | ★ SEO para clínicas estéticas: cómo llenar la agenda sin depender de la pauta | seo para clínicas estéticas | SEO por especialidad | publicado 2026-10-02 |
-| 4 | Cuánto tarda el SEO en dar pacientes (expectativas reales) | cuánto tarda el seo | Medición y resultados | pendiente |
+| 4 | Cuánto tarda el SEO en dar pacientes (expectativas reales) | cuánto tarda el seo | Medición y resultados | publicado 2026-10-07 |
 | 5 | ★ Agencia SEO para clínicas en Medellín: qué buscar y qué evitar | agencia seo clínicas medellín | SEO por ciudad | publicado 2026-10-02 |
 | 6 | Cómo conseguir más reseñas en Google sin violar las reglas | conseguir reseñas google clínica | Google Maps y reseñas | pendiente |
 | 7 | Qué es YMYL y por qué Google es más exigente con las webs de salud | ymyl salud | Contenido y blog | publicado 2026-10-04 |
