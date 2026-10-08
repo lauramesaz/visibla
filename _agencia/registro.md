@@ -2,6 +2,7 @@
 
 | Fecha | Qué se hizo | Slug | Nota SEO | Humanidad | Estado |
 |---|---|---|---|---|---|
+| 2026-10-08 | Guía nueva: Cómo conseguir más reseñas en Google para tu clínica | conseguir-resenas-google-clinica | 94 | 10/10 | publicado |
 | 2026-10-07 | Guía nueva: Cuánto tarda el SEO en darte pacientes nuevos | cuanto-tarda-el-seo | 93 | 9/10 | publicado |
 | 2026-10-06 | Guía nueva: SEO para clínica vascular: cómo llenar tu agenda | seo-clinica-vascular | 92 | 9/10 | publicado |
 | 2026-10-05 | Guía nueva: Publicidad de servicios de salud en Colombia: qué dice la norma | publicidad-servicios-salud-colombia | 93 | 10/10 | publicado |
