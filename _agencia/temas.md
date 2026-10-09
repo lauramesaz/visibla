@@ -54,7 +54,7 @@
 | 31 | Doctoralia, directorios y menciones: cuáles sí ayudan al SEO | directorios médicos seo | SEO local | pendiente |
 | 32 | SEO para nutricionistas y clínicas de obesidad | seo nutricionista | SEO por especialidad | pendiente |
 | 33 | ★ Cómo elegir una agencia SEO para tu clínica: 10 preguntas antes de firmar | cómo elegir agencia seo | Medición y resultados | pendiente |
-| 34 | ★ SEO para clínicas en Bucaramanga | seo clínicas bucaramanga | SEO por ciudad | pendiente |
+| 34 | ★ SEO para clínicas en Bucaramanga | seo clínicas bucaramanga | SEO por ciudad | publicado 2026-10-09 |
 | 35 | Fotos de antes y después en la web: lo que permite la norma y lo que funciona | fotos antes y después clínica | Normas y ética | pendiente |
 | 36 | Errores de SEO más comunes en webs de clínicas | errores seo clínicas | SEO local | pendiente |
 | 37 | Pacientes de otras ciudades y del exterior: SEO para turismo médico en Colombia | turismo médico seo | SEO por ciudad | pendiente |
