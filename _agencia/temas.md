@@ -32,7 +32,7 @@
 | 9 | Cómo medir cuántos pacientes llegan por WhatsApp desde tu web | medir clics whatsapp web | Medición y resultados | publicado 2026-10-03 |
 | 10 | Publicidad de servicios de salud en Colombia: qué dice la norma | publicidad servicios de salud colombia | Normas y ética | publicado 2026-10-05 |
 | 11 | ★ SEO para clínicas en Bogotá: cómo competir en una ciudad saturada | seo clínicas bogotá | SEO por ciudad | descartado (lo cubre la página de venta /agencia-seo-clinicas-bogota/; enlazarla) |
-| 12 | Blog para clínicas: 40 ideas de artículos que tus pacientes ya buscan | ideas de blog para clínicas | Contenido y blog | pendiente |
+| 12 | Blog para clínicas: 40 ideas de artículos que tus pacientes ya buscan | ideas de blog para clínicas | Contenido y blog | publicado 2026-10-10 |
 | 13 | Cómo aparecer en las respuestas de ChatGPT y en los resúmenes con IA de Google | aparecer en chatgpt clínica | IA y buscadores | pendiente |
 | 14 | SEO para odontólogos y clínicas dentales | seo para odontólogos | SEO por especialidad | descartado (lo cubre la página de venta /seo-odontologos/; enlazarla) |
 | 15 | Ficha de Google de tu clínica: los 12 campos que casi nadie llena bien | perfil de empresa de google clínica | Google Maps y reseñas | pendiente |

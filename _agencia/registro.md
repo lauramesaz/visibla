@@ -2,6 +2,7 @@
 
 | Fecha | Qué se hizo | Slug | Nota SEO | Humanidad | Estado |
 |---|---|---|---|---|---|
+| 2026-10-10 | Guía nueva: Ideas de blog para clínicas: qué escribir cada semana | ideas-blog-clinicas | 93 | 10/10 | publicado |
 | 2026-10-09 | Guía nueva: SEO para clínicas en Bucaramanga y su área metropolitana | seo-clinicas-bucaramanga | 91 | 10/10 | publicado |
 | 2026-10-08 | Guía nueva: Cómo conseguir más reseñas en Google para tu clínica | conseguir-resenas-google-clinica | 94 | 10/10 | publicado |
 | 2026-10-07 | Guía nueva: Cuánto tarda el SEO en darte pacientes nuevos | cuanto-tarda-el-seo | 93 | 9/10 | publicado |
