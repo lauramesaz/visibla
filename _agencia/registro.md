@@ -2,6 +2,7 @@
 
 | Fecha | Qué se hizo | Slug | Nota SEO | Humanidad | Estado |
 |---|---|---|---|---|---|
+| 2026-10-11 | Guía nueva: Cómo aparecer en ChatGPT si tienes una clínica | aparecer-en-chatgpt-clinica | 92 | 10/10 | publicado |
 | 2026-10-10 | Guía nueva: Ideas de blog para clínicas: qué escribir cada semana | ideas-blog-clinicas | 93 | 10/10 | publicado |
 | 2026-10-09 | Guía nueva: SEO para clínicas en Bucaramanga y su área metropolitana | seo-clinicas-bucaramanga | 91 | 10/10 | publicado |
 | 2026-10-08 | Guía nueva: Cómo conseguir más reseñas en Google para tu clínica | conseguir-resenas-google-clinica | 94 | 10/10 | publicado |
