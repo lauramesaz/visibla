@@ -40,7 +40,7 @@
 | 17 | ★ SEO para clínicas en Cali | seo clínicas cali | SEO por ciudad | descartado (lo cubre la página de venta /agencia-seo-clinicas-cali/; enlazarla) |
 | 18 | Cómo responder reseñas negativas de pacientes (sin romper el secreto profesional) | responder reseñas negativas pacientes | Google Maps y reseñas | pendiente |
 | 19 | SEO para dermatólogos | seo para dermatólogos | SEO por especialidad | descartado (lo cubre la página de venta /seo-dermatologos/; enlazarla) |
-| 20 | Google Search Console para dueños de clínica: lo único que necesitas mirar | search console para principiantes | Medición y resultados | pendiente |
+| 20 | Google Search Console para dueños de clínica: lo único que necesitas mirar | search console para principiantes | Medición y resultados | publicado 2026-10-12 |
 | 21 | ¿Se puede escribir el blog de la clínica con IA sin que Google lo castigue? | contenido con ia google | IA y buscadores | pendiente |
 | 22 | Velocidad de la web en celular: por qué te cuesta pacientes | velocidad web celular | SEO local | pendiente |
 | 23 | ★ SEO para clínicas en Barranquilla | seo clínicas barranquilla | SEO por ciudad | descartado (lo cubre la página de venta /agencia-seo-clinicas-barranquilla/; enlazarla) |
