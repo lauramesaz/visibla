@@ -20,6 +20,7 @@
 
 ## Guías
 
+- [SEO para fisioterapia: guía para tu clínica](https://posicion-seo.com/blog/seo-fisioterapia/): El paciente de fisioterapia no busca igual que el de una clínica estética: unos llegan por un dolor sin diagnóstico y otros con una orden médica en la mano. Cómo escribir para los dos.
 - [Search Console para principiantes: guía para tu clínica](https://posicion-seo.com/blog/search-console-para-principiantes/): Search Console es la única herramienta de Google que te dice con qué palabras te encuentran. Esta guía explica, sin jerga, qué informes revisar cada mes si tienes una clínica y cuáles puedes ignorar.
 - [Cómo aparecer en ChatGPT si tienes una clínica](https://posicion-seo.com/blog/aparecer-en-chatgpt-clinica/): Qué hace que Google y ChatGPT citen a tu clínica cuando alguien pregunta por un tratamiento en tu ciudad, con lo que de verdad confirman sus propias páginas de ayuda y el error del FAQ que seguimos viendo.
 - [Ideas de blog para clínicas: qué escribir cada semana](https://posicion-seo.com/blog/ideas-blog-clinicas/): Más de 30 ideas de blog para clínicas, sacadas de preguntas reales de pacientes y organizadas por especialidad, con lo que la norma colombiana no te deja prometer.

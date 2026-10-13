@@ -2,6 +2,7 @@
 
 | Fecha | Qué se hizo | Slug | Nota SEO | Humanidad | Estado |
 |---|---|---|---|---|---|
+| 2026-10-13 | Guía nueva: SEO para fisioterapia: guía para tu clínica | seo-fisioterapia | 93 | 10/10 | publicado |
 | 2026-10-12 | Guía nueva: Search Console para principiantes (guía para tu clínica) | search-console-para-principiantes | 92 | 9/10 | publicado |
 | 2026-10-11 | Guía nueva: Cómo aparecer en ChatGPT si tienes una clínica | aparecer-en-chatgpt-clinica | 92 | 10/10 | publicado |
 | 2026-10-10 | Guía nueva: Ideas de blog para clínicas: qué escribir cada semana | ideas-blog-clinicas | 93 | 10/10 | publicado |

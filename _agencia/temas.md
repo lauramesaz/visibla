@@ -48,7 +48,7 @@
 | 25 | Habeas data y formularios de la web de tu clínica | habeas data clínica | Normas y ética | pendiente |
 | 26 | Páginas de servicio que convierten: cómo escribir la página de cada tratamiento | página de servicio clínica | Contenido y blog | pendiente |
 | 27 | "Cerca de mí": cómo ganar las búsquedas de tu barrio | búsquedas cerca de mí | SEO local | pendiente |
-| 28 | SEO para fisioterapeutas y centros de rehabilitación | seo fisioterapia | SEO por especialidad | pendiente |
+| 28 | SEO para fisioterapeutas y centros de rehabilitación | seo fisioterapia | SEO por especialidad | publicado 2026-10-13 |
 | 29 | ★ SEO para clínicas en Pereira y el Eje Cafetero | seo clínicas pereira | SEO por ciudad | descartado (lo cubre la página de venta /agencia-seo-clinicas-pereira/; enlazarla) |
 | 30 | Cuánto vale un paciente nuevo: la cuenta que todo dueño de clínica debe hacer | valor de un paciente | Medición y resultados | pendiente |
 | 31 | Doctoralia, directorios y menciones: cuáles sí ayudan al SEO | directorios médicos seo | SEO local | pendiente |
