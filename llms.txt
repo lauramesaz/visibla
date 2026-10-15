@@ -20,6 +20,7 @@
 
 ## Guías
 
+- [SEO vs. Google Ads para clínicas: cuándo usar cada uno](https://posicion-seo.com/blog/seo-vs-google-ads-clinicas/): SEO y Google Ads no compiten por el mismo problema: uno llena la agenda ya, el otro construye algo que se queda. Cómo decidir cuál necesita tu clínica primero y cómo medir si de verdad está funcionando.
 - [Perfil de empresa de Google: los 12 campos de tu clínica](https://posicion-seo.com/blog/perfil-empresa-google-clinica/): El perfil de empresa de Google de tu clínica tiene más de una docena de campos, y la mayoría solo llena cuatro. Esta es la lista completa, campo por campo, con lo que dice la ayuda oficial de Google.
 - [SEO para fisioterapia: guía para tu clínica](https://posicion-seo.com/blog/seo-fisioterapia/): El paciente de fisioterapia no busca igual que el de una clínica estética: unos llegan por un dolor sin diagnóstico y otros con una orden médica en la mano. Cómo escribir para los dos.
 - [Search Console para principiantes: guía para tu clínica](https://posicion-seo.com/blog/search-console-para-principiantes/): Search Console es la única herramienta de Google que te dice con qué palabras te encuentran. Esta guía explica, sin jerga, qué informes revisar cada mes si tienes una clínica y cuáles puedes ignorar.

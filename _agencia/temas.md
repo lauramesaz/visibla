@@ -36,7 +36,7 @@
 | 13 | Cómo aparecer en las respuestas de ChatGPT y en los resúmenes con IA de Google | aparecer en chatgpt clínica | IA y buscadores | publicado 2026-10-11 |
 | 14 | SEO para odontólogos y clínicas dentales | seo para odontólogos | SEO por especialidad | descartado (lo cubre la página de venta /seo-odontologos/; enlazarla) |
 | 15 | Ficha de Google de tu clínica: los 12 campos que casi nadie llena bien | perfil de empresa de google clínica | Google Maps y reseñas | publicado 2026-10-14 |
-| 16 | SEO vs. Google Ads para clínicas: cuándo conviene cada uno | seo vs google ads | Medición y resultados | pendiente |
+| 16 | SEO vs. Google Ads para clínicas: cuándo conviene cada uno | seo vs google ads | Medición y resultados | publicado 2026-10-15 |
 | 17 | ★ SEO para clínicas en Cali | seo clínicas cali | SEO por ciudad | descartado (lo cubre la página de venta /agencia-seo-clinicas-cali/; enlazarla) |
 | 18 | Cómo responder reseñas negativas de pacientes (sin romper el secreto profesional) | responder reseñas negativas pacientes | Google Maps y reseñas | pendiente |
 | 19 | SEO para dermatólogos | seo para dermatólogos | SEO por especialidad | descartado (lo cubre la página de venta /seo-dermatologos/; enlazarla) |
