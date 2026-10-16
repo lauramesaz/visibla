@@ -38,7 +38,7 @@
 | 15 | Ficha de Google de tu clínica: los 12 campos que casi nadie llena bien | perfil de empresa de google clínica | Google Maps y reseñas | publicado 2026-10-14 |
 | 16 | SEO vs. Google Ads para clínicas: cuándo conviene cada uno | seo vs google ads | Medición y resultados | publicado 2026-10-15 |
 | 17 | ★ SEO para clínicas en Cali | seo clínicas cali | SEO por ciudad | descartado (lo cubre la página de venta /agencia-seo-clinicas-cali/; enlazarla) |
-| 18 | Cómo responder reseñas negativas de pacientes (sin romper el secreto profesional) | responder reseñas negativas pacientes | Google Maps y reseñas | pendiente |
+| 18 | Cómo responder reseñas negativas de pacientes (sin romper el secreto profesional) | responder reseñas negativas pacientes | Google Maps y reseñas | publicado 2026-10-16 |
 | 19 | SEO para dermatólogos | seo para dermatólogos | SEO por especialidad | descartado (lo cubre la página de venta /seo-dermatologos/; enlazarla) |
 | 20 | Google Search Console para dueños de clínica: lo único que necesitas mirar | search console para principiantes | Medición y resultados | publicado 2026-10-12 |
 | 21 | ¿Se puede escribir el blog de la clínica con IA sin que Google lo castigue? | contenido con ia google | IA y buscadores | pendiente |

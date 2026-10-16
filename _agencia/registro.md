@@ -2,6 +2,7 @@
 
 | Fecha | Qué se hizo | Slug | Nota SEO | Humanidad | Estado |
 |---|---|---|---|---|---|
+| 2026-10-16 | Guía nueva: Cómo responder reseñas negativas de pacientes | responder-resenas-negativas-pacientes | 95 | 10/10 | publicado |
 | 2026-10-15 | Guía nueva: SEO vs. Google Ads para clínicas: cuándo usar cada uno | seo-vs-google-ads-clinicas | 93 | 10/10 | publicado |
 | 2026-10-14 | Guía nueva: Perfil de empresa de Google: los 12 campos de tu clínica | perfil-empresa-google-clinica | 90 | 9/10 | publicado |
 | 2026-10-13 | Guía nueva: SEO para fisioterapia: guía para tu clínica | seo-fisioterapia | 93 | 10/10 | publicado |
