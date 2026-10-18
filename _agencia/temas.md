@@ -58,6 +58,6 @@
 | 35 | Fotos de antes y después en la web: lo que permite la norma y lo que funciona | fotos antes y después clínica | Normas y ética | pendiente |
 | 36 | Errores de SEO más comunes en webs de clínicas | errores seo clínicas | SEO local | pendiente |
 | 37 | Pacientes de otras ciudades y del exterior: SEO para turismo médico en Colombia | turismo médico seo | SEO por ciudad | pendiente |
-| 38 | ★ SEO para clínicas en Cartagena | seo clínicas cartagena | SEO por ciudad | pendiente |
+| 38 | ★ SEO para clínicas en Cartagena | seo clínicas cartagena | SEO por ciudad | publicado 2026-10-18 |
 | 39 | Instagram no basta: por qué tu clínica necesita Google también | instagram vs google clínica | Contenido y blog | pendiente |
 | 40 | Datos estructurados para clínicas (schema): qué son y cuáles usar | schema clínica médica | SEO local | pendiente |

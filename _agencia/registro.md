@@ -2,6 +2,7 @@
 
 | Fecha | Qué se hizo | Slug | Nota SEO | Humanidad | Estado |
 |---|---|---|---|---|---|
+| 2026-10-18 | Guía nueva: SEO para clínicas en Cartagena: ficha, reseñas y contenido | seo-clinicas-cartagena | 93 | 9/10 | publicado |
 | 2026-10-17 | Guía nueva: Contenido con IA en tu blog: qué castiga Google | contenido-ia-google | 92 | 9/10 | publicado |
 | 2026-10-16 | Guía nueva: Cómo responder reseñas negativas de pacientes | responder-resenas-negativas-pacientes | 95 | 10/10 | publicado |
 | 2026-10-15 | Guía nueva: SEO vs. Google Ads para clínicas: cuándo usar cada uno | seo-vs-google-ads-clinicas | 93 | 10/10 | publicado |
