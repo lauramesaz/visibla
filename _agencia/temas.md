@@ -42,7 +42,7 @@
 | 19 | SEO para dermatólogos | seo para dermatólogos | SEO por especialidad | descartado (lo cubre la página de venta /seo-dermatologos/; enlazarla) |
 | 20 | Google Search Console para dueños de clínica: lo único que necesitas mirar | search console para principiantes | Medición y resultados | publicado 2026-10-12 |
 | 21 | ¿Se puede escribir el blog de la clínica con IA sin que Google lo castigue? | contenido con ia google | IA y buscadores | publicado 2026-10-17 |
-| 22 | Velocidad de la web en celular: por qué te cuesta pacientes | velocidad web celular | SEO local | pendiente |
+| 22 | Velocidad de la web en celular: por qué te cuesta pacientes | velocidad web celular | SEO local | publicado 2026-10-19 |
 | 23 | ★ SEO para clínicas en Barranquilla | seo clínicas barranquilla | SEO por ciudad | descartado (lo cubre la página de venta /agencia-seo-clinicas-barranquilla/; enlazarla) |
 | 24 | SEO para clínicas vasculares y de várices (caso Seravena) | seo clínica vascular | SEO por especialidad | publicado 2026-10-06 |
 | 25 | Habeas data y formularios de la web de tu clínica | habeas data clínica | Normas y ética | pendiente |
