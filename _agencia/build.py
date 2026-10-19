@@ -306,6 +306,10 @@ def bloque_home(arts):
 <!--BLOG:FIN-->"""
 
 
+# Landing /plan-seo/ (HTML a mano, con precios): ruta, texto del enlace, fecha de su última edición (cambiarla al editarla)
+PLAN_SEO = ("/plan-seo/", "Plan SEO de 90 días", "2026-10-19")
+
+
 def enlaces_footer(pags):
     grupos = [("Especialidades", "especialidad"), ("Ciudades", "ciudad"), ("Casos", "caso")]
     cols = []
@@ -314,6 +318,8 @@ def enlaces_footer(pags):
         if items:
             cols.append(f'<div><div class="mono">{nombre}</div>' + "".join(
                 f'<a href="{p["ruta"]}">{e(p.get("corto") or p["h1"])}</a>' for p in items) + "</div>")
+    # landing de venta hecha a mano (no sale de paginas/*.json)
+    cols.append(f'<div><div class="mono">Precios</div><a href="{PLAN_SEO[0]}">{PLAN_SEO[1]}</a></div>')
     return f'<div class="wrap foot-links">{"".join(cols)}</div>' if cols else ""
 
 
@@ -342,7 +348,7 @@ def main():
     hoy = date.today().isoformat()
     ult = max([a["modificado"] for a in arts] or [hoy])
     urls = [(f"{DOMINIO}/", ult), (f"{DOMINIO}/blog/", ult)] + [(f"{DOMINIO}/blog/{a['slug']}/", a["modificado"]) for a in arts] + \
-        [(DOMINIO + p["ruta"], p["modificado"]) for p in pags] + [(f"{DOMINIO}/diagnostico/", ult)]
+        [(DOMINIO + p["ruta"], p["modificado"]) for p in pags] + [(f"{DOMINIO}/diagnostico/", ult), (DOMINIO + PLAN_SEO[0], PLAN_SEO[2])]
     (RAIZ / "sitemap.xml").write_text(
         '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
         "".join(f"  <url><loc>{u}</loc><lastmod>{m}</lastmod></url>\n" for u, m in urls) + "</urlset>\n", encoding="utf-8")
@@ -350,7 +356,9 @@ def main():
     (RAIZ / "llms.txt").write_text(
         "# Visibla\n\n> Agencia de SEO con agentes de IA para clínicas en Colombia. Publica contenido diario revisado, "
         "cuida la ficha de Google y las reseñas, y mide los contactos por WhatsApp. Contacto: WhatsApp +57 320 363 8223.\n\n"
-        f"- [Inicio]({DOMINIO}/)\n- [Guías de SEO para clínicas]({DOMINIO}/blog/)\n- [Diagnóstico SEO gratis]({DOMINIO}/diagnostico/)\n\n## Servicios y casos\n\n" +
+        f"- [Inicio]({DOMINIO}/)\n- [Guías de SEO para clínicas]({DOMINIO}/blog/)\n- [Diagnóstico SEO gratis]({DOMINIO}/diagnostico/)\n"
+        f"- [Plan SEO de 90 días para clínicas, con precios]({DOMINIO}{PLAN_SEO[0]}): solo SEO desde $500.000 el primer mes y $300.000 los meses 2 y 3; "
+        "SEO + gestión de Google Ads desde $1.500.000 el primer mes y $900.000 los meses 2 y 3 (pesos colombianos; la inversión en anuncios va aparte).\n\n## Servicios y casos\n\n" +
         "".join(f"- [{p['h1']}]({DOMINIO}{p['ruta']}): {p['meta']}\n" for p in pags) + "\n## Guías\n\n" +
         "".join(f"- [{a['titulo']}]({DOMINIO}/blog/{a['slug']}/): {a['resumen']}\n" for a in arts), encoding="utf-8")
     print(f"OK · {len(arts)} artículos · {len(pags)} páginas · sitemap con {len(urls)} URLs")
