@@ -1,0 +1,82 @@
+<!--
+{
+  "titulo": "Velocidad web en el celular: por qué pierdes pacientes",
+  "meta": "Cómo saber si la velocidad de tu web en el celular te quita pacientes y posiciones en Google, con la herramienta gratuita y qué arreglar primero.",
+  "fecha": "2026-10-19",
+  "modificado": "2026-10-19",
+  "categoria": "SEO local",
+  "keyword": "velocidad web celular",
+  "lectura": 6,
+  "resumen": "Google clasifica tu web usando la versión que se ve en el celular, no la del computador de tu oficina. Esta guía te muestra cómo medir la velocidad gratis en dos minutos, qué la hace lenta en las webs de clínicas y qué arreglar primero.",
+  "faq": [
+    {"q": "¿Qué tan rápida debe ser mi web en el celular?", "a": "Google considera buena una página cuando el elemento principal se ve en 2,5 segundos o menos, responde a un toque en 200 milisegundos o menos y casi no se mueve mientras carga. Lo mides gratis en PageSpeed Insights; no necesitas memorizar las cifras, solo mirar si tu página sale en verde."},
+    {"q": "¿La velocidad de mi web afecta mi posición en Google?", "a": "Es una de las señales que Google usa, y pesa más cuando compites contra páginas con contenido parecido al tuyo. Una web lenta no te sacará del mapa si el contenido es bueno, pero entre dos páginas igual de relevantes, la más rápida tiene ventaja."},
+    {"q": "¿Cómo mido la velocidad de mi web gratis?", "a": "Entra a pagespeed.web.dev, pega la URL de tu página y pulsa analizar. En unos segundos te da un puntaje para celular y otro para computador, más una lista de oportunidades con el tiempo que ahorrarías arreglando cada una."},
+    {"q": "¿Por qué mi web es lenta en el celular si en la computadora de mi consultorio se ve rápida?", "a": "Porque Google y tus pacientes la evalúan en condiciones distintas a las de tu oficina: una red 4G o 5G variable en vez de wifi fijo, y un procesador de celular en vez del de un computador. Revisa siempre el puntaje de 'Mobile' en PageSpeed Insights, no el de escritorio."},
+    {"q": "¿Cuánto cuesta arreglar la velocidad de mi web?", "a": "Depende de la causa: comprimir fotos o quitar un widget duplicado puede resolverlo en una tarde de trabajo; migrar de hosting o rehacer la plantilla toma más tiempo. No hay una cifra única sin revisar primero qué está pesando tu página."}
+  ],
+  "fuentes": [
+    {"t": "Google Search Central · Preguntas frecuentes sobre indexación mobile-first", "u": "https://developers.google.com/search/mobile-sites/faq"},
+    {"t": "web.dev · Cómo se definieron los umbrales de Core Web Vitals", "u": "https://web.dev/articles/defining-core-web-vitals-thresholds"},
+    {"t": "PageSpeed Insights (herramienta oficial de Google)", "u": "https://pagespeed.web.dev/"},
+    {"t": "Think with Google · The need for mobile speed", "u": "https://thinkwithgoogle.com/intl/en-154/marketing-strategies/app-and-mobile/need-mobile-speed-how-mobile-latency-impacts-publisher-revenue"},
+    {"t": "MinTIC · Colombia cerró el primer trimestre de 2025 con más de 49 millones de accesos móviles a Internet", "u": "https://mintic.gov.co/portal/inicio/Sala-de-prensa/Noticias/404518:Colombia-cerro-el-primer-trimestre-de-2025-con-mas-de-49-millones-de-accesos-moviles-a-Internet"}
+  ]
+}
+-->
+<p>Si tu web tarda varios segundos en abrir en el celular, sí te está costando pacientes: una parte se va antes de leer una palabra. Y Google no mira la versión que se ve en la pantalla grande de tu oficina, sino la que carga en un celular con datos móviles, así que una web lenta ahí te pesa doble: en pacientes que se cansan de esperar y en cómo te clasifica el buscador.</p>
+
+<p>Esta guía es para el dueño o la gerente que ya tiene web y quiere saber si la velocidad le está jugando en contra, no para quien recién va a construirla. Si todavía no tienes resueltos los básicos de SEO, empieza por la <a href="/blog/seo-para-clinicas/">guía completa de SEO para clínicas</a> y vuelve aquí cuando quieras revisar la velocidad.</p>
+
+<h2>Qué tan lenta es "lenta", según Google</h2>
+
+<p>Google mide tres cosas concretas para decidir si una página carga bien, y las llama Core Web Vitals. La primera es cuánto tarda en verse el elemento más grande de la pantalla, casi siempre la foto de portada: por debajo de 2,5 segundos se considera buena, por encima de 4 ya es un problema. La segunda es qué tan rápido responde la página cuando alguien toca un botón: 200 milisegundos o menos está bien, más de 500 es demasiado. La tercera mide cuánto se mueven los elementos mientras la página sigue cargando, por ejemplo cuando el botón de WhatsApp salta de lugar justo cuando ibas a tocarlo; por debajo de 0,1 en esa escala está bien. Google explica estos umbrales con detalle en la <a href="https://web.dev/articles/defining-core-web-vitals-thresholds">documentación de Core Web Vitals</a>, y los mide con datos de usuarios reales de Chrome, no solo en un laboratorio.</p>
+
+<h2>Por qué a Google le importa la versión de celular y no la del computador de tu oficina</h2>
+
+<p>Desde hace varios años, Google usa lo que llama indexación mobile-first: rastrea y clasifica tu web con la versión que ve un celular, aunque tú la revises siempre desde el computador del consultorio. Lo explica así la <a href="https://developers.google.com/search/mobile-sites/faq">documentación oficial sobre indexación mobile-first</a>: el contenido se recopila con el rastreador de celular, y es esa versión la que entra al índice y decide tu posición.</p>
+
+<p>Eso importa más en Colombia de lo que parece: al cierre del primer trimestre de 2025 el país tenía 49,1 millones de accesos móviles a internet, con cobertura del 92 % de la población, según el <a href="https://mintic.gov.co/portal/inicio/Sala-de-prensa/Noticias/404518:Colombia-cerro-el-primer-trimestre-de-2025-con-mas-de-49-millones-de-accesos-moviles-a-Internet">reporte del Ministerio TIC</a>. La mayoría de quienes buscan "dermatólogo cerca de mí" o "clínica de várices en Medellín" lo hacen con el celular en la mano, no sentados frente a un monitor.</p>
+
+<h2>Lo que le pasa a un paciente cuando tu web tarda en abrir</h2>
+
+<p>Google estudió esto hace años con datos de más de 10.000 dominios móviles y lo publicó en <a href="https://thinkwithgoogle.com/intl/en-154/marketing-strategies/app-and-mobile/need-mobile-speed-how-mobile-latency-impacts-publisher-revenue">The need for mobile speed</a>: la probabilidad de que una visita se vaya sin interactuar sube a 53 % cuando la página tarda más de 3 segundos en cargar. Es un estudio de 2016, así que las cifras de tiempo de carga de esa época ya quedaron viejas, pero el patrón se sostiene: el mismo informe comparó páginas que cargaban en 5 segundos contra páginas que tardaban 19, y las rápidas lograron sesiones un 70 % más largas. Un paciente que entra a buscar precios de una valoración y la página no termina de abrir no espera: cierra y busca la siguiente clínica en la lista.</p>
+
+<h2>Cómo medir la velocidad de tu web ahora, gratis</h2>
+
+<ol>
+<li><strong>Entra a pagespeed.web.dev</strong> desde el celular o el computador, no hace falta cuenta ni instalar nada.</li>
+<li><strong>Pega la URL de tu página de inicio</strong> (o la de un tratamiento específico) y pulsa "Analizar".</li>
+<li><strong>Mira primero la pestaña "Mobile"</strong>, no la de escritorio: es la que de verdad usa Google para clasificarte.</li>
+<li><strong>Revisa la lista de "Oportunidades"</strong>, que trae cada problema con el tiempo estimado que ahorrarías arreglándolo. Empieza por el que más tiempo promete ahorrar.</li>
+</ol>
+
+<p>La herramienta tarda entre unos segundos y un minuto en darte el resultado completo, y lo vuelve a correr cada vez que quieras comprobar si una mejora sí funcionó.</p>
+
+<h2>Las causas más comunes de lentitud en webs de clínicas</h2>
+
+<p>Un error frecuente: subir las fotos de antes y después directo desde el celular a la web, en archivos de 4 o 5 megabytes cada una, sin pasar por ningún compresor. Una sola página de tratamiento con diez fotos así puede pesar más de 40 megabytes, y en una conexión 4G eso tarda varios segundos solo en bajar las imágenes, antes de que el paciente lea una sola palabra.</p>
+
+<p>Otras causas típicas: videos de testimonios o del recorrido de la clínica incrustados sin miniatura, que empiezan a cargar aunque nadie los reproduzca; dos o tres widgets de chat encima del botón de WhatsApp, cada uno con su propio script; y plantillas con carruseles de imágenes en la portada que cargan todas las fotos de una vez en lugar de mostrarlas una por una.</p>
+
+<h2>Qué arreglar primero, en orden de impacto</h2>
+
+<table>
+<thead>
+<tr><th>Qué está pesando</th><th>Qué hacer</th><th>Quién lo resuelve</th></tr>
+</thead>
+<tbody>
+<tr><td>Fotos de antes/después o de instalaciones sin comprimir</td><td>Comprimirlas y guardarlas en formato WebP antes de subirlas</td><td>Quien maneje tu web, en una tarde</td></tr>
+<tr><td>Videos incrustados que cargan solos</td><td>Mostrar una miniatura y que el video cargue solo al tocarla</td><td>Desarrollador, cambio puntual</td></tr>
+<tr><td>Varios widgets de chat a la vez</td><td>Dejar un solo botón de WhatsApp visible</td><td>Tú mismo, desde el panel de la web</td></tr>
+<tr><td>Hosting lento o compartido con otras webs</td><td>Migrar a un plan con caché y servidor más cercano a Colombia</td><td>Desarrollador, cambio de plan</td></tr>
+</tbody>
+</table>
+
+<div class="nota"><strong>Haz esto hoy (10 minutos):</strong> abre pagespeed.web.dev desde tu celular, pega la URL de tu página de inicio, pulsa analizar y anota el puntaje de "Mobile" y la primera oportunidad de la lista. Con ese solo dato ya sabes por dónde empezar la conversación con quien maneje tu web.</div>
+
+<h2>Cuánto se demora en notarse el cambio</h2>
+
+<p>Comprimir fotos o quitar un widget duplicado puede bajar el tiempo de carga el mismo día que lo haces, y lo compruebas de inmediato volviendo a correr PageSpeed Insights. Migrar de hosting o rehacer una plantilla pesada toma más, entre varios días y un par de semanas según quién te la maneje. Lo que no cambia de un día para otro es tu posición en Google: como explicamos en la guía de <a href="/blog/cuanto-tarda-el-seo/">cuánto tarda el SEO en dar pacientes</a>, una mejora técnica como esta ayuda, pero entra a sumar junto con el resto del trabajo, no reemplaza el contenido ni los enlaces.</p>
+
+<p>Si ya tienes Search Console instalado, revisa también el informe de "Core Web Vitals" y el de "Usabilidad móvil" que trae por defecto; en la <a href="/blog/search-console-para-principiantes/">guía de Search Console para principiantes</a> explicamos dónde están y qué otros reportes vale la pena mirar cada mes. Y si corres pauta además de SEO, cruzar la velocidad con los clics reales a WhatsApp te dice si el problema es que no te encuentran o que te encuentran y la página los hace esperar; de eso habla la guía de <a href="/blog/medir-clics-whatsapp-web/">cómo medir los clics a WhatsApp desde tu web</a>. Si quieres ver cómo revisamos la velocidad y el resto del SEO técnico para una clínica, <a href="/#como">así trabajamos en Visibla</a>.</p>
