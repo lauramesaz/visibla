@@ -45,7 +45,7 @@
 | 22 | Velocidad de la web en celular: por qué te cuesta pacientes | velocidad web celular | SEO local | publicado 2026-10-19 |
 | 23 | ★ SEO para clínicas en Barranquilla | seo clínicas barranquilla | SEO por ciudad | descartado (lo cubre la página de venta /agencia-seo-clinicas-barranquilla/; enlazarla) |
 | 24 | SEO para clínicas vasculares y de várices (caso Seravena) | seo clínica vascular | SEO por especialidad | publicado 2026-10-06 |
-| 25 | Habeas data y formularios de la web de tu clínica | habeas data clínica | Normas y ética | pendiente |
+| 25 | Habeas data y formularios de la web de tu clínica | habeas data clínica | Normas y ética | publicado 2026-10-20 |
 | 26 | Páginas de servicio que convierten: cómo escribir la página de cada tratamiento | página de servicio clínica | Contenido y blog | pendiente |
 | 27 | "Cerca de mí": cómo ganar las búsquedas de tu barrio | búsquedas cerca de mí | SEO local | pendiente |
 | 28 | SEO para fisioterapeutas y centros de rehabilitación | seo fisioterapia | SEO por especialidad | publicado 2026-10-13 |
