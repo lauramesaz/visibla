@@ -1,0 +1,97 @@
+{
+ "tipo": "caso",
+ "fecha": "2026-10-19",
+ "modificado": "2026-10-19",
+ "corto": "noon Clinic",
+ "cliente": {
+  "nombre": "noon Clinic",
+  "url": "https://noon.clinic/"
+ },
+ "tarjeta_k": "Caso real · Medellín",
+ "tarjeta_t": "noon Clinic: web completa y guías diarias en español e inglés para pacientes de Colombia y Estados Unidos.",
+ "titulo": "Caso noon Clinic: SEO bilingüe para cirugía plástica",
+ "meta": "Web completa y SEO en español e inglés para una clínica de cirugía plástica en Medellín: guías diarias para pacientes de Colombia y de Estados Unidos.",
+ "kicker": "Caso real",
+ "keyword": "caso seo cirugía plástica",
+ "h1": "Caso noon Clinic: SEO bilingüe para una clínica de cirugía plástica",
+ "sub": "Una clínica de cirugía plástica y medicina estética en Medellín, con valoraciones en Bogotá y Pereira. Web en vivo desde el 24 de septiembre de 2026 y guías diarias en dos idiomas.",
+ "wa": "Hola Visibla, vi el caso noon Clinic y quiero algo así para mi clínica",
+ "dolores": [
+  {
+   "t": "Pacientes en dos países",
+   "p": "noon atiende a quien vive en Colombia y a quien viaja desde Estados Unidos para operarse. Unas buscan en español y otras en inglés. Una web en un solo idioma deja a una de las dos por fuera."
+  },
+  {
+   "t": "Muchas preguntas antes de agendar",
+   "p": "Antes de una cirugía la paciente compara: cuántos días quedarse, cuándo puede volar, cómo elegir cirujano. Si esas respuestas no están en la web de la clínica, las encuentra en la de otra."
+  },
+  {
+   "t": "Una web sin precios",
+   "p": "La web de noon no publica precios. Eso obliga a que el contenido haga el trabajo: explicar cada cirugía y cada tratamiento con la claridad suficiente para que la persona pida su valoración."
+  }
+ ],
+ "contexto": "<p>noon Clinic es una clínica de cirugía plástica y medicina estética en Medellín, con valoraciones también en Bogotá y Pereira. Su web, <a href=\"https://noon.clinic/\">noon.clinic</a>, está en vivo desde el 24 de septiembre de 2026. Encima de esa web armamos una agencia SEO bilingüe que publica guías para pacientes cada día, en español y en inglés. A octubre de 2026 ya van más de 30.</p>\n<h2>El reto</h2>\n<p>Una clínica de cirugía plástica en Medellín compite en Google con muchas otras, y una parte de sus pacientes ni siquiera vive en Colombia. La persona que está en Houston o en Miami pensando en operarse en Medellín busca en inglés, o en español desde Estados Unidos. Antes de escribir quiere resolver dudas muy concretas: cuántos días quedarse, cuándo puede volar, si es seguro.</p>\n<p>El reto era tener esas respuestas en la web de noon, en los dos idiomas, y con una web que mostrara toda la oferta de la clínica sin publicar precios.</p>\n<h2>Qué construimos: la web completa</h2>\n<p>Primero la base. La web reúne todas las cirugías de la clínica, de rostro y de cuerpo, y todos los tratamientos de <a href=\"https://noon.clinic/medicina-estetica\">medicina estética</a>, cada uno con su propia página y sin precios. La sección de <a href=\"https://noon.clinic/cirugia-plastica\">cirugía plástica</a> lleva a cada procedimiento, y hay una página de <a href=\"https://noon.clinic/especialistas\">especialistas</a>: en cirugía, la paciente quiere saber quién la va a atender antes de pedir cita.</p>\n<h2>Una agencia SEO bilingüe que publica cada día</h2>\n<p>Sobre esa base pusimos a trabajar la misma cadena de agentes de IA que usamos con todas las clínicas. Uno investiga qué buscan los pacientes, otro escribe, un editor quita lo que suena a robot, un verificador revisa cada dato médico y un juez SEO califica antes de publicar. Lo particular de noon es que la cadena trabaja en dos idiomas y para dos públicos:</p>\n<ul>\n<li><strong>En español</strong>, para quien vive en Colombia y para la paciente latina que vive en Estados Unidos: <a href=\"https://noon.clinic/como-elegir-cirujano-plastico-en-medellin\">Cómo elegir cirujano plástico en Medellín</a>, <a href=\"https://noon.clinic/cuando-puedo-volar-despues-de-una-lipo\">Cuándo puedo volar después de una lipo</a> y <a href=\"https://noon.clinic/cirugia-plastica-en-medellin-desde-miami\">Cirugía plástica en Medellín desde Miami</a>.</li>\n<li><strong>En inglés</strong>, para la paciente estadounidense: <a href=\"https://noon.clinic/is-it-safe-to-get-plastic-surgery-in-colombia\">Is It Safe to Get Plastic Surgery in Colombia?</a> y <a href=\"https://noon.clinic/how-long-to-stay-in-colombia-after-plastic-surgery\">How Long to Stay in Colombia After Plastic Surgery</a>.</li>\n</ul>\n<p>Todas las guías están a la vista en el <a href=\"https://noon.clinic/blog\">blog en español</a> y en la sección <a href=\"https://noon.clinic/guides\">Guides</a> en inglés. Son las preguntas que una paciente le haría al asesor por WhatsApp antes de agendar. Si la respuesta ya está en la web de noon, la lee ahí y el siguiente paso es pedir su valoración.</p>\n<h2>Una landing para criolipólisis con prueba de candidata</h2>\n<p>Para la criolipólisis, un tratamiento sin cirugía, armamos una <a href=\"https://noon.clinic/criolipolisis\">landing propia</a> con una prueba corta de \"¿eres candidata?\". La persona responde unas preguntas antes de escribir y llega a la conversación con una primera idea de si el tratamiento va con lo que busca.</p>\n<h2>Que Google y Bing se enteren rápido</h2>\n<p>La web está conectada a Google Search Console, la herramienta gratuita de Google que muestra con qué búsquedas aparece cada página y cuántas personas hacen clic. Si nunca la has abierto, tenemos una <a href=\"/blog/search-console-para-principiantes/\">guía de Search Console para principiantes</a>. Además, las páginas nuevas se le avisan a Bing con IndexNow, un aviso automático para que el buscador las revise sin esperar a encontrarlas por su cuenta.</p>\n<table>\n<thead><tr><th>Qué se hizo</th><th>Para qué sirve</th></tr></thead>\n<tbody>\n<tr><td>Web completa: cirugías y medicina estética, sin precios</td><td>Que cada procedimiento tenga su página para aparecer cuando lo buscan</td></tr>\n<tr><td>Página de especialistas</td><td>Mostrar quién atiende antes de pedir cita</td></tr>\n<tr><td>Guías diarias en español e inglés</td><td>Responder las dudas de pacientes en Colombia y en Estados Unidos</td></tr>\n<tr><td>Blog visible en /blog y /guides</td><td>Que la paciente y Google encuentren todas las guías</td></tr>\n<tr><td>Landing de criolipólisis con prueba</td><td>Que la persona sepa si es candidata antes de escribir</td></tr>\n<tr><td>Search Console e IndexNow</td><td>Ver con qué búsquedas aparece la web y avisar a Bing de lo nuevo</td></tr>\n</tbody>\n</table>\n<h2>Estado actual: resultados tempranos</h2>\n<p>A octubre de 2026 la web lleva menos de un mes en vivo. Es muy pronto para hablar de pacientes que llegaron por Google, y no vamos a poner números que todavía no dicen nada. Lo que sí está: la web completa, más de 30 guías publicadas en dos idiomas y la medición conectada para ver, mes a mes, con qué búsquedas empieza a aparecer noon. El SEO tarda, y lo explicamos sin rodeos en <a href=\"/blog/cuanto-tarda-el-seo/\">cuánto tarda el SEO en darte pacientes nuevos</a>.</p>\n<h2>Qué significa para tu clínica</h2>\n<p>Si haces cirugía plástica y recibes pacientes de otras ciudades o de otro país, la lección de noon es directa: cada público busca con sus palabras y en su idioma, y tu web tiene que contestarle a cada uno. Si quieres ver cómo lo aplicamos a tu especialidad, mira <a href=\"/seo-cirujanos-plasticos/\">SEO para cirujanos plásticos</a>. Y si buscas un caso con más meses encima, el de <a href=\"/casos/seravena/\">Clínica Seravena</a> publica a diario desde julio de 2026.</p>\n<p>Un paso para hoy: busca en Google, en inglés, la cirugía que más haces seguida de \"Colombia\". Si tu clínica no aparece en la primera página, escríbenos por WhatsApp y te mostramos qué están buscando esos pacientes.</p>",
+ "incluye": [
+  {
+   "t": "Web completa, sin precios",
+   "p": "Todas las cirugías y los tratamientos de medicina estética con su propia página, más una página de especialistas."
+  },
+  {
+   "t": "Guías diarias en dos idiomas",
+   "p": "Artículos en español e inglés para pacientes en Colombia y en Estados Unidos. Más de 30 publicados a octubre de 2026."
+  },
+  {
+   "t": "Revisión antes de publicar",
+   "p": "Un editor quita lo que suena a robot y un verificador revisa cada dato médico antes de que el texto salga."
+  },
+  {
+   "t": "Blog a la vista",
+   "p": "Las guías viven en /blog (español) y /guides (inglés), fáciles de encontrar para la paciente y para Google."
+  },
+  {
+   "t": "Landing de criolipólisis",
+   "p": "Página propia con una prueba corta de «¿eres candidata?» antes de pedir valoración."
+  },
+  {
+   "t": "Search Console e IndexNow",
+   "p": "Medición de las búsquedas en Google y aviso a Bing cada vez que sale una página nueva."
+  }
+ ],
+ "guias": [
+  "seo-para-clinicas",
+  "cuanto-tarda-el-seo",
+  "search-console-para-principiantes"
+ ],
+ "faq": [
+  {
+   "q": "¿Ya hay resultados?",
+   "a": "Todavía son tempranos. La web está en vivo desde el 24 de septiembre de 2026 y el SEO tarda meses en madurar. Por eso no publicamos cifras aún: cuando Search Console muestre datos que digan algo, actualizamos este caso."
+  },
+  {
+   "q": "¿Por qué en dos idiomas?",
+   "a": "Porque noon recibe pacientes que viven en Colombia y pacientes que viajan desde Estados Unidos. Cada grupo busca con sus palabras. Una guía en inglés sobre cuántos días quedarse en Colombia no repite la versión en español: le habla a otra persona."
+  },
+  {
+   "q": "¿Sirve para una clínica que no recibe pacientes del exterior?",
+   "a": "Sí. Lo bilingüe es lo particular de noon. El resto aplica igual a una clínica que solo atiende en su ciudad: una página por procedimiento, guías diarias revisadas y medición en Search Console."
+  },
+  {
+   "q": "¿La clínica tiene que escribir algo?",
+   "a": "No escribe los artículos. Aporta lo que sabe: sus procedimientos, su forma de hablar y las preguntas que más le hacen. Con eso los agentes trabajan y publican cada día."
+  }
+ ],
+ "fuentes": [
+  {
+   "t": "noon Clinic · Sitio web",
+   "u": "https://noon.clinic/"
+  },
+  {
+   "t": "noon Clinic · Blog en español",
+   "u": "https://noon.clinic/blog"
+  },
+  {
+   "t": "noon Clinic · Guides (en inglés)",
+   "u": "https://noon.clinic/guides"
+  }
+ ]
+}

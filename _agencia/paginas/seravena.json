@@ -1,8 +1,14 @@
 {
  "tipo": "caso",
  "fecha": "2026-10-02",
- "modificado": "2026-10-02",
+ "modificado": "2026-10-19",
  "corto": "Clínica Seravena",
+ "cliente": {
+  "nombre": "Clínica Seravena",
+  "url": "https://www.clinicaseravena.com/"
+ },
+ "tarjeta_k": "Caso real · Medellín",
+ "tarjeta_t": "Clínica Seravena: un blog que publica solo cada mañana desde julio de 2026, con cada clic a WhatsApp medido.",
  "titulo": "Caso Clínica Seravena: SEO con agentes de IA en Medellín",
  "meta": "Una clínica de lipedema y várices en Medellín publica un artículo al día con agentes de IA desde julio de 2026. Qué se montó, qué se mide y qué aprendimos.",
  "kicker": "Caso real",

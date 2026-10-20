@@ -1,7 +1,7 @@
 # Hechos verificados de Visibla (lo ÚNICO que se puede afirmar sobre Visibla y sus clientes)
 
 > Si un dato sobre Visibla o un cliente no está aquí, NO se escribe. Laura actualiza este archivo; los agentes solo lo leen.
-> Última revisión: 2-oct-2026.
+> Última revisión: 19-oct-2026 (casos noon Clinic y The Skin Haus agregados con datos aprobados por Laura).
 
 ## Visibla
 - Agencia de SEO con agentes de IA para clínicas, en Colombia. Marca: Visibla. Web: https://posicion-seo.com
@@ -18,6 +18,21 @@
 - Alrededor de 55 contactos por WhatsApp al mes medidos entre la web y los anuncios de Google (septiembre 2026: 57). NO atribuir esos contactos solo al SEO.
 - Se le hizo foco local (Medellín) en todos los artículos y páginas de servicio por ciudad (ej. várices Medellín, escleroterapia Medellín).
 - Mapa de calor (Microsoft Clarity) instalado para ver cómo navegan los pacientes.
+
+## Caso noon Clinic (Medellín) — se puede nombrar
+- Clínica de cirugía plástica y medicina estética en Medellín, con valoraciones también en Bogotá y Pereira. Web: https://noon.clinic (se escribe "noon Clinic", noon en minúscula).
+- Web completa hecha por el equipo, en vivo desde el 24 de septiembre de 2026: todas las cirugías y los tratamientos de medicina estética, SIN precios, y página de especialistas.
+- Agencia SEO bilingüe (español e inglés) con artículos diarios para pacientes en Colombia y en Estados Unidos: más de 30 guías publicadas a octubre de 2026. Blog visible en /blog (español) y /guides (inglés).
+- Landing de criolipólisis con prueba "¿eres candidata?". Search Console conectado y aviso a Bing con IndexNow.
+- Resultados: todavía tempranos. NO dar números.
+- Página del caso: https://posicion-seo.com/casos/noon/
+
+## Caso The Skin Haus (Pereira) — se puede nombrar
+- Clínica de medicina estética (y vascular) en la Torre Médica Oval de Pereira. Web: https://theskinhaus.com.co (OJO: "Haus", no "House").
+- Web con diseño fluido según su manual de marca, en vivo desde el 28 de septiembre de 2026.
+- Estrategia SEO solo de medicina estética en Pereira, arrancó el 19 de octubre de 2026: páginas de tratamiento con las palabras que usa la gente ("bótox", "dermapen"); 5 páginas nuevas por búsqueda (relleno de labios, ojeras, armonización facial, hiperhidrosis, cicatrices de acné); blog con agencia diaria, Policía humanizador y verificador médico; Search Console, IndexNow y datos estructurados.
+- Resultados: en curso (arrancó el 19-oct-2026). NO dar números.
+- Página del caso: https://posicion-seo.com/casos/skin-haus/
 
 ## Otras clínicas con web hecha por el equipo (se pueden mencionar como "clínicas con las que trabajamos" SIN dar resultados)
 - (vacío por ahora — Laura decide cuáles se nombran)

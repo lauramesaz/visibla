@@ -14,6 +14,12 @@ Campos del JSON:
   guias       [slugs del blog] relacionadas (solo las que existan)
   faq         [{"q","a"}]     fuentes [{"t","u"}]
   fecha, modificado
+Solo casos (opcionales):
+  corto       nombre corto (pie de página y tarjetas)
+  cliente     {"nombre","url"} la clínica del caso (va en el schema Article como "about")
+  tarjeta_k   etiqueta de la tarjeta en "Otros casos" (ej. "Caso real · Medellín")
+  tarjeta_t   frase de la tarjeta en "Otros casos"
+Cada caso muestra solo una sección "Otros casos" que enlaza a todos los demás casos.
 """
 import json, sys
 from datetime import date
@@ -43,8 +49,8 @@ def cargar(raiz):
     return out
 
 
-def render(pg, arts, h):
-    """h = módulo build (para reutilizar cabeza, NAV, FOOTER, JS, e, wa, ld, tarjeta)."""
+def render(pg, arts, h, pags=()):
+    """h = módulo build (para reutilizar cabeza, NAV, FOOTER, JS, e, wa, ld, tarjeta); pags = todas las páginas (para "Otros casos")."""
     e, wa = h.e, h.wa
     url = h.DOMINIO + pg["ruta"]
     porslug = {a["slug"]: a for a in arts}
@@ -59,9 +65,12 @@ def render(pg, arts, h):
             {"@type": "ListItem", "position": 2, "name": pg["h1"], "item": url}]},
     ]
     if pg["tipo"] == "caso":
-        esquemas.append({"@context": "https://schema.org", "@type": "Article", "headline": pg["h1"], "description": pg["meta"],
-                         "datePublished": pg["fecha"], "dateModified": pg["modificado"], "inLanguage": "es-CO",
-                         "author": {"@type": "Organization", "name": "Visibla"}, "mainEntityOfPage": url})
+        art = {"@context": "https://schema.org", "@type": "Article", "headline": pg["h1"], "description": pg["meta"],
+               "datePublished": pg["fecha"], "dateModified": pg["modificado"], "inLanguage": "es-CO",
+               "author": {"@type": "Organization", "name": "Visibla"}, "mainEntityOfPage": url}
+        if pg.get("cliente"):
+            art["about"] = {"@type": "MedicalClinic", "name": pg["cliente"]["nombre"], "url": pg["cliente"]["url"]}
+        esquemas.append(art)
     else:
         srv = {"@context": "https://schema.org", "@type": "Service", "name": pg["h1"], "description": pg["meta"],
                "serviceType": "Posicionamiento SEO para clínicas", "url": url,
@@ -89,6 +98,13 @@ def render(pg, arts, h):
   <h3>Clínica Seravena: un blog que publica solo cada mañana desde julio de 2026.</h3>
   <div class="lp-stats"><div><b>4,9</b><span>en Google</span></div><div><b>+65</b><span>artículos publicados</span></div><div><b>~55</b><span>contactos por WhatsApp al mes entre web y anuncios</span></div></div>
   <span class="lp-more">Ver el caso completo →</span></a></section>"""
+    otros = [p for p in pags if p["tipo"] == "caso" and p["slug"] != pg["slug"]] if pg["tipo"] == "caso" else []
+    sec_otros = ""
+    if otros:
+        sec_otros = '<section class="lp-sec wrap"><div class="mono lp-k">Otros casos</div><div class="lp-grid2">' + "".join(
+            f'<a class="lp-caso grain" href="{p["ruta"]}"><div class="mono">{e(p.get("tarjeta_k") or "Caso real")}</div>'
+            f'<h3 style="font-size:clamp(21px,2.4vw,27px)">{e(p.get("tarjeta_t") or p["sub"])}</h3>'
+            f'<span class="lp-more">Ver el caso {e(p.get("corto") or p["h1"])} →</span></a>' for p in otros) + "</div></section>"
     sec_guias = ""
     if guias:
         sec_guias = '<section class="rel wrap"><div class="mono">Guías relacionadas</div><div class="grid">' + "".join(h.tarjeta(a) for a in guias) + "</div></section>"
@@ -120,7 +136,7 @@ def render(pg, arts, h):
 </article></main>
 {sec_incluye}
 <section class="lp-sec wrap"><div class="mono lp-k">Cómo trabajamos</div><div class="lp-grid3">{pasos}</div></section>
-{sec_caso}
+{sec_caso}{sec_otros}
 {faq_html}
 <div class="art" style="padding-top:0">{h.cta_box({'titulo': pg['h1']}, "Hagamos visible tu clínica.", "Una conversación corta por WhatsApp: revisamos tu web, tu ficha de Google y tus reseñas, y te decimos por dónde empezar.", "Escribir por WhatsApp").replace(h.wa("Hola Visibla, leí la guía «" + pg['h1'] + "» y quiero mi diagnóstico SEO gratis"), link_wa)}</div>
 {fuentes_html}
@@ -137,5 +153,5 @@ def generar(raiz, arts, h):
     for pg in pags:
         d = raiz / pg["ruta"].strip("/")
         d.mkdir(parents=True, exist_ok=True)
-        (d / "index.html").write_text(render(pg, arts, h), encoding="utf-8")
+        (d / "index.html").write_text(render(pg, arts, h, pags), encoding="utf-8")
     return pags
