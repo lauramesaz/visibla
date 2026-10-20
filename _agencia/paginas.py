@@ -19,7 +19,10 @@ Solo casos (opcionales):
   cliente     {"nombre","url"} la clínica del caso (va en el schema Article como "about")
   tarjeta_k   etiqueta de la tarjeta en "Otros casos" (ej. "Caso real · Medellín")
   tarjeta_t   frase de la tarjeta en "Otros casos"
+  destacado   {"k","h","stats":[["cifra","texto"], ...]} tarjeta grande que muestran las páginas de venta
 Cada caso muestra solo una sección "Otros casos" que enlaza a todos los demás casos.
+Solo páginas de venta (opcional):
+  caso        slug del caso que se destaca en la tarjeta (por defecto "seravena")
 """
 import json, sys
 from datetime import date
@@ -93,10 +96,19 @@ def render(pg, arts, h, pags=()):
     sec_incluye = f"""<section class="lp-sec wrap"><div class="mono lp-k">Qué hacemos por tu clínica</div>
   <h2 class="lp-h2">Un equipo de agentes trabajando por ti cada mañana.</h2>
   <div class="lp-grid2">{incluye}</div></section>""" if incluye else ""
-    sec_caso = "" if pg["tipo"] == "caso" else f"""<section class="lp-sec wrap"><a class="lp-caso grain" href="/casos/seravena/">
-  <div class="mono">Caso real · Medellín</div>
-  <h3>Clínica Seravena: un blog que publica solo cada mañana desde julio de 2026.</h3>
-  <div class="lp-stats"><div><b>4,9</b><span>en Google</span></div><div><b>+65</b><span>artículos publicados</span></div><div><b>~55</b><span>contactos por WhatsApp al mes entre web y anuncios</span></div></div>
+    sec_caso = ""
+    if pg["tipo"] != "caso":
+        slug_caso = pg.get("caso", "seravena")
+        caso = next((p for p in pags if p["tipo"] == "caso" and p["slug"] == slug_caso and p.get("destacado")), None)
+        if pags and not caso:
+            sys.exit(f"ERROR {pg['slug']}.json: el caso «{slug_caso}» no existe o no tiene «destacado»")
+        if caso:
+            dst = caso["destacado"]
+            stats = "".join(f"<div><b>{e(b)}</b><span>{e(t)}</span></div>" for b, t in dst.get("stats", []))
+            sec_caso = f"""<section class="lp-sec wrap"><a class="lp-caso grain" href="{caso['ruta']}">
+  <div class="mono">{e(dst['k'])}</div>
+  <h3>{e(dst['h'])}</h3>
+  <div class="lp-stats">{stats}</div>
   <span class="lp-more">Ver el caso completo →</span></a></section>"""
     otros = [p for p in pags if p["tipo"] == "caso" and p["slug"] != pg["slug"]] if pg["tipo"] == "caso" else []
     sec_otros = ""
