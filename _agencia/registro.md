@@ -2,6 +2,7 @@
 
 | Fecha | Qué se hizo | Slug | Nota SEO | Humanidad | Estado |
 |---|---|---|---|---|---|
+| 2026-10-21 | Guía nueva: Página de servicio de tu clínica: guía para que convierta | pagina-servicio-clinica | 94 | 10/10 | publicado |
 | 2026-10-20 | Guía nueva: Habeas data en la web de tu clínica: qué exige la ley | habeas-data-clinica | 93 | 10/10 | publicado |
 | 2026-10-19 | Guía nueva: Velocidad web en el celular: por qué pierdes pacientes | velocidad-web-celular | 92 | 10/10 | publicado |
 | 2026-10-18 | Guía nueva: SEO para clínicas en Cartagena: ficha, reseñas y contenido | seo-clinicas-cartagena | 93 | 9/10 | publicado |
