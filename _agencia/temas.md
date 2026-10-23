@@ -47,7 +47,7 @@
 | 24 | SEO para clínicas vasculares y de várices (caso Seravena) | seo clínica vascular | SEO por especialidad | publicado 2026-10-06 |
 | 25 | Habeas data y formularios de la web de tu clínica | habeas data clínica | Normas y ética | publicado 2026-10-20 |
 | 26 | Páginas de servicio que convierten: cómo escribir la página de cada tratamiento | página de servicio clínica | Contenido y blog | publicado 2026-10-21 |
-| 27 | "Cerca de mí": cómo ganar las búsquedas de tu barrio | búsquedas cerca de mí | SEO local | pendiente |
+| 27 | "Cerca de mí": cómo ganar las búsquedas de tu barrio | búsquedas cerca de mí | SEO local | publicado 2026-10-23 |
 | 28 | SEO para fisioterapeutas y centros de rehabilitación | seo fisioterapia | SEO por especialidad | publicado 2026-10-13 |
 | 29 | ★ SEO para clínicas en Pereira y el Eje Cafetero | seo clínicas pereira | SEO por ciudad | descartado (lo cubre la página de venta /agencia-seo-clinicas-pereira/; enlazarla) |
 | 30 | Cuánto vale un paciente nuevo: la cuenta que todo dueño de clínica debe hacer | valor de un paciente | Medición y resultados | pendiente |

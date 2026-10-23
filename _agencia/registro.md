@@ -2,6 +2,7 @@
 
 | Fecha | Qué se hizo | Slug | Nota SEO | Humanidad | Estado |
 |---|---|---|---|---|---|
+| 2026-10-23 | Guía nueva: Búsquedas cerca de mí: cómo ganarlas con tu clínica | cerca-de-mi-clinica | 92 | 10/10 | publicado |
 | 2026-10-22 | Guía nueva: SEO para nutricionistas y clínicas de obesidad | seo-nutricionista | 95 | 10/10 | publicado |
 | 2026-10-21 | Guía nueva: Página de servicio de tu clínica: guía para que convierta | pagina-servicio-clinica | 94 | 10/10 | publicado |
 | 2026-10-20 | Guía nueva: Habeas data en la web de tu clínica: qué exige la ley | habeas-data-clinica | 93 | 10/10 | publicado |
