@@ -53,7 +53,7 @@
 | 30 | Cuánto vale un paciente nuevo: la cuenta que todo dueño de clínica debe hacer | valor de un paciente | Medición y resultados | pendiente |
 | 31 | Doctoralia, directorios y menciones: cuáles sí ayudan al SEO | directorios médicos seo | SEO local | pendiente |
 | 32 | SEO para nutricionistas y clínicas de obesidad | seo nutricionista | SEO por especialidad | publicado 2026-10-22 |
-| 33 | ★ Cómo elegir una agencia SEO para tu clínica: 10 preguntas antes de firmar | cómo elegir agencia seo | Medición y resultados | pendiente |
+| 33 | ★ Cómo elegir una agencia SEO para tu clínica: 10 preguntas antes de firmar | cómo elegir agencia seo | Medición y resultados | publicado 2026-10-24 |
 | 34 | ★ SEO para clínicas en Bucaramanga | seo clínicas bucaramanga | SEO por ciudad | publicado 2026-10-09 |
 | 35 | Fotos de antes y después en la web: lo que permite la norma y lo que funciona | fotos antes y después clínica | Normas y ética | pendiente |
 | 36 | Errores de SEO más comunes en webs de clínicas | errores seo clínicas | SEO local | pendiente |
