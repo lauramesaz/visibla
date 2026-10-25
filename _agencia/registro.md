@@ -2,6 +2,7 @@
 
 | Fecha | Qué se hizo | Slug | Nota SEO | Humanidad | Estado |
 |---|---|---|---|---|---|
+| 2026-10-25 | Guía nueva: Directorios médicos y SEO: cuáles ayudan a tu clínica | directorios-medicos-seo | 95 | 10/10 | publicado |
 | 2026-10-24 | Guía nueva: Cómo elegir una agencia SEO para tu clínica: 10 preguntas | como-elegir-agencia-seo-clinica | 97 | 10/10 | publicado |
 | 2026-10-23 | Guía nueva: Búsquedas cerca de mí: cómo ganarlas con tu clínica | cerca-de-mi-clinica | 92 | 10/10 | publicado |
 | 2026-10-22 | Guía nueva: SEO para nutricionistas y clínicas de obesidad | seo-nutricionista | 95 | 10/10 | publicado |

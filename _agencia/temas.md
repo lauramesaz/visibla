@@ -51,7 +51,7 @@
 | 28 | SEO para fisioterapeutas y centros de rehabilitación | seo fisioterapia | SEO por especialidad | publicado 2026-10-13 |
 | 29 | ★ SEO para clínicas en Pereira y el Eje Cafetero | seo clínicas pereira | SEO por ciudad | descartado (lo cubre la página de venta /agencia-seo-clinicas-pereira/; enlazarla) |
 | 30 | Cuánto vale un paciente nuevo: la cuenta que todo dueño de clínica debe hacer | valor de un paciente | Medición y resultados | pendiente |
-| 31 | Doctoralia, directorios y menciones: cuáles sí ayudan al SEO | directorios médicos seo | SEO local | pendiente |
+| 31 | Doctoralia, directorios y menciones: cuáles sí ayudan al SEO | directorios médicos seo | SEO local | publicado 2026-10-25 |
 | 32 | SEO para nutricionistas y clínicas de obesidad | seo nutricionista | SEO por especialidad | publicado 2026-10-22 |
 | 33 | ★ Cómo elegir una agencia SEO para tu clínica: 10 preguntas antes de firmar | cómo elegir agencia seo | Medición y resultados | publicado 2026-10-24 |
 | 34 | ★ SEO para clínicas en Bucaramanga | seo clínicas bucaramanga | SEO por ciudad | publicado 2026-10-09 |
