@@ -61,6 +61,7 @@ def render(pg, arts, h, pags=()):
     faq = pg.get("faq") or []
     fuentes = pg.get("fuentes") or []
     link_wa = wa(pg["wa"])
+    img = h.portada(pg["ruta"].strip("/") + "/portada.jpg", pg["h1"], pg.get("kicker") or ("Caso real" if pg["tipo"] == "caso" else "Visibla"))
 
     esquemas = [
         {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
@@ -70,15 +71,15 @@ def render(pg, arts, h, pags=()):
     if pg["tipo"] == "caso":
         art = {"@context": "https://schema.org", "@type": "Article", "headline": pg["h1"], "description": pg["meta"],
                "datePublished": pg["fecha"], "dateModified": pg["modificado"], "inLanguage": "es-CO",
-               "author": {"@type": "Organization", "name": "Visibla"}, "mainEntityOfPage": url}
+               "author": h.ORG, "publisher": h.ORG, "mainEntityOfPage": url,
+               "image": {"@type": "ImageObject", "url": img, "width": 1200, "height": 630}}
         if pg.get("cliente"):
             art["about"] = {"@type": "MedicalClinic", "name": pg["cliente"]["nombre"], "url": pg["cliente"]["url"]}
         esquemas.append(art)
     else:
         srv = {"@context": "https://schema.org", "@type": "Service", "name": pg["h1"], "description": pg["meta"],
                "serviceType": "Posicionamiento SEO para clínicas", "url": url,
-               "provider": {"@type": "Organization", "name": "Visibla", "url": h.DOMINIO + "/",
-                            "telephone": "+57 320 363 8223"}}
+               "provider": dict(h.ORG, telephone="+57 320 363 8223"), "image": img}
         srv["areaServed"] = {"@type": "City", "name": pg["ciudad"]} if pg.get("ciudad") else {"@type": "Country", "name": "Colombia"}
         esquemas.append(srv)
     if faq:
@@ -129,7 +130,7 @@ def render(pg, arts, h, pags=()):
         fuentes_html = '<section class="fuentes art" style="padding-top:0"><div class="mono">Fuentes</div><ol>' + "".join(
             f'<li><a href="{e(f["u"])}" target="_blank" rel="noopener nofollow">{e(f["t"])}</a></li>' for f in fuentes) + "</ol></section>"
 
-    return h.cabeza(pg["titulo"] + " | Visibla", pg["meta"], url, extra) + h.NAV.format(wa=link_wa) + f"""
+    return h.cabeza(pg["titulo"] + " | Visibla", pg["meta"], url, extra, img, "website") + h.NAV.format(wa=link_wa) + f"""
 <header class="art-head grain lp-head">
   <div class="blob b1"></div><div class="blob b2"></div><div class="frost"></div>
   <div class="art-head-in">

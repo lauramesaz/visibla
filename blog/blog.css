@@ -158,3 +158,12 @@ footer a{text-decoration:underline;text-underline-offset:3px}
 .lp-more{display:inline-block;margin-top:26px;font-size:14px;border-bottom:1px solid rgba(255,255,255,.5)}
 @media (max-width:900px){.lp-grid3,.lp-grid2{grid-template-columns:1fr}}
 @media (max-width:600px){.lp-sec{padding-top:50px}.lp-caso{padding:30px 22px}.lp-stats{gap:22px}.foot-links{gap:28px}}
+
+/* FIN DE GUÍA: siguiente paso y autora */
+.siguiente{margin-top:36px;font-size:16px;line-height:1.65;color:var(--ink-2)}
+.siguiente a,.autora a{color:var(--steel-deep);text-decoration:underline;text-underline-offset:3px}
+.autora{margin-top:28px;border:1px solid var(--line);border-radius:var(--r);padding:20px 24px;background:var(--mist);font-size:15px;line-height:1.6;color:var(--ink-2)}
+.autora .mono{color:var(--steel-deep);margin-bottom:6px}
+.autora strong{color:var(--ink);font-weight:500}
+/* PÁGINAS INSTITUCIONALES */
+.inst .prosa h2{font-size:26px}

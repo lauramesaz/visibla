@@ -24,7 +24,46 @@ from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parent.parent
 FUENTES = RAIZ / "_agencia" / "articulos"
+INSTITUCIONAL = RAIZ / "_agencia" / "institucional"
 DOMINIO = "https://posicion-seo.com"
+ORG_ID = DOMINIO + "/#org"
+# La organización tal como la ve Google en cada página (misma @id que el inicio)
+ORG = {"@type": "Organization", "@id": ORG_ID, "name": "Visibla", "alternateName": "posicion-seo.com",
+       "url": DOMINIO + "/", "logo": {"@type": "ImageObject", "url": DOMINIO + "/og.png", "width": 1200, "height": 630}}
+
+
+def cargar_autora():
+    """Si existe _agencia/autora.json, las guías van firmadas por esa persona (si no, por el equipo)."""
+    p = RAIZ / "_agencia" / "autora.json"
+    return json.loads(p.read_text(encoding="utf-8")) if p.exists() else None
+
+
+AUTORA = cargar_autora()
+
+# Página de venta a la que lleva cada guía al final (si existe); el resto lleva al inicio
+VENTA = {
+    "seo-clinicas-esteticas": "/agencia-seo-clinicas-esteticas/",
+    "fotos-antes-despues-clinica": "/seo-cirujanos-plasticos/",
+    "publicidad-servicios-salud-colombia": "/seo-cirujanos-plasticos/",
+    "directorios-medicos-seo": "/seo-medicos/",
+    "seo-fisioterapia": "/seo-traumatologos/",
+    "cuanto-tarda-el-seo": "/plan-seo/",
+    "seo-vs-google-ads-clinicas": "/plan-seo/",
+    "valor-de-un-paciente": "/plan-seo/",
+    "como-elegir-agencia-seo-clinica": "/plan-seo/",
+}
+PILAR = "seo-para-clinicas"
+
+
+def portada(ruta_rel, titulo, kicker):
+    """URL de la portada propia (1200×630), o la genérica og.png si no se pudo crear."""
+    try:
+        import portadas
+        if portadas.asegurar(RAIZ, ruta_rel, titulo, kicker):
+            return f"{DOMINIO}/{ruta_rel}"
+    except Exception as err:
+        print(f"aviso: sin portada para {ruta_rel} ({err})")
+    return f"{DOMINIO}/og.png"
 WA = "573203638223"
 MESES = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto",
          "septiembre", "octubre", "noviembre", "diciembre"]
@@ -101,9 +140,10 @@ addEventListener('scroll',()=>{const h=document.documentElement;bar.style.transf
 </script>"""
 
 
-def cabeza(titulo, meta, url, extra=""):
+def cabeza(titulo, meta, url, extra="", imagen=None, tipo="article"):
     if titulo.endswith(" | Visibla") and len(titulo) > 60:
         titulo = titulo[:-len(" | Visibla")]  # Google corta los títulos de más de ~60 caracteres
+    imagen = imagen or f"{DOMINIO}/og.png"
     return f"""<!DOCTYPE html>
 <html lang="es-CO">
 <head>
@@ -112,13 +152,16 @@ def cabeza(titulo, meta, url, extra=""):
 <title>{e(titulo)}</title>
 <meta name="description" content="{e(meta)}">
 <link rel="canonical" href="{url}">
-<meta property="og:type" content="article">
+<meta property="og:type" content="{tipo}">
 <meta property="og:title" content="{e(titulo)}">
 <meta property="og:description" content="{e(meta)}">
 <meta property="og:url" content="{url}">
 <meta property="og:site_name" content="Visibla">
 <meta property="og:locale" content="es_CO">
-<meta property="og:image" content="{DOMINIO}/og.png">
+<meta property="og:image" content="{imagen}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{e(titulo)}">
 <meta name="twitter:card" content="summary_large_image">
 {FONTS}
 <link rel="stylesheet" href="/blog/blog.css">
@@ -169,23 +212,54 @@ def toc(cuerpo):
     return cuerpo, (f'<div class="toc" role="navigation" aria-label="En esta guía"><div class="mono">En esta guía</div><ol>{lista}</ol></div>' if len(items) >= 3 else "")
 
 
+RUTAS_VENTA = {}  # ruta -> nombre corto de las páginas de venta que existen (lo llena main)
+
+
+def siguiente_paso(a):
+    """Enlace al final de cada guía hacia la página que vende ese servicio (o al inicio)."""
+    ruta = VENTA.get(a["slug"])
+    partes = []
+    if ruta and ruta in RUTAS_VENTA and ruta != "/plan-seo/":
+        partes.append(f'nuestro servicio de <a href="{ruta}">{e(RUTAS_VENTA[ruta])}</a>')
+    partes.append('cómo trabajamos como <a href="/">agencia SEO para clínicas</a>')
+    partes.append('el <a href="/plan-seo/">plan SEO de 90 días con precio fijo</a>')
+    return ('<p class="siguiente">¿Prefieres que lo hagamos por ti? Mira ' + ", ".join(partes[:-1]) +
+            " o " + partes[-1] + ".</p>")
+
+
+def caja_autora():
+    if not AUTORA:
+        return ""
+    return f"""<aside class="autora">
+  <div class="mono">Sobre la autora</div>
+  <p><a href="/quienes-somos/"><strong>{e(AUTORA['nombre'])}</strong></a> · {e(AUTORA['cargo'])}. {e(AUTORA['bio_corta'])}</p>
+</aside>"""
+
+
 def pagina_articulo(a, todos):
     url = f"{DOMINIO}/blog/{a['slug']}/"
     cuerpo, indice = toc(a["cuerpo"])
     cuerpo = insertar_cta(cuerpo, a)
     faq = a.get("faq") or []
     fuentes = a.get("fuentes") or []
-    rel = [b for b in todos if b["slug"] != a["slug"] and b["categoria"] == a["categoria"]]
+    pilar = [b for b in todos if b["slug"] == PILAR and a["slug"] != PILAR]
+    rel = pilar + [b for b in todos if b["slug"] not in (a["slug"], PILAR) and b["categoria"] == a["categoria"]]
     rel += [b for b in todos if b["slug"] != a["slug"] and b not in rel]
     rel = rel[:3]
+    img = portada(f"blog/{a['slug']}/portada.jpg", a["titulo"], a["categoria"])
+    if AUTORA:
+        autor = {"@type": "Person", "@id": DOMINIO + "/quienes-somos/#" + AUTORA["id"], "name": AUTORA["nombre"],
+                 "url": DOMINIO + "/quienes-somos/", "jobTitle": AUTORA["cargo"], "worksFor": {"@id": ORG_ID}}
+        firma = f'<a href="/quienes-somos/">{e(AUTORA["nombre"])}</a>'
+    else:
+        autor, firma = {"@type": "Organization", "name": "Equipo Visibla", "url": DOMINIO + "/"}, "Equipo Visibla"
 
     esquemas = [
         {"@context": "https://schema.org", "@type": "BlogPosting", "headline": a["titulo"],
          "description": a["meta"], "datePublished": a["fecha"], "dateModified": a["modificado"],
          "inLanguage": "es-CO", "mainEntityOfPage": url,
-         "author": {"@type": "Organization", "name": "Equipo Visibla", "url": DOMINIO + "/"},
-         "publisher": {"@type": "Organization", "name": "Visibla", "url": DOMINIO + "/", "logo": {"@type": "ImageObject", "url": DOMINIO + "/og.png"}},
-         "image": DOMINIO + "/og.png",
+         "author": autor, "publisher": ORG,
+         "image": {"@type": "ImageObject", "url": img, "width": 1200, "height": 630},
          "about": a.get("keyword", a["categoria"])},
         {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": "Inicio", "item": DOMINIO + "/"},
@@ -212,7 +286,7 @@ def pagina_articulo(a, todos):
     if rel:
         rel_html = '<section class="rel wrap"><div class="mono">Sigue leyendo</div><div class="grid">' + "".join(tarjeta(b) for b in rel) + "</div></section>"
 
-    return cabeza(a["titulo"] + " | Visibla", a["meta"], url, extra) + NAV.format(
+    return cabeza(a["titulo"] + " | Visibla", a["meta"], url, extra, img) + NAV.format(
         wa=wa("Hola Visibla, quiero agendar una llamada")) + f"""
 <header class="art-head grain">
   <div class="blob b1"></div><div class="blob b2"></div><div class="frost"></div>
@@ -220,7 +294,7 @@ def pagina_articulo(a, todos):
     <div class="crumbs mono"><a href="/">Inicio</a> / <a href="/blog/">Guías</a> / {e(a['categoria'])}</div>
     <h1>{e(a['titulo'])}</h1>
     <p class="lead">{e(a['resumen'])}</p>
-    <div class="meta mono">Equipo Visibla · {fecha_larga(a['fecha'])}{act} · {a['lectura']} min de lectura</div>
+    <div class="meta mono">{firma} · {fecha_larga(a['fecha'])}{act} · {a['lectura']} min de lectura</div>
   </div>
 </header>
 <main class="art">
@@ -229,6 +303,8 @@ def pagina_articulo(a, todos):
 {cuerpo}
   </article>
   {faq_html}
+  {caja_autora()}
+  {siguiente_paso(a)}
   {cta_box(a, "Hagamos visible tu clínica.", "Una conversación corta por WhatsApp: revisamos tu web, tu ficha de Google y tus reseñas, y te decimos por dónde empezar.", "Escribir por WhatsApp")}
   {fuentes_html}
 </main>
@@ -307,7 +383,76 @@ def bloque_home(arts):
 
 
 # Landing /plan-seo/ (HTML a mano, con precios): ruta, texto del enlace, fecha de su última edición (cambiarla al editarla)
-PLAN_SEO = ("/plan-seo/", "Plan SEO de 90 días", "2026-10-19")
+PLAN_SEO = ("/plan-seo/", "Plan SEO de 90 días", "2026-10-27")
+
+
+def cargar_institucional():
+    """Páginas fijas de la marca (quiénes somos, contacto, privacidad): _agencia/institucional/<slug>.html
+    con cabecera JSON {titulo, meta, h1, sub, corto, tipo (AboutPage|ContactPage|WebPage), orden, fecha, modificado}."""
+    out = []
+    for p in sorted(INSTITUCIONAL.glob("*.html")) if INSTITUCIONAL.exists() else []:
+        m = re.match(r"\s*<!--(.*?)-->(.*)", p.read_text(encoding="utf-8"), re.S)
+        if not m:
+            sys.exit(f"ERROR institucional/{p.name}: falta la cabecera JSON")
+        d = json.loads(m.group(1))
+        faltan = [c for c in ("titulo", "meta", "h1", "corto", "fecha") if not d.get(c)]
+        if faltan:
+            sys.exit(f"ERROR institucional/{p.name}: faltan campos {faltan}")
+        d.update(slug=p.stem, ruta=f"/{p.stem}/", cuerpo=m.group(2).strip())
+        d.setdefault("modificado", d["fecha"])
+        out.append(d)
+    return sorted(out, key=lambda d: d.get("orden", 9))
+
+
+def pagina_institucional(d):
+    url = DOMINIO + d["ruta"]
+    img = portada(f"{d['slug']}/portada.jpg", d["h1"], "Visibla")
+    pagina = {"@context": "https://schema.org", "@type": d.get("tipo", "WebPage"), "name": d["h1"], "url": url,
+              "description": d["meta"], "inLanguage": "es-CO", "dateModified": d["modificado"],
+              "isPartOf": {"@type": "WebSite", "@id": DOMINIO + "/#web"}, "about": {"@id": ORG_ID}}
+    esquemas = [pagina, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Inicio", "item": DOMINIO + "/"},
+        {"@type": "ListItem", "position": 2, "name": d["corto"], "item": url}]}]
+    if d.get("tipo") == "AboutPage":
+        org = dict(ORG, **{"@context": "https://schema.org", "description": d["meta"],
+                          "areaServed": {"@type": "Country", "name": "Colombia"},
+                          "telephone": "+57 320 363 8223"})
+        if AUTORA:
+            persona = {"@type": "Person", "@id": DOMINIO + "/quienes-somos/#" + AUTORA["id"], "name": AUTORA["nombre"],
+                       "jobTitle": AUTORA["cargo"], "url": url, "worksFor": {"@id": ORG_ID},
+                       "knowsAbout": AUTORA.get("sabe_de", [])}
+            org["founder"] = persona
+            pagina["mainEntity"] = persona
+        esquemas.append(org)
+    if d.get("tipo") == "ContactPage":
+        pagina["mainEntity"] = {"@id": ORG_ID, "@type": "Organization", "name": "Visibla",
+                                "contactPoint": {"@type": "ContactPoint", "telephone": "+57 320 363 8223",
+                                                 "contactType": "sales", "availableLanguage": "es", "areaServed": "CO"}}
+    sub = f'<p class="lead">{e(d["sub"])}</p>' if d.get("sub") else ""
+    return cabeza(d["titulo"] + " | Visibla", d["meta"], url, "\n".join(ld(s) for s in esquemas), img, "website") + NAV.format(
+        wa=wa("Hola Visibla, quiero agendar una llamada")) + f"""
+<header class="art-head grain">
+  <div class="blob b1"></div><div class="blob b2"></div><div class="frost"></div>
+  <div class="art-head-in">
+    <div class="crumbs mono"><a href="/">Inicio</a> / {e(d['corto'])}</div>
+    <h1>{e(d['h1'])}</h1>
+    {sub}
+  </div>
+</header>
+<main class="art inst">
+  <article class="prosa">
+{d['cuerpo']}
+  </article>
+  {cta_box({'titulo': d['h1']}, "Hagamos visible tu clínica.", "Una conversación corta por WhatsApp: revisamos tu web, tu ficha de Google y tus reseñas, y te decimos por dónde empezar.", "Escribir por WhatsApp").replace(wa("Hola Visibla, leí la guía «" + d['h1'] + "» y quiero mi diagnóstico SEO gratis"), wa("Hola Visibla, quiero hablar con ustedes"))}
+</main>
+{FOOTER.format(anio=date.today().year)}
+{JS}
+</body>
+</html>
+"""
+
+
+INST = []  # páginas institucionales cargadas (las llena main)
 
 
 def enlaces_footer(pags):
@@ -320,19 +465,48 @@ def enlaces_footer(pags):
                 f'<a href="{p["ruta"]}">{e(p.get("corto") or p["h1"])}</a>' for p in items) + "</div>")
     # landing de venta hecha a mano (no sale de paginas/*.json)
     cols.append(f'<div><div class="mono">Precios</div><a href="{PLAN_SEO[0]}">{PLAN_SEO[1]}</a></div>')
+    if INST:
+        cols.append('<div><div class="mono">Visibla</div>' + "".join(
+            f'<a href="{d["ruta"]}">{e(d["corto"])}</a>' for d in INST) + '<a href="/blog/">Guías</a></div>')
     return f'<div class="wrap foot-links">{"".join(cols)}</div>' if cols else ""
 
 
+def sobre_visibla(pags):
+    """Bloque para llms.txt: quién es Visibla, sin dejar lugar a confusiones con marcas parecidas."""
+    casos = [p for p in pags if p["tipo"] == "caso" and p.get("cliente")]
+    lineas = [
+        "- Nombre: Visibla (con «a» al final). Su web es posicion-seo.com: el dominio no es el nombre de la marca.",
+        "- Qué es: agencia colombiana de SEO para clínicas y médicos (estética, cirugía plástica, vascular, dermatología, "
+        "odontología y más). Trabaja de forma remota con clínicas de toda Colombia.",
+        "- Cómo trabaja: un equipo de agentes de IA investiga lo que buscan los pacientes, escribe, edita, verifica lo médico "
+        "y publica cada mañana; además cuida la ficha de Google y las reseñas, y mide cuántas personas escriben por WhatsApp.",
+    ]
+    if AUTORA:
+        lineas.append(f"- Fundadora: {AUTORA['nombre']}, {AUTORA['cargo']}. {AUTORA['bio_corta']} ({DOMINIO}/quienes-somos/)")
+    if casos:
+        lineas.append("- Clínicas con caso publicado: " + "; ".join(
+            f"{p['cliente']['nombre']} ({p['cliente']['url']}, caso en {DOMINIO}{p['ruta']})" for p in casos) + ".")
+    lineas.append("- Contacto: WhatsApp +57 320 363 8223 (https://wa.me/573203638223).")
+    return "## Sobre Visibla\n\n" + "\n".join(lineas) + "\n\n"
+
+
 def main():
-    global FOOTER
+    global FOOTER, INST
     import paginas
     arts = cargar()
-    FOOTER = FOOTER.replace("{{links}}", enlaces_footer(paginas.cargar(RAIZ)))
+    INST = cargar_institucional()
+    previas = paginas.cargar(RAIZ)
+    RUTAS_VENTA.update({p["ruta"]: ("SEO para " + p["corto"].lower()) if p["tipo"] == "especialidad" and p.get("corto")
+                        else p["h1"].split(":")[0] for p in previas if p["tipo"] != "caso"})
+    FOOTER = FOOTER.replace("{{links}}", enlaces_footer(previas))
     for a in arts:
         d = RAIZ / "blog" / a["slug"]
         d.mkdir(parents=True, exist_ok=True)
         (d / "index.html").write_text(pagina_articulo(a, arts), encoding="utf-8")
     (RAIZ / "blog" / "index.html").write_text(pagina_listado(arts), encoding="utf-8")
+    for d in INST:
+        (RAIZ / d["slug"]).mkdir(parents=True, exist_ok=True)
+        (RAIZ / d["slug"] / "index.html").write_text(pagina_institucional(d), encoding="utf-8")
 
     home = RAIZ / "index.html"
     h = home.read_text(encoding="utf-8")
@@ -348,20 +522,24 @@ def main():
     hoy = date.today().isoformat()
     ult = max([a["modificado"] for a in arts] or [hoy])
     urls = [(f"{DOMINIO}/", ult), (f"{DOMINIO}/blog/", ult)] + [(f"{DOMINIO}/blog/{a['slug']}/", a["modificado"]) for a in arts] + \
-        [(DOMINIO + p["ruta"], p["modificado"]) for p in pags] + [(f"{DOMINIO}/diagnostico/", ult), (DOMINIO + PLAN_SEO[0], PLAN_SEO[2])]
+        [(DOMINIO + p["ruta"], p["modificado"]) for p in pags] + [(DOMINIO + d["ruta"], d["modificado"]) for d in INST] + \
+        [(f"{DOMINIO}/diagnostico/", ult), (DOMINIO + PLAN_SEO[0], PLAN_SEO[2])]
     (RAIZ / "sitemap.xml").write_text(
         '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
         "".join(f"  <url><loc>{u}</loc><lastmod>{m}</lastmod></url>\n" for u, m in urls) + "</urlset>\n", encoding="utf-8")
     (RAIZ / "robots.txt").write_text(f"User-agent: *\nAllow: /\n\nSitemap: {DOMINIO}/sitemap.xml\n", encoding="utf-8")
     (RAIZ / "llms.txt").write_text(
-        "# Visibla\n\n> Agencia de SEO con agentes de IA para clínicas en Colombia. Publica contenido diario revisado, "
-        "cuida la ficha de Google y las reseñas, y mide los contactos por WhatsApp. Contacto: WhatsApp +57 320 363 8223.\n\n"
-        f"- [Inicio]({DOMINIO}/)\n- [Guías de SEO para clínicas]({DOMINIO}/blog/)\n- [Diagnóstico SEO gratis]({DOMINIO}/diagnostico/)\n"
+        "# Visibla\n\n> Agencia de SEO con agentes de IA para clínicas en Colombia (web: posicion-seo.com). Publica contenido diario revisado, "
+        "cuida la ficha de Google y las reseñas, y mide los contactos por WhatsApp. Contacto: WhatsApp +57 320 363 8223.\n\n" +
+        sobre_visibla(pags) +
+        f"## Páginas principales\n\n- [Inicio: agencia SEO para clínicas]({DOMINIO}/)\n- [Guías de SEO para clínicas]({DOMINIO}/blog/)\n- [Diagnóstico SEO gratis]({DOMINIO}/diagnostico/)\n"
         f"- [Plan SEO de 90 días para clínicas, con precios]({DOMINIO}{PLAN_SEO[0]}): solo SEO desde $500.000 el primer mes y $300.000 los meses 2 y 3; "
-        "SEO + gestión de Google Ads desde $1.500.000 el primer mes y $900.000 los meses 2 y 3 (pesos colombianos; la inversión en anuncios va aparte).\n\n## Servicios y casos\n\n" +
+        "SEO + gestión de Google Ads desde $1.500.000 el primer mes y $900.000 los meses 2 y 3 (pesos colombianos; la inversión en anuncios va aparte).\n" +
+        "".join(f"- [{d['h1']}]({DOMINIO}{d['ruta']}): {d['meta']}\n" for d in INST) +
+        "\n## Servicios y casos\n\n" +
         "".join(f"- [{p['h1']}]({DOMINIO}{p['ruta']}): {p['meta']}\n" for p in pags) + "\n## Guías\n\n" +
         "".join(f"- [{a['titulo']}]({DOMINIO}/blog/{a['slug']}/): {a['resumen']}\n" for a in arts), encoding="utf-8")
-    print(f"OK · {len(arts)} artículos · {len(pags)} páginas · sitemap con {len(urls)} URLs")
+    print(f"OK · {len(arts)} artículos · {len(pags)} páginas · {len(INST)} institucionales · sitemap con {len(urls)} URLs")
 
 
 if __name__ == "__main__":

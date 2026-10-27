@@ -42,13 +42,13 @@
   },
   {
    "t": "Cada consulta medida",
-   "p": "Search Console, Microsoft Clarity y la conversión \"clic en WhatsApp\" en un panel: quién te encontró y quién te escribió."
+   "p": "Search Console, Microsoft Clarity y la conversión \"clic en WhatsApp\" en un panel: cuántas personas te encontraron y cuántas hicieron clic para escribirte."
   }
  ],
  "guias": [
-  "seo-para-clinicas",
-  "como-aparecer-en-google-maps-clinica",
-  "seo-clinicas-esteticas"
+  "seo-clinicas-esteticas",
+  "fotos-antes-despues-clinica",
+  "ymyl-salud"
  ],
  "faq": [
   {

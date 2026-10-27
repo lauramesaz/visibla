@@ -1,7 +1,7 @@
 # Hechos verificados de Visibla (lo ÚNICO que se puede afirmar sobre Visibla y sus clientes)
 
 > Si un dato sobre Visibla o un cliente no está aquí, NO se escribe. Laura actualiza este archivo; los agentes solo lo leen.
-> Última revisión: 19-oct-2026 (casos noon Clinic y The Skin Haus agregados con datos aprobados por Laura).
+> Última revisión: 27-oct-2026 (conteo de artículos de Seravena; firma "Web y SEO: Visibla" en el pie de las webs de Seravena, The Skin Haus, Medicina Segura y Aqua Beauty & Spa).
 
 ## Visibla
 - Agencia de SEO con agentes de IA para clínicas, en Colombia. Marca: Visibla. Web: https://posicion-seo.com
@@ -13,7 +13,7 @@
 
 ## Caso Clínica Seravena (Medellín) — se puede nombrar
 - Clínica de lipedema, venas (várices) y obesidad en Medellín. Web: https://www.clinicaseravena.com
-- Blog con agentes de IA publicando un artículo al día desde el 14 de julio de 2026; a 2 de octubre de 2026 lleva más de 65 artículos.
+- Blog con agentes de IA publicando un artículo al día desde el 14 de julio de 2026; a 2 de octubre de 2026 llevaba más de 65 artículos y a 27 de octubre de 2026 tiene 93 publicados (contados en su repositorio).
 - Calificación en Google: 4,9.
 - Alrededor de 55 contactos por WhatsApp al mes medidos entre la web y los anuncios de Google (septiembre 2026: 57). NO atribuir esos contactos solo al SEO.
 - Se le hizo foco local (Medellín) en todos los artículos y páginas de servicio por ciudad (ej. várices Medellín, escleroterapia Medellín).
