@@ -69,6 +69,7 @@ El propio blog es la prueba del producto: si Visibla posiciona su blog, demuestr
 - **Páginas de venta:** si el tema toca una especialidad o ciudad que tiene página de venta en `_agencia/paginas/` (mira los slugs), enlázala UNA vez con texto natural (ej. "cómo trabajamos con clínicas estéticas" → `/agencia-seo-clinicas-esteticas/`). No escribas artículos que compitan con esas páginas (keyword "agencia SEO + especialidad/ciudad").
 - **Enlaces externos:** 2–5 a fuentes de autoridad (Google, estudios, normas). Van en el texto Y en `fuentes`.
 - **Local:** 1 de cada 3 artículos con foco de ciudad colombiana (ver `temas.md`). Hablar de esa ciudad con datos reales (barrios con clínicas, búsquedas típicas), no cambiar solo el nombre de la ciudad. Nada de páginas puerta copiadas.
+- **Lo que dice Google:** antes de elegir tema lee `_agencia/search-console.md` (foto semanal de Search Console que deja el analista de los lunes). Prioriza búsquedas que ya traen apariciones pero no tienen una guía fuerte, y si una guía sale en Google pero nadie la abre, propón mejorar su título y descripción.
 - **No canibalizar:** antes de escribir, lee títulos y keywords de `_agencia/articulos/`. Si ya hay uno que apunta a la misma keyword, elige otro tema o propone actualizar ese.
 - **Para IA (ChatGPT, AI Overviews):** respuestas directas al inicio de cada H2, definiciones claras, listas de pasos numeradas, FAQ. Así las IA citan el artículo.
 
