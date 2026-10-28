@@ -2,6 +2,7 @@
 
 | Fecha | Qué se hizo | Slug | Nota SEO | Humanidad | Estado |
 |---|---|---|---|---|---|
+| 2026-10-28 | Guía nueva: SEO para turismo médico: Bogotá, Cali y Medellín (Policía 10/10, Verificador APROBADO) | turismo-medico-seo | 91 | 10/10 | publicado |
 | 2026-10-27 | Guía nueva: Fotos de antes y después: qué permite la ley en tu clínica | fotos-antes-despues-clinica | 90 | 9/10 | publicado |
 | 2026-10-26 | Guía nueva: Valor de un paciente nuevo: la cuenta que debes hacer | valor-de-un-paciente | 94 | 10/10 | publicado |
 | 2026-10-25 | Guía nueva: Directorios médicos y SEO: cuáles ayudan a tu clínica | directorios-medicos-seo | 95 | 10/10 | publicado |
