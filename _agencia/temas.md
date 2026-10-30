@@ -56,7 +56,7 @@
 | 33 | ★ Cómo elegir una agencia SEO para tu clínica: 10 preguntas antes de firmar | cómo elegir agencia seo | Medición y resultados | publicado 2026-10-24 |
 | 34 | ★ SEO para clínicas en Bucaramanga | seo clínicas bucaramanga | SEO por ciudad | publicado 2026-10-09 |
 | 35 | Fotos de antes y después en la web: lo que permite la norma y lo que funciona | fotos antes y después clínica | Normas y ética | publicado 2026-10-27 |
-| 36 | Errores de SEO más comunes en webs de clínicas | errores seo clínicas | SEO local | pendiente |
+| 36 | Errores de SEO más comunes en webs de clínicas | errores seo clínicas | SEO local | publicado 2026-10-30 |
 | 37 | Pacientes de otras ciudades y del exterior: SEO para turismo médico en Colombia | turismo médico seo | SEO por ciudad | publicado 2026-10-28 |
 | 38 | ★ SEO para clínicas en Cartagena | seo clínicas cartagena | SEO por ciudad | publicado 2026-10-18 |
 | 39 | Instagram no basta: por qué tu clínica necesita Google también | instagram vs google clínica | Contenido y blog | pendiente |
