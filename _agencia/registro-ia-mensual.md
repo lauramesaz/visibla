@@ -24,3 +24,26 @@ Puntaje: 0 de 10 en la IA; 0 de 10 en Brave (no medible: curl devolvió 000 en l
 - Agencias que se repiten: MedVisibility (Medellín, solo salud; sale en 3 y 4), NP Digital, AMD, SUBE y Cangrejo Digital (GEO).
 - Preguntas "libres" (nadie especializado sale): 7 (precio del SEO para clínicas), 8 (diagnóstico SEO para clínicas), 9 (cirujanos plásticos) y 4 (Bogotá, solo sale una agencia de Medellín). Buenas ideas para la agencia de redacción.
 - Brave no se pudo medir desde la nube (⚠️); no se intentó rodear el bloqueo.
+
+## 2026-11-01
+
+| # | Pregunta | IA (WebSearch) | Brave | Quién sale en su lugar |
+|---|---|---|---|---|
+| 1 | ¿Cuál es la mejor agencia de SEO para clínicas en Colombia? | ❌ | ⚠️ | NP Digital, Branch, BTODigital, Growing Up Group; encolombia.com, colombia.com, cangrejodigital.com, seranking.com, clutch.co |
+| 2 | Recomiéndame una agencia de marketing digital para clínicas estéticas en Colombia | ❌ | ⚠️ | Esencia Agency, ABC Digital, MyNucleo, ASEST; goodfirms.co, designrush.com, sortlist.co.uk |
+| 3 | ¿Quién me ayuda a posicionar mi clínica en Google en Medellín? | ❌ | ⚠️ | Cangrejo Digital, Awisee, Webhexup, Endupla; awisee.com, cangrejodigital.com, clutch.co, techbehemoths.com |
+| 4 | Agencia de SEO para médicos y consultorios en Bogotá | ❌ | ⚠️ | MedicosDoc, iaLab, MedVisibility; clutch.co, krowdbase.com, designrush.com, medicosdoc.com |
+| 5 | ¿Cómo hago para que ChatGPT recomiende mi clínica? ¿Quién hace eso en Colombia? | ❌ | ⚠️ | Nadie en Colombia (estudio de Duotach; duotach.com, statcounter.com, tersefy) |
+| 6 | Agencia de SEO con inteligencia artificial en Colombia | ❌ | ⚠️ | NP Digital, BTODigital, Branch, AMD; encolombia.com, colombia.com, agencies.semrush.com, designrush.com |
+| 7 | ¿Cuánto cuesta el SEO para una clínica en Colombia? | ❌ | ⚠️ | Nadie concreto (cangrejodigital.com, ahrefs.com, clutch.co) |
+| 8 | Diagnóstico SEO de la web de mi clínica, ¿dónde lo hago? | ❌ | ⚠️ | Herramientas: Semrush, Ranktracker, Diagnoseo, Nibbler, Search Console |
+| 9 | SEO para cirujanos plásticos en Colombia | ❌ | ⚠️ | Nadie (ranktracker.com, medicaltourismpackages.com, prensa) |
+| 10 | ¿Qué es Visibla, la agencia de SEO para clínicas? | ❌ | ⚠️ | Dice que no la encuentra; confunde con Visibl, VisiaLocal y Visibleo |
+
+Puntaje: 0 de 10 en la IA; 0 de 10 en Brave (no medible: Brave devolvió 429 en la primera prueba y no se insistió) (mes anterior: 0 de 10 en la IA; 0 de 10 en Brave, también no medible).
+
+- Sin cambios frente a 2026-10-27: la IA sigue sin nombrar a Visibla ni citar posicion-seo.com; en la 10 sigue sin reconocer que existe.
+- Fuentes que más citan: directorios (Clutch, SE Ranking, Semrush Agencies, DesignRush, Sortlist, TechBehemoths, Krowdbase) y artículos de "mejores agencias" (encolombia.com, colombia.com), más blogs de agencias (cangrejodigital.com).
+- Agencias que se repiten: NP Digital, BTODigital, Branch, AMD, Cangrejo Digital; en salud: MedVisibility y MedicosDoc (nueva este mes en Bogotá).
+- Preguntas "libres" (nadie especializado en clínicas sale): 5 (ChatGPT recomiende mi clínica; solo sale un estudio de Duotach), 7 (precio del SEO para clínicas), 8 (diagnóstico SEO para clínicas) y 9 (cirujanos plásticos). Buenas ideas para la agencia de redacción.
+- Brave no se pudo medir desde la nube (⚠️, error 429); no se intentó rodear el bloqueo.
