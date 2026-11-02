@@ -59,5 +59,5 @@
 | 36 | Errores de SEO más comunes en webs de clínicas | errores seo clínicas | SEO local | publicado 2026-10-30 |
 | 37 | Pacientes de otras ciudades y del exterior: SEO para turismo médico en Colombia | turismo médico seo | SEO por ciudad | publicado 2026-10-28 |
 | 38 | ★ SEO para clínicas en Cartagena | seo clínicas cartagena | SEO por ciudad | publicado 2026-10-18 |
-| 39 | Instagram no basta: por qué tu clínica necesita Google también | instagram vs google clínica | Contenido y blog | pendiente |
+| 39 | Instagram no basta: por qué tu clínica necesita Google también | instagram vs google clínica | Contenido y blog | publicado 2026-11-02 |
 | 40 | Datos estructurados para clínicas (schema): qué son y cuáles usar | schema clínica médica | SEO local | pendiente |
