@@ -2,6 +2,62 @@
 
 Propiedad de dominio `sc-domain:posicion-seo.com` (dueña: lauramesazuluaga@gmail.com). La lee el "usuario robot" (solo lectura) con `python3 _agencia/gsc.py sc-domain:posicion-seo.com --paises`. Cada lunes el analista agrega una foto nueva ARRIBA; las viejas quedan debajo (máximo 8). La agencia la lee antes de elegir tema.
 
+## Foto del 2026-11-02 (últimos 28 días)
+
+**Totales:** 1 clic · 317 apariciones en Google · CTR 0.3% · posición media 51.0
+
+### Países (top 10)
+país | clics | impresiones | CTR | posición
+---|---|---|---|---
+USA | 1 | 24 | 4.2% | 58.2
+COL | 0 | 114 | 0.0% | 43.4
+ESP | 0 | 84 | 0.0% | 71.7
+MEX | 0 | 27 | 0.0% | 46.1
+CAN | 0 | 23 | 0.0% | 64.3
+CHL | 0 | 12 | 0.0% | 52.6
+ARG | 0 | 10 | 0.0% | 11.7
+PER | 0 | 4 | 0.0% | 19.5
+BRA | 0 | 2 | 0.0% | 28.5
+CRI | 0 | 2 | 0.0% | 5.5
+
+### Top 10 búsquedas
+búsqueda | clics | impresiones | posición
+---|---|---|---
+seo para clínicas | 0 | 40 | 64.2
+seo para cirujanos plasticos | 0 | 32 | 71.9
+seo para cirugia plastica | 0 | 31 | 71.2
+seravena clinica | 0 | 18 | 6.2
+seo para clinicas | 0 | 14 | 88.8
+seo para cirujanos plásticos | 0 | 8 | 83.8
+seo para nutricionistas | 0 | 7 | 72.1
+agencia seo en cali | 0 | 6 | 98.8
+seo para clinicas medicas | 0 | 6 | 77.7
+agencia seo para médicos | 0 | 5 | 93.2
+
+### Top 10 páginas
+página | clics | impresiones | posición
+---|---|---|---
+/blog/medir-clics-whatsapp-web/ | 1 | 7 | 5.1
+/seo-cirujanos-plasticos/ | 0 | 76 | 69.9
+/blog/seo-para-clinicas/ | 0 | 70 | 71.0
+/casos/seravena/ | 0 | 54 | 8.4
+/blog/como-aparecer-en-google-maps-clinica/ | 0 | 26 | 7.3
+/agencia-seo-clinicas-cali/ | 0 | 15 | 92.1
+/agencia-seo-clinicas-barranquilla/ | 0 | 13 | 88.2
+/blog/seo-nutricionista/ | 0 | 12 | 51.0
+/agencia-seo-clinicas-pereira/ | 0 | 8 | 66.4
+/blog/seo-fisioterapia/ | 0 | 8 | 83.5
+
+### Salen pero casi nadie abre (posición ≤ 20)
+- /casos/seravena/ · 54 apariciones, 0 clics, posición 8.4
+- /blog/como-aparecer-en-google-maps-clinica/ · 26 apariciones, 0 clics, posición 7.3
+
+### Indexación (48 páginas en el sitemap)
+- **37 en Google**, 11 todavía no (9 "descubierta, sin indexar", 1 "rastreada, sin indexar", 1 "Google no la reconoce").
+- Faltan: instagram-vs-google-clinica (no reconocida), responder-resenas-negativas-pacientes, seo-vs-google-ads-clinicas, perfil-empresa-google-clinica, search-console-para-principiantes (rastreada), aparecer-en-chatgpt-clinica, ideas-blog-clinicas, seo-clinicas-bucaramanga, cuanto-tarda-el-seo, publicidad-servicios-salud-colombia, seo-clinicas-esteticas.
+
+**Lectura:** Frente a la foto del 27-oct, las apariciones subieron de 271 a 317 y las de Colombia de 95 a 114; clics siguen en 1. Google nos muestra más pero casi nadie entra: las páginas de "seo para clínicas" y "cirujanos plásticos" están en posición ~70 (página 7). Búsqueda a atacar: "seo para clínicas" / "seo para cirugía plástica" (las más buscadas, dueños de clínica). Además, mejorar título y descripción de /casos/seravena/ y la guía de Google Maps, que ya salen en primera página sin clics. 11 guías nuevas esperan indexación.
+
 ## Foto del 2026-10-27 (últimos 28 días)
 
 
