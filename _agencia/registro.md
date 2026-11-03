@@ -2,6 +2,7 @@
 
 | Fecha | Qué se hizo | Slug | Nota SEO | Humanidad | Estado |
 |---|---|---|---|---|---|
+| 2026-11-03 | Mejora: SEO para clínicas estéticas: cómo te busca la paciente (dato nuevo ISAPS/Portafolio: 490.944 procedimientos estéticos en Colombia en 2024, 65.472 de toxina botulínica; checklist propio para decidir qué tratamientos necesitan página aparte; Policía 10/10 tras 1 corrección, Verificador APROBADO sin correcciones) | seo-clinicas-esteticas | 94 | 10/10 | mejorado |
 | 2026-11-02 | Guía nueva: Instagram vs. Google: por qué tu clínica necesita los dos (indexación de Instagram por Google desde jul-2025, ranking del feed, perfil de empresa 2,7x confianza, DataReportal Colombia; Policía 10/10, Verificador APROBADO sin correcciones) | instagram-vs-google-clinica | 88 | 10/10 | publicado |
 | 2026-10-30 | Guía nueva: Errores de SEO en clínicas que te cuestan pacientes (ficha con teléfono distinto por sede, categoría genérica, blog con IA sin revisar, reseñas sin responder; Policía 10/10, Verificador APROBADO con 1 corrección) | errores-seo-clinicas | 90 | 10/10 | publicado |
 | 2026-10-29 | Mejora: SEO para clínicas: la guía completa para salir en Google (autodiagnóstico de 4 frentes, ejemplo resuelto Sonrisa Andina/Bucaramanga con pasos de pantalla, cifra nueva BrightLocal 17%→31%; Policía 10/10, Verificador APROBADO con 1 corrección) | seo-para-clinicas | 95 | 10/10 | mejorado |
