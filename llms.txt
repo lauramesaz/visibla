@@ -34,6 +34,7 @@
 
 ## Guías
 
+- [Schema de tu clínica médica: qué datos estructurados usar](https://posicion-seo.com/blog/schema-clinica-medica/): Google ya no premia el FAQPage con una caja visible, y casi ninguna clínica pone bien el schema de LocalBusiness. Qué datos van, qué tipo elegir según tu especialidad y por qué no debes meter ahí tus reseñas de Google.
 - [Instagram vs. Google: por qué tu clínica necesita los dos](https://posicion-seo.com/blog/instagram-vs-google-clinica/): Instagram premia la cercanía con quien ya te conoce; Google premia a quien busca el tratamiento sin conocerte todavía. Con un caso resuelto de una clínica que vivía solo de Instagram, lo que cambió desde que Google empezó a indexar algunas publicaciones, y una repartición práctica del trabajo entre los dos.
 - [Errores de SEO en clínicas que te cuestan pacientes](https://posicion-seo.com/blog/errores-seo-clinicas/): Dos sedes con el mismo teléfono en la ficha de Google, una categoría genérica, una reseña de hace meses sin respuesta: ningún error pesa solo, pero juntos alejan al paciente que ya te había encontrado.
 - [SEO para turismo médico: Bogotá, Cali y Medellín](https://posicion-seo.com/blog/turismo-medico-seo/): Entre enero y agosto de 2026 entraron a Colombia 21.034 extranjeros por motivo médico. Cómo trabajar el SEO de tu clínica para esa persona, sin copiar tu web en inglés con un traductor.
