@@ -1,0 +1,61 @@
+<!--
+{
+  "titulo": "Schema de tu clínica médica: qué datos estructurados usar",
+  "meta": "El schema o datos estructurados le dicen a Google qué es tu clínica, dónde queda y qué atiende. Qué poner, qué tipo elegir y el error que la mayoría comete con las reseñas.",
+  "fecha": "2026-11-04",
+  "modificado": "2026-11-04",
+  "categoria": "SEO local",
+  "keyword": "schema clínica médica",
+  "lectura": 8,
+  "resumen": "Google ya no premia el FAQPage con una caja visible, y casi ninguna clínica pone bien el schema de LocalBusiness. Qué datos van, qué tipo elegir según tu especialidad y por qué no debes meter ahí tus reseñas de Google.",
+  "faq": [
+    {"q": "¿Necesito saber programar para poner el schema de mi clínica?", "a": "No tú, pero sí alguien. El schema se escribe en un formato llamado JSON-LD y va pegado en el código de cada página, no en el texto que ve el paciente. Si tu web la hizo una agencia o corre en Wordpress, Wix o Squarespace, pide ese código a quien la administra o busca un complemento de schema para tu plataforma."},
+    {"q": "¿Poner schema me sube en Google?", "a": "No directamente. El schema no es un factor de posicionamiento: es una traducción de tu página para que Google la entienda mejor y, si cumples las reglas, pueda mostrarla con más detalle (horario, ubicación, tipo de negocio). Ayuda a que te lean bien, no a que te suban de posición por sí solo."},
+    {"q": "¿Qué tipo de schema le pongo si mi clínica tiene varias especialidades?", "a": "El tipo más específico de cada servicio, no uno genérico para toda la clínica. Si tu página principal es general, usa MedicalBusiness o MedicalClinic; si tienes una página propia de odontología, de dermatología o de fisioterapia, cada una puede llevar el tipo de esa especialidad."},
+    {"q": "¿El FAQPage todavía sirve de algo si Google dejó de mostrarlo?", "a": "Sirve el contenido, no la caja. Desde el 7 de mayo de 2026 Google no muestra la pregunta y respuesta expandible en los resultados, pero las preguntas frecuentes siguen siendo útiles para el paciente que lee tu página y para que las IA conversacionales encuentren la respuesta. Lo que ya no tiene sentido es invertir tiempo de desarrollo solo en ese marcado."},
+    {"q": "¿Puedo poner mis reseñas de Google en el schema de mi clínica?", "a": "No con las propiedades aggregateRating o review de LocalBusiness: Google las reserva para sitios que publican reseñas sobre otros negocios, como un directorio, no para que un negocio califique sus propios servicios. Tus reseñas reales siguen viéndose en tu ficha de Google y en Google Maps; eso no depende del schema de tu web."}
+  ],
+  "fuentes": [
+    {"t": "Google Search Central · Datos estructurados de tipo Local Business (LocalBusiness)", "u": "https://developers.google.com/search/docs/appearance/structured-data/local-business?hl=es"},
+    {"t": "Google Search Central · Datos estructurados de preguntas frecuentes (FAQPage)", "u": "https://developers.google.com/search/docs/appearance/structured-data/faqpage?hl=es"},
+    {"t": "Google Search Central · Introducción a los datos estructurados", "u": "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data?hl=es"},
+    {"t": "Schema.org · MedicalClinic", "u": "https://schema.org/MedicalClinic"},
+    {"t": "Google · Prueba de resultados enriquecidos", "u": "https://search.google.com/test/rich-results"}
+  ]
+}
+-->
+<p>El schema (o datos estructurados) es un código que va escondido en tu página y le explica a Google, en un lenguaje que entiende sin adivinar, qué es tu clínica, dónde queda, qué atiende y cómo contactarla. No lo ve el paciente; lo lee el buscador. Una clínica con el schema bien puesto no sube de posición solo por eso, pero sí deja menos espacio para que Google interprete mal su dirección, su horario o su tipo de negocio.</p>
+
+<h2>Qué es en realidad el schema de tu clínica</h2>
+<p>Es un bloque de texto en un formato llamado JSON-LD, que es el que <a href="https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data?hl=es">Google recomienda usar</a> cuando el sitio lo permite (microdatos y RDFa también valen, pero JSON-LD es el más fácil de mantener). Describe tu clínica con un vocabulario compartido llamado schema.org: en vez de que Google adivine tu nombre leyendo el logo o tu dirección leyendo el pie de página, el código lo dice de forma literal.</p>
+<p>La categoría que le corresponde a una clínica se llama <code>LocalBusiness</code> (negocio local). Google pide usar, dentro de esa categoría, el tipo más específico que exista para tu negocio en lugar de uno genérico. Para un consultorio médico general, ese tipo específico suele ser <code>MedicalClinic</code> o <code>MedicalBusiness</code>, según la jerarquía que <a href="https://schema.org/MedicalClinic">publica schema.org</a>; para un consultorio dental, <code>Dentist</code>; para un fisioterapeuta, <code>PhysicalTherapy</code>. Si tu clínica reúne varias especialidades en una sola página, puedes declarar más de un tipo a la vez.</p>
+
+<h2>Los datos que no pueden faltar</h2>
+<p>Según la <a href="https://developers.google.com/search/docs/appearance/structured-data/local-business?hl=es">guía de Google para LocalBusiness</a>, solo dos propiedades son obligatorias para que el marcado sea válido: el nombre y la dirección completa. El resto son recomendadas, pero son justo las que hacen la diferencia cuando un paciente busca tu clínica desde el celular.</p>
+<table>
+<thead><tr><th>Dato</th><th>Por qué importa</th><th>Obligatorio</th></tr></thead>
+<tbody>
+<tr><td>Nombre y dirección completa</td><td>Es lo mínimo para que el marcado sea válido</td><td>Sí</td></tr>
+<tr><td>Teléfono y sitio web</td><td>Para que el paciente pueda contactarte desde el resultado</td><td>Recomendado</td></tr>
+<tr><td>Coordenadas (latitud y longitud)</td><td>Ubica tu sede en el mapa con precisión, con al menos 5 decimales</td><td>Recomendado</td></tr>
+<tr><td>Horario, con días y festivos aparte</td><td>Evita que un paciente llegue y encuentre la puerta cerrada</td><td>Recomendado</td></tr>
+<tr><td>Rango de precios</td><td>Da una referencia general sin publicar tarifas exactas</td><td>Recomendado</td></tr>
+</tbody>
+</table>
+<p>Si tienes dos sedes, cada una lleva su propio bloque de <code>LocalBusiness</code> con su dirección, su teléfono y su horario. No sirve un solo bloque con los datos de la sede principal repetido en las páginas de las otras.</p>
+
+<h2>El error que casi toda clínica comete con las reseñas</h2>
+<p>Es tentador poner en el schema tu calificación de 4,8 o 4,9 estrellas para que se vea bonita en el buscador. Google lo frena de forma explícita: las propiedades <code>aggregateRating</code> y <code>review</code> de LocalBusiness están reservadas, según su propia guía, "solo para sitios que capturan reseñas sobre otros negocios locales", es decir, para directorios que reciben opiniones de terceros, no para que un negocio califique sus propios servicios en su propia página.</p>
+<p>En la práctica: tu clínica no debe poner su propia reseña en el schema de su web. Las estrellas que de verdad importan (las de tu ficha de Google) se manejan y se muestran solas, por fuera de este marcado, cuando el paciente busca tu clínica o la encuentra en Maps. Lo que sí puedes hacer con esas reseñas, incluidas las negativas, está en <a href="/blog/responder-resenas-negativas-pacientes/">cómo responder reseñas negativas de pacientes</a>.</p>
+
+<h2>El FAQPage dejó de mostrarse: qué hacer con tus preguntas frecuentes</h2>
+<p>Desde el <a href="https://developers.google.com/search/docs/appearance/structured-data/faqpage?hl=es">7 de mayo de 2026, Google dejó de mostrar el rich result de FAQPage</a> en los resultados de búsqueda, la cajita expandible de pregunta y respuesta que antes aparecía debajo de algunos enlaces. La función llevaba desde 2023 limitada casi solo a sitios de gobierno y de salud reconocidos, y ahora Google la retiró para todos.</p>
+<p>Esto no significa que las preguntas frecuentes dejen de servir. Siguen respondiendo dudas reales del paciente antes de que escriba a WhatsApp, y las IA conversacionales (ChatGPT, el modo IA de Google) siguen leyendo ese contenido para armar sus respuestas, como explicamos en <a href="/blog/aparecer-en-chatgpt-clinica/">cómo aparecer en las respuestas de ChatGPT y en la IA de Google</a>. Lo que cambia es la prioridad: si alguien te está cobrando desarrollo solo para marcar tus preguntas como FAQPage, ese tiempo rinde más puesto en los datos de LocalBusiness, que sí pueden ganarte un panel con tu horario y tu ubicación.</p>
+
+<h2>Cómo se pone sin tocar código tú misma o tú mismo</h2>
+<p>Si tu web corre en Wordpress, Wix o Squarespace, busca en el panel de administración un complemento o sección llamada "schema", "datos estructurados" o "SEO"; varios ya traen una plantilla de LocalBusiness que solo pide llenar campos. Si tu web la construyó una agencia o un desarrollador, pídele textualmente "el schema de tipo LocalBusiness en JSON-LD, con el tipo más específico de mi especialidad, en la página de inicio y en cada página de sede". Esa frase evita que te entreguen solo un bloque genérico de Organization sin dirección ni horario, que es lo que se ve con más frecuencia en webs de clínicas.</p>
+<div class="nota"><strong>Haz esto hoy (10 minutos):</strong> abre tu web desde el celular, entra a <a href="https://search.google.com/test/rich-results">la Prueba de resultados enriquecidos de Google</a> y pega la URL de tu página de inicio. Si dice que no detectó datos estructurados, ya sabes qué pedirle a quien administra tu web. Si detectó un bloque, revisa que el nombre, la dirección y el teléfono que muestra sean los correctos y no los de una sede antigua.</div>
+
+<h2>Cómo saber si quedó bien puesto</h2>
+<p>Después de que lo pongan, vuelve a pasar la URL por la misma prueba: debe marcar el tipo de negocio sin errores ni advertencias. Si tu web ya está en <a href="/blog/search-console-para-principiantes/">Search Console</a>, revisa de vez en cuando que Google siga viendo tu clínica como el negocio local que es y no como una página genérica; eso facilita que aparezcas completa cuando alguien busca tu clínica por nombre o cuando Google te ubica en un mapa, el mismo terreno que trabajamos en <a href="/blog/como-aparecer-en-google-maps-clinica/">cómo aparecer en Google Maps si tienes una clínica</a>.</p>
+<p>El schema no reemplaza tener la ficha de Google bien llena: son dos cosas distintas que se complementan, y los campos que pide una se parecen a los que pide la otra, como vimos en <a href="/blog/perfil-empresa-google-clinica/">los 12 campos del perfil de empresa de Google</a>. Si tu web todavía no tiene ninguna de las dos cosas resueltas, ese es el punto de partida antes de pensar en marcado técnico; de eso trata la <a href="/blog/seo-para-clinicas/">guía completa de SEO para clínicas</a>, y si prefieres que alguien lo revise por ti, puedes <a href="/#como">escribirnos</a> para ver cómo lo hacemos.</p>
