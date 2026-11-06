@@ -1,0 +1,85 @@
+<!--
+{
+  "titulo": "Mapa de calor para la web de tu clínica, gratis",
+  "meta": "Microsoft Clarity muestra gratis dónde hace clic el paciente en tu web, hasta dónde baja y si llega al botón de WhatsApp. Cómo instalarlo y qué proteger.",
+  "fecha": "2026-11-06",
+  "modificado": "2026-11-06",
+  "categoria": "Medición y resultados",
+  "keyword": "mapa de calor para la web de tu clínica",
+  "lectura": 6,
+  "resumen": "Un mapa de calor te enseña, sin adivinar, en qué parte de la página se queda el paciente y en qué punto se va. Con Microsoft Clarity (gratis, sin límite de tráfico) y un ejemplo resuelto de una clínica dental en Manizales, inventada para esta guía, qué mapas mirar primero y qué datos no debe grabar.",
+  "faq": [
+    {"q": "¿Microsoft Clarity es gratis de verdad?", "a": "Sí. La documentación oficial de Clarity dice que es un servicio gratis para siempre, sin límite de tráfico y sin pedir tarjeta para registrarte. No hay una versión de pago con más funciones encima."},
+    {"q": "¿Un mapa de calor me ayuda a subir en Google?", "a": "No directamente. El mapa de calor no es una señal que Google mire; te sirve a ti para decidir qué cambiar en la página (dónde va el botón de WhatsApp, qué tan larga debe ser) y esos cambios sí pueden mejorar cuánta gente se queda leyendo, que es algo que Google sí valora de forma indirecta."},
+    {"q": "¿Clarity puede grabar los datos de salud que escribe un paciente en un formulario?", "a": "Por defecto enmascara los números y los correos, y las casillas de formulario quedan siempre ocultas en cualquier modo. Si tu formulario pide algo más sensible (motivo de consulta, historia clínica), conviene subir el modo a estricto o marcar ese bloque con el atributo que ofrece Clarity para ocultarlo del todo."},
+    {"q": "¿Cuánto tiempo se guardan las grabaciones y los mapas de calor?", "a": "Las grabaciones de sesión se guardan 30 días. Los datos de clics y los mapas de calor se guardan 9 meses, igual que las sesiones que marques como favoritas. Pasado ese plazo se borran de los servidores de Clarity y no se pueden recuperar."}
+  ],
+  "fuentes": [
+    {"t": "Microsoft Learn · Heatmaps overview", "u": "https://learn.microsoft.com/en-us/clarity/heatmaps/heatmaps-overview"},
+    {"t": "Microsoft Learn · Masking content", "u": "https://learn.microsoft.com/en-us/clarity/setup-and-installation/clarity-masking"},
+    {"t": "Microsoft Learn · Data retention", "u": "https://learn.microsoft.com/en-us/clarity/setup-and-installation/data-retention"},
+    {"t": "Microsoft Learn · Clarity FAQ", "u": "https://learn.microsoft.com/en-us/clarity/faq"}
+  ]
+}
+-->
+<p>Un mapa de calor te muestra, sin adivinar, en qué parte de la página de tu clínica hace clic el paciente, hasta dónde baja antes de cerrarla y si el botón de WhatsApp recibe algo de atención o queda de adorno. Microsoft Clarity genera ese mapa con el tráfico que ya tienes hoy, gratis y sin pedirte tarjeta. Lo que sigue es cómo leerlo para la web de una clínica, no para una tienda en línea.</p>
+
+<h2>Qué muestra un mapa de calor (y qué no)</h2>
+
+<p>Un mapa de calor junta los clics y los desplazamientos de todas las visitas a una página y los pinta en colores: rojo donde hay mucha actividad, azul donde casi no pasa nada. Te dice dónde mira y toca la gente, no por qué lo hace. Para eso sirve otra pieza de Clarity, las grabaciones de sesión, que muestran una visita completa como un video sin sonido ni imagen de cámara, solo el movimiento del mouse y el toque en el celular.</p>
+
+<p>Así medimos en Visibla, con el método que explicamos en la <a href="/#como">página de inicio</a>: Google Search Console para saber cuánta gente llega desde Google, y un mapa de calor con Clarity para ver qué hace esa visita una vez adentro. En Clínica Seravena, en Medellín, está instalado desde que arrancó el blog para ver cómo navegan los pacientes que llegan a cada artículo.</p>
+
+<h2>Microsoft Clarity: la herramienta que no tiene letra pequeña</h2>
+
+<p>La documentación de Clarity es clara en un punto donde otras herramientas no lo son: dice que el servicio es gratis para siempre, que nunca vas a encontrar un límite de tráfico y que no te van a pedir que subas a una versión de pago. No hace falta tarjeta para registrarte. Eso importa para una clínica que recibe pocas visitas al mes: no vas a quedarte sin datos a mitad de mes porque llegaste a un tope.</p>
+
+<p>El mapa de calor no necesita un mínimo de visitas para generarse y aparece en segundos, no al día siguiente. Si tu web recibe 40 visitas en una semana, ya puedes ver dónde cayeron los clics de esa semana.</p>
+
+<h2>Los tres mapas que debes mirar primero</h2>
+
+<p>Clarity ofrece varios tipos de mapa; para la web de una clínica, con tres resuelves la mayoría de las dudas.</p>
+
+<table>
+<thead>
+<tr><th>Mapa</th><th>Qué muestra</th><th>Para qué te sirve</th></tr>
+</thead>
+<tbody>
+<tr><td>Mapa de clics</td><td>Dónde toca la gente: botones, enlaces, imágenes, incluidos los "clics muertos" sobre algo que no es clicable y los "clics de rabia" cuando alguien toca varias veces seguidas sin que pase nada.</td><td>Saber si el botón de WhatsApp recibe clics o si la gente intenta tocar una foto que no lleva a ninguna parte.</td></tr>
+<tr><td>Mapa de desplazamiento (scroll)</td><td>Hasta dónde baja la gente en la página y qué porcentaje llega a cada sección, con un promedio de lo que se ve sin bajar ("el pliegue").</td><td>Ver si el precio, la dirección o el botón de agendar quedan más abajo de donde la gente realmente llega.</td></tr>
+<tr><td>Mapa de área</td><td>Los clics totales de una zona que tú marcas (por ejemplo, todo el bloque de "nuestros tratamientos"), no de un solo elemento.</td><td>Comparar qué bloque completo de la página gana más atención cuando tienes varias secciones parecidas.</td></tr>
+</tbody>
+</table>
+
+<h2>Cómo lo instalas sin saber programar</h2>
+
+<p>El registro lo hace cualquiera; pegar el código ya pide un poco de ayuda.</p>
+
+<ol>
+<li>Entra a clarity.microsoft.com y crea una cuenta con tu correo.</li>
+<li>Registra tu dominio como un proyecto nuevo; Clarity te entrega un código corto.</li>
+<li>Pega ese código en el sitio, justo antes de cerrar la etiqueta "head" de cada página. Si tu web la administra una agencia o corre en Wordpress, pídeselo a quien la mantiene, o busca el plugin de Clarity para esa plataforma.</li>
+<li>Espera unas horas y entra a la sección de Heatmaps del panel: ahí aparece la lista de páginas con más visitas.</li>
+</ol>
+
+<h2>Qué no debe grabar: cómo proteger los datos de tus pacientes</h2>
+
+<p>Clarity enmascara contenido sensible por regla, no por favor. En el modo por defecto (llamado "Balanced"), oculta los números y los correos que aparecen en la página, y las casillas de formulario y los menús desplegables quedan siempre tapados, sin que lo puedas desactivar. Si tu web pide algo más delicado que un correo, por ejemplo el motivo de consulta en un formulario de contacto, puedes subir el modo a "Strict" para que oculte todo el texto, o marcar ese bloque en particular con un atributo que Clarity lee y que lo oculta sin tocar el resto de la página.</p>
+
+<p>Esa protección técnica no reemplaza lo que ya exige la ley colombiana sobre los datos que pide el formulario de tu clínica; eso lo cubre la guía de <a href="/blog/habeas-data-clinica/">habeas data en la web de tu clínica</a>. Lo que sí debes revisar aparte es tu aviso de cookies: si usas Clarity, tu web está guardando una cookie para reconocer visitas repetidas, y ese aviso debe decirlo.</p>
+
+<h2>Cuánto tiempo se guardan esos datos</h2>
+
+<p>Las grabaciones de sesión, es decir el detalle de cada visita para reproducirla, se guardan 30 días. Los datos de clics agregados y los mapas de calor duran más: 9 meses, igual que cualquier sesión que marques como favorita para no perderla. Pasado ese plazo, Clarity borra la información de sus servidores, incluidas las copias de respaldo, y ya no se puede recuperar. Si quieres comparar noviembre con mayo, hazlo antes de que se cumplan esos 9 meses, no después.</p>
+
+<h2>Ejemplo: el botón de WhatsApp que nadie tocaba</h2>
+
+<p>Una clínica dental en Manizales, inventada para esta guía, tenía el botón de "Agenda tu cita por WhatsApp" arriba de todo, junto al logo. El mapa de clics mostraba casi nada de calor ahí; el mapa de desplazamiento explicaba por qué: la mitad de las visitas nunca pasaba de la primera foto grande de la fachada, así que ni siquiera llegaban a ver bien ese botón fijo en una pantalla de celular angosta. Al bajar el tamaño de esa foto y repetir el botón después del primer bloque de texto, el clic apareció donde antes había azul.</p>
+
+<p>El error no estaba en el texto del botón ni en el color: estaba en que la pantalla de un celular corta la página distinto a como se ve en una computadora, y nadie lo había probado en un teléfono real.</p>
+
+<h2>Haz esto hoy en 10 minutos</h2>
+
+<p>Si ya tienes Clarity instalado, entra al panel, abre Heatmaps y mira la página de inicio: revisa si el mapa de clics muestra calor sobre el botón de WhatsApp y si el mapa de desplazamiento dice que la mitad de las visitas llega hasta ahí. Si todavía no lo tienes, regístrate ahora en clarity.microsoft.com, pega el código en tu web (o pídeselo a quien la administra) y vuelve a mirar el mapa de tu página de inicio dentro de una semana, cuando ya tengas algo de tráfico acumulado.</p>
+
+<p>Esto se complementa con la guía de <a href="/blog/medir-clics-whatsapp-web/">cómo medir los clics a WhatsApp desde tu web</a> y con la de <a href="/blog/velocidad-web-celular/">velocidad web en el celular</a>, porque una página lenta cambia lo que el mapa de calor te va a mostrar. Y si todavía no tienes clara la base del SEO para tu clínica, la <a href="/blog/seo-para-clinicas/">guía completa de SEO para clínicas</a> explica por dónde empezar antes de medir nada.</p>
