@@ -61,3 +61,4 @@
 | 38 | ★ SEO para clínicas en Cartagena | seo clínicas cartagena | SEO por ciudad | publicado 2026-10-18 |
 | 39 | Instagram no basta: por qué tu clínica necesita Google también | instagram vs google clínica | Contenido y blog | publicado 2026-11-02 |
 | 40 | Datos estructurados para clínicas (schema): qué son y cuáles usar | schema clínica médica | SEO local | publicado 2026-11-04 |
+| 41 | Mapa de calor con Microsoft Clarity para la web de la clínica | mapa de calor para la web de tu clínica | Medición y resultados | publicado 2026-11-06 |
