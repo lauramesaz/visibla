@@ -7,7 +7,7 @@
   "categoria": "Medición y resultados",
   "keyword": "mapa de calor para la web de tu clínica",
   "lectura": 6,
-  "resumen": "Un mapa de calor te enseña, sin adivinar, en qué parte de la página se queda el paciente y en qué punto se va. Con Microsoft Clarity (gratis, sin límite de tráfico) y un ejemplo resuelto de una clínica dental en Manizales, inventada para esta guía, qué mapas mirar primero y qué datos no debe grabar.",
+  "resumen": "Microsoft Clarity es gratis, sin límite de tráfico, y arma el mapa en segundos con el tráfico que ya tienes. Con el ejemplo de una clínica dental en Manizales, inventada para esta guía, qué tres mapas revisar primero, cómo instalarlo sin programar y qué datos de un formulario no debe grabar.",
   "faq": [
     {"q": "¿Microsoft Clarity es gratis de verdad?", "a": "Sí. La documentación oficial de Clarity dice que es un servicio gratis para siempre, sin límite de tráfico y sin pedir tarjeta para registrarte. No hay una versión de pago con más funciones encima."},
     {"q": "¿Un mapa de calor me ayuda a subir en Google?", "a": "No directamente. El mapa de calor no es una señal que Google mire; te sirve a ti para decidir qué cambiar en la página (dónde va el botón de WhatsApp, qué tan larga debe ser) y esos cambios sí pueden mejorar cuánta gente se queda leyendo, que es algo que Google sí valora de forma indirecta."},
@@ -22,17 +22,17 @@
   ]
 }
 -->
-<p>Un mapa de calor te muestra, sin adivinar, en qué parte de la página de tu clínica hace clic el paciente, hasta dónde baja antes de cerrarla y si el botón de WhatsApp recibe algo de atención o queda de adorno. Microsoft Clarity genera ese mapa con el tráfico que ya tienes hoy, gratis y sin pedirte tarjeta. Lo que sigue es cómo leerlo para la web de una clínica, no para una tienda en línea.</p>
+<p>Un mapa de calor te muestra, sin adivinar, en qué parte de la página de tu clínica hace clic el paciente. También dice hasta dónde baja antes de cerrarla y si el botón de WhatsApp recibe atención o queda de adorno. Microsoft Clarity genera ese mapa con el tráfico que ya tienes hoy, gratis y sin pedirte tarjeta. Lo que sigue es cómo leerlo para la web de una clínica, no para una tienda en línea.</p>
 
 <h2>Qué muestra un mapa de calor (y qué no)</h2>
 
-<p>Un mapa de calor junta los clics y los desplazamientos de todas las visitas a una página y los pinta en colores: rojo donde hay mucha actividad, azul donde casi no pasa nada. Te dice dónde mira y toca la gente, no por qué lo hace. Para eso sirve otra pieza de Clarity, las grabaciones de sesión, que muestran una visita completa como un video sin sonido ni imagen de cámara, solo el movimiento del mouse y el toque en el celular.</p>
+<p>Un mapa de calor junta los clics y los desplazamientos de todas las visitas a una página y los pinta en colores. Rojo es mucha actividad; azul, casi ninguna. Te dice dónde mira y toca la gente, no por qué lo hace. Para eso sirve otra pieza de Clarity: las grabaciones de sesión. Muestran una visita completa como un video sin sonido ni cámara, solo el movimiento del mouse y el toque en el celular.</p>
 
-<p>Así medimos en Visibla, con el método que explicamos en la <a href="/#como">página de inicio</a>: Google Search Console para saber cuánta gente llega desde Google, y un mapa de calor con Clarity para ver qué hace esa visita una vez adentro. En Clínica Seravena, en Medellín, está instalado desde que arrancó el blog para ver cómo navegan los pacientes que llegan a cada artículo.</p>
+<p>Así medimos en Visibla, con el método que explicamos en la <a href="/#como">página de inicio</a>. Google Search Console dice cuánta gente llega desde Google; el mapa de calor con Clarity dice qué hace esa visita una vez adentro. En Clínica Seravena, en Medellín, está instalado desde que arrancó el blog para ver cómo navegan los pacientes que llegan a cada artículo.</p>
 
 <h2>Microsoft Clarity: la herramienta que no tiene letra pequeña</h2>
 
-<p>La documentación de Clarity es clara en un punto donde otras herramientas no lo son: dice que el servicio es gratis para siempre, que nunca vas a encontrar un límite de tráfico y que no te van a pedir que subas a una versión de pago. No hace falta tarjeta para registrarte. Eso importa para una clínica que recibe pocas visitas al mes: no vas a quedarte sin datos a mitad de mes porque llegaste a un tope.</p>
+<p>La documentación de Clarity es clara en un punto donde otras herramientas no lo son. Dice que el servicio es gratis para siempre, sin límite de tráfico y sin pedirte que subas a una versión de pago. No hace falta tarjeta para registrarte. Eso importa para una clínica que recibe pocas visitas al mes: no vas a quedarte sin datos a mitad de mes porque llegaste a un tope.</p>
 
 <p>El mapa de calor no necesita un mínimo de visitas para generarse y aparece en segundos, no al día siguiente. Si tu web recibe 40 visitas en una semana, ya puedes ver dónde cayeron los clics de esa semana.</p>
 
@@ -60,13 +60,14 @@
 <li>Registra tu dominio como un proyecto nuevo; Clarity te entrega un código corto.</li>
 <li>Pega ese código en el sitio, justo antes de cerrar la etiqueta "head" de cada página. Si tu web la administra una agencia o corre en Wordpress, pídeselo a quien la mantiene, o busca el plugin de Clarity para esa plataforma.</li>
 <li>Espera unas horas y entra a la sección de Heatmaps del panel: ahí aparece la lista de páginas con más visitas.</li>
+<li>Revisa el mapa de la versión de celular y el de computador por separado: una página puede verse bien en una pantalla grande y partir mal en una angosta.</li>
 </ol>
 
 <h2>Qué no debe grabar: cómo proteger los datos de tus pacientes</h2>
 
-<p>Clarity enmascara contenido sensible por regla, no por favor. En el modo por defecto (llamado "Balanced"), oculta los números y los correos que aparecen en la página, y las casillas de formulario y los menús desplegables quedan siempre tapados, sin que lo puedas desactivar. Si tu web pide algo más delicado que un correo, por ejemplo el motivo de consulta en un formulario de contacto, puedes subir el modo a "Strict" para que oculte todo el texto, o marcar ese bloque en particular con un atributo que Clarity lee y que lo oculta sin tocar el resto de la página.</p>
+<p>Clarity enmascara contenido sensible por regla, no por favor. En el modo por defecto, llamado "Balanced", oculta los números y los correos que aparecen en la página. Las casillas de formulario y los menús desplegables quedan siempre tapados, sin que lo puedas desactivar. Si tu web pide algo más delicado, como el motivo de consulta en un formulario de contacto, puedes subir el modo a "Strict" para que oculte todo el texto. También puedes marcar ese bloque en particular con un atributo que Clarity lee, y que lo oculta sin tocar el resto de la página.</p>
 
-<p>Esa protección técnica no reemplaza lo que ya exige la ley colombiana sobre los datos que pide el formulario de tu clínica; eso lo cubre la guía de <a href="/blog/habeas-data-clinica/">habeas data en la web de tu clínica</a>. Lo que sí debes revisar aparte es tu aviso de cookies: si usas Clarity, tu web está guardando una cookie para reconocer visitas repetidas, y ese aviso debe decirlo.</p>
+<p>Esa protección técnica no reemplaza lo que ya exige la ley colombiana sobre los datos que pide el formulario de tu clínica. Eso lo cubre la guía de <a href="/blog/habeas-data-clinica/">habeas data en la web de tu clínica</a>. Lo que debes revisar aparte es tu aviso de cookies: si usas Clarity, tu web guarda una cookie para reconocer visitas repetidas, y ese aviso debe decirlo.</p>
 
 <h2>Cuánto tiempo se guardan esos datos</h2>
 
@@ -74,12 +75,12 @@
 
 <h2>Ejemplo: el botón de WhatsApp que nadie tocaba</h2>
 
-<p>Una clínica dental en Manizales, inventada para esta guía, tenía el botón de "Agenda tu cita por WhatsApp" arriba de todo, junto al logo. El mapa de clics mostraba casi nada de calor ahí; el mapa de desplazamiento explicaba por qué: la mitad de las visitas nunca pasaba de la primera foto grande de la fachada, así que ni siquiera llegaban a ver bien ese botón fijo en una pantalla de celular angosta. Al bajar el tamaño de esa foto y repetir el botón después del primer bloque de texto, el clic apareció donde antes había azul.</p>
+<p>Una clínica dental en Manizales, inventada para esta guía, tenía el botón de "Agenda tu cita por WhatsApp" arriba de todo, junto al logo. El mapa de clics mostraba casi nada de calor ahí. El mapa de desplazamiento explicaba por qué: la mitad de las visitas nunca pasaba de la primera foto grande de la fachada. Ni siquiera llegaban a ver bien ese botón, fijo en una pantalla de celular angosta. Al bajar el tamaño de esa foto y repetir el botón después del primer bloque de texto, el clic apareció donde antes había azul.</p>
 
-<p>El error no estaba en el texto del botón ni en el color: estaba en que la pantalla de un celular corta la página distinto a como se ve en una computadora, y nadie lo había probado en un teléfono real.</p>
+<p>El error no estaba en el texto del botón ni en el color. Estaba en que la pantalla de un celular corta la página distinto a como se ve en una computadora, y nadie lo había probado en un teléfono real.</p>
 
 <h2>Haz esto hoy en 10 minutos</h2>
 
-<p>Si ya tienes Clarity instalado, entra al panel, abre Heatmaps y mira la página de inicio: revisa si el mapa de clics muestra calor sobre el botón de WhatsApp y si el mapa de desplazamiento dice que la mitad de las visitas llega hasta ahí. Si todavía no lo tienes, regístrate ahora en clarity.microsoft.com, pega el código en tu web (o pídeselo a quien la administra) y vuelve a mirar el mapa de tu página de inicio dentro de una semana, cuando ya tengas algo de tráfico acumulado.</p>
+<p>Si ya tienes Clarity instalado, entra al panel, abre Heatmaps y mira la página de inicio. Revisa si el mapa de clics muestra calor sobre el botón de WhatsApp, y si el mapa de desplazamiento dice que la mitad de las visitas llega hasta ahí. Si todavía no lo tienes, regístrate ahora en clarity.microsoft.com y pega el código en tu web, o pídeselo a quien la administra. Vuelve a mirar el mapa de tu página de inicio dentro de una semana, cuando ya tengas algo de tráfico acumulado.</p>
 
-<p>Esto se complementa con la guía de <a href="/blog/medir-clics-whatsapp-web/">cómo medir los clics a WhatsApp desde tu web</a> y con la de <a href="/blog/velocidad-web-celular/">velocidad web en el celular</a>, porque una página lenta cambia lo que el mapa de calor te va a mostrar. Y si todavía no tienes clara la base del SEO para tu clínica, la <a href="/blog/seo-para-clinicas/">guía completa de SEO para clínicas</a> explica por dónde empezar antes de medir nada.</p>
+<p>Esto se complementa con la guía de <a href="/blog/medir-clics-whatsapp-web/">cómo medir los clics a WhatsApp desde tu web</a> y con la de <a href="/blog/velocidad-web-celular/">velocidad web en el celular</a>. Una página lenta cambia lo que el mapa de calor te va a mostrar. Y si todavía no tienes clara la base del SEO para tu clínica, la <a href="/blog/seo-para-clinicas/">guía completa de SEO para clínicas</a> explica por dónde empezar antes de medir nada.</p>
