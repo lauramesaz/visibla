@@ -3,7 +3,7 @@
 > La rutina NO elige sola qué mejorar: toma de aquí, de arriba hacia abajo, la primera entrada en `[pendiente]` que cumpla sus condiciones.
 > Martes y jueves (y el miércoles 11-nov): lista de **guías**. Desde el miércoles 18-nov, los miércoles: lista de **páginas de venta**.
 > Al terminar, marca la entrada `[hecho AAAA-MM-DD · nota SEO · humanidad]`. Si no se pudo publicar, `[no publicado AAAA-MM-DD · motivo]` y la próxima vez se reintenta.
-> Saltar una entrada (y pasar a la siguiente) cuando: tenga fecha "no antes del" que no ha llegado; se haya mejorado en los últimos 30 días según `registro.md`; o su archivo no exista todavía en `_agencia/articulos/` o `_agencia/paginas/` (las de la fase 2 aparecen con VIS-03).
+> Saltar una entrada (y pasar a la siguiente) cuando: tenga fecha "no antes del" que no ha llegado; se haya mejorado en los últimos 30 días según `registro.md`; o su archivo no exista todavía en `_agencia/articulos/` o `_agencia/paginas/` (las de la fase 2 se publicaron el 7-nov con VIS-03).
 > Hecha el 7-nov-2026. El estado de Google sale de la inspección en vivo de ese día con el usuario robot (50 páginas del sitemap, 40 en Google). Las guías con "clínica inventada" son las que hoy basan un ejemplo en una clínica ficticia.
 
 ## Qué se hace en cada mejora de guía (resumen de INSTRUCCIONES §8)
@@ -28,7 +28,7 @@ Primero las que además tienen clínica inventada.
 
 ## B. Fisioterapia frente a nutrición
 
-8. [pendiente] seo-fisioterapia · Subtítulos distintos de los de seo-nutricionista (hoy se parecen demasiado; VIS-10). "seo para traumatologos" es de /seo-traumatologos/ (fase 2): no atacarla aquí; cuando la página exista, enlazarla una vez.
+8. [pendiente] seo-fisioterapia · Subtítulos distintos de los de seo-nutricionista (hoy se parecen demasiado; VIS-10). "seo para traumatologos" es de /seo-traumatologos/ (publicada el 7-nov): no atacarla aquí; enlazarla una vez.
 
 ## C. Revisión legal contra la norma oficial
 
@@ -55,10 +55,10 @@ En cada una: respuesta directa en las 2 primeras frases, FAQ con las búsquedas 
 
 19. [pendiente] seo-cirujanos-plasticos
 20. [pendiente] agencia-seo-clinicas-pereira · Meter con naturalidad "agencia seo pereira", "seo pereira" y "posicionamiento seo pereira".
-21. [pendiente] seo-traumatologos (fase 2)
-22. [pendiente] seo-medicos (fase 2) · FAQ con "agencia seo para médicos".
-23. [pendiente] seo-clinicas-capilares (fase 2)
-24. [pendiente] agencia-seo-clinicas-medellin (fase 2)
+21. [pendiente] seo-traumatologos · publicada el 7-nov: no antes del 7-dic.
+22. [pendiente] seo-medicos · publicada el 7-nov: no antes del 7-dic. FAQ con "agencia seo para médicos".
+23. [pendiente] seo-clinicas-capilares · publicada el 7-nov: no antes del 7-dic.
+24. [pendiente] agencia-seo-clinicas-medellin · publicada el 7-nov: no antes del 7-dic.
 25. [pendiente] seo-dermatologos
 26. [pendiente] agencia-seo-clinicas-esteticas
 27. [pendiente] agencia-seo-clinicas-bogota

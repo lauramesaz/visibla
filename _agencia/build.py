@@ -29,7 +29,7 @@ DOMINIO = "https://posicion-seo.com"
 ORG_ID = DOMINIO + "/#org"
 # La organización tal como la ve Google en cada página (misma @id que el inicio)
 ORG = {"@type": "Organization", "@id": ORG_ID, "name": "Visibla", "alternateName": "posicion-seo.com",
-       "url": DOMINIO + "/", "logo": {"@type": "ImageObject", "url": DOMINIO + "/og.png", "width": 1200, "height": 630}}
+       "url": DOMINIO + "/", "logo": {"@type": "ImageObject", "url": DOMINIO + "/logo-512.png", "width": 512, "height": 512}}
 
 
 def cargar_autora():
@@ -69,11 +69,22 @@ MESES = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto
          "septiembre", "octubre", "noviembre", "diciembre"]
 CAMPOS = ["titulo", "meta", "fecha", "categoria", "lectura", "resumen"]
 
-FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com">\n'
-         '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n'
-         '<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&display=swap">\n'
-         '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&display=swap" media="print" onload="this.media=\'all\'">\n'
-         '<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&display=swap"></noscript>')
+# Fuentes Geist servidas desde la propia web (/fuentes/, licencia OFL; las genera _agencia/fuentes.py).
+# 'Geist Fallback' es Arial ajustada para que ocupe lo mismo que Geist: si la letra llega tarde, el texto no salta.
+FUENTES_CSS = ("@font-face{font-family:'Geist';src:url(/fuentes/geist.woff2) format('woff2');font-weight:300 700;font-style:normal;font-display:swap}"
+               "@font-face{font-family:'Geist Mono';src:url(/fuentes/geist-mono.woff2) format('woff2');font-weight:400 500;font-style:normal;font-display:swap}"
+               "@font-face{font-family:'Geist Fallback';src:local('Arial'),local('ArialMT');font-weight:100 450;size-adjust:101.6%;ascent-override:98.92%;descent-override:29.04%;line-gap-override:0%}"
+               "@font-face{font-family:'Geist Fallback';src:local('Arial'),local('ArialMT');font-weight:451 550;size-adjust:103.61%;ascent-override:97%;descent-override:28.47%;line-gap-override:0%}"
+               "@font-face{font-family:'Geist Fallback';src:local('Arial Bold'),local('Arial-BoldMT');font-weight:551 900;size-adjust:99.05%;ascent-override:101.47%;descent-override:29.78%;line-gap-override:0%}"
+               "@font-face{font-family:'Geist Mono Fallback';src:local('Courier New'),local('CourierNewPSMT'),local('Menlo');size-adjust:100%;ascent-override:100.5%;descent-override:29.5%;line-gap-override:0%}")
+FONTS = ('<link rel="preload" href="/fuentes/geist.woff2" as="font" type="font/woff2" crossorigin>\n'
+         '<link rel="preload" href="/fuentes/geist-mono.woff2" as="font" type="font/woff2" crossorigin>\n'
+         f'<style>{FUENTES_CSS}</style>')
+# Iconos propios (los genera _agencia/iconos.py)
+ICONOS = ('<link rel="icon" href="/favicon.ico" sizes="48x48">\n'
+          '<link rel="icon" href="/favicon.svg" type="image/svg+xml">\n'
+          '<link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192">\n'
+          '<link rel="apple-touch-icon" href="/apple-touch-icon.png">')
 
 
 def wa(texto):
@@ -163,6 +174,7 @@ def cabeza(titulo, meta, url, extra="", imagen=None, tipo="article"):
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="{e(titulo)}">
 <meta name="twitter:card" content="summary_large_image">
+{ICONOS}
 {FONTS}
 <link rel="stylesheet" href="/blog/blog.css">
 {extra}
@@ -250,7 +262,7 @@ def pagina_articulo(a, todos):
     if AUTORA:
         autor = {"@type": "Person", "@id": DOMINIO + "/quienes-somos/#" + AUTORA["id"], "name": AUTORA["nombre"],
                  "url": DOMINIO + "/quienes-somos/", "jobTitle": AUTORA["cargo"], "worksFor": {"@id": ORG_ID}}
-        firma = f'<a href="/quienes-somos/">{e(AUTORA["nombre"])}</a>'
+        firma = f'Por <a href="/quienes-somos/">{e(AUTORA["nombre"])}</a>'
     else:
         autor, firma = {"@type": "Organization", "name": "Equipo Visibla", "url": DOMINIO + "/"}, "Equipo Visibla"
 
@@ -383,7 +395,7 @@ def bloque_home(arts):
 
 
 # Landing /plan-seo/ (HTML a mano, con precios): ruta, texto del enlace, fecha de su última edición (cambiarla al editarla)
-PLAN_SEO = ("/plan-seo/", "Plan SEO de 90 días", "2026-10-27")
+PLAN_SEO = ("/plan-seo/", "Plan SEO de 90 días", "2026-11-07")
 
 
 def cargar_institucional():
@@ -482,7 +494,7 @@ def sobre_visibla(pags):
         "y publica cada mañana; además cuida la ficha de Google y las reseñas, y mide cuántas personas escriben por WhatsApp.",
     ]
     if AUTORA:
-        lineas.append(f"- Fundadora: {AUTORA['nombre']}, {AUTORA['cargo']}. {AUTORA['bio_corta']} ({DOMINIO}/quienes-somos/)")
+        lineas.append(f"- Fundadora: {AUTORA['nombre']}. {AUTORA['bio_corta']} ({DOMINIO}/quienes-somos/)")
     if casos:
         lineas.append("- Clínicas con caso publicado: " + "; ".join(
             f"{p['cliente']['nombre']} ({p['cliente']['url']}, caso en {DOMINIO}{p['ruta']})" for p in casos) + ".")

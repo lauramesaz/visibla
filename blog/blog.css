@@ -5,9 +5,9 @@
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:'Geist',system-ui,sans-serif;background:var(--paper);color:var(--ink);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body{font-family:'Geist','Geist Fallback',system-ui,sans-serif;background:var(--paper);color:var(--ink);-webkit-font-smoothing:antialiased;overflow-x:hidden}
 a{color:inherit;text-decoration:none}
-.mono{font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase}
+.mono{font-family:'Geist Mono','Geist Mono Fallback',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase}
 .wrap{max-width:1200px;margin:0 auto;padding:0 24px}
 .grain{position:relative}
 .grain::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.07;mix-blend-mode:overlay;

@@ -2,7 +2,7 @@
 
 Estado: [pendiente] → [humanizado AAAA-MM-DD · nota antes→después]
 Lista hecha el 7-nov-2026 con las 34 guías publicadas, la más vieja primero. Las guías nuevas o mejoradas que ya pasaron por el Policía completo no hace falta añadirlas.
-El turno 3 toma la primera `[pendiente]`. Las marcadas `[va por cola-mejoras]` se humanizan cuando les toque su mejora (cola-mejoras.md), así que se saltan; la de Medellín espera la versión nueva de la fase 2 (VIS-03).
+El turno 3 toma la primera `[pendiente]`. Las marcadas `[va por cola-mejoras]` se humanizan cuando les toque su mejora (cola-mejoras.md), así que se saltan. La de Medellín se publicó reescrita el 7-nov (VIS-03) y quedó al final de las pendientes.
 Si una guía `[pendiente]` aparece mejorada en `registro.md` en los últimos 30 días, márcala `[humanizado AAAA-MM-DD · por mejora]` y toma la siguiente.
 
 ## Pendientes (no están en la cola de mejoras)
@@ -22,6 +22,7 @@ Si una guía `[pendiente]` aparece mejorada en `registro.md` en los últimos 30 
 - [pendiente] directorios-medicos-seo · Directorios médicos y SEO: cuáles ayudan a tu clínica (publicada 2026-10-25)
 - [pendiente] valor-de-un-paciente · Valor de un paciente nuevo: la cuenta que debes hacer (publicada 2026-10-26)
 - [pendiente] turismo-medico-seo · SEO para turismo médico: Bogotá, Cali y Medellín (publicada 2026-10-28)
+- [pendiente] agencia-seo-clinicas-medellin · SEO para clínicas en Medellín: barrios, Maps y contenido (publicada 2026-10-02, reescrita el 2026-11-07 con la fase 2)
 
 ## Van por la cola de mejoras (se saltan aquí)
 
@@ -43,7 +44,3 @@ Si una guía `[pendiente]` aparece mejorada en `registro.md` en los últimos 30 
 - [va por cola-mejoras] instagram-vs-google-clinica · Instagram vs. Google: por qué tu clínica necesita los dos (publicada 2026-11-02)
 - [va por cola-mejoras] schema-clinica-medica · Schema de tu clínica médica: qué datos estructurados usar (publicada 2026-11-04)
 - [va por cola-mejoras] mapa-de-calor-web-clinica · Mapa de calor para la web de tu clínica, gratis (publicada 2026-11-06)
-
-## En espera
-
-- [espera fase 2] agencia-seo-clinicas-medellin · la reescribe la fase 2 (VIS-03); cuando se publique, pasa a [pendiente]

@@ -2,12 +2,13 @@
 """Revisión técnica de todo el sitio ya construido (correr después de build.py).
 
 Revisa en cada página publicada: título y descripción (largo y repetidos), un solo H1, canonical a sí misma,
-datos estructurados que se puedan leer, enlaces internos que existan, imágenes de portada y peso del HTML.
+datos estructurados que se puedan leer, enlaces internos que existan, imágenes de portada, peso del HTML,
+que declare el icono de Visibla (favicon.ico y apple-touch-icon) y que no pida letras a fonts.googleapis.com.
 Con --externos también prueba los enlaces a otras webs (tarda más).
 
 Uso: python3 _agencia/auditoria.py [--externos]
 """
-import concurrent.futures as cf, json, re, sys, urllib.request
+import concurrent.futures as cf, html, json, re, sys, urllib.request
 from collections import defaultdict
 from pathlib import Path
 
@@ -44,7 +45,7 @@ def main():
         t = re.search(r"<title>(.*?)</title>", h, re.S)
         t = t.group(1).strip() if t else ""
         m = re.search(r'<meta name="description" content="(.*?)"', h)
-        m = m.group(1) if m else ""
+        m = html.unescape(m.group(1)) if m else ""
         titulos[t].append(ruta)
         metas[m].append(ruta)
         if not t:
@@ -72,7 +73,7 @@ def main():
         for href in re.findall(r'href="([^"]+)"', h):
             if href.startswith(("/", DOMINIO)) and not href.startswith("//"):
                 destino = href[len(DOMINIO):] if href.startswith(DOMINIO) else href
-                if destino.startswith("/blog/blog.css") or destino.endswith((".css", ".png", ".jpg", ".txt", ".xml")):
+                if destino.startswith("/blog/blog.css") or destino.endswith((".css", ".png", ".jpg", ".txt", ".xml", ".ico", ".svg", ".woff2")):
                     if not existe(destino):
                         errores.append(f"{ruta}: archivo {destino} no existe")
                     continue
@@ -80,6 +81,10 @@ def main():
                     errores.append(f"{ruta}: enlace roto {href}")
             elif href.startswith("http") and "fonts.g" not in href and "wa.me" not in href:
                 externos[href.replace("&amp;", "&")].add(ruta)
+        if 'rel="icon" href="/favicon.ico"' not in h or 'rel="apple-touch-icon"' not in h:
+            errores.append(f"{ruta}: no declara el icono de Visibla (favicon.ico y apple-touch-icon)")
+        if "fonts.googleapis.com" in h or "fonts.gstatic.com" in h:
+            errores.append(f"{ruta}: pide letras a Google Fonts (van en /fuentes/)")
         kb = len(h.encode()) / 1024
         if kb > 200:
             avisos.append(f"{ruta}: HTML de {kb:.0f} KB")

@@ -7,6 +7,7 @@
 - Nombre: Visibla (con «a» al final). Su web es posicion-seo.com: el dominio no es el nombre de la marca.
 - Qué es: agencia colombiana de SEO para clínicas y médicos (estética, cirugía plástica, vascular, dermatología, odontología y más). Trabaja de forma remota con clínicas de toda Colombia.
 - Cómo trabaja: un equipo de agentes de IA investiga lo que buscan los pacientes, escribe, edita, verifica lo médico y publica cada mañana; además cuida la ficha de Google y las reseñas, y mide cuántas personas escriben por WhatsApp.
+- Fundadora: Laura Mesa. Monta y posiciona las webs de clínicas como Clínica Seravena y noon Clinic en Medellín y The Skin Haus en Pereira, con agentes de IA que publican cada mañana. (https://posicion-seo.com/quienes-somos/)
 - Clínicas con caso publicado: noon Clinic (https://noon.clinic/, caso en https://posicion-seo.com/casos/noon/); Clínica Seravena (https://www.clinicaseravena.com/, caso en https://posicion-seo.com/casos/seravena/); The Skin Haus (https://theskinhaus.com.co/, caso en https://posicion-seo.com/casos/skin-haus/).
 - Contacto: WhatsApp +57 320 363 8223 (https://wa.me/573203638223).
 
@@ -16,6 +17,7 @@
 - [Guías de SEO para clínicas](https://posicion-seo.com/blog/)
 - [Diagnóstico SEO gratis](https://posicion-seo.com/diagnostico/)
 - [Plan SEO de 90 días para clínicas, con precios](https://posicion-seo.com/plan-seo/): solo SEO desde $500.000 el primer mes y $300.000 los meses 2 y 3; SEO + gestión de Google Ads desde $1.500.000 el primer mes y $900.000 los meses 2 y 3 (pesos colombianos; la inversión en anuncios va aparte).
+- [Quiénes somos](https://posicion-seo.com/quienes-somos/): Visibla es una agencia colombiana de SEO para clínicas fundada por Laura Mesa. Quién está detrás, cómo trabajamos con agentes de IA y con qué clínicas.
 - [Contacto](https://posicion-seo.com/contacto/): Escríbele a Visibla, agencia SEO para clínicas en Colombia, por WhatsApp al 320 363 8223: diagnóstico gratis de tu web, tu ficha de Google y tus reseñas.
 
 ## Servicios y casos
@@ -24,11 +26,15 @@
 - [Agencia SEO para clínicas en Bogotá: que en tu zona te encuentren a ti](https://posicion-seo.com/agencia-seo-clinicas-bogota/): Agencia SEO para clínicas, médicos y consultorios en Bogotá: ficha de Maps por sede, páginas por especialidad y por zona, y cada clic a WhatsApp medido.
 - [Agencia SEO para clínicas en Cali: del barrio al paciente que viaja](https://posicion-seo.com/agencia-seo-clinicas-cali/): Agencia SEO para clínicas en Cali: ficha de Maps sin errores, páginas por tratamiento para pacientes de aquí y de afuera, y contactos por WhatsApp medidos.
 - [Agencia SEO para clínicas estéticas: que te elijan cuando buscan botox](https://posicion-seo.com/agencia-seo-clinicas-esteticas/): Agencia SEO para clínicas estéticas: escribimos con IA sobre tus tratamientos, cuidamos tu ficha en Google y medimos cada clic a WhatsApp. Caso en Pereira.
+- [Agencia SEO para clínicas en Medellín: de El Poblado a Envigado](https://posicion-seo.com/agencia-seo-clinicas-medellin/): Agencia SEO para clínicas en Medellín que ya trabaja con Seravena y noon Clinic: una ficha de Google por sede y páginas que explican cómo llegar a tu clínica.
 - [Agencia SEO para clínicas en Pereira y el Eje Cafetero](https://posicion-seo.com/agencia-seo-clinicas-pereira/): Agencia SEO para clínicas en Pereira: que te encuentren en Pereira, Dosquebradas y el Eje Cafetero con ficha de Maps, contenido diario y WhatsApp medido.
 - [Caso noon Clinic: SEO bilingüe para una clínica de cirugía plástica](https://posicion-seo.com/casos/noon/): Web completa y SEO en español e inglés para una clínica de cirugía plástica en Medellín: guías diarias para pacientes de Colombia y de Estados Unidos.
 - [SEO para cirujanos plásticos: de la búsqueda en Google a tu consulta](https://posicion-seo.com/seo-cirujanos-plasticos/): SEO para cirujanos plásticos y clínicas de cirugía plástica en Colombia: una página por procedimiento, tu nombre en Google y cada clic a WhatsApp medido.
+- [SEO para clínicas capilares: del "injerto capilar precio" a tu consulta](https://posicion-seo.com/seo-clinicas-capilares/): SEO para clínicas capilares: que quien busca "injerto capilar precio" o "caída del cabello" llegue a tu página, con el precio explicado y fotos en regla.
 - [SEO para dermatólogos: que el paciente con melasma o acné te encuentre](https://posicion-seo.com/seo-dermatologos/): SEO para dermatólogos en Colombia: contenido sobre melasma, acné o caída del pelo, tu ficha de Google al día y cada WhatsApp medido. Diagnóstico gratis.
+- [SEO para médicos: tu nombre, tu ficha y tu consulta en Google](https://posicion-seo.com/seo-medicos/): SEO para médicos con consultorio propio: que al buscar tu nombre salga tu web, la ficha que te corresponde, Doctoralia en orden y una página por servicio.
 - [SEO para odontólogos: que te encuentren cuando buscan diseño de sonrisa](https://posicion-seo.com/seo-odontologos/): SEO para odontólogos y clínicas dentales: ficha de Google lista para urgencias, páginas de diseño de sonrisa, ortodoncia e implantes, y cada WhatsApp medido.
+- [SEO para traumatólogos: del "dolor de rodilla" a tu consulta](https://posicion-seo.com/seo-traumatologos/): SEO para traumatólogos y ortopedistas: páginas que le respondan a quien busca "dolor de rodillas al subir y bajar escaleras" y digan si atiendes particular.
 - [Caso Seravena: SEO con agentes de IA para una clínica en Medellín](https://posicion-seo.com/casos/seravena/): Una clínica de lipedema y várices en Medellín publica un artículo al día con agentes de IA desde julio de 2026. Qué se montó, qué se mide y qué aprendimos.
 - [Caso The Skin Haus: SEO para una clínica de medicina estética en Pereira](https://posicion-seo.com/casos/skin-haus/): Web con diseño fluido y estrategia SEO de medicina estética en Pereira: páginas por búsqueda, blog diario revisado y medición. Un caso en curso.
 
@@ -67,4 +73,4 @@
 - [SEO para clínicas: la guía completa para salir en Google](https://posicion-seo.com/blog/seo-para-clinicas/): Todo lo que un dueño de clínica en Colombia necesita para que los pacientes lo encuentren en Google: ficha y reseñas, web, páginas de servicio, blog, enlaces, medición por WhatsApp, tiempos reales e IA.
 - [SEO para clínicas estéticas: cómo te busca la paciente](https://posicion-seo.com/blog/seo-clinicas-esteticas/): Tu paciente puede escribir en Google "bótox frente" o "dermapen precio" mientras tu web dice "toxina botulínica" e "inducción de colágeno". La guía trae una prueba de 15 minutos para sacar esas búsquedas y el orden de páginas de una clínica de Chapinero inventada para el ejemplo.
 - [Aparecer en Google Maps con tu clínica: gratis, paso a paso](https://posicion-seo.com/blog/como-aparecer-en-google-maps-clinica/): Los pasos reales para que tu clínica salga en Google Maps: reclamar o crear la ficha, verificarla, llenarla como Google pide y medir si te llegan llamadas.
-- [Agencia SEO para clínicas en Medellín: qué buscar y evitar](https://posicion-seo.com/blog/agencia-seo-clinicas-medellin/): Las preguntas, los entregables y las señales de alerta para contratar una agencia SEO para tu clínica en Medellín sin perder plata ni la ficha de Google.
+- [SEO para clínicas en Medellín: barrios, Maps y contenido](https://posicion-seo.com/blog/agencia-seo-clinicas-medellin/): En Medellín los pacientes buscan clínica por barrio, por municipio y desde otros países. Pasos para armar el SEO de la tuya en El Poblado, Laureles o Envigado sin copiar páginas, y qué medir cada mes.

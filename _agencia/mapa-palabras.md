@@ -4,7 +4,7 @@
 > Regla: cada búsqueda tiene UNA sola página dueña. Si la búsqueda que pensabas atacar ya tiene dueña, no se escribe una guía nueva: se mejora la dueña y las demás páginas la enlazan con ese texto ancla.
 > Si encuentras una búsqueda nueva, agrégala abajo con su dueña antes de escribir. Si no tiene página y vale la pena, va a `temas.md` como `propuesto`.
 >
-> Hecho el 7-nov-2026 con: Search Console en vivo (usuario robot, 90 días del 8-ago al 5-nov-2026, todas las búsquedas que Google reporta: 39) y el autocompletado de Google Colombia (7-nov). Las páginas marcadas "fase 2" existen solo en `_agencia/fase2/` y se publican con VIS-03; mientras tanto la búsqueda queda reservada para ellas y nadie más la ataca.
+> Hecho el 7-nov-2026 con: Search Console en vivo (usuario robot, 90 días del 8-ago al 5-nov-2026, todas las búsquedas que Google reporta: 39) y el autocompletado de Google Colombia (7-nov). Las páginas de la fase 2 (/seo-medicos/, /seo-traumatologos/, /seo-clinicas-capilares/ y /agencia-seo-clinicas-medellin/) se publicaron el 7-nov-2026 con VIS-03 y ya son las dueñas de sus búsquedas.
 > Posición hoy = posición media en esos 90 días (apariciones entre paréntesis). "—" = Google no la reporta todavía.
 > Intención: **compra** (busca quién le haga el trabajo), **informativa** (quiere aprender a hacerlo), **marca** (busca un nombre), **fuera de foco** (no se persigue).
 
@@ -22,11 +22,11 @@
 | seo para cirujanos plásticos | /seo-cirujanos-plasticos/ | compra | 83,8 (8) |
 | seo para nutricionistas | /blog/seo-nutricionista/ | informativa | 74,7 (11) |
 | seo para nutriologos | /blog/seo-nutricionista/ | informativa | 32,5 (11) |
-| agencia seo para médicos | /seo-medicos/ (fase 2) | compra | 93,2 (5) · hoy sale /agencia-seo-clinicas-barranquilla/ |
-| seo para medicos | /seo-medicos/ (fase 2) | compra | 123,0 (1) · hoy sale la pilar |
-| seo para medico | /seo-medicos/ (fase 2) | compra | 94,0 (1) · hoy sale la pilar |
-| seo para traumatologos | /seo-traumatologos/ (fase 2) | compra | 88,8 (4) · hoy sale /blog/seo-fisioterapia/ |
-| seo para cirugia capilar | /seo-clinicas-capilares/ (fase 2) | compra | 55,0 (2) · hoy sale /seo-cirujanos-plasticos/ |
+| agencia seo para médicos | /seo-medicos/ | compra | 93,2 (5) · hoy sale /agencia-seo-clinicas-barranquilla/ |
+| seo para medicos | /seo-medicos/ | compra | 123,0 (1) · hoy sale la pilar |
+| seo para medico | /seo-medicos/ | compra | 94,0 (1) · hoy sale la pilar |
+| seo para traumatologos | /seo-traumatologos/ | compra | 88,8 (4) · hoy sale /blog/seo-fisioterapia/ |
+| seo para cirugia capilar | /seo-clinicas-capilares/ | compra | 55,0 (2) · hoy sale /seo-cirujanos-plasticos/ |
 | seo para clinicas de fisioterapia | /blog/seo-fisioterapia/ | informativa | 86,0 (3) |
 | guia seo fisioterapeutas | /blog/seo-fisioterapia/ | informativa | 55,0 (1) |
 | agencia seo pereira | /agencia-seo-clinicas-pereira/ | compra | 57,6 (5) |
@@ -59,16 +59,16 @@
 | agencia seo para clínicas | / | compra | — |
 | agencia seo para clínicas en colombia | / | compra | — |
 | seo local para clínicas | /blog/seo-para-clinicas/ | informativa | — |
-| seo local para medicos | /seo-medicos/ (fase 2) | compra | — |
-| seo medico | /seo-medicos/ (fase 2) | compra | — |
-| cómo aparecer en google como médico | /seo-medicos/ (fase 2) | compra | — |
+| seo local para medicos | /seo-medicos/ | compra | — |
+| seo medico | /seo-medicos/ | compra | — |
+| cómo aparecer en google como médico | /seo-medicos/ | compra | — |
 | seo para cirujanos plásticos en colombia | /seo-cirujanos-plasticos/ | compra | — |
-| seo para clínicas capilares | /seo-clinicas-capilares/ (fase 2) | compra | — |
-| seo clinicas capilares | /seo-clinicas-capilares/ (fase 2) | compra | — |
-| seo para traumatólogos y ortopedistas | /seo-traumatologos/ (fase 2) | compra | — |
-| agencia seo clínicas medellín | /agencia-seo-clinicas-medellin/ (fase 2) | compra | — |
-| agencia seo medellin | /agencia-seo-clinicas-medellin/ (fase 2) | compra | — |
-| seo para clínicas en medellín | /blog/agencia-seo-clinicas-medellin/ | informativa | — (su keyword cambia a esta con la fase 2) |
+| seo para clínicas capilares | /seo-clinicas-capilares/ | compra | — |
+| seo clinicas capilares | /seo-clinicas-capilares/ | compra | — |
+| seo para traumatólogos y ortopedistas | /seo-traumatologos/ | compra | — |
+| agencia seo clínicas medellín | /agencia-seo-clinicas-medellin/ | compra | — |
+| agencia seo medellin | /agencia-seo-clinicas-medellin/ | compra | — |
+| seo para clínicas en medellín | /blog/agencia-seo-clinicas-medellin/ | informativa | — (keyword de la guía desde el 7-nov) |
 | seo local medellin | /blog/agencia-seo-clinicas-medellin/ | informativa | — |
 | agencia seo bogotá | /agencia-seo-clinicas-bogota/ | compra | — |
 | seo clínicas bogotá | /agencia-seo-clinicas-bogota/ | compra | — |
@@ -127,7 +127,7 @@
 
 ## 3. Choques que hay hoy (se resuelven con otras tareas del plan)
 
-- "agencia seo para médicos" sale con la landing de Barranquilla, "seo para traumatologos" con la guía de fisioterapia y "seo para cirugia capilar" con la de cirujanos plásticos: sus dueñas son páginas de la fase 2 (VIS-03). Hasta que salgan, no escribir nada nuevo para esas búsquedas.
+- "agencia seo para médicos" salía con la landing de Barranquilla, "seo para traumatologos" con la guía de fisioterapia y "seo para cirugia capilar" con la de cirujanos plásticos. Desde el 7-nov sus dueñas existen (/seo-medicos/, /seo-traumatologos/, /seo-clinicas-capilares/): no escribir nada nuevo para esas búsquedas; las otras páginas las enlazan con esa búsqueda como texto del enlace. Revisar en la foto de Search Console de diciembre si Google ya muestra la dueña.
 - `/blog/seo-clinicas-esteticas/` tiene como keyword "seo para clínicas estéticas", que es de `/agencia-seo-clinicas-esteticas/`. VIS-10 le cambia la keyword a "qué tratamientos de tu clínica estética necesitan página propia".
-- `/blog/agencia-seo-clinicas-medellin/` tiene como keyword "agencia seo clínicas medellín", que es de la landing de Medellín de la fase 2. La versión de la fase 2 ya la cambia a "seo para clínicas en Medellín".
+- Resuelto el 7-nov: `/blog/agencia-seo-clinicas-medellin/` pasó a "seo para clínicas en Medellín" (informativa) y "agencia seo clínicas medellín" es de `/agencia-seo-clinicas-medellin/`. Conserva la URL vieja para no perder lo ganado.
 - `/casos/seravena/` sale en el puesto 6 cuando alguien busca la clínica por su nombre: VIS-10 le cambia el title para que se entienda que es un caso de agencia.
