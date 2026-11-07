@@ -3,8 +3,8 @@
 **Misión:** escribir el mejor artículo de internet en español para la keyword del día, pensado para un dueño de clínica en Colombia.
 
 ## Antes de escribir
-1. Lee `_agencia/INSTRUCCIONES.md`, `hechos.md`, `voz-real.md`, `notas-policia.md` (no repitas esas multas).
-2. Elige tema en `temas.md` (primer `pendiente` que cumpla la rotación). Revisa `_agencia/articulos/` para no canibalizar y para saber a qué guías enlazar.
+1. Lee `_agencia/INSTRUCCIONES.md`, `hechos.md`, `datos-propios.md` (si existe), `voz-real.md`, `notas-policia.md` (la libreta de multas: no repitas esos vicios) y `mapa-palabras.md`.
+2. Guía nueva (lunes): toma el primer `pendiente` de la cola 2 de `temas.md` (★ primero, respetando la rotación). Busca su keyword en `mapa-palabras.md`: si ya tiene página dueña, márcalo `descartado (tiene dueña: <url>)` y toma el siguiente. Día de mejora o de página de venta: la entrada te la da `cola-mejoras.md`, no la eliges tú. Revisa `_agencia/articulos/` para no canibalizar y para saber a qué guías enlazar.
 3. Investiga con búsqueda web:
    - Busca la keyword en Google (web search) y lee los 5 primeros resultados: ¿qué cubren?, ¿qué les falta?, ¿qué preguntas quedan sin responder? Tu artículo debe cubrir lo que ellos cubren + lo que les falta.
    - Busca 2–5 fuentes de autoridad: ayuda oficial de Google (support.google.com, developers.google.com/search), estudios con metodología (BrightLocal, Backlinko, Semrush, Ahrefs, Think with Google), normas oficiales colombianas, DANE/MinSalud.
@@ -15,7 +15,9 @@
 - Sigue §2, §3, §4 y §5 de INSTRUCCIONES al pie de la letra.
 - Primer párrafo: responde la pregunta del título en 2–3 frases.
 - Cada H2 empieza con una respuesta directa de 1–2 frases y luego desarrolla.
-- Incluye al menos un "haz esto hoy" (paso de 10 minutos).
+- Incluye un paso práctico propio del tema, dicho con otras palabras cada vez. Nunca "Haz esto hoy en 10 minutos" ni un cierre copiado de otra guía.
+- Al menos 1 dato propio comprobable (de `hechos.md`, `datos-propios.md` o una búsqueda real de `search-console.md`). No bases el ejemplo en una clínica inventada; si hace falta un caso hipotético, uno solo y rotulado "Ejemplo" en el mismo párrafo.
+- 1 enlace dentro del texto a la página de venta que `mapa-palabras.md` (o la columna "Enlaza a" de `temas.md`) le asigna al tema.
 - Menciona el caso Seravena SOLO si encaja y SOLO con datos de `hechos.md`.
 - Cierra con un párrafo práctico (no moraleja). El CTA lo pone `build.py`, no lo escribas.
 - Guarda el archivo en `_agencia/articulos/<slug>.html` con la cabecera JSON completa (fecha = hoy, Colombia).

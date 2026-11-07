@@ -1,11 +1,11 @@
 # Libreta de multas del Policía humanizador
 
-> El Policía anota aquí los vicios que encontró; Redactor y Editor la LEEN antes de escribir para no repetirlos.
-> Formato: fecha · vicio · ejemplo · cómo evitarlo. Máximo 30 entradas: borrar las más viejas.
+> El Policía (en sus 3 turnos) anota aquí los vicios que corrigió. El Redactor y el Editor la LEEN ANTES de escribir para no repetirlos.
+> Formato: fecha · agente (si se sabe) · vicio · ejemplo corto · cómo evitarlo. Máximo 30 activas: si un vicio no aparece en 2 semanas, pasa a "Resueltas"; si hay más de 30, las más viejas también.
+> Desde el 7-nov-2026 esta es la única libreta de la agencia (hace el papel de `notas-humanizador.md` de la plantilla).
 
-- 2026-10-27 · Duplete de palabra clave en casi cada frase · "clínicas y consultorios" / "clínicas, médicos y consultorios" más de 10 veces · La pareja completa solo en título, meta, H1 y un H2; en el resto elegir una o hablarle a la persona ("si atiendes en…").
-- 2026-10-27 · Cambio de sujeto o de persona dentro de una frase o serie · "agentes de IA escriben…, cuidamos… y medimos…"; "Un consultorio particular… una página que diga qué atiendes" · Un solo sujeto y una sola persona de principio a fin de la frase.
-- 2026-10-27 · Cifra ambigua · "$300.000 el mes 2 y el mes 3" (¿cada uno o entre los dos?); "llegaron 7.320 extranjeros" sin decir a dónde · Repetir la cifra por mes o decir "en cada uno"; nombrar el lugar en la misma frase que el número.
+## Activas
+
 - 2026-10-27 · Sobrecorrección al partir frases largas: fragmentos sin verbo · "hazle tres preguntas. Qué permite la Ley 23… Qué hace con la ficha… Y cómo cuenta…" · Si son 2 o 3 cosas, una lista con dos puntos; si son más, dos frases completas.
 - 2026-10-27 · Jerga sin traducir en el texto de un enlace interno · "guía de YMYL en salud" · Traducir en el mismo ancla: "guía sobre cómo trata Google los temas de salud (YMYL)".
 - 2026-10-27 · Frase que anuncia en vez de decir, y fórmulas de folleto para presentar listas · "Esos números sirven para algo práctico." / "Una estructura que funciona:" / "Lo ideal es que…" · Ir directo a lo práctico ("Si tu clínica queda en…", "Un orden sencillo para esa página:").
@@ -33,3 +33,12 @@
 - 2026-10-27 · Comparación tipo eslogan "A vale/construye más que B", repetida entre cuerpo y FAQ · "Dos artículos al mes… construyen más que diez en marzo y silencio después" / "Diez artículos… valen más que treinta temas genéricos" · Decirlo con el número concreto ("en un año tienes 24 guías") o con la instrucción, una sola vez.
 - 2026-10-27 · Plantilla de título repetida dentro de una lista de ideas · "de qué depende el precio de…" ×5 y "qué preguntar(le)…" ×5 en 30 ideas · Ninguna fórmula más de 2 veces por lista; cambiar el ángulo ("por qué dos cotizaciones salen distintas", "qué incluye el precio").
 - 2026-11-05 · Párrafo de cierre que amontona 2-3 enlaces internos en frases consecutivas y termina en una orden tipo CTA · "Cómo escribir las páginas... está en la guía completa de SEO para clínicas, y así lo aplicamos en SEO para clínicas estéticas. Si quieres..., ahí tienes el método de Visibla" (tres enlaces pegados cerrando el artículo) · Repartir los enlaces en frases con verbo distinto a lo largo del párrafo ("explica", "contamos", "así trabaja") y evitar que el último enlace quede como una orden de venta ("ahí tienes").
+- 2026-11-07 · Redactor · Clínica inventada como ejemplo principal de la guía · "una clínica dental en Manizales" (6-nov), "Sonrisa Andina" en Bucaramanga, y 10 guías más con el mismo recurso · Usar un dato propio de hechos.md (o datos-propios.md) o una búsqueda real de search-console.md. Si de verdad hace falta un caso hipotético: uno solo, rotulado "Ejemplo" en el mismo párrafo.
+- 2026-11-07 · Redactor · Cierre con fórmula fija repetida en casi todas las guías · "Haz esto hoy en 10 minutos" en 25 de 34 guías · Cerrar con el paso práctico que toca a ese tema, dicho con sus propias palabras; nunca la misma frase de otra guía.
+- 2026-11-07 · Redactor · Pedir que se desconfíe de cualquiera que escriba sin que se lo pidan (Visibla también escribe a clínicas) · "desconfía de los correos no solicitados" · Si el tema lo necesita: "desconfía de quien te escribe prometiendo posiciones sin mostrarte un diagnóstico real de tu web".
+
+## Resueltas
+
+- 2026-10-27 · Duplete de palabra clave en casi cada frase · "clínicas y consultorios" / "clínicas, médicos y consultorios" más de 10 veces · La pareja completa solo en título, meta, H1 y un H2; en el resto elegir una o hablarle a la persona ("si atiendes en…"). (movida el 7-nov por el límite de 30; si reaparece, vuelve a Activas)
+- 2026-10-27 · Cambio de sujeto o de persona dentro de una frase o serie · "agentes de IA escriben…, cuidamos… y medimos…"; "Un consultorio particular… una página que diga qué atiendes" · Un solo sujeto y una sola persona de principio a fin de la frase. (movida el 7-nov por el límite de 30; si reaparece, vuelve a Activas)
+- 2026-10-27 · Cifra ambigua · "$300.000 el mes 2 y el mes 3" (¿cada uno o entre los dos?); "llegaron 7.320 extranjeros" sin decir a dónde · Repetir la cifra por mes o decir "en cada uno"; nombrar el lugar en la misma frase que el número. (movida el 7-nov por el límite de 30; si reaparece, vuelve a Activas)

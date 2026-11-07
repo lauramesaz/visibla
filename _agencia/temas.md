@@ -1,23 +1,53 @@
 # Cola de temas
 
-> El Investigador toma el PRIMER tema `pendiente` respetando las reglas de rotación. Puede proponer temas nuevos al final (con estado `propuesto`) si encuentra búsquedas reales mejores; no los escribe hasta el día siguiente.
+> Desde el 9-nov-2026 se publica UNA guía nueva por semana, el lunes. El Investigador toma el PRIMER tema `pendiente` de la cola 2, con prioridad para los marcados ★.
+> Antes de escribir, busca la keyword en `mapa-palabras.md`. Si ya tiene página dueña, marca el tema `descartado (tiene dueña: <url>)` y toma el siguiente. Al publicar, agrega la búsqueda al mapa con su nueva dueña.
+> Puede proponer temas nuevos al final (estado `propuesto`) si encuentra búsquedas reales sin página; no los escribe hasta la semana siguiente.
 > Estados: `pendiente` · `publicado AAAA-MM-DD` · `propuesto` · `descartado (motivo)`
 
 ## Reglas de rotación
-1. Nunca dos días seguidos la misma categoría.
-2. 1 de cada 3 artículos es de `SEO por ciudad` o `SEO por especialidad` (los que más cerca están de la compra).
-3. Cada 7 artículos, uno de `Normas y ética` o `IA y buscadores`.
-4. Prioridad a los marcados ★ (keywords de compra: el lector ya busca agencia).
+1. Nunca dos guías nuevas seguidas de la misma categoría.
+2. Prioridad a los marcados ★ (intención de compra: el lector ya busca quién le ayude).
+3. Cada 7 guías nuevas, una de `Normas y ética` o `IA y buscadores`.
+4. Cada guía enlaza UNA vez, dentro del texto, a la página de venta de la columna "Enlaza a" (si es de la fase 2 y todavía no existe en `_agencia/paginas/`, usa la home `/`).
 
 ## Racimos (para enlazar entre sí)
 - **Pilar:** seo-para-clinicas (guía completa) ← todos enlazan aquí.
-- Local/Maps: ficha de Google, reseñas, NAP, "cerca de mí".
-- Contenido: blog médico, YMYL, temas, IA para escribir.
-- Especialidad: estética, cirugía plástica, odontología, dermatología, vascular, fisioterapia, nutrición.
-- Ciudad: Medellín, Bogotá, Cali, Barranquilla, Pereira, Bucaramanga, Cartagena.
-- Medición: WhatsApp, Search Console, Analytics, Clarity, cuánto vale un paciente.
+- Local/Maps: ficha de Google, reseñas, NAP, "cerca de mí", varias sedes, otros mapas.
+- Contenido: blog médico, YMYL, temas, IA para escribir, páginas de servicio, web de la clínica.
+- Especialidad: estética, cirugía plástica, odontología, dermatología, vascular, fisioterapia, nutrición, oftalmología, ginecología.
+- Ciudad: Medellín, Bogotá, Cali, Barranquilla, Pereira, Bucaramanga, Cartagena, Cúcuta.
+- Medición: WhatsApp, Search Console, Analytics, Clarity, PageSpeed, cuánto vale un paciente, cómo evaluar a la agencia.
 
-## Cola
+## Cola 2 (desde el 9-nov-2026)
+
+Sacada el 7-nov-2026 de búsquedas sin página dueña (Search Console y autocompletado de Google Colombia) y de las preguntas que ninguna IA responde con una agencia especializada en la prueba mensual (5, 7, 8 y 9; la 7 y la 9 ya tienen dueña: /plan-seo/ y /seo-cirujanos-plasticos/).
+
+| # | Tema / título de trabajo | Keyword | Categoría | Enlaza a | Para no chocar | Estado |
+|---|---|---|---|---|---|---|
+| 1 | ★ Cómo saber si tu agencia SEO está trabajando: qué revisar en el informe de cada mes | cómo saber si mi agencia seo funciona | Medición y resultados | /plan-seo/ | Es para quien ya contrató. Enlaza a como-elegir-agencia-seo-clinica (antes de firmar) sin repetir sus 10 preguntas | pendiente |
+| 2 | ★ GEO para clínicas: qué es y qué pedirle a quien promete que ChatGPT te recomiende | geo para clínicas | IA y buscadores | / | aparecer-en-chatgpt-clinica explica el cómo; esta explica el término y qué exigir a una agencia. Enlázala, no repitas sus pasos | pendiente |
+| 3 | ★ Qué debe tener la página web de una clínica antes de invertir en SEO | página web para clínica | Contenido y blog | /diagnostico/ | La web completa (inicio, servicios, médicos, contacto, legal). La página de cada tratamiento es de pagina-servicio-clinica: enlázala | pendiente |
+| 4 | ★ Doctoralia o web propia: qué le conviene a tu consulta | doctoralia o página web propia | SEO local | /seo-medicos/ | La lista de directorios es de directorios-medicos-seo: enlázala y no la repitas | pendiente |
+| 5 | ★ SEO para oftalmólogos y clínicas de ojos | seo para oftalmólogos | SEO por especialidad | /seo-medicos/ | Búsquedas propias de oftalmología (cirugía refractiva, catarata, examen de la vista); nada genérico copiado de otra especialidad | pendiente |
+| 6 | ★ Landing page para la pauta de tu clínica: qué lleva para que te escriban | landing page para clínicas | Contenido y blog | /plan-seo/ | Página para anuncios; la página de servicio orgánica es de pagina-servicio-clinica. Enlaza a seo-vs-google-ads-clinicas | pendiente |
+| 7 | ★ Cómo conseguir pacientes para tu consultorio particular | cómo conseguir pacientes para mi consultorio | SEO local | /seo-medicos/ | Canales para un médico independiente (Google, ficha, referidos, convenios); el detalle de Instagram es de instagram-vs-google-clinica | pendiente |
+| 8 | ★ SEO para ginecólogos: las búsquedas de tus pacientes | seo para ginecólogos | SEO por especialidad | /seo-medicos/ | Búsquedas propias de ginecología; cuidado extra con privacidad y con la norma de publicidad en salud | pendiente |
+| 9 | Ficha de Google suspendida: por qué pasa y cómo recuperarla | perfil de empresa suspendido google | Google Maps y reseñas | / | Crear la ficha es de como-aparecer-en-google-maps-clinica y llenarla es de perfil-empresa-google-clinica: enlázalas | pendiente |
+| 10 | Cómo ver en Google Analytics 4 los pacientes que llegan desde ChatGPT | tráfico de chatgpt en google analytics | Medición y resultados | /plan-seo/ | Pasos exactos en GA4 con la ayuda oficial de Google. Los clics a WhatsApp son de medir-clics-whatsapp-web | pendiente |
+| 11 | Consulta virtual en la web de tu clínica: lo que exige la norma de telesalud | consulta virtual telesalud colombia | Normas y ética | /seo-medicos/ | Citar la norma vigente con enlace oficial; si no se encuentra, no afirmar. Habeas data es de habeas-data-clinica | pendiente |
+| 12 | Reputación online del médico: qué sale cuando un paciente busca tu nombre | reputación online médico | Google Maps y reseñas | /seo-medicos/ | "Cómo aparecer en Google como médico" es de /seo-medicos/: esta guía enseña a revisar y corregir lo que ya sale (directorios, reseñas, prensa) | pendiente |
+| 13 | AI Overviews y tu clínica: qué búsquedas de salud lo muestran y qué pasa con los clics | ai overviews clínicas | IA y buscadores | / | Cómo ser citado es de aparecer-en-chatgpt-clinica; aquí, qué cambia en los clics y cómo verlo en Search Console | pendiente |
+| 14 | Clínica con varias sedes: una ficha y una página por sede sin que compitan | clínica con varias sedes seo | SEO local | /agencia-seo-clinicas-medellin/ | El código schema de dos sedes ya está en schema-clinica-medica: enlázala, no repitas el código | pendiente |
+| 15 | SEO para clínicas en Cúcuta | seo clínicas cúcuta | SEO por ciudad | / | Datos reales de la ciudad con fuente (zonas con clínicas, pacientes de Venezuela si hay fuente). Nada de cambiar solo el nombre de la ciudad | pendiente |
+| 16 | Cómo leer el informe de PageSpeed de tu web sin ser técnico | cómo leer pagespeed insights | Medición y resultados | /diagnostico/ | Por qué importa la velocidad es de velocidad-web-celular: aquí se lee el informe línea por línea | pendiente |
+| 17 | Precios en la web de tu clínica: publicarlos o no | publicar precios en la web de la clínica | Contenido y blog | / | Nunca dar precios de Visibla (solo en /plan-seo/). Mirar qué exige la norma de protección al consumidor, con fuente oficial | pendiente |
+| 18 | Apple Maps y Bing: los otros mapas donde te buscan los pacientes | apple business connect clínica | Google Maps y reseñas | / | Solo funciones que existan hoy, con la ayuda oficial de Apple y Microsoft | pendiente |
+| 19 | Cambiar el dominio de la web de tu clínica sin perder lo que ganaste en Google | cambiar dominio sin perder seo | SEO local | /diagnostico/ | Pasos con la ayuda oficial de Google (redirecciones 301, Search Console). No nombrar clientes si no está en hechos.md | pendiente |
+| 20 | YouTube para médicos: videos que también te traen pacientes desde Google | youtube para médicos | Contenido y blog | /seo-medicos/ | Sin consejos médicos en el ejemplo; solo qué tipo de video y cómo conectarlo con la web | pendiente |
+
+## Cola 1 (2-oct a 6-nov-2026, cerrada)
+
 
 | # | Tema / título de trabajo | Keyword | Categoría | Estado |
 |---|---|---|---|---|

@@ -8,10 +8,10 @@
 | Intención: responde lo que busca un DUEÑO de clínica (no un paciente) | 15 |
 | Primer párrafo responde en 2–3 frases; cada H2 abre con respuesta directa | 10 |
 | Profundidad: cubre lo de los 5 primeros de Google + algo que ellos no tienen | 15 |
-| 2–4 enlaces internos reales + enlace a home; 2–5 externos de autoridad | 10 |
+| 2–4 enlaces internos reales + enlace a home + 1 a su página de venta según `mapa-palabras.md`; 2–5 externos de autoridad | 10 |
 | FAQ con 3–5 preguntas reales en la cabecera | 5 |
 | Estructura legible (H2/H3, listas o tabla cuando ayudan, párrafos cortos) | 10 |
-| Sin canibalización con otros artículos | 10 |
+| Sin canibalización: la keyword no tiene otra página dueña en `mapa-palabras.md` | 10 |
 | Local (si aplica) hecho con datos reales, no cambio de nombre de ciudad | 5 |
 | Huellas de IA (descuenta hasta −15 si el Policía dejó vicios) | −15 |
 

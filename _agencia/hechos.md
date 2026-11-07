@@ -1,7 +1,7 @@
 # Hechos verificados de Visibla (lo ÚNICO que se puede afirmar sobre Visibla y sus clientes)
 
 > Si un dato sobre Visibla o un cliente no está aquí, NO se escribe. Laura actualiza este archivo; los agentes solo lo leen.
-> Última revisión: 27-oct-2026 (conteo de artículos de Seravena; firma "Web y SEO: Visibla" en el pie de las webs de Seravena, The Skin Haus, Medicina Segura y Aqua Beauty & Spa).
+> Última revisión: 7-nov-2026 (el diagnóstico de /diagnostico/ es real, no de muestra). Antes: 27-oct-2026 (conteo de artículos de Seravena; firma "Web y SEO: Visibla" en el pie de las webs de Seravena, The Skin Haus, Medicina Segura y Aqua Beauty & Spa).
 
 ## Visibla
 - Agencia de SEO con agentes de IA para clínicas, en Colombia. Marca: Visibla. Web: https://posicion-seo.com
@@ -9,7 +9,7 @@
 - Método (lo que se hace de verdad): equipo de agentes de IA que investigan qué buscan los pacientes, escriben, un editor quita lo que suena a robot, un verificador revisa lo médico, un juez SEO califica, y se publica solo cada mañana. Se mide cuántas personas llegan desde Google y cuántas hacen clic a WhatsApp (Microsoft Clarity, Google Search Console, conversión "clic en WhatsApp").
 - Planes en la web: Presencia, Crecimiento, Dominio. **Sus precios: NO publicar.**
 - Plan SEO de 90 días (página https://posicion-seo.com/plan-seo/, desde 19-oct-2026, con precios aprobados por Laura): solo SEO $500.000 el primer mes y $300.000 los meses 2 y 3 ($1.100.000 total); SEO + gestión de Google Ads $1.500.000 el primer mes y $900.000 los meses 2 y 3 ($3.300.000 total); la inversión en anuncios va aparte. En artículos NO repetir cifras: si el tema es cuánto cuesta el SEO o cuánto tarda, enlazar a /plan-seo/ ("plan de 90 días con precio fijo").
-- El diagnóstico de la home todavía es de muestra: en artículos ofrecer "diagnóstico gratis por WhatsApp" (lo hace una persona), no "herramienta automática".
+- El diagnóstico de /diagnostico/ es real desde el 2-oct-2026 (PageSpeed de Google): https://posicion-seo.com/diagnostico/ revisa la web que escriba el lector y muestra su velocidad en celular, el SEO técnico básico y las buenas prácticas. Las guías pueden enlazarlo. Comprobado el 7-nov-2026 con la web de Seravena. El diagnóstico gratis por WhatsApp (lo revisa una persona) se sigue ofreciendo en los botones.
 
 ## Caso Clínica Seravena (Medellín) — se puede nombrar
 - Clínica de lipedema, venas (várices) y obesidad en Medellín. Web: https://www.clinicaseravena.com
