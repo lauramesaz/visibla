@@ -25,7 +25,7 @@ Sacada el 7-nov-2026 de búsquedas sin página dueña (Search Console y autocomp
 
 | # | Tema / título de trabajo | Keyword | Categoría | Enlaza a | Para no chocar | Estado |
 |---|---|---|---|---|---|---|
-| 1 | ★ Cómo saber si tu agencia SEO está trabajando: qué revisar en el informe de cada mes | cómo saber si mi agencia seo funciona | Medición y resultados | /plan-seo/ | Es para quien ya contrató. Enlaza a como-elegir-agencia-seo-clinica (antes de firmar) sin repetir sus 10 preguntas | pendiente |
+| 1 | ★ Cómo saber si tu agencia SEO está trabajando: qué revisar en el informe de cada mes | cómo saber si mi agencia seo funciona | Medición y resultados | /plan-seo/ | Es para quien ya contrató. Enlaza a como-elegir-agencia-seo-clinica (antes de firmar) sin repetir sus 10 preguntas | publicado 2026-11-09 |
 | 2 | ★ GEO para clínicas: qué es y qué pedirle a quien promete que ChatGPT te recomiende | geo para clínicas | IA y buscadores | / | aparecer-en-chatgpt-clinica explica el cómo; esta explica el término y qué exigir a una agencia. Enlázala, no repitas sus pasos | pendiente |
 | 3 | ★ Qué debe tener la página web de una clínica antes de invertir en SEO | página web para clínica | Contenido y blog | /diagnostico/ | La web completa (inicio, servicios, médicos, contacto, legal). La página de cada tratamiento es de pagina-servicio-clinica: enlázala | pendiente |
 | 4 | ★ Doctoralia o web propia: qué le conviene a tu consulta | doctoralia o página web propia | SEO local | /seo-medicos/ | La lista de directorios es de directorios-medicos-seo: enlázala y no la repitas | pendiente |

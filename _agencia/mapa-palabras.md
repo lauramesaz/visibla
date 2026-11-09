@@ -114,6 +114,7 @@
 | cuánto tarda el seo | /blog/cuanto-tarda-el-seo/ | informativa | — |
 | search console para principiantes | /blog/search-console-para-principiantes/ | informativa | — |
 | medir clics whatsapp web | /blog/medir-clics-whatsapp-web/ | informativa | — |
+| cómo saber si mi agencia seo funciona | /blog/saber-si-agencia-seo-funciona/ | informativa | — |
 | mapa de calor para la web de tu clínica | /blog/mapa-de-calor-web-clinica/ | informativa | — |
 | valor de un paciente | /blog/valor-de-un-paciente/ | informativa | — |
 | seo vs google ads para clínicas | /blog/seo-vs-google-ads-clinicas/ | informativa | — |

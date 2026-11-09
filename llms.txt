@@ -40,6 +40,7 @@
 
 ## Guías
 
+- [Cómo saber si tu agencia SEO funciona: el informe mensual](https://posicion-seo.com/blog/saber-si-agencia-seo-funciona/): Cuatro cifras de Search Console, una lista del trabajo hecho en el mes y el conteo de mensajes por WhatsApp: con eso sabes si la agencia que contrataste está moviendo algo. Incluye los números reales de la web de Visibla.
 - [Mapa de calor para la web de tu clínica, gratis](https://posicion-seo.com/blog/mapa-de-calor-web-clinica/): Microsoft Clarity es gratis, sin límite de tráfico, y arma el mapa en segundos con el tráfico que ya tienes. Con el ejemplo de una clínica dental en Manizales, inventada para esta guía, qué tres mapas revisar primero, cómo instalarlo sin programar y qué datos de un formulario no debe grabar.
 - [Schema de tu clínica médica: qué datos estructurados usar](https://posicion-seo.com/blog/schema-clinica-medica/): Google ya no premia el FAQPage con una caja visible, y casi ninguna clínica pone bien el schema de LocalBusiness. Qué datos van, qué tipo elegir según tu especialidad y por qué no debes meter ahí tus reseñas de Google.
 - [Instagram vs. Google: por qué tu clínica necesita los dos](https://posicion-seo.com/blog/instagram-vs-google-clinica/): Instagram premia la cercanía con quien ya te conoce; Google premia a quien busca el tratamiento sin conocerte todavía. Con un caso resuelto de una clínica que vivía solo de Instagram, lo que cambió desde que Google empezó a indexar algunas publicaciones, y una repartición práctica del trabajo entre los dos.
