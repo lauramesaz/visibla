@@ -36,6 +36,8 @@
 - 2026-11-07 · Redactor · Clínica inventada como ejemplo principal de la guía · "una clínica dental en Manizales" (6-nov), "Sonrisa Andina" en Bucaramanga, y 10 guías más con el mismo recurso · Usar un dato propio de hechos.md (o datos-propios.md) o una búsqueda real de search-console.md. Si de verdad hace falta un caso hipotético: uno solo, rotulado "Ejemplo" en el mismo párrafo.
 - 2026-11-07 · Redactor · Cierre con fórmula fija repetida en casi todas las guías · "Haz esto hoy en 10 minutos" en 25 de 34 guías · Cerrar con el paso práctico que toca a ese tema, dicho con sus propias palabras; nunca la misma frase de otra guía.
 - 2026-11-07 · Redactor · Pedir que se desconfíe de cualquiera que escriba sin que se lo pidan (Visibla también escribe a clínicas) · "desconfía de los correos no solicitados" · Si el tema lo necesita: "desconfía de quien te escribe prometiendo posiciones sin mostrarte un diagnóstico real de tu web".
+- 2026-11-09 · Redactor · Cierre que vuelve a amontonar 3 enlaces internos y los remata con "sigue siendo el mejor punto de partida" · "plan de 90 días… diagnóstico gratis… guía completa… sigue siendo el mejor punto de partida" en un solo párrafo · Un enlace por párrafo, cada uno con su motivo concreto, y cerrar con lo que el lector hace después (reaparece la multa del 5-nov).
+- 2026-11-09 · Redactor · Pregunta de FAQ mal puntuada que mezcla dos preguntas y rótulo "Esta guía es para…" en la entrada · "¿Sube el tráfico pero no llegan pacientes. Es culpa del SEO?" · Una pregunta por entrada, con signos completos; y decir a quién sirve el texto sin nombrarlo ("Esto es para quien ya firmó").
 
 ## Resueltas
 
