@@ -205,3 +205,10 @@ footer a{text-decoration:underline;text-underline-offset:3px}
 @media (max-width:600px){.lp-precio{padding:26px 22px}.lp-precio .btn{width:100%;justify-content:center}}
 .cta-in p.cta-nota{margin-top:14px;font-size:14.5px;color:#fff}
 .autora .autora-dx{margin-top:8px}
+
+/* Zona de toque de 44 px sin cambiar el tamaño que se ve */
+nav .btn,.tab,.faq summary{position:relative}
+nav .btn::after,.tab::after{content:"";position:absolute;left:0;right:0;top:50%;height:44px;transform:translateY(-50%)}
+.faq summary::before{content:"";position:absolute;left:0;right:0;top:50%;height:100%;min-height:48px;transform:translateY(-50%)}
+/* Tablas en celular: un poco más compactas para que quepan sin deslizar */
+@media (max-width:480px){.prosa table{font-size:14px}.prosa th,.prosa td{padding:9px 8px}}
