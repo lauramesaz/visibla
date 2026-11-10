@@ -137,7 +137,7 @@ NAV = """<div class="progress" id="progress"></div>
       <a href="/plan-seo/">Planes</a>
       <a href="/blog/">Guías</a>
     </div>
-    <a href="{wa}" target="_blank" rel="noopener" class="btn">Agendar llamada</a>
+    <a href="{wa}" target="_blank" rel="noopener" class="btn">Escribir por WhatsApp</a>
   </div>
 </nav>"""
 
@@ -342,7 +342,7 @@ def pagina_articulo(a, todos):
         rel_html = '<section class="rel wrap"><div class="mono">Sigue leyendo</div><div class="grid">' + "".join(tarjeta(b) for b in rel) + "</div></section>"
 
     return cabeza(a["titulo"] + " | Visibla", a["meta"], url, extra, img) + NAV.format(
-        wa=wa(f"Hola Visibla, estoy leyendo la guía «{a['titulo']}» y quiero agendar una llamada")) + f"""
+        wa=wa(f"Hola Visibla, estoy leyendo la guía «{a['titulo']}» y quiero hablar con ustedes")) + f"""
 <header class="art-head grain">
   <div class="blob b1"></div><div class="blob b2"></div><div class="frost"></div>
   <div class="art-head-in">
@@ -391,7 +391,7 @@ def pagina_listado(arts):
                              "datePublished": a["fecha"]} for a in arts[:30]]}
     titulo = "Guías de SEO para clínicas en Colombia | Visibla"
     meta = "Guías prácticas para que tu clínica aparezca en Google: ficha de Google, reseñas, contenido médico, medición y más. Escritas para dueños de clínicas."
-    return cabeza(titulo, meta, url, ld(esquema)) + NAV.format(wa=wa("Hola Visibla, vengo de las guías de SEO para clínicas y quiero agendar una llamada")) + f"""
+    return cabeza(titulo, meta, url, ld(esquema)) + NAV.format(wa=wa("Hola Visibla, vengo de las guías de SEO para clínicas y quiero hablar con ustedes")) + f"""
 <header class="art-head grain list-head">
   <div class="blob b1"></div><div class="blob b2"></div><div class="frost"></div>
   <div class="art-head-in">
@@ -537,7 +537,7 @@ def pagina_404():
     cab = cabeza("Página no encontrada | Visibla", "Esta dirección no existe en la web de Visibla.", DOMINIO + "/404.html",
                  '<meta name="robots" content="noindex">', tipo="website")
     cab = re.sub(r'<link rel="canonical"[^>]*>\n|<meta property="og:url"[^>]*>\n', "", cab)
-    return cab + NAV.format(wa=wa("Hola Visibla, quiero agendar una llamada")) + f"""
+    return cab + NAV.format(wa=wa("Hola Visibla, quiero hablar con ustedes")) + f"""
 <header class="art-head grain e404">
   <div class="blob b1"></div><div class="blob b2"></div><div class="frost"></div>
   <div class="art-head-in">
