@@ -154,7 +154,7 @@ h2 em{font-style:normal;color:var(--steel)}
 .cs p{color:var(--muted);font-size:14px;line-height:1.45}
 
 /* PLANES */
-.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:60px;text-align:left}
+.plans{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:60px;text-align:left}
 .plan{border-radius:var(--r);border:1px solid var(--line);padding:32px;display:flex;flex-direction:column;gap:22px}
 .plan.feat{background:var(--ink);color:#fff;border-color:var(--ink);position:relative;overflow:hidden}
 .plan.feat::before{content:"";position:absolute;width:420px;height:420px;right:-160px;top:-180px;border-radius:50%;background:radial-gradient(circle,rgba(125,147,171,.6),transparent 65%)}
@@ -166,7 +166,13 @@ h2 em{font-style:normal;color:var(--steel)}
 .plan li{display:flex;gap:10px}
 .plan li::before{content:"";flex:none;width:16px;height:16px;margin-top:2px;border-radius:50%;background:var(--steel-soft);box-shadow:inset 0 0 0 4px #fff}
 .plan.feat li::before{box-shadow:inset 0 0 0 4px var(--ink)}
-.plan .btn{margin-top:auto;justify-content:center}
+.plan .acc{margin-top:auto;display:grid;gap:10px}
+.plan .btn{justify-content:center}
+.plan .precio b{font-weight:400;font-size:44px;letter-spacing:-.04em;line-height:1}
+.plan .precio span{margin-left:8px;font-size:15px;color:var(--muted)}
+.plan .precio small{display:block;margin-top:10px;font-size:14px;line-height:1.45;color:var(--muted)}
+.plan.feat .precio span,.plan.feat .precio small{color:rgba(255,255,255,.6)}
+.plan.feat .btn.ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.3)}
 .plan.feat .btn{background:#fff;color:var(--ink)}
 
 /* CTA */
@@ -289,7 +295,7 @@ nav.hide{transform:translateY(-100%)}
 @media (min-width:601px) and (max-width:900px){
   .cards,.steps,.plans{grid-template-columns:1fr 1fr}
   .case-stats{grid-template-columns:1fr 1fr}
-  .cards .card:last-child:nth-child(odd),.plans .plan:last-child{grid-column:1/-1}
+  .cards .card:last-child:nth-child(odd){grid-column:1/-1}
 }
 @media (max-width:380px){
   .hero h1{font-size:40px}
@@ -334,7 +340,7 @@ nav.hide{transform:translateY(-100%)}
 .post .when{margin-top:auto;padding-top:22px;color:#97a0aa;font-size:10.5px}
 @media (max-width:900px){.guias-grid{grid-template-columns:1fr}.guias{padding:90px 0}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Qué hace una agencia SEO para clínicas?", "acceptedAnswer": {"@type": "Answer", "text": "Hace que tu clínica aparezca cuando los pacientes buscan tus tratamientos en Google: cuida tu ficha de Google y tus reseñas, mejora tu web y publica contenido que responde lo que preguntan tus pacientes. En Visibla ese contenido lo producen agentes de IA cada mañana, con revisión antes de publicar. Si quieres entender el proceso completo, está en la guía de SEO para clínicas."}}, {"@type": "Question", "name": "¿Cuánto tarda en notarse el SEO en una clínica?", "acceptedAnswer": {"@type": "Answer", "text": "Se mide en meses, no en semanas, y depende de tu ciudad y de cuánta competencia tengas. Nadie puede garantizar el primer lugar en Google, y desconfía de quien lo prometa. Lo que sí te damos desde el primer mes es un panel con cuántas personas te encuentran y cuántas escriben por WhatsApp."}}, {"@type": "Question", "name": "¿Quién escribe los artículos de mi clínica?", "acceptedAnswer": {"@type": "Answer", "text": "Un equipo de agentes de IA: uno investiga y escribe, otro edita, otro quita lo que suena a robot, otro verifica cada dato y otro califica el SEO. Solo se publica lo que pasa todos los filtros. Tú no tienes que escribir nada."}}, {"@type": "Question", "name": "¿Sirve si ya invierto en Instagram o en Google Ads?", "acceptedAnswer": {"@type": "Answer", "text": "Sí, se complementan. Los anuncios traen pacientes mientras pagas; el contenido que se publica en tu web sigue trabajando aunque pauses la pauta, y muchos pacientes que te ven en redes te buscan en Google antes de escribirte."}}, {"@type": "Question", "name": "¿Trabajan con clínicas fuera de Medellín?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. Trabajamos de forma remota con clínicas de toda Colombia: Bogotá, Cali, Barranquilla, Pereira, Bucaramanga, Cartagena y más."}}, {"@type": "Question", "name": "¿Visibla y posicion-seo.com son lo mismo?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. Visibla es el nombre de la agencia y posicion-seo.com es la dirección de su web. Es una agencia colombiana de SEO para clínicas y médicos, con casos publicados en Medellín y Pereira."}}, {"@type": "Question", "name": "¿Cuánto cuesta?", "acceptedAnswer": {"@type": "Answer", "text": "Para empezar tenemos un plan de 90 días con precio fijo: solo SEO desde $500.000 el primer mes, o SEO con gestión de Google Ads desde $1.500.000. Los planes Presencia, Crecimiento y Dominio dependen de tu clínica: escríbenos por WhatsApp al 315 381 1567 y te lo contamos con tu diagnóstico."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Qué hace una agencia SEO para clínicas?", "acceptedAnswer": {"@type": "Answer", "text": "Hace que tu clínica aparezca cuando los pacientes buscan tus tratamientos en Google: cuida tu ficha de Google y tus reseñas, mejora tu web y publica contenido que responde lo que preguntan tus pacientes. En Visibla ese contenido lo producen agentes de IA cada mañana, con revisión antes de publicar. Si quieres entender el proceso completo, está en la guía de SEO para clínicas."}}, {"@type": "Question", "name": "¿Cuánto tarda en notarse el SEO en una clínica?", "acceptedAnswer": {"@type": "Answer", "text": "Se mide en meses, no en semanas, y depende de tu ciudad y de cuánta competencia tengas. Nadie puede garantizar el primer lugar en Google, y desconfía de quien lo prometa. Lo que sí te damos desde el primer mes es un panel con cuántas personas te encuentran y cuántas escriben por WhatsApp."}}, {"@type": "Question", "name": "¿Quién escribe los artículos de mi clínica?", "acceptedAnswer": {"@type": "Answer", "text": "Un equipo de agentes de IA: uno investiga y escribe, otro edita, otro quita lo que suena a robot, otro verifica cada dato y otro califica el SEO. Solo se publica lo que pasa todos los filtros. Tú no tienes que escribir nada."}}, {"@type": "Question", "name": "¿Sirve si ya invierto en Instagram o en Google Ads?", "acceptedAnswer": {"@type": "Answer", "text": "Sí, se complementan. Los anuncios traen pacientes mientras pagas; el contenido que se publica en tu web sigue trabajando aunque pauses la pauta, y muchos pacientes que te ven en redes te buscan en Google antes de escribirte."}}, {"@type": "Question", "name": "¿Trabajan con clínicas fuera de Medellín?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. Trabajamos de forma remota con clínicas de toda Colombia: Bogotá, Cali, Barranquilla, Pereira, Bucaramanga, Cartagena y más."}}, {"@type": "Question", "name": "¿Visibla y posicion-seo.com son lo mismo?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. Visibla es el nombre de la agencia y posicion-seo.com es la dirección de su web. Es una agencia colombiana de SEO para clínicas y médicos, con casos publicados en Medellín y Pereira."}}, {"@type": "Question", "name": "¿Cuánto cuesta?", "acceptedAnswer": {"@type": "Answer", "text": "Tenemos un plan de 90 días con precio fijo. Solo SEO: $500.000 el primer mes y $300.000 los meses 2 y 3, $1.100.000 en total. SEO con gestión de Google Ads: $1.500.000 el primer mes y $900.000 los meses 2 y 3, $3.300.000 en total; la inversión en anuncios va aparte. El diagnóstico de tu web es gratis. El plan está explicado en posicion-seo.com/plan-seo/."}}]}</script>
 </head>
 <body>
 
@@ -478,26 +484,28 @@ nav.hide{transform:translateY(-100%)}
 <section id="planes" class="center" style="padding-top:0">
   <div class="wrap">
     <span class="eyebrow mono reveal">Planes</span>
-    <h2 class="reveal blur">Planes de SEO para clínicas: elige qué tan <em>visible</em> quieres ser.</h2>
+    <h2 class="reveal blur">Planes de SEO para clínicas: 90 días, <em>precio fijo.</em></h2>
     <div class="plans">
       <div class="plan reveal">
-        <div><h3>Presencia</h3><div class="for">Para clínicas que están empezando en Google</div></div>
-        <ul><li>Diagnóstico completo</li><li>Ficha de Google Maps optimizada</li><li>8 artículos al mes</li><li>Informe mensual</li></ul>
-        <a href="https://wa.me/573153811567?text=Hola%20Visibla%2C%20me%20interesa%20el%20plan%20Presencia" target="_blank" rel="noopener" class="btn ghost">Agendar llamada</a>
+        <div><h3>SEO 90 días</h3><div class="for">Para crecer en Google y en la IA sin pagar anuncios.</div></div>
+        <div class="precio"><b>$500.000</b><span>el primer mes</span><small>$300.000 los meses 2 y 3 · total de los 90 días: $1.100.000</small></div>
+        <ul><li>Diagnóstico y arreglos técnicos de tu web</li><li>Ficha de Google optimizada y plan de reseñas</li><li>Contenido con agentes de IA, revisado antes de publicar</li><li>Tu web preparada para ChatGPT, Gemini y Google</li><li>Medición de visitas y clics a WhatsApp</li><li>Informe mensual en palabras sencillas</li></ul>
+        <div class="acc">
+          <a href="https://wa.me/573153811567?text=Hola%20Visibla%2C%20vengo%20de%20la%20p%C3%A1gina%20de%20inicio%20y%20quiero%20el%20plan%20SEO%20sin%20pauta%20%28%24500.000%20el%20primer%20mes%20y%20%24300.000%20los%20meses%202%20y%203%29" target="_blank" rel="noopener" class="btn">Quiero el plan SEO</a>
+          <a href="/plan-seo/" class="btn ghost">Ver el plan mes por mes</a>
+        </div>
       </div>
       <div class="plan feat reveal">
-        <div class="mono" style="color:var(--steel-soft)">Más elegido</div>
-        <div><h3>Crecimiento</h3><div class="for">Para llenar la agenda con pacientes de Google</div></div>
-        <ul><li>Todo lo de Presencia</li><li>1 artículo al día con agente IA</li><li>Mapa de calor de tu web</li><li>Medición de contactos por WhatsApp</li><li>Panel en vivo</li></ul>
-        <a href="https://wa.me/573153811567?text=Hola%20Visibla%2C%20me%20interesa%20el%20plan%20Crecimiento" target="_blank" rel="noopener" class="btn">Agendar llamada</a>
-      </div>
-      <div class="plan reveal">
-        <div><h3>Dominio</h3><div class="for">Para ser la primera opción de tu ciudad</div></div>
-        <ul><li>Todo lo de Crecimiento</li><li>Páginas por tratamiento y ciudad</li><li>Gestión de reseñas</li><li>Google Ads conectado al SEO</li></ul>
-        <a href="https://wa.me/573153811567?text=Hola%20Visibla%2C%20me%20interesa%20el%20plan%20Dominio" target="_blank" rel="noopener" class="btn ghost">Agendar llamada</a>
+        <div class="mono" style="color:var(--steel-soft)">Anuncios desde el mes 1</div>
+        <div><h3>SEO + Google Ads</h3><div class="for">Anuncios que traen pacientes ya, mientras el SEO construye lo que se queda.</div></div>
+        <div class="precio"><b>$1.500.000</b><span>el primer mes</span><small>$900.000 los meses 2 y 3 · total de los 90 días: $3.300.000. La inversión en anuncios va aparte.</small></div>
+        <ul><li>Todo lo del plan SEO 90 días</li><li>Campaña de Google Ads creada desde cero</li><li>Palabras que usan los pacientes que ya quieren agendar</li><li>Gestión y ajustes cada semana para no pagar clics inútiles</li><li>Cada clic a WhatsApp medido como contacto</li><li>Lo que funciona en anuncios se vuelve contenido SEO</li></ul>
+        <div class="acc">
+          <a href="https://wa.me/573153811567?text=Hola%20Visibla%2C%20vengo%20de%20la%20p%C3%A1gina%20de%20inicio%20y%20quiero%20el%20plan%20SEO%20%2B%20Google%20Ads%20%28%241.500.000%20el%20primer%20mes%20y%20%24900.000%20los%20meses%202%20y%203%29" target="_blank" rel="noopener" class="btn">Quiero SEO + Google Ads</a>
+          <a href="/plan-seo/" class="btn ghost">Ver el plan mes por mes</a>
+        </div>
       </div>
     </div>
-    <p style="margin-top:34px"><a class="btn ghost" href="/plan-seo/">Ver el plan de 90 días con precios <span class="ar">→</span></a></p>
   </div>
 </section>
 
@@ -505,7 +513,7 @@ nav.hide{transform:translateY(-100%)}
   <div class="wrap faq-home">
     <span class="eyebrow mono reveal">Preguntas</span>
     <h2 class="reveal blur">Preguntas frecuentes sobre <em>SEO para clínicas</em>.</h2>
-    <div class="faq-list"><details class="reveal"><summary>¿Qué hace una agencia SEO para clínicas?</summary><p>Hace que tu clínica aparezca cuando los pacientes buscan tus tratamientos en Google: cuida tu ficha de Google y tus reseñas, mejora tu web y publica contenido que responde lo que preguntan tus pacientes. En Visibla ese contenido lo producen agentes de IA cada mañana, con revisión antes de publicar. Si quieres entender el proceso completo, está en la <a href="/blog/seo-para-clinicas/" style="color:var(--ink);text-decoration:underline;text-underline-offset:3px">guía de SEO para clínicas</a>.</p></details><details class="reveal"><summary>¿Cuánto tarda en notarse el SEO en una clínica?</summary><p>Se mide en meses, no en semanas, y depende de tu ciudad y de cuánta competencia tengas. Nadie puede garantizar el primer lugar en Google, y desconfía de quien lo prometa. Lo que sí te damos desde el primer mes es un panel con cuántas personas te encuentran y cuántas escriben por WhatsApp.</p></details><details class="reveal"><summary>¿Quién escribe los artículos de mi clínica?</summary><p>Un equipo de agentes de IA: uno investiga y escribe, otro edita, otro quita lo que suena a robot, otro verifica cada dato y otro califica el SEO. Solo se publica lo que pasa todos los filtros. Tú no tienes que escribir nada.</p></details><details class="reveal"><summary>¿Sirve si ya invierto en Instagram o en Google Ads?</summary><p>Sí, se complementan. Los anuncios traen pacientes mientras pagas; el contenido que se publica en tu web sigue trabajando aunque pauses la pauta, y muchos pacientes que te ven en redes te buscan en Google antes de escribirte.</p></details><details class="reveal"><summary>¿Trabajan con clínicas fuera de Medellín?</summary><p>Sí. Trabajamos de forma remota con clínicas de toda Colombia: Bogotá, Cali, Barranquilla, Pereira, Bucaramanga, Cartagena y más.</p></details><details class="reveal"><summary>¿Visibla y posicion-seo.com son lo mismo?</summary><p>Sí. Visibla es el nombre de la agencia y posicion-seo.com es la dirección de su web. Es una agencia colombiana de SEO para clínicas y médicos, con casos publicados en Medellín y Pereira.</p></details><details class="reveal"><summary>¿Cuánto cuesta?</summary><p>Para empezar tenemos un <a href="/plan-seo/" style="color:var(--ink);text-decoration:underline;text-underline-offset:3px">plan de 90 días con precio fijo</a>: solo SEO desde $500.000 el primer mes, o SEO con gestión de Google Ads desde $1.500.000. Los planes Presencia, Crecimiento y Dominio dependen de tu clínica: escríbenos por WhatsApp al 315 381 1567 y te lo contamos con tu diagnóstico.</p></details></div>
+    <div class="faq-list"><details class="reveal"><summary>¿Qué hace una agencia SEO para clínicas?</summary><p>Hace que tu clínica aparezca cuando los pacientes buscan tus tratamientos en Google: cuida tu ficha de Google y tus reseñas, mejora tu web y publica contenido que responde lo que preguntan tus pacientes. En Visibla ese contenido lo producen agentes de IA cada mañana, con revisión antes de publicar. Si quieres entender el proceso completo, está en la <a href="/blog/seo-para-clinicas/" style="color:var(--ink);text-decoration:underline;text-underline-offset:3px">guía de SEO para clínicas</a>.</p></details><details class="reveal"><summary>¿Cuánto tarda en notarse el SEO en una clínica?</summary><p>Se mide en meses, no en semanas, y depende de tu ciudad y de cuánta competencia tengas. Nadie puede garantizar el primer lugar en Google, y desconfía de quien lo prometa. Lo que sí te damos desde el primer mes es un panel con cuántas personas te encuentran y cuántas escriben por WhatsApp.</p></details><details class="reveal"><summary>¿Quién escribe los artículos de mi clínica?</summary><p>Un equipo de agentes de IA: uno investiga y escribe, otro edita, otro quita lo que suena a robot, otro verifica cada dato y otro califica el SEO. Solo se publica lo que pasa todos los filtros. Tú no tienes que escribir nada.</p></details><details class="reveal"><summary>¿Sirve si ya invierto en Instagram o en Google Ads?</summary><p>Sí, se complementan. Los anuncios traen pacientes mientras pagas; el contenido que se publica en tu web sigue trabajando aunque pauses la pauta, y muchos pacientes que te ven en redes te buscan en Google antes de escribirte.</p></details><details class="reveal"><summary>¿Trabajan con clínicas fuera de Medellín?</summary><p>Sí. Trabajamos de forma remota con clínicas de toda Colombia: Bogotá, Cali, Barranquilla, Pereira, Bucaramanga, Cartagena y más.</p></details><details class="reveal"><summary>¿Visibla y posicion-seo.com son lo mismo?</summary><p>Sí. Visibla es el nombre de la agencia y posicion-seo.com es la dirección de su web. Es una agencia colombiana de SEO para clínicas y médicos, con casos publicados en Medellín y Pereira.</p></details><details class="reveal"><summary>¿Cuánto cuesta?</summary><p>Tenemos un plan de 90 días con precio fijo. Solo SEO: $500.000 el primer mes y $300.000 los meses 2 y 3, $1.100.000 en total. SEO con gestión de Google Ads: $1.500.000 el primer mes y $900.000 los meses 2 y 3, $3.300.000 en total; la inversión en anuncios va aparte. El diagnóstico de tu web es gratis. Está explicado mes por mes en el <a href="/plan-seo/" style="color:var(--ink);text-decoration:underline;text-underline-offset:3px">plan SEO de 90 días</a>.</p></details></div>
   </div>
 </section>
 
