@@ -49,7 +49,7 @@ El propio blog es la prueba del producto: si Visibla posiciona su blog, demuestr
 
 1. **Nada de datos inventados.** Toda cifra lleva fuente real enlazada en `fuentes` y debe existir en esa fuente. Si no la encuentras, no pongas la cifra.
 2. Datos de Visibla o de clientes: SOLO los de `hechos.md`. No inventes casos, clientes, resultados, testimonios ni precios.
-3. Precios de Visibla: SOLO los de `hechos.md` y SOLO en /plan-seo/ (los planes Presencia, Crecimiento y Dominio no tienen precio publicado). En guías y páginas de venta no se repiten cifras: se enlaza a /plan-seo/. Rangos del mercado SOLO con fuente.
+3. Precios de Visibla: SOLO los de `hechos.md` y SOLO en /plan-seo/ (los planes los dos planes de 90 días de /plan-seo/ no tienen precio publicado). En guías y páginas de venta no se repiten cifras: se enlaza a /plan-seo/. Rangos del mercado SOLO con fuente.
 4. Normas colombianas (publicidad en salud, ética médica, habeas data, Supersalud, INVIMA): citar la norma exacta (número y año) con enlace oficial (funcionpublica.gov.co, secretariasenado.gov.co, minsalud.gov.co, sic.gov.co…). Si no estás seguro, no lo afirmes. Nunca citar el artículo 57 de la Ley 23 de 1981: es inexequible.
 5. Herramientas de Google: describir solo funciones que existen hoy; enlazar la ayuda oficial (support.google.com, developers.google.com).
 6. No hablar mal de competidores con nombre propio.
