@@ -155,6 +155,7 @@ def render(pg, arts, h, pags=()):
 {fuentes_html}
 {sec_guias}
 {h.FOOTER.format(anio=date.today().year)}
+{h.BARRA}
 {h.JS}
 </body>
 </html>

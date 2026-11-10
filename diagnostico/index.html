@@ -56,6 +56,13 @@
 .dx-err{display:none;padding:26px;border-radius:var(--r);background:var(--mist);border:1px solid var(--line);font-size:16px;line-height:1.6}
 .dx-err.on{display:block}
 .dx-note{margin-top:18px;font-size:13px;color:var(--muted)}
+.dx-plan{display:none;margin-top:34px;padding:28px;border-radius:var(--r);background:var(--mist);border:1px solid var(--line)}
+.dx-plan.on{display:block}
+.dx-plan .mono{color:var(--steel-deep)}
+.dx-plan h3{font-size:clamp(22px,3vw,28px);font-weight:400;letter-spacing:-.03em;line-height:1.2;margin-top:10px}
+.dx-plan p{margin-top:10px;font-size:16px;line-height:1.55;color:var(--ink-2);max-width:620px}
+.dx-plan-acc{display:flex;align-items:center;gap:12px 22px;flex-wrap:wrap;margin-top:20px}
+.dx-plan-acc a:not(.btn){font-size:14.5px;color:var(--steel-deep);text-decoration:underline;text-underline-offset:4px}
 @media (max-width:700px){.dx-scores{grid-template-columns:1fr}.dx-form{flex-direction:column;border-radius:22px}.dx-form input{height:48px}.dx-form .btn{justify-content:center}}
 </style>
 </head>
@@ -64,8 +71,8 @@
 <nav id="nav" class="solid">
   <div class="wrap">
     <a href="/" class="logo"><i></i>Visibla</a>
-    <div class="links"><a href="/#como">Cómo funciona</a><a href="/#planes">Planes</a><a href="/blog/">Guías</a></div>
-    <a href="https://wa.me/573153811567?text=Hola%20Visibla%2C%20quiero%20agendar%20una%20llamada" target="_blank" rel="noopener" class="btn">Agendar llamada</a>
+    <div class="links"><a href="/#como">Cómo funciona</a><a href="/plan-seo/">Planes</a><a href="/blog/">Guías</a></div>
+    <a href="https://wa.me/573153811567?text=Hola%20Visibla%2C%20vengo%20del%20diagn%C3%B3stico%20gratis%20y%20quiero%20agendar%20una%20llamada" target="_blank" rel="noopener" class="btn">Agendar llamada</a>
   </div>
 </nav>
 
@@ -98,7 +105,16 @@
       <div class="dx-sc"><div class="mono">Buenas prácticas</div><b id="s3">–</b><div class="dx-bar"><i id="b3"></i></div><small id="t3"></small></div>
     </div>
     <div class="dx-list"><h2 style="font-size:22px;font-weight:500;letter-spacing:-.02em;margin-bottom:12px">Oportunidades de mejora de tu web</h2><div id="ops"></div></div>
-    <aside class="cta-in" style="margin-top:40px">
+    <aside class="dx-plan" id="plan">
+      <div class="mono">Plan SEO de 90 días</div>
+      <h3 id="plan-t"></h3>
+      <p>En el mes 1 hacemos los arreglos técnicos de tu web (velocidad en celular, títulos y estructura) y dejamos completa tu ficha de Google. Precio fijo y publicado.</p>
+      <div class="dx-plan-acc">
+        <a class="btn" href="/plan-seo/">Ver el plan y los precios <span class="ar">→</span></a>
+        <a href="/casos/seravena/">Ver el caso de Clínica Seravena</a>
+      </div>
+    </aside>
+    <aside class="cta-in" style="margin-top:28px">
       <div class="mono">Informe completo · gratis</div>
       <h3>Esto es lo técnico. Falta lo que más pesa.</h3>
       <p>Tu ficha de Google, tus reseñas, qué buscan tus pacientes en tu ciudad y quién se los está llevando. Te lo revisamos y te mandamos el plan por WhatsApp.</p>
@@ -195,6 +211,9 @@ function pintar(url,lh){
   [1,2,3].forEach(k=>{$('s'+k).textContent=s[k-1];$('t'+k).textContent=nota(s[k-1])+'. '+frase(s[k-1],['v','s','b'][k-1]);setTimeout(()=>$('b'+k).style.width=s[k-1]+'%',120)});
   $('ops').innerHTML=malas.map(({id,a})=>'<div class="dx-it"><i class="dot"></i><div><strong>'+CLARO[id][1]+'</strong>'+(a.displayValue?' <span>· '+a.displayValue+'</span>':'')+'</div></div>').join('')
     +buenas.slice(0,4).map(({id})=>'<div class="dx-it ok"><i class="dot"></i><div>'+CLARO[id][0]+' <span>· bien</span></div></div>').join('');
+  const n=malas.length;
+  $('plan-t').textContent=n>1?'Arreglar estas '+n+' cosas es el primer mes del plan de 90 días.':'Arreglar esto es parte del primer mes del plan de 90 días.';
+  $('plan').classList.toggle('on',n>0);
   const txt='Hola Visibla, analicé mi web '+$('rsite').textContent+' en su diagnóstico: velocidad '+s[0]+', SEO '+s[1]+', '+malas.length+' oportunidades de mejora. Quiero el informe completo.';
   $('wa').href='https://wa.me/'+WA+'?text='+encodeURIComponent(txt);
   $('res').classList.add('on');

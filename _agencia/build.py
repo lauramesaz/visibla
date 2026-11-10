@@ -8,11 +8,15 @@ Cada artículo fuente empieza con un comentario JSON (cabecera) y sigue el cuerp
  "categoria": "SEO local", "lectura": 7, "resumen": "...", "keyword": "...",
  "faq": [{"q": "...", "a": "..."}], "fuentes": [{"t": "...", "u": "https://..."}]}
 -->
+Opcional en la cabecera: "cta": {"titulo": "...", "texto": "...", "boton": "...", "wa": "..."} cambia la caja del medio de
+esa guía (todas las llaves son opcionales; lo que falte sale del valor por defecto de su categoría, ver CTA_CATEGORIA).
+El botón lleva a /diagnostico/ (que mide la web: no prometer ahí que revisa la ficha) y "wa" es el texto del enlace a WhatsApp.
 <p>Cuerpo con <h2>, <p>, <ul>, <ol>, <table>, <blockquote> ...</p>
 
 Salida (no editar a mano, se regenera):
   blog/<slug>/index.html   una página por artículo (URL limpia /blog/<slug>/)
   blog/index.html          listado con filtro por categoría
+  404.html                 página de "no encontrada" (GitHub Pages la sirve desde la raíz)
   index.html               bloque "Guías" entre <!--BLOG:INICIO--> y <!--BLOG:FIN-->
   sitemap.xml, robots.txt, llms.txt
 
@@ -130,7 +134,7 @@ NAV = """<div class="progress" id="progress"></div>
     <a href="/" class="logo"><i></i>Visibla</a>
     <div class="links">
       <a href="/#como">Cómo funciona</a>
-      <a href="/#planes">Planes</a>
+      <a href="/plan-seo/">Planes</a>
       <a href="/blog/">Guías</a>
     </div>
     <a href="{wa}" target="_blank" rel="noopener" class="btn">Agendar llamada</a>
@@ -196,11 +200,50 @@ def cta_box(a, titulo, texto, boton):
 </aside>"""
 
 
+# Caja del medio de cada guía: título según la categoría (una guía puede cambiarlo con "cta" en su cabecera).
+CTA_TEXTO = ("Escribe la dirección de tu web y en menos de un minuto ves su velocidad en celular, su SEO técnico "
+             "y cuántas oportunidades de mejora tiene. Gratis y sin registro.")
+CTA_BOTON = "Hacer el diagnóstico gratis"
+CTA_WA = "Prefiero que lo revisen conmigo por WhatsApp"
+CTA_DEFECTO = "¿Tu clínica ya aparece cuando la buscan?"
+CTA_CATEGORIA = {
+    "SEO local": "¿Tu clínica aparece cuando la buscan en tu ciudad?",
+    "SEO por ciudad": "¿Tu clínica aparece cuando la buscan en tu ciudad?",
+    "SEO por especialidad": "¿Los pacientes de tu especialidad encuentran tu web?",
+    "Google Maps y reseñas": "¿Tu ficha de Google y tu web están al día?",
+    "Contenido y blog": "¿Google puede leer bien la web de tu clínica?",
+    "Medición y resultados": "¿Sabes cómo está hoy la web de tu clínica?",
+    "IA y buscadores": "¿Google y la IA pueden leer la web de tu clínica?",
+}
+
+
+def cta_medio(a):
+    """Caja del medio con dos acciones: botón al diagnóstico de la web y enlace a WhatsApp que nombra la guía."""
+    c = a.get("cta") or {}
+    titulo = c.get("titulo") or CTA_CATEGORIA.get(a["categoria"], CTA_DEFECTO)
+    link = wa(f"Hola Visibla, leí la guía «{a['titulo']}» y quiero mi diagnóstico SEO gratis")
+    return f"""<aside class="cta-in cta-2">
+  <div class="mono">Visibla · diagnóstico gratis</div>
+  <h3>{e(titulo)}</h3>
+  <p>{e(c.get("texto") or CTA_TEXTO)}</p>
+  <div class="cta-acc">
+    <a class="btn" href="/diagnostico/">{e(c.get("boton") or CTA_BOTON)} <span class="ar">→</span></a>
+    <a class="cta-wa" href="{link}" target="_blank" rel="noopener">{e(c.get("wa") or CTA_WA)}</a>
+  </div>
+</aside>"""
+
+
+# Barra fija de abajo, solo en celular (guías y páginas de venta). El espaciador evita que tape el pie.
+BARRA = """<div class="barra-esp"></div>
+<div class="barra-m" role="navigation" aria-label="Siguiente paso">
+  <a class="btn" href="/diagnostico/">Diagnóstico gratis</a>
+  <a class="btn ghost" href="/plan-seo/">Ver plan y precios</a>
+</div>"""
+
+
 def insertar_cta(cuerpo, a):
     """CTA suave después del 2.º <h2> (o al 40 % si hay pocos)."""
-    caja = cta_box(a, "¿Tu clínica ya aparece cuando la buscan?",
-                   "Te mostramos en 20 minutos qué buscan tus pacientes en tu ciudad y quién se los está llevando.",
-                   "Quiero mi diagnóstico")
+    caja = cta_medio(a)
     pos = [m.start() for m in re.finditer(r"<h2", cuerpo)]
     if len(pos) >= 3:
         i = pos[2]
@@ -299,7 +342,7 @@ def pagina_articulo(a, todos):
         rel_html = '<section class="rel wrap"><div class="mono">Sigue leyendo</div><div class="grid">' + "".join(tarjeta(b) for b in rel) + "</div></section>"
 
     return cabeza(a["titulo"] + " | Visibla", a["meta"], url, extra, img) + NAV.format(
-        wa=wa("Hola Visibla, quiero agendar una llamada")) + f"""
+        wa=wa(f"Hola Visibla, estoy leyendo la guía «{a['titulo']}» y quiero agendar una llamada")) + f"""
 <header class="art-head grain">
   <div class="blob b1"></div><div class="blob b2"></div><div class="frost"></div>
   <div class="art-head-in">
@@ -322,6 +365,7 @@ def pagina_articulo(a, todos):
 </main>
 {rel_html}
 {FOOTER.format(anio=date.today().year)}
+{BARRA}
 {JS}
 </body>
 </html>
@@ -347,7 +391,7 @@ def pagina_listado(arts):
                              "datePublished": a["fecha"]} for a in arts[:30]]}
     titulo = "Guías de SEO para clínicas en Colombia | Visibla"
     meta = "Guías prácticas para que tu clínica aparezca en Google: ficha de Google, reseñas, contenido médico, medición y más. Escritas para dueños de clínicas."
-    return cabeza(titulo, meta, url, ld(esquema)) + NAV.format(wa=wa("Hola Visibla, quiero agendar una llamada")) + f"""
+    return cabeza(titulo, meta, url, ld(esquema)) + NAV.format(wa=wa("Hola Visibla, vengo de las guías de SEO para clínicas y quiero agendar una llamada")) + f"""
 <header class="art-head grain list-head">
   <div class="blob b1"></div><div class="blob b2"></div><div class="frost"></div>
   <div class="art-head-in">
@@ -357,6 +401,10 @@ def pagina_listado(arts):
   </div>
 </header>
 <main class="wrap listado">
+  <a class="franja" href="/diagnostico/">
+    <span><b>¿Cómo está la web de tu clínica?</b> Mídela en menos de un minuto: velocidad en celular y SEO técnico, con datos de Google.</span>
+    <span class="btn">Hacer el diagnóstico gratis <span class="ar">→</span></span>
+  </a>
   <h2 class="lp-k mono" style="margin-bottom:14px">Todas las guías de SEO para clínicas</h2>
   <div class="tabs" id="tabs">{chips}</div>
   <div class="grid" id="posts">
@@ -395,7 +443,7 @@ def bloque_home(arts):
 
 
 # Landing /plan-seo/ (HTML a mano, con precios): ruta, texto del enlace, fecha de su última edición (cambiarla al editarla)
-PLAN_SEO = ("/plan-seo/", "Plan SEO de 90 días", "2026-11-07")
+PLAN_SEO = ("/plan-seo/", "Plan SEO de 90 días", "2026-11-09")
 
 
 def cargar_institucional():
@@ -441,8 +489,9 @@ def pagina_institucional(d):
                                 "contactPoint": {"@type": "ContactPoint", "telephone": "+57 315 381 1567",
                                                  "contactType": "sales", "availableLanguage": "es", "areaServed": "CO"}}
     sub = f'<p class="lead">{e(d["sub"])}</p>' if d.get("sub") else ""
+    msg = f"Hola Visibla, vengo de la página «{d['corto']}» y quiero hablar con ustedes"
     return cabeza(d["titulo"] + " | Visibla", d["meta"], url, "\n".join(ld(s) for s in esquemas), img, "website") + NAV.format(
-        wa=wa("Hola Visibla, quiero agendar una llamada")) + f"""
+        wa=wa(msg)) + f"""
 <header class="art-head grain">
   <div class="blob b1"></div><div class="blob b2"></div><div class="frost"></div>
   <div class="art-head-in">
@@ -455,7 +504,7 @@ def pagina_institucional(d):
   <article class="prosa">
 {d['cuerpo']}
   </article>
-  {cta_box({'titulo': d['h1']}, "Hagamos visible tu clínica.", "Una conversación corta por WhatsApp: revisamos tu web, tu ficha de Google y tus reseñas, y te decimos por dónde empezar.", "Escribir por WhatsApp").replace(wa("Hola Visibla, leí la guía «" + d['h1'] + "» y quiero mi diagnóstico SEO gratis"), wa("Hola Visibla, quiero hablar con ustedes"))}
+  {cta_box({'titulo': d['h1']}, "Hagamos visible tu clínica.", "Una conversación corta por WhatsApp: revisamos tu web, tu ficha de Google y tus reseñas, y te decimos por dónde empezar.", "Escribir por WhatsApp").replace(wa("Hola Visibla, leí la guía «" + d['h1'] + "» y quiero mi diagnóstico SEO gratis"), wa(msg))}
 </main>
 {FOOTER.format(anio=date.today().year)}
 {JS}
@@ -481,6 +530,31 @@ def enlaces_footer(pags):
         cols.append('<div><div class="mono">Visibla</div>' + "".join(
             f'<a href="{d["ruta"]}">{e(d["corto"])}</a>' for d in INST) + '<a href="/blog/">Guías</a></div>')
     return f'<div class="wrap foot-links">{"".join(cols)}</div>' if cols else ""
+
+
+def pagina_404():
+    """404.html en la raíz: GitHub Pages la muestra cuando alguien abre una dirección que no existe."""
+    cab = cabeza("Página no encontrada | Visibla", "Esta dirección no existe en la web de Visibla.", DOMINIO + "/404.html",
+                 '<meta name="robots" content="noindex">', tipo="website")
+    cab = re.sub(r'<link rel="canonical"[^>]*>\n|<meta property="og:url"[^>]*>\n', "", cab)
+    return cab + NAV.format(wa=wa("Hola Visibla, quiero agendar una llamada")) + f"""
+<header class="art-head grain e404">
+  <div class="blob b1"></div><div class="blob b2"></div><div class="frost"></div>
+  <div class="art-head-in">
+    <div class="crumbs mono">Error 404</div>
+    <h1>Esta página no existe.</h1>
+    <p class="lead">Puede que la dirección esté mal escrita o que la hayamos movido. Desde aquí llegas a lo importante.</p>
+    <div class="lp-ctas">
+      <a class="btn" href="/">Ir al inicio <span class="ar">→</span></a>
+      <a class="btn ghost" href="/diagnostico/">Diagnóstico gratis de mi web</a>
+    </div>
+  </div>
+</header>
+{FOOTER.format(anio=date.today().year)}
+{JS}
+</body>
+</html>
+"""
 
 
 def sobre_visibla(pags):
@@ -519,6 +593,8 @@ def main():
     for d in INST:
         (RAIZ / d["slug"]).mkdir(parents=True, exist_ok=True)
         (RAIZ / d["slug"] / "index.html").write_text(pagina_institucional(d), encoding="utf-8")
+
+    (RAIZ / "404.html").write_text(pagina_404(), encoding="utf-8")
 
     home = RAIZ / "index.html"
     h = home.read_text(encoding="utf-8")

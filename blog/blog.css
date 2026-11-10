@@ -167,3 +167,29 @@ footer a{text-decoration:underline;text-underline-offset:3px}
 .autora strong{color:var(--ink);font-weight:500}
 /* PÁGINAS INSTITUCIONALES */
 .inst .prosa h2{font-size:26px}
+
+/* CAJA DEL MEDIO con dos acciones (diagnóstico + WhatsApp) */
+.cta-acc{display:flex;align-items:center;gap:10px 22px;flex-wrap:wrap;margin-top:20px}
+.cta-acc .btn{margin-top:0}
+.prosa .cta-in .cta-wa,.cta-in .cta-wa{font-size:14.5px;color:#fff;text-decoration:underline;text-underline-offset:4px;text-decoration-color:rgba(255,255,255,.55)}
+
+/* FRANJA del diagnóstico en el listado de guías */
+.franja{display:flex;align-items:center;justify-content:space-between;gap:16px 28px;flex-wrap:wrap;padding:20px 24px;margin-bottom:36px;border-radius:var(--r);background:var(--mist);border:1px solid var(--line);font-size:15.5px;line-height:1.5;color:var(--ink-2)}
+.franja>span:first-child{flex:1;min-width:240px}
+.franja b{font-weight:500;color:var(--ink)}
+.franja .btn{flex:none}
+
+/* 404 */
+.e404{min-height:72vh;display:flex;align-items:center}
+
+/* BARRA FIJA de abajo, solo en celular (guías y páginas de venta) */
+.barra-m,.barra-esp{display:none}
+@media (max-width:600px){
+  .barra-esp{display:block;height:calc(66px + env(safe-area-inset-bottom))}
+  .barra-m{display:flex;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:55;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.94);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-top:1px solid var(--line)}
+  .barra-m .btn{flex:1;justify-content:center;height:46px;padding:0 10px;font-size:14px;white-space:nowrap}
+  .barra-m .btn.ghost{background:#fff}
+  .franja .btn{width:100%;justify-content:center}
+}
+@media (max-width:340px){.barra-m .btn{font-size:13px;padding:0 6px}}
+@media print{.barra-m,.barra-esp{display:none}}
