@@ -203,3 +203,5 @@ footer a{text-decoration:underline;text-underline-offset:3px}
 .lp-precio .btn{flex:none}
 .faq details p a{color:var(--steel-deep);text-decoration:underline;text-underline-offset:3px}
 @media (max-width:600px){.lp-precio{padding:26px 22px}.lp-precio .btn{width:100%;justify-content:center}}
+.cta-in p.cta-nota{margin-top:14px;font-size:14.5px;color:#fff}
+.autora .autora-dx{margin-top:8px}

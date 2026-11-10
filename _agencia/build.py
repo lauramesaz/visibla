@@ -191,12 +191,13 @@ def ld(obj):
     return '<script type="application/ld+json">' + json.dumps(obj, ensure_ascii=False) + "</script>"
 
 
-def cta_box(a, titulo, texto, boton):
+def cta_box(a, titulo, texto, boton, nota=""):
+    nota = f'\n  <p class="cta-nota">{e(nota)}</p>' if nota else ""
     return f"""<aside class="cta-in">
   <div class="mono">Visibla · diagnóstico gratis</div>
   <h3>{titulo}</h3>
   <p>{texto}</p>
-  <a class="btn" href="{wa(f"Hola Visibla, leí la guía «{a['titulo']}» y quiero mi diagnóstico SEO gratis")}" target="_blank" rel="noopener">{boton} <span class="ar">→</span></a>
+  <a class="btn" href="{wa(f"Hola Visibla, leí la guía «{a['titulo']}» y quiero mi diagnóstico SEO gratis")}" target="_blank" rel="noopener">{boton} <span class="ar">→</span></a>{nota}
 </aside>"""
 
 
@@ -282,12 +283,17 @@ def siguiente_paso(a):
             " o " + partes[-1] + ".</p>")
 
 
+# Quién contesta el WhatsApp (va junto al botón en Quiénes somos y Contacto)
+RESPONDE = f"Te responde {AUTORA['nombre']}, fundadora." if AUTORA else ""
+
+
 def caja_autora():
     if not AUTORA:
         return ""
     return f"""<aside class="autora">
   <div class="mono">Sobre la autora</div>
   <p><a href="/quienes-somos/"><strong>{e(AUTORA['nombre'])}</strong></a> · {e(AUTORA['cargo'])}. {e(AUTORA['bio_corta'])}</p>
+  <p class="autora-dx">¿Quieres saber cómo está la web de tu clínica? <a href="/diagnostico/">Haz el diagnóstico gratis</a>.</p>
 </aside>"""
 
 
@@ -504,7 +510,7 @@ def pagina_institucional(d):
   <article class="prosa">
 {d['cuerpo']}
   </article>
-  {cta_box({'titulo': d['h1']}, "Hagamos visible tu clínica.", "Una conversación corta por WhatsApp: revisamos tu web, tu ficha de Google y tus reseñas, y te decimos por dónde empezar.", "Escribir por WhatsApp").replace(wa("Hola Visibla, leí la guía «" + d['h1'] + "» y quiero mi diagnóstico SEO gratis"), wa(msg))}
+  {cta_box({'titulo': d['h1']}, "Hagamos visible tu clínica.", "Una conversación corta por WhatsApp: revisamos tu web, tu ficha de Google y tus reseñas, y te decimos por dónde empezar.", "Escribir por WhatsApp", RESPONDE).replace(wa("Hola Visibla, leí la guía «" + d['h1'] + "» y quiero mi diagnóstico SEO gratis"), wa(msg))}
 </main>
 {FOOTER.format(anio=date.today().year)}
 {JS}
