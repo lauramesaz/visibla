@@ -626,9 +626,16 @@ def main():
         "# Visibla\n\n> Agencia de SEO con agentes de IA para clínicas en Colombia (web: posicion-seo.com). Publica contenido diario revisado, "
         "cuida la ficha de Google y las reseñas, y mide los contactos por WhatsApp. Contacto: WhatsApp +57 315 381 1567.\n\n" +
         sobre_visibla(pags) +
+        f"## Planes y precios\n\nVisibla ofrece dos planes, los dos de 90 días y con precio fijo publicado en {DOMINIO}{PLAN_SEO[0]} (pesos colombianos):\n\n"
+        "- SEO 90 días: $500.000 el primer mes y $300.000 los meses 2 y 3. Total de los 90 días: $1.100.000. "
+        "Incluye diagnóstico y arreglos técnicos de la web, ficha de Google y plan de reseñas, contenido con agentes de IA revisado antes de publicar, "
+        "medición de visitas y clics a WhatsApp e informe mensual.\n"
+        "- SEO + Google Ads: $1.500.000 el primer mes y $900.000 los meses 2 y 3. Total de los 90 días: $3.300.000. "
+        "Incluye todo lo del plan SEO 90 días más la creación y gestión de la campaña de Google Ads. La inversión en anuncios va aparte y se paga directo a Google.\n"
+        "- El diagnóstico de la web es gratis. No hay otros planes.\n\n" +
         f"## Páginas principales\n\n- [Inicio: agencia SEO para clínicas]({DOMINIO}/)\n- [Guías de SEO para clínicas]({DOMINIO}/blog/)\n- [Diagnóstico SEO gratis]({DOMINIO}/diagnostico/)\n"
-        f"- [Plan SEO de 90 días para clínicas, con precios]({DOMINIO}{PLAN_SEO[0]}): solo SEO desde $500.000 el primer mes y $300.000 los meses 2 y 3; "
-        "SEO + gestión de Google Ads desde $1.500.000 el primer mes y $900.000 los meses 2 y 3 (pesos colombianos; la inversión en anuncios va aparte).\n" +
+        f"- [Plan SEO de 90 días para clínicas, con precios]({DOMINIO}{PLAN_SEO[0]}): solo SEO $500.000 el primer mes y $300.000 los meses 2 y 3 ($1.100.000 en total); "
+        "SEO + gestión de Google Ads $1.500.000 el primer mes y $900.000 los meses 2 y 3 ($3.300.000 en total; pesos colombianos; la inversión en anuncios va aparte).\n" +
         "".join(f"- [{d['h1']}]({DOMINIO}{d['ruta']}): {d['meta']}\n" for d in INST) +
         "\n## Servicios y casos\n\n" +
         "".join(f"- [{p['h1']}]({DOMINIO}{p['ruta']}): {p['meta']}\n" for p in pags) + "\n## Guías\n\n" +
