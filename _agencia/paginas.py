@@ -121,10 +121,27 @@ def render(pg, arts, h, pags=()):
     sec_guias = ""
     if guias:
         sec_guias = '<section class="rel wrap"><div class="mono">Guías relacionadas</div><div class="grid">' + "".join(h.tarjeta(a) for a in guias) + "</div></section>"
+    # Precio a la vista antes de las preguntas (solo páginas de venta; cifras = las publicadas en /plan-seo/)
+    sec_precio = ""
+    if pg["tipo"] != "caso":
+        sec_precio = """<section class="lp-sec wrap" id="precio"><div class="mono lp-k">Precio</div>
+  <div class="lp-precio">
+    <div>
+      <h2 class="lp-h2">¿Cuánto cuesta?</h2>
+      <p class="lp-desde">Desde $500.000 el primer mes · plan de 90 días</p>
+      <p>Solo SEO: $500.000 el primer mes y $300.000 los meses 2 y 3 ($1.100.000 en total). Con gestión de Google Ads: $1.500.000 el primer mes y $900.000 los meses 2 y 3 ($3.300.000 en total); la inversión en anuncios va aparte.</p>
+    </div>
+    <a class="btn" href="/plan-seo/">Ver el plan y los precios <span class="ar">→</span></a>
+  </div></section>"""
+
+    def resp(t):
+        """Respuesta de una pregunta: la dirección del plan escrita en texto se vuelve enlace."""
+        return e(t).replace("posicion-seo.com/plan-seo/", '<a href="/plan-seo/">posicion-seo.com/plan-seo/</a>')
+
     faq_html = ""
     if faq:
         faq_html = '<section class="faq art" style="padding-top:0"><h2>Preguntas frecuentes</h2>' + "".join(
-            f"<details><summary>{e(f['q'])}</summary><p>{e(f['a'])}</p></details>" for f in faq) + "</section>"
+            f"<details><summary>{e(f['q'])}</summary><p>{resp(f['a'])}</p></details>" for f in faq) + "</section>"
     fuentes_html = ""
     if fuentes:
         fuentes_html = '<section class="fuentes art" style="padding-top:0"><div class="mono">Fuentes</div><ol>' + "".join(
@@ -150,6 +167,7 @@ def render(pg, arts, h, pags=()):
 {sec_incluye}
 <section class="lp-sec wrap"><div class="mono lp-k">Cómo trabajamos</div><div class="lp-grid3">{pasos}</div></section>
 {sec_caso}{sec_otros}
+{sec_precio}
 {faq_html}
 <div class="art" style="padding-top:0">{h.cta_box({'titulo': pg['h1']}, "Hagamos visible tu clínica.", "Una conversación corta por WhatsApp: revisamos tu web, tu ficha de Google y tus reseñas, y te decimos por dónde empezar.", "Escribir por WhatsApp").replace(h.wa("Hola Visibla, leí la guía «" + pg['h1'] + "» y quiero mi diagnóstico SEO gratis"), link_wa)}</div>
 {fuentes_html}
