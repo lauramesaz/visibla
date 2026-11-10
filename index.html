@@ -130,8 +130,10 @@ h2 em{font-style:normal;color:var(--steel)}
 /* PANEL */
 .panel{margin-top:70px;border-radius:28px;padding:14px;background:linear-gradient(160deg,#dfe6ed,#f3f5f7);border:1px solid var(--line)}
 .screen{background:#fff;border-radius:18px;border:1px solid var(--line);padding:28px;display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-.screen .top{grid-column:1/-1;display:flex;justify-content:space-between;align-items:center;padding-bottom:16px;border-bottom:1px solid var(--line)}
+.screen .top{grid-column:1/-1;display:flex;justify-content:space-between;align-items:center;gap:10px 14px;flex-wrap:wrap;padding-bottom:16px;border-bottom:1px solid var(--line)}
 .dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#3fb27f;margin-right:8px;box-shadow:0 0 0 4px rgba(63,178,127,.15)}
+.muestra{display:inline-block;margin-right:10px;padding:5px 11px;border-radius:999px;background:var(--ink);color:#fff;font-size:12px;font-weight:500;letter-spacing:.04em;text-transform:uppercase;vertical-align:middle}
+.muestra-nota{margin:18px auto 0;max-width:560px;font-size:16px;line-height:1.5;color:var(--ink-2,#3a4048)}
 .kpi{padding:20px;border-radius:14px;background:var(--mist)}
 .kpi .mono{color:var(--muted);font-size:10px}
 .kpi b{display:block;font-weight:400;font-size:40px;letter-spacing:-.04em;margin-top:14px}
@@ -428,13 +430,14 @@ nav.hide{transform:translateY(-100%)}
     <div class="center">
       <span class="eyebrow mono reveal">Tu panel</span>
       <h2 class="reveal blur">Tus resultados de SEO, <em>en una sola pantalla.</em></h2>
+      <p class="muestra-nota reveal"><strong>Ejemplo ilustrativo.</strong> Así se ve el panel; las cifras de abajo son de muestra, no de una clínica real.</p>
     </div>
     <div class="panel reveal">
       <div class="screen">
-        <div class="top"><div style="font-weight:500">Clínica ejemplo · Septiembre</div><div class="mono" style="color:var(--muted)"><span class="dot"></span>Agente activo</div></div>
+        <div class="top"><div style="font-weight:500"><span class="muestra">Ejemplo ilustrativo</span>Clínica de muestra · un mes cualquiera</div><div class="mono" style="color:var(--muted)"><span class="dot"></span>Agente activo</div></div>
         <div class="kpi"><div class="mono">Artículos publicados</div><b>30</b><small>1 por día</small></div>
-        <div class="kpi"><div class="mono">Visitas desde Google</div><b>4.812</b><small>↑ 1.240 vs agosto</small></div>
-        <div class="kpi"><div class="mono">Contactos WhatsApp</div><b>57</b><small>↑ 12 vs agosto</small></div>
+        <div class="kpi"><div class="mono">Visitas desde Google</div><b>4.812</b><small>↑ 1.240 vs mes anterior</small></div>
+        <div class="kpi"><div class="mono">Contactos WhatsApp</div><b>57</b><small>↑ 12 vs mes anterior</small></div>
         <div class="kpi"><div class="mono">Calificación Google</div><b>4,9</b><small>★★★★★</small></div>
         <div class="chart">
           <div class="mono" style="color:var(--muted);font-size:10px">Visitas desde Google · 6 meses</div>
