@@ -62,7 +62,7 @@
 .dx-plan h3{font-size:clamp(22px,3vw,28px);font-weight:400;letter-spacing:-.03em;line-height:1.2;margin-top:10px}
 .dx-plan p{margin-top:10px;font-size:16px;line-height:1.55;color:var(--ink-2);max-width:620px}
 .dx-plan-acc{display:flex;align-items:center;gap:12px 22px;flex-wrap:wrap;margin-top:20px}
-.dx-plan-acc a:not(.btn){font-size:14.5px;color:var(--steel-deep);text-decoration:underline;text-underline-offset:4px}
+.dx-plan-acc a:not(.btn){font-size:14.5px;color:var(--steel-deep);text-decoration:underline;text-underline-offset:4px;display:inline-flex;align-items:center;min-height:44px;margin:-12px 0}
 @media (max-width:700px){.dx-scores{grid-template-columns:1fr}.dx-form{flex-direction:column;border-radius:22px}.dx-form input{height:48px}.dx-form .btn{justify-content:center}}
 </style>
 </head>
@@ -104,7 +104,7 @@
       <div class="dx-sc"><div class="mono">SEO técnico</div><b id="s2">–</b><div class="dx-bar"><i id="b2"></i></div><small id="t2"></small></div>
       <div class="dx-sc"><div class="mono">Buenas prácticas</div><b id="s3">–</b><div class="dx-bar"><i id="b3"></i></div><small id="t3"></small></div>
     </div>
-    <div class="dx-list"><h2 style="font-size:22px;font-weight:500;letter-spacing:-.02em;margin-bottom:12px">Oportunidades de mejora de tu web</h2><div id="ops"></div></div>
+    <div class="dx-list"><h2 style="font-size:22px;font-weight:500;letter-spacing:-.02em;margin-bottom:12px" id="ops-t">Oportunidades de mejora de tu web</h2><div id="ops"></div></div>
     <aside class="dx-plan" id="plan">
       <div class="mono">Plan SEO de 90 días</div>
       <h3 id="plan-t"></h3>
@@ -207,14 +207,15 @@ function pintar(url,lh){
   const malas=[],buenas=[];
   Object.keys(CLARO).forEach(id=>{const a=A[id];if(!a||a.score===null||a.scoreDisplayMode==='notApplicable'||a.scoreDisplayMode==='informative'||a.scoreDisplayMode==='manual')return;(a.score<0.9?malas:buenas).push({id,a})});
   $('rsite').textContent=url.replace(/^https?:\/\//,'').replace(/\/$/,'');
-  $('rtitle').innerHTML=malas.length?'Tu web tiene <b>'+malas.length+' oportunidades de mejora</b>.':'Tu web está bien en lo técnico.';
+  $('rtitle').innerHTML=malas.length?'Tu web tiene <b>'+malas.length+(malas.length===1?' oportunidad':' oportunidades')+' de mejora</b>.':'Tu web está bien en lo técnico.';
   [1,2,3].forEach(k=>{$('s'+k).textContent=s[k-1];$('t'+k).textContent=nota(s[k-1])+'. '+frase(s[k-1],['v','s','b'][k-1]);setTimeout(()=>$('b'+k).style.width=s[k-1]+'%',120)});
   $('ops').innerHTML=malas.map(({id,a})=>'<div class="dx-it"><i class="dot"></i><div><strong>'+CLARO[id][1]+'</strong>'+(a.displayValue?' <span>· '+a.displayValue+'</span>':'')+'</div></div>').join('')
     +buenas.slice(0,4).map(({id})=>'<div class="dx-it ok"><i class="dot"></i><div>'+CLARO[id][0]+' <span>· bien</span></div></div>').join('');
   const n=malas.length;
+  $('ops-t').textContent=n?(n===1?'Oportunidad de mejora de tu web':'Oportunidades de mejora de tu web'):'Lo que ya está bien en tu web';
   $('plan-t').textContent=n>1?'Arreglar estas '+n+' cosas es el primer mes del plan de 90 días.':'Arreglar esto es parte del primer mes del plan de 90 días.';
   $('plan').classList.toggle('on',n>0);
-  const txt='Hola Visibla, analicé mi web '+$('rsite').textContent+' en su diagnóstico: velocidad '+s[0]+', SEO '+s[1]+', '+malas.length+' oportunidades de mejora. Quiero el informe completo.';
+  const txt='Hola Visibla, analicé mi web '+$('rsite').textContent+' en su diagnóstico: velocidad '+s[0]+', SEO '+s[1]+', '+malas.length+(malas.length===1?' oportunidad':' oportunidades')+' de mejora. Quiero el informe completo.';
   $('wa').href='https://wa.me/'+WA+'?text='+encodeURIComponent(txt);
   $('res').classList.add('on');
 }
