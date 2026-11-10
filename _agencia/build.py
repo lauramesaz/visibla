@@ -64,7 +64,7 @@ def portada(ruta_rel, titulo, kicker):
     except Exception as err:
         print(f"aviso: sin portada para {ruta_rel} ({err})")
     return f"{DOMINIO}/og.png"
-WA = "573203638223"
+WA = "573153811567"
 MESES = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto",
          "septiembre", "octubre", "noviembre", "diciembre"]
 CAMPOS = ["titulo", "meta", "fecha", "categoria", "lectura", "resumen"]
@@ -428,7 +428,7 @@ def pagina_institucional(d):
     if d.get("tipo") == "AboutPage":
         org = dict(ORG, **{"@context": "https://schema.org", "description": d["meta"],
                           "areaServed": {"@type": "Country", "name": "Colombia"},
-                          "telephone": "+57 320 363 8223"})
+                          "telephone": "+57 315 381 1567"})
         if AUTORA:
             persona = {"@type": "Person", "@id": DOMINIO + "/quienes-somos/#" + AUTORA["id"], "name": AUTORA["nombre"],
                        "jobTitle": AUTORA["cargo"], "url": url, "worksFor": {"@id": ORG_ID},
@@ -438,7 +438,7 @@ def pagina_institucional(d):
         esquemas.append(org)
     if d.get("tipo") == "ContactPage":
         pagina["mainEntity"] = {"@id": ORG_ID, "@type": "Organization", "name": "Visibla",
-                                "contactPoint": {"@type": "ContactPoint", "telephone": "+57 320 363 8223",
+                                "contactPoint": {"@type": "ContactPoint", "telephone": "+57 315 381 1567",
                                                  "contactType": "sales", "availableLanguage": "es", "areaServed": "CO"}}
     sub = f'<p class="lead">{e(d["sub"])}</p>' if d.get("sub") else ""
     return cabeza(d["titulo"] + " | Visibla", d["meta"], url, "\n".join(ld(s) for s in esquemas), img, "website") + NAV.format(
@@ -498,7 +498,7 @@ def sobre_visibla(pags):
     if casos:
         lineas.append("- Clínicas con caso publicado: " + "; ".join(
             f"{p['cliente']['nombre']} ({p['cliente']['url']}, caso en {DOMINIO}{p['ruta']})" for p in casos) + ".")
-    lineas.append("- Contacto: WhatsApp +57 320 363 8223 (https://wa.me/573203638223).")
+    lineas.append("- Contacto: WhatsApp +57 315 381 1567 (https://wa.me/573153811567).")
     return "## Sobre Visibla\n\n" + "\n".join(lineas) + "\n\n"
 
 
@@ -542,7 +542,7 @@ def main():
     (RAIZ / "robots.txt").write_text(f"User-agent: *\nAllow: /\n\nSitemap: {DOMINIO}/sitemap.xml\n", encoding="utf-8")
     (RAIZ / "llms.txt").write_text(
         "# Visibla\n\n> Agencia de SEO con agentes de IA para clínicas en Colombia (web: posicion-seo.com). Publica contenido diario revisado, "
-        "cuida la ficha de Google y las reseñas, y mide los contactos por WhatsApp. Contacto: WhatsApp +57 320 363 8223.\n\n" +
+        "cuida la ficha de Google y las reseñas, y mide los contactos por WhatsApp. Contacto: WhatsApp +57 315 381 1567.\n\n" +
         sobre_visibla(pags) +
         f"## Páginas principales\n\n- [Inicio: agencia SEO para clínicas]({DOMINIO}/)\n- [Guías de SEO para clínicas]({DOMINIO}/blog/)\n- [Diagnóstico SEO gratis]({DOMINIO}/diagnostico/)\n"
         f"- [Plan SEO de 90 días para clínicas, con precios]({DOMINIO}{PLAN_SEO[0]}): solo SEO desde $500.000 el primer mes y $300.000 los meses 2 y 3; "

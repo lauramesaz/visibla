@@ -8,7 +8,7 @@
 Visibla vende SEO con agentes de IA **a clínicas** (estética, cirugía plástica, vascular, dermatología, odontología, fisioterapia, nutrición/obesidad, centros médicos) en Colombia.
 Este blog NO es para pacientes. Es para **dueños, directores médicos y gerentes de clínicas** que se preguntan cómo conseguir más pacientes desde Google.
 
-Meta única y medible: **que dueños de clínicas encuentren Visibla en Google (y en ChatGPT/AI Overviews) y escriban al WhatsApp +57 320 363 8223.**
+Meta única y medible: **que dueños de clínicas encuentren Visibla en Google (y en ChatGPT/AI Overviews) y escriban al WhatsApp +57 315 381 1567.**
 Cada artículo es una puerta de entrada: resuelve de verdad una duda del dueño de clínica y, al final, le ofrece el diagnóstico gratis por WhatsApp.
 
 El propio blog es la prueba del producto: si Visibla posiciona su blog, demuestra que sabe posicionar el de una clínica.

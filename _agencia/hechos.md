@@ -5,7 +5,7 @@
 
 ## Visibla
 - Agencia de SEO con agentes de IA para clínicas, en Colombia. Marca: Visibla. Web: https://posicion-seo.com
-- Contacto: WhatsApp +57 320 363 8223 (todos los botones de la web llevan ahí).
+- Contacto: WhatsApp +57 315 381 1567 (todos los botones de la web llevan ahí).
 - Fundadora: Laura Mesa. Página https://posicion-seo.com/quienes-somos/ desde el 7-nov-2026 (sin foto ni LinkedIn por ahora). Las guías salen firmadas "Por Laura Mesa" con su caja "Sobre la autora" (_agencia/autora.json); no inventarle cargos, estudios ni años de experiencia.
 - Método (lo que se hace de verdad): equipo de agentes de IA que investigan qué buscan los pacientes, escriben, un editor quita lo que suena a robot, un verificador revisa lo médico, un juez SEO califica, y se publica solo cada mañana. Se mide cuántas personas llegan desde Google y cuántas hacen clic a WhatsApp (Microsoft Clarity, Google Search Console, conversión "clic en WhatsApp").
 - Planes en la web: Presencia, Crecimiento, Dominio. **Sus precios: NO publicar.**

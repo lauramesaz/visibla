@@ -79,7 +79,7 @@ def render(pg, arts, h, pags=()):
     else:
         srv = {"@context": "https://schema.org", "@type": "Service", "name": pg["h1"], "description": pg["meta"],
                "serviceType": "Posicionamiento SEO para clínicas", "url": url,
-               "provider": dict(h.ORG, telephone="+57 320 363 8223"), "image": img}
+               "provider": dict(h.ORG, telephone="+57 315 381 1567"), "image": img}
         srv["areaServed"] = {"@type": "City", "name": pg["ciudad"]} if pg.get("ciudad") else {"@type": "Country", "name": "Colombia"}
         esquemas.append(srv)
     if faq:

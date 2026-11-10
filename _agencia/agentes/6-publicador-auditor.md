@@ -3,7 +3,7 @@
 Solo actúa si: Policía ≥ 8 en el turno 1 y en el turno 2 (control final), Verificador APROBADO y Juez SEO ≥ 85, y esa evidencia está anotada para `registro.md`.
 
 1. `python3 _agencia/build.py` → debe decir OK.
-2. Abre `blog/<slug>/index.html` y confirma: título, meta, canonical `https://posicion-seo.com/blog/<slug>/`, JSON-LD BlogPosting + BreadcrumbList (+ FAQPage si hay FAQ), dos CTA de WhatsApp a 573203638223.
+2. Abre `blog/<slug>/index.html` y confirma: título, meta, canonical `https://posicion-seo.com/blog/<slug>/`, JSON-LD BlogPosting + BreadcrumbList (+ FAQPage si hay FAQ), dos CTA de WhatsApp a 573153811567.
 3. Confirma que `sitemap.xml` contiene la URL y que la home tiene el bloque de guías actualizado.
 4. Actualiza `temas.md` (publicado + fecha; agrega la keyword a `mapa-palabras.md` con su nueva dueña), `cola-mejoras.md` o `humanizados.md` si el trabajo salió de ahí, y `registro.md` (fecha, slug, nota SEO, humanidad turno 1 → turno 2, veredicto del Verificador, estado).
 5. Publica: `git add -A && git commit -m "Guía: <título>" && git pull --rebase && git push`.
