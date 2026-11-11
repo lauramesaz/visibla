@@ -38,6 +38,9 @@
 - 2026-11-07 · Redactor · Pedir que se desconfíe de cualquiera que escriba sin que se lo pidan (Visibla también escribe a clínicas) · "desconfía de los correos no solicitados" · Si el tema lo necesita: "desconfía de quien te escribe prometiendo posiciones sin mostrarte un diagnóstico real de tu web".
 - 2026-11-09 · Redactor · Cierre que vuelve a amontonar 3 enlaces internos y los remata con "sigue siendo el mejor punto de partida" · "plan de 90 días… diagnóstico gratis… guía completa… sigue siendo el mejor punto de partida" en un solo párrafo · Un enlace por párrafo, cada uno con su motivo concreto, y cerrar con lo que el lector hace después (reaparece la multa del 5-nov).
 - 2026-11-09 · Redactor · Pregunta de FAQ mal puntuada que mezcla dos preguntas y rótulo "Esta guía es para…" en la entrada · "¿Sube el tráfico pero no llegan pacientes. Es culpa del SEO?" · Una pregunta por entrada, con signos completos; y decir a quién sirve el texto sin nombrarlo ("Esto es para quien ya firmó").
+- 2026-11-11 · Redactor · Entrada que abre con definición de enciclopedia · "Search Console es la herramienta gratuita de Google que muestra…" · Abrir con lo que ve el dueño ("Entras a Search Console y ves gráficas que no te dicen qué hacer") y meter la definición en una frase corta después.
+- 2026-11-11 · Redactor · Cierre que vuelve a amontonar 4 enlaces internos en un solo párrafo, terminado en "sigue con la guía completa" (reaparece multa del 5 y 9-nov) · Analytics, cuánto tarda, agencia y guía pilar pegados en una frase · Un enlace por idea, repartidos en las secciones donde pegan, y cerrar con el paso práctico que el lector hace después.
+- 2026-11-11 · Redactor · Antítesis "la decisión es X, no Y" tras cada dato · "escribir páginas para esas búsquedas, no más artículos generales" / "la decisión no es alarmarse, sino anotar la fecha" · Decir solo la decisión afirmativa.
 
 ## Resueltas
 

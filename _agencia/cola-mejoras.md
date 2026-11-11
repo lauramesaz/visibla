@@ -19,7 +19,7 @@
 Primero las que además tienen clínica inventada.
 
 1. [hecho 2026-11-10 · SEO 91 · humanidad 7→9 / 9] cuanto-tarda-el-seo · Descubierta, sin indexar · clínica inventada. Enlaza a /plan-seo/ sin repetir cifras.
-2. [pendiente] search-console-para-principiantes · Rastreada, sin indexar · clínica inventada. Puede usar como dato propio las búsquedas reales de `search-console.md` (sin nombres de pacientes).
+2. [hecho 2026-11-11 · SEO 91 · humanidad 6→9 / 9] search-console-para-principiantes · Rastreada, sin indexar · clínica inventada. Puede usar como dato propio las búsquedas reales de `search-console.md` (sin nombres de pacientes).
 3. [pendiente] instagram-vs-google-clinica · Rastreada, sin indexar · clínica inventada.
 4. [pendiente] seo-clinicas-bucaramanga · Descubierta, sin indexar · clínica inventada. Datos de la ciudad con fuente, no un cambio de nombre.
 5. [pendiente] seo-vs-google-ads-clinicas · Google no reconoce la URL (publicada el 15-oct). Revisar que la pilar y 2 guías indexadas la enlacen.
