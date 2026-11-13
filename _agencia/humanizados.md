@@ -7,7 +7,7 @@ Si una guía `[pendiente]` aparece mejorada en `registro.md` en los últimos 30 
 
 ## Pendientes (no están en la cola de mejoras)
 
-- [pendiente] como-aparecer-en-google-maps-clinica · Aparecer en Google Maps con tu clínica: gratis, paso a paso (publicada 2026-10-02)
+- [humanizado 2026-11-13 · nota 5→9] como-aparecer-en-google-maps-clinica · Aparecer en Google Maps con tu clínica: gratis, paso a paso (publicada 2026-10-02)
 - [pendiente] medir-clics-whatsapp-web · Cómo medir los clics a WhatsApp desde tu web (publicada 2026-10-03)
 - [pendiente] ymyl-salud · YMYL en salud: qué le exige Google a la web de tu clínica (publicada 2026-10-04)
 - [pendiente] seo-clinica-vascular · SEO para clínica vascular: cómo llenar tu agenda (publicada 2026-10-06)

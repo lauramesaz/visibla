@@ -76,4 +76,4 @@ Elegir con la foto más reciente de `search-console.md`: una guía de "Páginas 
 - En cada una, 1 o 2 enlaces dentro de párrafos que ya existen: a su página de venta según el mapa y a una guía no indexada, con texto ancla descriptivo. Nada de párrafos nuevos que solo amontonen enlaces (multa del 5-nov en `notas-policia.md`).
 - No cambia `modificado`: agregar enlaces no es un cambio de contenido (INSTRUCCIONES §7).
 - Anotar aquí las 3 guías y la fecha:
-  - (vacío)
+  - 2026-11-13: seo-clinicas-bucaramanga (→ cuanto-tarda-el-seo), aparecer-en-chatgpt-clinica (→ ideas-blog-clinicas, saber-si-agencia-seo-funciona), ideas-blog-clinicas (→ cuanto-tarda-el-seo). Verificador APROBADO.

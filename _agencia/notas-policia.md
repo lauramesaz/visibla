@@ -37,6 +37,9 @@
 - 2026-11-12 · Redactor · Cierre que termina en invitación comercial tras dos enlaces seguidos ("Si quieres que alguien revise ambos frentes… puedes ver cómo trabajamos") · Meter el enlace a la página de venta a mitad de artículo con su motivo, y cerrar con el paso práctico (qué abrir o revisar hoy).
 - 2026-11-12 · Redactor · Cierres de párrafo en espejo ("Instagram atiende a quien ya te conoce. Google atiende a quien te está buscando por primera vez.") y comparaciones "funciona al revés: no reparte X, lo reparte entre Y" · Decir una vez la parte afirmativa con el dato ("Google pone primero las páginas que mejor responden a lo que alguien escribió").
 
+- 2026-11-13 · Redactor · Antítesis "X, no Y" repetida (mes contra mes, no semana contra semana; referencia y no regla; lo que es, no lo que tiene) y frases de relleno ("Aquí va el proceso…", "Pocas guías explican esta parte", "Nuestro consejo:") · Decir solo la parte afirmativa y ir directo al contenido (reaparece multa del 27-oct y 11-nov).
+- 2026-11-13 · Redactor · Cierre "Haz esto hoy en 10 minutos" seguido de un resumen que repite la moraleja · Titular el paso con lo que se revisa ("Revisa tu ficha desde el celular") y cerrar con la consecuencia práctica por caso.
+
 ## Resueltas
 
 - 2026-10-27 · Sobrecorrección al partir frases largas: fragmentos sin verbo · "hazle tres preguntas. Qué permite la Ley 23… Qué hace con la ficha… Y cómo cuenta…" · Si son 2 o 3 cosas, una lista con dos puntos; si son más, dos frases completas. (movida el 12-nov por el límite de 30)
