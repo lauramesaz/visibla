@@ -144,7 +144,7 @@ NAV = """<div class="progress" id="progress"></div>
 FOOTER = """<footer>
   <div class="wrap">
     <a href="/" class="logo" style="font-size:15px;color:var(--ink)"><i style="width:18px;height:18px"></i>Visibla</a>
-    <div>SEO con agentes de IA para clínicas · Colombia · © {anio} · <a href="/blog/">Guías</a> · <a href="/diagnostico/">Diagnóstico gratis</a></div>
+    <div><a href="/">SEO para clínicas</a> con agentes de IA · Colombia · © {anio} · <a href="/blog/">Guías</a> · <a href="/diagnostico/">Diagnóstico gratis</a></div>
   </div>
   {{links}}
 </footer>"""

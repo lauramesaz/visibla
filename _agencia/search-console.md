@@ -2,6 +2,63 @@
 
 Propiedad de dominio `sc-domain:posicion-seo.com` (dueña: lauramesazuluaga@gmail.com). La lee el "usuario robot" (solo lectura) con `python3 _agencia/gsc.py sc-domain:posicion-seo.com --paises`. Cada lunes el analista agrega una foto nueva ARRIBA; las viejas quedan debajo (máximo 8). La agencia la lee antes de elegir tema.
 
+## Plan orgánico 13-nov-2026 (NO es una foto: no borrar al rotar las fotos)
+
+**No tocar antes del 4-dic-2026** los títulos, descripciones ni keywords de esta tabla (ni los de `/blog/seo-para-clinicas/` y el inicio). Google necesita unas 3 semanas para volver a leer y mover cada página; si se cambian antes, no se sabe qué funcionó. El lunes 7-dic se compara contra la foto del 9-nov.
+
+### Títulos y descripciones cambiados (2 de un máximo de 8)
+
+| Página | Antes | Después | Por qué |
+|---|---|---|---|
+| /casos/seravena/ · título | Agencia SEO para clínicas: caso Clínica Seravena \| Visibla | Caso de SEO: Clínica Seravena, Medellín \| Visibla | Salía 56 veces en el puesto 7,8 por "seravena clinica" (gente que busca la clínica). Ahora se entiende que es un caso de la agencia y deja de competir con el inicio por "agencia SEO para clínicas" |
+| /casos/seravena/ · descripción | Agencia SEO para clínicas: caso Clínica Seravena, Medellín. Un artículo al día con agentes de IA desde julio de 2026: qué se montó, qué se mide y qué aprendimos. | Caso de SEO de la agencia Visibla con Clínica Seravena, en Medellín: un artículo al día con agentes de IA desde julio de 2026, qué se mide y qué aprendimos. | Igual |
+| /blog/como-aparecer-en-google-maps-clinica/ · título | Aparecer en Google Maps con tu clínica: gratis, paso a paso | Cómo aparecer en Google Maps con tu clínica (gratis) | Puesto 11,6 y 0 clics. El título empieza como la gente lo escribe ("cómo aparecer en google maps") |
+| /blog/como-aparecer-en-google-maps-clinica/ · descripción | Aparecer en Google Maps con tu clínica es gratis: cómo reclamar la ficha, qué método de verificación te toca y qué revisar si otra clínica sale antes. | Cómo aparecer en Google Maps con tu clínica o consultorio sin pagar: crear y verificar la ficha, llenarla bien y qué revisar si no sales o sale otra antes. | Suma "consultorio" y "si no sales", que es la duda más común |
+
+### "seo para clínicas": una sola dueña
+
+- Dueña desde hoy: el inicio (`/`). Antes Google mostraba la guía `/blog/seo-para-clinicas/` (puesto 74) porque 42 enlaces internos decían "guía de SEO para clínicas" y solo 1 apuntaba al inicio.
+- El pie de todas las páginas generadas enlaza al inicio con el texto "SEO para clínicas". También lo hacen la guía pilar, /casos/seravena/ y /seo-cirujanos-plasticos/.
+- Inicio: 4 preguntas nuevas (qué es el SEO para clínicas, qué incluye el servicio, con qué especialidades trabajan, cómo saber si funciona), de 7 a 11, visibles y en los datos estructurados. Título y descripción del inicio sin cambios.
+- La guía no cambió de título ni de keyword (se revisa el 4-dic; regla en `mapa-palabras.md`, sección 3).
+
+### /seo-cirujanos-plasticos/ (título y descripción sin cambios)
+
+- 4 preguntas nuevas (qué incluye, SEO o Google Ads, qué revisar antes de contratar, otras ciudades): de 8 a 12.
+- 2 secciones nuevas: "SEO, Instagram o Google Ads" (tabla) y "Qué revisar antes de contratar SEO para tu clínica de cirugía plástica".
+- Enlaces a /seo-clinicas-capilares/ (por "seo para cirugia capilar", que caía aquí), /seo-medicos/, /agencia-seo-clinicas-medellin/ y el inicio.
+
+### Guía de Google Maps
+
+- Pregunta nueva: "¿Por qué mi clínica no aparece en Google Maps?". Enlaces a /seo-medicos/ y a instagram-vs-google-clinica.
+
+### Las 12 páginas que Google aún no guarda
+
+Revisadas una por una: todas tienen canonical a sí mismas, ninguna tiene noindex y todas están en el sitemap con la barra final, igual que su canonical. No había fallo técnico: les faltaban enlaces desde páginas que Google sí conoce.
+
+| Página sin indexar | Enlaces nuevos desde páginas que ya están en Google |
+|---|---|
+| saber-si-agencia-seo-funciona | inicio, medir-clics-whatsapp-web, como-elegir-agencia-seo-clinica, /seo-cirujanos-plasticos/ |
+| mapa-de-calor-web-clinica | inicio, pilar, medir-clics-whatsapp-web, /casos/seravena/ |
+| instagram-vs-google-clinica | inicio, guía de Google Maps, /seo-cirujanos-plasticos/ |
+| seo-vs-google-ads-clinicas | inicio, pilar, como-elegir-agencia-seo-clinica, /seo-cirujanos-plasticos/ |
+| search-console-para-principiantes | inicio (ya tenía 7) |
+| aparecer-en-chatgpt-clinica | ya tenía 2 (schema-clinica-medica y contenido-ia-google); sin cambio |
+| ideas-blog-clinicas | contenido-ia-google |
+| seo-clinicas-bucaramanga | inicio, pilar, seo-clinicas-cartagena |
+| cuanto-tarda-el-seo | inicio, pilar, /casos/seravena/, /seo-cirujanos-plasticos/ |
+| seo-clinicas-esteticas (guía) | ya tenía 7; sin cambio |
+| /seo-clinicas-capilares/ | inicio, /seo-cirujanos-plasticos/, /seo-dermatologos/ |
+| /seo-medicos/ | inicio, guía de Google Maps, /seo-cirujanos-plasticos/, /agencia-seo-clinicas-bogota/ |
+
+### Qué mirar el 7-dic
+
+1. ¿Google ya muestra el inicio (y no la guía) para "seo para clínicas"? ¿En qué puesto?
+2. ¿/seo-cirujanos-plasticos/ bajó del puesto 75?
+3. ¿La guía de Google Maps volvió a primera página (puesto ≤ 10) y tuvo algún clic?
+4. ¿Cuántas de las 12 páginas ya están en Google?
+5. Lo que no se arregla desde la web: el dominio es nuevo y casi ninguna otra web lo enlaza. Mientras eso no cambie, las búsquedas de compra seguirán lejos (puesto 60 a 90).
+
 ## Foto del 2026-11-09 (últimos 28 días)
 
 **Totales:** 1 clic · 319 apariciones en Google · CTR 0.3% · posición media 50.7

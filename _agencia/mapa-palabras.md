@@ -12,10 +12,11 @@
 
 | Búsqueda | Página dueña | Intención | Posición hoy |
 |---|---|---|---|
-| seo para clínicas | /blog/seo-para-clinicas/ | informativa | 68,9 (49) |
-| seo para clinicas | /blog/seo-para-clinicas/ | informativa | 88,8 (14) |
-| seo para clinicas medicas | /blog/seo-para-clinicas/ | informativa | 77,7 (6) |
-| seo para clínicas médicas | /blog/seo-para-clinicas/ | informativa | 92,0 (4) |
+| seo para clínicas | / | compra | 68,9 (49) · hoy Google muestra /blog/seo-para-clinicas/ (dueña cambiada el 13-nov) |
+| seo para clinicas | / | compra | 88,8 (14) · hoy sale la guía |
+| seo para clinicas medicas | / | compra | 77,7 (6) · hoy sale la guía |
+| seo para clínicas médicas | / | compra | 92,0 (4) · hoy sale la guía |
+| servicio seo para clinicas medicas | / | compra | 86,5 (8) · foto del 13-nov; hoy sale la guía |
 | posicionamiento seo para hospitales | /blog/seo-para-clinicas/ | informativa | 73,5 (2) |
 | seo para cirujanos plasticos | /seo-cirujanos-plasticos/ | compra | 71,9 (32) |
 | seo para cirugia plastica | /seo-cirujanos-plasticos/ | compra | 71,2 (31) |
@@ -59,6 +60,9 @@
 | agencia seo para clínicas | / | compra | — |
 | agencia seo para clínicas en colombia | / | compra | — |
 | seo local para clínicas | /blog/seo-para-clinicas/ | informativa | — |
+| guía de seo para clínicas | /blog/seo-para-clinicas/ | informativa | — (desde el 13-nov la guía se queda con las búsquedas de "guía" y "cómo hacer") |
+| cómo hacer seo para una clínica | /blog/seo-para-clinicas/ | informativa | — |
+| qué es el seo para clínicas | / | informativa-compra | — (primera pregunta del inicio desde el 13-nov) |
 | seo local para medicos | /seo-medicos/ | compra | — |
 | seo medico | /seo-medicos/ | compra | — |
 | cómo aparecer en google como médico | /seo-medicos/ | compra | — |
@@ -128,7 +132,8 @@
 
 ## 3. Choques que hay hoy (se resuelven con otras tareas del plan)
 
+- **"seo para clínicas" (decisión del 13-nov-2026):** la dueña es el inicio (`/`), que es la página de venta. Google mostraba la guía porque 42 enlaces internos decían "guía de SEO para clínicas" y solo 1 apuntaba al inicio. Regla desde hoy: el texto exacto **"SEO para clínicas"** como enlace va SIEMPRE a `/`; la guía se enlaza como "guía completa de SEO para clínicas" o "guía paso a paso" (con la palabra "guía"). El pie de todas las páginas ya enlaza a `/` con "SEO para clínicas". No cambiar el título ni la keyword de la guía antes del 4-dic-2026: primero se mira en la foto de Search Console si Google ya muestra el inicio. Si para entonces sigue saliendo la guía, su título pasa a empezar por "Guía de SEO para clínicas…" y el primer párrafo enlaza a `/`.
 - "agencia seo para médicos" salía con la landing de Barranquilla, "seo para traumatologos" con la guía de fisioterapia y "seo para cirugia capilar" con la de cirujanos plásticos. Desde el 7-nov sus dueñas existen (/seo-medicos/, /seo-traumatologos/, /seo-clinicas-capilares/): no escribir nada nuevo para esas búsquedas; las otras páginas las enlazan con esa búsqueda como texto del enlace. Revisar en la foto de Search Console de diciembre si Google ya muestra la dueña.
 - `/blog/seo-clinicas-esteticas/` tiene como keyword "seo para clínicas estéticas", que es de `/agencia-seo-clinicas-esteticas/`. VIS-10 le cambia la keyword a "qué tratamientos de tu clínica estética necesitan página propia".
 - Resuelto el 7-nov: `/blog/agencia-seo-clinicas-medellin/` pasó a "seo para clínicas en Medellín" (informativa) y "agencia seo clínicas medellín" es de `/agencia-seo-clinicas-medellin/`. Conserva la URL vieja para no perder lo ganado.
-- `/casos/seravena/` sale en el puesto 6 cuando alguien busca la clínica por su nombre: VIS-10 le cambia el title para que se entienda que es un caso de agencia.
+- Resuelto el 13-nov: `/casos/seravena/` salía en el puesto 6-8 cuando alguien busca la clínica por su nombre. Su title ahora es "Caso de SEO: Clínica Seravena, Medellín | Visibla" y el segundo párrafo manda a clinicaseravena.com a quien busca la clínica. No se persigue ese clic.

@@ -22,7 +22,7 @@ Primero las que además tienen clínica inventada.
 2. [hecho 2026-11-11 · SEO 91 · humanidad 6→9 / 9] search-console-para-principiantes · Rastreada, sin indexar · clínica inventada. Puede usar como dato propio las búsquedas reales de `search-console.md` (sin nombres de pacientes).
 3. [hecho 2026-11-12 · SEO 90 · humanidad 6→9 / 9] instagram-vs-google-clinica · Rastreada, sin indexar · clínica inventada.
 4. [pendiente] seo-clinicas-bucaramanga · Descubierta, sin indexar · clínica inventada. Datos de la ciudad con fuente, no un cambio de nombre.
-5. [pendiente] seo-vs-google-ads-clinicas · Google no reconoce la URL (publicada el 15-oct). Revisar que la pilar y 2 guías indexadas la enlacen.
+5. [pendiente] seo-vs-google-ads-clinicas · Google no reconoce la URL (publicada el 15-oct). Enlaces ya puestos el 13-nov desde el inicio, la pilar, como-elegir-agencia-seo-clinica y /seo-cirujanos-plasticos/: falta solo la mejora de contenido.
 6. [pendiente] aparecer-en-chatgpt-clinica · Descubierta, sin indexar. Sus búsquedas en el mapa: "aparecer en chatgpt clínica" y "que chatgpt recomiende mi clínica".
 7. [pendiente] ideas-blog-clinicas · Descubierta, sin indexar.
 
@@ -41,7 +41,7 @@ Leer cada norma citada en la fuente oficial (funcionpublica.gov.co, secretariase
 
 11. [pendiente] perfil-empresa-google-clinica · Ya en Google desde la inspección del 7-nov: no cambiar la keyword.
 12. [pendiente] responder-resenas-negativas-pacientes · Ya en Google: no cambiar la keyword. Cada respuesta de ejemplo pasa la misma prueba que enseña la guía.
-13. [pendiente] seo-para-clinicas · No antes del 28-nov (mejorada el 29-oct). Si VIS-11 ya la reforzó, solo cambiar el ejemplo inventado.
+13. [pendiente] seo-para-clinicas · No antes del 4-dic (plan orgánico del 13-nov: no tocar título ni keyword hasta ver la foto de Search Console de diciembre; ver "Choques" en `mapa-palabras.md`). Al mejorarla: cambiar el ejemplo inventado (Sonrisa Andina) y dejarla como la GUÍA; la búsqueda "seo para clínicas" es del inicio.
 14. [pendiente] errores-seo-clinicas
 15. [pendiente] mapa-de-calor-web-clinica · No antes del 6-dic (publicada el 6-nov). Su ejemplo es una clínica dental en Manizales inventada.
 16. [pendiente] schema-clinica-medica
@@ -53,7 +53,10 @@ Leer cada norma citada en la fuente oficial (funcionpublica.gov.co, secretariase
 Solo textos de `_agencia/paginas/<slug>.json`: FAQ y párrafos. Nunca precios, estructura, diseño ni el orden de los bloques. Saltar la página si su `modificado` es de los últimos 30 días.
 En cada una: respuesta directa en las 2 primeras frases, FAQ con las búsquedas reales que el mapa le asigna, 1 o 2 enlaces a guías que la apoyen, y lo que diga `hechos.md` del caso relacionado (sin cifras que no estén ahí).
 
-19. [pendiente] seo-cirujanos-plasticos
+19. [hecho 2026-11-13 · a mano, plan orgánico · sin notas de Juez ni Policía] seo-cirujanos-plasticos · 4 preguntas nuevas, 2 secciones (SEO/Instagram/Google Ads y qué revisar antes de contratar) y enlaces a capilares, médicos y Medellín. No tocar antes del 4-dic.
+
+Orden desde el 13-nov (plan orgánico): primero las de ciudad que ya salen en Google: 20 (Pereira), 29 (Barranquilla) y 28 (Cali). Después 25, 26, 27 y 30; y 21 a 24 cuando se cumpla su fecha.
+
 20. [pendiente] agencia-seo-clinicas-pereira · Meter con naturalidad "agencia seo pereira", "seo pereira" y "posicionamiento seo pereira".
 21. [pendiente] seo-traumatologos · publicada el 7-nov: no antes del 7-dic.
 22. [pendiente] seo-medicos · publicada el 7-nov: no antes del 7-dic. FAQ con "agencia seo para médicos".
@@ -76,4 +79,5 @@ Elegir con la foto más reciente de `search-console.md`: una guía de "Páginas 
 - En cada una, 1 o 2 enlaces dentro de párrafos que ya existen: a su página de venta según el mapa y a una guía no indexada, con texto ancla descriptivo. Nada de párrafos nuevos que solo amontonen enlaces (multa del 5-nov en `notas-policia.md`).
 - No cambia `modificado`: agregar enlaces no es un cambio de contenido (INSTRUCCIONES §7).
 - Anotar aquí las 3 guías y la fecha:
+  - 2026-11-13 (plan orgánico, a mano): enlaces hacia las 12 páginas que Google aún no guarda, puestos en páginas que sí están en Google: inicio (preguntas), pilar seo-para-clinicas, como-aparecer-en-google-maps-clinica, medir-clics-whatsapp-web, como-elegir-agencia-seo-clinica, contenido-ia-google, seo-clinicas-cartagena, /casos/seravena/, /seo-cirujanos-plasticos/, /seo-dermatologos/ y /agencia-seo-clinicas-bogota/. Detalle en `search-console.md`.
   - 2026-11-13: seo-clinicas-bucaramanga (→ cuanto-tarda-el-seo), aparecer-en-chatgpt-clinica (→ ideas-blog-clinicas, saber-si-agencia-seo-funciona), ideas-blog-clinicas (→ cuanto-tarda-el-seo). Verificador APROBADO.

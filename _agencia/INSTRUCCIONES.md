@@ -69,6 +69,7 @@ El propio blog es la prueba del producto: si Visibla posiciona su blog, demuestr
 - Estructura: párrafo de entrada que responde la pregunta en 2–3 frases (para fragmento destacado y para IA) → H2 claros (5–8) → pasos accionables → FAQ de 3–5 preguntas reales (en la cabecera `faq`, NO en el cuerpo).
 - Al menos 1 tabla o lista de pasos cuando aporte.
 - **Enlaces internos:** 2–4 a otras guías publicadas (`/blog/<slug>/`) con texto ancla descriptivo + 1 a la home (`/`) o a `/#como`. Solo enlaces que EXISTAN (mira `_agencia/articulos/`).
+- **Texto "SEO para clínicas" (desde el 13-nov-2026):** la búsqueda "seo para clínicas" es del inicio (`/`). Si enlazas con el texto exacto "SEO para clínicas", el enlace va a `/`. A la pilar se la enlaza con la palabra "guía" ("guía completa de SEO para clínicas").
 - **Páginas de venta:** cada guía enlaza UNA vez, dentro del texto, a la página de venta que le da `mapa-palabras.md` (o la columna "Enlaza a" de `temas.md`), con texto natural (ej. "cómo trabajamos con clínicas estéticas" → `/agencia-seo-clinicas-esteticas/`). No escribas artículos que compitan con esas páginas (keyword "agencia SEO + especialidad/ciudad").
 - **Enlaces externos:** 2–5 a fuentes de autoridad (Google, estudios, normas). Van en el texto Y en `fuentes`.
 - **Dato propio:** cada guía nueva o mejorada lleva al menos 1 dato propio comprobable (de `hechos.md`, `datos-propios.md` o `search-console.md`).
