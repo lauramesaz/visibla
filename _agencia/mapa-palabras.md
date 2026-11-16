@@ -129,6 +129,7 @@
 | agencia seo para psicologos | ninguna | fuera de foco (psicólogos no son público de Visibla por ahora) | — |
 | seo para clinicas veterinarias | ninguna | fuera de foco | — |
 | agencia seo colombia | / | fuera de foco: genérica y muy competida, no se escribe para ella | — |
+| seo para oftalmólogos | /blog/seo-oftalmologos/ | informativa | — (publicada el 16-nov-2026) |
 
 ## 3. Choques que hay hoy (se resuelven con otras tareas del plan)
 
