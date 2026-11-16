@@ -39,6 +39,9 @@
 
 - 2026-11-13 · Redactor · Antítesis "X, no Y" repetida (mes contra mes, no semana contra semana; referencia y no regla; lo que es, no lo que tiene) y frases de relleno ("Aquí va el proceso…", "Pocas guías explican esta parte", "Nuestro consejo:") · Decir solo la parte afirmativa y ir directo al contenido (reaparece multa del 27-oct y 11-nov).
 - 2026-11-13 · Redactor · Cierre "Haz esto hoy en 10 minutos" seguido de un resumen que repite la moraleja · Titular el paso con lo que se revisa ("Revisa tu ficha desde el celular") y cerrar con la consecuencia práctica por caso.
+- 2026-11-16 · Redactor · Frase-aviso que presenta la pieza ("Una aclaración sobre esta guía:") y antítesis "no escribe X y ya: escribe Y" / H2 "una página por servicio, no una página de 'servicios'" / "como señal y no como promesa" (3 en una guía) · Entrar directo al dato ("En la foto de Search Console… la búsqueda no aparece") y decir solo la parte afirmativa (reaparece multa del 27-oct).
+- 2026-11-16 · Redactor · Presentar cada enlace interno con "está en la guía de / se explica en la guía de / Cómo hacerlo está en" (6 veces) y cierre que junta 4 enlaces en un párrafo (reaparece multa del 5, 9 y 11-nov) · Verbo distinto por enlace ("la recorremos en", "sigue la guía de", "detalla qué cuida la ley") y repartir los enlaces por las secciones donde pegan.
+- 2026-11-16 · Redactor · "Lo que sí se puede hacer…" para corregir la frase anterior (reaparece multa del 27-oct) · Decirlo directo: "Desde el primer mes puedes completar la ficha…".
 
 ## Resueltas
 
