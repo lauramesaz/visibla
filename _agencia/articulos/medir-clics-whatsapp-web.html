@@ -3,7 +3,7 @@
   "titulo": "Cómo medir los clics a WhatsApp desde tu web",
   "meta": "Cómo medir los clics a WhatsApp desde tu web con Google Analytics 4 y Search Console, sin pagar ninguna herramienta nueva ni tocar el código.",
   "fecha": "2026-10-03",
-  "modificado": "2026-11-07",
+  "modificado": "2026-11-20",
   "categoria": "Medición y resultados",
   "keyword": "medir clics whatsapp web",
   "lectura": 6,
@@ -25,13 +25,13 @@
 -->
 <p>Para medir los clics a WhatsApp desde la web de tu clínica no necesitas contratar nada nuevo: si ya tienes Google Analytics 4 instalado, está contando esos clics desde el primer día, sin que lo hayas pedido. Lo que falta es saber dónde mirarlos, separarlos de los que trae la pauta y entender qué te dicen de verdad sobre pacientes nuevos.</p>
 
-<p>Esta guía es para el dueño o la gerente que ya tiene su número de WhatsApp puesto en la web y quiere saber si funciona, no para quien recién va a ponerlo. Si todavía estás armando la base de tu SEO, empieza por la <a href="/blog/seo-para-clinicas/">guía completa de SEO para clínicas</a> y vuelve aquí cuando tengas tráfico que medir.</p>
+<p>Esta guía es para el dueño o la gerente que ya tiene su número de WhatsApp puesto en la web y quiere saber si funciona. Si todavía estás armando la base de tu SEO, empieza por la <a href="/blog/seo-para-clinicas/">guía completa de SEO para clínicas</a> y vuelve aquí cuando tengas tráfico que medir.</p>
 
 <h2>Por qué contar clics a WhatsApp importa más que contar posiciones</h2>
 
 <p>Porque una posición en Google no paga arriendo. Un clic a WhatsApp es la señal más cercana que tienes a un paciente que de verdad está considerando agendar. Puedes salir de primero para una búsqueda y no recibir un solo mensaje si la página no convence, o salir más abajo y recibir varios si la página responde justo lo que esa persona quería saber.</p>
 
-<p>Por eso en Visibla medimos así para las clínicas con las que trabajamos: Google Search Console para saber cuánta gente llega desde Google, un <a href="/blog/mapa-de-calor-web-clinica/">mapa de calor con Microsoft Clarity</a> para ver cómo navegan esa visita, y una conversión separada para el clic en WhatsApp.</p>
+<p>Por eso en Visibla medimos así para las clínicas con las que trabajamos: Google Search Console para saber cuánta gente llega desde Google, un <a href="/blog/mapa-de-calor-web-clinica/">mapa de calor con Microsoft Clarity</a> para ver cómo navegan esa visita, y una conversión separada para el clic en WhatsApp. Si quieres ver cómo armamos esa medición completa para una clínica, <a href="/#como">así trabajamos en Visibla</a>.</p>
 
 <h2>Lo que Google Analytics 4 ya mide sin que actives nada</h2>
 
@@ -42,7 +42,7 @@
 <h2>Paso a paso para medir los clics a WhatsApp en tu web</h2>
 
 <ol>
-<li><strong>Entra a Informes y luego a Interacción &gt; Eventos.</strong> Busca el evento llamado "click" en la lista; ahí están todos los clics de salida, no solo los de WhatsApp.</li>
+<li><strong>Entra a Informes y luego a Interacción &gt; Eventos.</strong> Busca el evento llamado "click" en la lista; ahí están todos los clics de salida, incluidos los de WhatsApp.</li>
 <li><strong>Abre una exploración en blanco</strong> (menú Explorar, plantilla en blanco) y arma una tabla con la dimensión del dominio del enlace y la métrica "recuento de eventos", filtrando el nombre del evento a "click".</li>
 <li><strong>Quédate con las filas de wa.me o api.whatsapp.com.</strong> Ese número es tu total de clics a WhatsApp en el período que elegiste.</li>
 <li><strong>Agrega la página de entrada como segunda dimensión</strong> para ver si los clics salen más de la home, de una página de tratamiento o del blog.</li>
@@ -54,7 +54,7 @@
 
 <p>Un clic a WhatsApp no es lo mismo que un paciente nuevo. Dentro de esos clics hay pacientes que ya tienes preguntando por una cita y personas que escriben solo por curiosidad. También hay clics dobles de la misma persona que entró dos veces a comparar precios. Tratar el número de clics como si fuera el número de pacientes agendados hace que un mes real de 30 contactos se vea como un fracaso frente a una meta de 60 que nunca tuvo base.</p>
 
-<p>Un ejemplo real con cifras es el de Clínica Seravena, en Medellín. Su web y sus anuncios de Google generan juntos alrededor de 55 contactos por WhatsApp al mes, con 57 en septiembre de 2026. Esa cifra mezcla lo que trae la pauta y lo que trae el SEO; no se puede repartir el mérito solo mirando el total de clics. Si corres pauta además de SEO, el paso siguiente es obligatorio.</p>
+<p>Un ejemplo real con cifras es el de Clínica Seravena, en Medellín. Su web y sus anuncios de Google generan juntos alrededor de 55 contactos por WhatsApp al mes, con 57 en septiembre de 2026. Esa cifra mezcla lo que trae la pauta y lo que trae el SEO, y el total de clics no dice cuánto puso cada uno. Si corres pauta además de SEO, necesitas el paso siguiente.</p>
 
 <h2>Separar lo que llega gratis de lo que llega pagado</h2>
 
@@ -64,21 +64,21 @@
 
 <h2>Cómo marcar cada botón de WhatsApp para saber cuál funciona</h2>
 
-<p>Puede que tu web tenga más de un botón de WhatsApp: uno flotante, uno en el encabezado y otro al final de cada página de tratamiento. Analytics puede distinguirlos si cada botón tiene un identificador distinto en el código, algo tan simple como un atributo id o class diferente por botón. Pídele eso a quien maneje tu web: no cambia cómo se ve el botón, solo deja una etiqueta para que Analytics la lea.</p>
+<p>Puede que tu web tenga más de un botón de WhatsApp: uno flotante, uno en el encabezado y otro al final de cada página de tratamiento. Analytics puede distinguirlos si cada botón tiene un identificador distinto en el código, algo tan simple como un atributo id o class diferente por botón. Pídele eso a quien maneje tu web. El botón se ve igual y solo suma una etiqueta que Analytics lee.</p>
 
-<p>Con esa etiqueta puedes comparar, por ejemplo, si el botón flotante que sigue al visitante por toda la página convierte más que el del encabezado, que solo se ve arriba. Con ese dato puedes decidir, por ejemplo, si quitas el botón del encabezado porque casi nadie lo toca o si lo dejas porque de ahí sale una parte real de los contactos.</p>
+<p>Con esa etiqueta puedes comparar, por ejemplo, si el botón flotante que sigue al visitante por toda la página convierte más que el del encabezado, que solo se ve arriba. Con ese dato decides si quitas el botón del encabezado porque casi nadie lo toca o si lo dejas porque de ahí sale una parte real de los contactos.</p>
 
-<div class="nota"><strong>Haz esto hoy (10 minutos):</strong> entra a tu cuenta de Google Analytics, ve a Administrador &gt; Flujos de datos &gt; tu sitio y revisa que el interruptor de "Medición mejorada" esté activado. Si lo está, abre Informes &gt; Tiempo real y toca tú mismo tu botón de WhatsApp desde el celular: en unos segundos debe aparecer el evento "click" en la pantalla.</div>
+<div class="nota"><strong>Comprueba que ya está midiendo:</strong> entra a tu cuenta de Google Analytics, ve a Administrador &gt; Flujos de datos &gt; tu sitio y revisa que el interruptor de "Medición mejorada" esté activado. Si lo está, abre Informes &gt; Tiempo real y toca tú mismo tu botón de WhatsApp desde el celular: en unos segundos debe aparecer el evento "click" en la pantalla.</div>
 
 <h2>Si todavía no tienes Analytics instalado en tu web</h2>
 
 <p>Entonces nada de lo anterior se está midiendo todavía, y es el primer paso antes de cualquier otra cosa. Crear una cuenta de Google Analytics 4 y pegar su código en tu web toma menos de media hora si quien maneja tu web sigue la guía oficial de configuración, y no cuesta nada. Una vez instalado, la medición mejorada arranca sola y en un par de días ya tienes los primeros clics de salida registrados.</p>
 
-<p>Si tu web la maneja un proveedor externo, pídele acceso de administrador a la cuenta de Analytics con tu propio correo desde el primer día. Es el mismo cuidado que conviene tener con la ficha de Google Maps: que la cuenta quede a tu nombre desde el primer día, no a nombre de quien te la instaló.</p>
+<p>Si tu web la maneja un proveedor externo, pídele acceso de administrador a la cuenta de Analytics con tu propio correo desde el inicio. Es el mismo cuidado que pide la ficha de Google Maps, que también debe quedar a tu nombre y no al de quien te la instaló: <a href="/blog/como-aparecer-en-google-maps-clinica/">cómo aparecer en Google Maps con tu clínica</a> explica cómo.</p>
 
 <h2>Qué pedirle cada mes a tu equipo o a tu agencia</h2>
 
-<p>Pide números que puedas revisar tú mismo, no solo un resumen en una diapositiva. Esta tabla sirve de guía para la conversación mensual:</p>
+<p>Pide números que puedas revisar tú mismo en Analytics y Search Console. Para la conversación mensual, estos:</p>
 
 <table>
 <thead>
@@ -91,6 +91,6 @@
 </tbody>
 </table>
 
-<p>Si te entregan solo posiciones de palabras sueltas sin estos tres datos, falta la mitad del informe. Puedes enlazar esta tabla con lo que ya cubrimos sobre <a href="/blog/como-elegir-agencia-seo-clinica/">qué entregables pedirle a una agencia SEO</a> antes de firmar.</p>
+<p>Si te entregan solo posiciones de palabras sueltas sin estos tres datos, falta la mitad del informe. Antes de firmar con alguien, mira <a href="/blog/como-elegir-agencia-seo-clinica/">qué entregables pedirle a una agencia SEO</a>.</p>
 
-<p>Lo último: si decides cambiar de agencia, revisa primero que la propiedad de Analytics esté a nombre de tu clínica, con tu propio correo como administrador principal. Así el historial de clics a WhatsApp se queda contigo, no con quien se va. Para la ficha de Google Maps aplica la misma lógica, explicada en la guía de <a href="/blog/como-aparecer-en-google-maps-clinica/">cómo aparecer en Google Maps con tu clínica</a>. Y si quieres ver cómo armamos esta medición completa para una clínica, <a href="/#como">así trabajamos en Visibla</a>.</p>
+<p>Si piensas cambiar de agencia, entra primero a Administrador y mira qué correo figura como propietario de la propiedad de Analytics. Debe ser el de tu clínica, como administrador principal; así el historial de clics a WhatsApp se queda contigo cuando alguien se va.</p>
