@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Torre de control</title>
+<style>
+@font-face{font-family:'Geist';src:url(/fuentes/geist.woff2) format('woff2');font-weight:300 700;font-display:swap}
+@font-face{font-family:'Geist Mono';src:url(/fuentes/geist-mono.woff2) format('woff2');font-weight:400 500;font-display:swap}
+:root{--ink:#0c0e11;--ink2:#2a2f36;--ink3:#6b7480;--line:#e6e9ed;--mist:#f5f6f8;--paper:#fbfbfc;
+--acc:#7d93ab;--glass:rgba(255,255,255,.62);--glass-b:rgba(255,255,255,.9);--bar:#dfe5ec;
+--bg1:#d9e0e8;--bg2:#eef1f4;--orb:rgba(255,255,255,.9);--ok:#3f8f6b;--warn:#c9922e;--r:22px}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--ink:#eef1f4;--ink2:#c3cad3;--ink3:#8a94a1;--line:rgba(255,255,255,.1);--mist:rgba(255,255,255,.05);--paper:#0c0e11;--glass:rgba(22,26,31,.62);--glass-b:rgba(255,255,255,.08);--bar:rgba(255,255,255,.1);--bg1:#131820;--bg2:#0b0d10;--orb:rgba(125,147,171,.35)}}
+:root[data-theme="dark"]{--ink:#eef1f4;--ink2:#c3cad3;--ink3:#8a94a1;--line:rgba(255,255,255,.1);--mist:rgba(255,255,255,.05);--paper:#0c0e11;--glass:rgba(22,26,31,.62);--glass-b:rgba(255,255,255,.08);--bar:rgba(255,255,255,.1);--bg1:#131820;--bg2:#0b0d10;--orb:rgba(125,147,171,.35)}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;font-family:'Geist',system-ui,sans-serif;color:var(--ink);-webkit-font-smoothing:antialiased;
+background:radial-gradient(1200px 600px at 50% -10%,var(--bg2),transparent 70%),linear-gradient(180deg,var(--bg1),var(--bg2) 60%,var(--paper));background-attachment:fixed}
+.mono{font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink3)}
+.aviso{text-align:center;padding:8px 16px;background:var(--glass);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-bottom:1px solid var(--glass-b)}
+.wrap{max-width:1000px;margin:0 auto;padding:22px 16px 90px}
+nav{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.logo{display:flex;align-items:center;gap:9px;font-weight:500;font-size:15px}
+.logo i{width:18px;height:18px;border-radius:50%;border:1.5px solid var(--ink);display:grid;place-items:center}
+.logo i:after{content:"";width:6px;height:6px;border-radius:50%;background:var(--ink)}
+.marcas{display:flex;gap:4px;padding:4px;border-radius:999px;background:var(--glass);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid var(--glass-b);overflow-x:auto;scrollbar-width:none;max-width:100%}
+.marcas a{flex:none;text-decoration:none;color:var(--ink2);font-size:13.5px;padding:7px 14px;border-radius:999px}
+.marcas a.on{background:var(--ink);color:var(--paper);font-weight:500}
+.marcas a.off{opacity:.45}
+/* portada */
+.hero{text-align:center;padding:54px 0 26px;position:relative}
+.orb{width:58px;height:58px;border-radius:50%;margin:0 auto 26px;background:radial-gradient(circle,#fff 0 38%,var(--orb) 60%,transparent 72%);box-shadow:0 0 60px 18px var(--orb)}
+h1{font-weight:400;font-size:clamp(36px,6vw,60px);letter-spacing:-.04em;line-height:1.02;margin:0}
+.estado{display:inline-flex;align-items:center;gap:8px;margin-top:18px;padding:7px 14px;border-radius:999px;background:var(--glass);border:1px solid var(--glass-b);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);font-size:14px;color:var(--ink2)}
+.estado b{width:8px;height:8px;border-radius:50%;background:var(--warn);box-shadow:0 0 10px var(--warn)}
+.lead{color:var(--ink2);font-size:17px;font-weight:300;max-width:560px;margin:14px auto 0;line-height:1.5}
+/* paneles de vidrio */
+.panel{margin-top:16px;padding:26px;border-radius:var(--r);background:var(--glass);border:1px solid var(--glass-b);backdrop-filter:blur(30px);-webkit-backdrop-filter:blur(30px)}
+h2{font-weight:400;font-size:clamp(24px,3.6vw,32px);letter-spacing:-.03em;line-height:1.1;margin:6px 0 20px}
+.tres{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.dato{padding:18px;border-radius:16px;background:var(--mist);border:1px solid var(--line)}
+.v{font-size:clamp(30px,4.4vw,42px);font-weight:400;letter-spacing:-.045em;margin:8px 0 2px}
+.s{font-size:13.5px;color:var(--ink3)}
+.barra{height:4px;border-radius:99px;background:var(--bar);margin-top:12px;overflow:hidden}
+.barra i{display:block;height:100%;background:var(--ink)}
+/* embudo */
+.paso{display:grid;grid-template-columns:170px 1fr 52px;align-items:center;gap:14px;padding:9px 0;border-bottom:1px solid var(--line);font-size:15px}
+.paso:last-of-type{border-bottom:0}
+.t{height:6px;border-radius:99px;background:var(--bar);overflow:hidden}
+.t i{display:block;height:100%;background:var(--acc)}
+.t i.fin{background:var(--ink)}
+.n{text-align:right;font-family:'Geist Mono',monospace;font-size:14px}
+.nota{margin-top:16px;padding:13px 16px;border-radius:14px;background:var(--mist);border:1px solid var(--line);font-size:14.5px;color:var(--ink2)}
+.nota strong{color:var(--ink);font-weight:500}
+/* agentes */
+.agentes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.ag{padding:16px 18px;border-radius:16px;background:var(--mist);border:1px solid var(--line);transition:transform .3s,box-shadow .3s}
+.ag:hover{transform:translateY(-2px);box-shadow:0 20px 40px rgba(30,40,55,.08)}
+.ag .top{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.ag h3{font-weight:500;font-size:15.5px;margin:0}
+.pill{display:inline-flex;align-items:center;gap:6px;font-family:'Geist Mono',monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink3)}
+.pill b{width:7px;height:7px;border-radius:50%;background:var(--ok);box-shadow:0 0 8px var(--ok)}
+.pill.pausa b{background:var(--warn);box-shadow:0 0 8px var(--warn)}
+.ag p{margin:8px 0 0;font-size:14px;color:var(--ink2);line-height:1.5}
+.ag ul{margin:8px 0 0;padding:0;list-style:none;font-size:14px;color:var(--ink2)}
+.ag li{padding:3px 0;display:flex;justify-content:space-between;gap:10px}
+.ag li span:last-child{font-family:'Geist Mono',monospace;color:var(--ink)}
+.ag.ancho{grid-column:1/-1}
+.humano{font-size:13.5px;color:var(--ink3);margin-top:12px}
+/* el 20 % */
+.card{display:flex;gap:14px;align-items:flex-start;padding:16px 18px;border-radius:16px;background:var(--mist);border:1px solid var(--line);margin-top:10px}
+.card:first-of-type{margin-top:0}
+.num{flex:none;width:28px;height:28px;border-radius:50%;border:1px solid var(--ink);display:grid;place-items:center;font-family:'Geist Mono',monospace;font-size:12px}
+.card h3{font-weight:500;font-size:16px;margin:1px 0 0}
+.card p{margin:4px 0 0;font-size:14.5px;color:var(--ink2)}
+.btns{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
+.btn{height:36px;padding:0 16px;border-radius:999px;border:0;background:var(--ink);color:var(--paper);font:500 13.5px 'Geist',sans-serif;cursor:pointer}
+.btn.sec{background:transparent;color:var(--ink);border:1px solid var(--line)}
+.pie{text-align:center;margin-top:34px}
+@media (max-width:680px){.tres,.agentes{grid-template-columns:1fr}.paso{grid-template-columns:118px 1fr 40px;font-size:14px}.panel{padding:20px}.hero{padding-top:40px}}
+
+.gate{max-width:360px;margin:18vh auto 0;text-align:center}
+.gate input{width:100%;height:50px;border-radius:999px;border:1px solid var(--glass-b);background:var(--glass);backdrop-filter:blur(20px);text-align:center;font:400 20px 'Geist',sans-serif;letter-spacing:.3em;color:var(--ink);outline:none}
+.err{color:#c4573a;font-size:14px;min-height:20px;margin-top:10px}
+.marcas button{flex:none;border:0;background:none;color:var(--ink2);font:inherit;font-size:13.5px;padding:7px 14px;border-radius:999px;cursor:pointer}
+.marcas button.on{background:var(--ink);color:var(--paper);font-weight:500}
+.cmp{font-size:13.5px;margin-top:6px;color:var(--ink3)}
+.sube{color:var(--ok)}.baja{color:#c4573a}
+.vacio{color:var(--ink3);font-size:14.5px}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script>
+const DATOS = /*__DATOS__*/null;
+const $ = s => document.querySelector(s);
+const M = v => (v/1e6).toLocaleString('es-CO',{minimumFractionDigits:1,maximumFractionDigits:1})+'M';
+const NOMBRES = {seravena:'Seravena', noon:'noon', skinhaus:'Skin Haus', todas:'Todas'};
+const MESES = ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
+const AGENTES = {'seguimiento-auto-305':'Seguimiento WhatsApp 305','seguimiento-auto-crm-saneo':'Seguimiento Saneo Seravena','seguimiento-auto-ig-valeria':'Seguimiento Instagram Dra. Valeria','vigilante-seravena':'Vigilante del 305','vale-de-noche':'Vale de Noche'};
+let marca = 'seravena';
+
+function cmp(a, b, txt){ if(!b) return ''; const d=a-b; return `<div class="cmp">${txt}: <span class="${d>=0?'sube':'baja'}">${d>=0?'+':'−'}${typeof a==='number'&&a>1e5?M(Math.abs(d)):Math.abs(d)}</span></div>`; }
+
+function vista(D){
+  const mesN = MESES[+D.mes.slice(5)-1], antN = MESES[+D.mes_ant.slice(5)-1];
+  const dias = new Date(+D.mes.slice(0,4), +D.mes.slice(5), 0).getDate();
+  let m = D.marcas[marca];
+  if(marca==='todas'){ m={}; for(const k of ['entro','citas','citas_sem','mayores']) m[k]=Object.values(D.marcas).reduce((s,x)=>s+(x[k]||0),0);
+    estado0 = 'Las tres marcas'; }
+  let estado0=null, estado='Así vamos', frase='';
+  if(m.meta){ const deberia=m.meta*D.dia/dias, r=m.entro/deberia;
+    estado = r>=1?'Vas bien':(r>=.85?'Vas justo':'Vas bajito');
+    frase = `Para llegar a ${M(m.meta)} en ${mesN} deberías llevar ${M(deberia)} hoy. Llevas ${M(m.entro)}.`;
+  } else if(m.cierre_ant){ const r=m.entro/m.cierre_ant;
+    estado = r>=1?'Ya pasaste '+antN+' completo':'Vas por debajo de '+antN;
+    frase = `${antN[0].toUpperCase()+antN.slice(1)} completo cerró en ${M(m.cierre_ant)} y ${m.cierre_citas_ant} citas. Del 1 al ${D.dia} de ${mesN} llevas ${M(m.entro)} y ${m.citas} citas.`;
+  } else if(m.parcial){ estado='Cuenta parcial';
+    frase = `Por ahora solo se suma lo que trae el valor escrito en el comprobante: ${M(m.entro)}. Hay ${m.por_confirmar} comprobantes sin valor.`;
+  } else if(m.entro_ant){ const r=m.entro/m.entro_ant;
+    estado = r>=1?'Vas mejor que '+antN:'Vas por debajo de '+antN;
+    frase = `Del 1 al ${D.dia} de ${mesN} entró ${M(m.entro)}; en el mismo tramo de ${antN} entró ${M(m.entro_ant)}.`; }
+  if(estado0){ estado=estado0; frase=`Del 1 al ${D.dia} de ${mesN} entró ${M(m.entro)} entre Seravena, noon y Skin Haus.`; }
+  const luz = estado0?'#7d93ab':/bien|mejor/.test(estado)?'#3f8f6b':(/justo/.test(estado)?'#c9922e':'#c4573a');
+  const may = {seravena:'Abonos de tratamiento', noon:'Abonos de cirugía', skinhaus:'Abonos de tratamiento', todas:'Abonos grandes'}[marca];
+  const tercero = (marca==='seravena' && m.quedo_ant!=null)
+    ? `<div class="dato"><div class="mono">Lo que quedó · ${antN}</div><div class="v">${M(m.quedo_ant)}</div><div class="s">Según el panel de Finanzas</div></div>`
+    : `<div class="dato"><div class="mono">${may}</div><div class="v">${M(m.mayores)}</div><div class="s">${m.n_mayores!=null?m.n_mayores+' pagos este mes':'este mes'}</div></div>`;
+  const confirmar = m.por_confirmar ? `<div class="nota"><strong>Por confirmar:</strong> ${m.por_confirmar} comprobante${m.por_confirmar>1?'s':''} sin valor escrito este mes (no están sumados).${m.supuestas?' '+m.supuestas+' citas de cirugía no traen valor y se contaron a 200.000.':''}</div>` : '';
+  const A = D.agentes, filas = Object.entries(A.envios_24h).sort((a,b)=>b[1]-a[1]).map(([k,v])=>
+    `<div class="ag"><div class="top"><h3>${AGENTES[k]||k}</h3><span class="pill"><b></b>Activo</span></div><p>${v} mensaje${v>1?'s':''} en las últimas 24 horas.</p><p class="s">Último: ${A.ultimo[k]}</p></div>`).join('');
+  const vig = `<div class="ag"><div class="top"><h3>Vigilante de chats</h3><span class="pill ${A.vigilante_prendido?'':'pausa'}"><b></b>${A.vigilante_prendido?'Prendido':'Apagado'}</span></div><p>${A.vigilante_prendido?'Está respondiendo chats ahora.':'No está corriendo en este momento.'}</p></div>`;
+  const pend = D.pendientes.length ? D.pendientes.slice(0,3).map((p,i)=>`<div class="card"><span class="num">${i+1}</span><div><h3>${p.titulo}</h3><p>${p.detalle}</p></div></div>`).join('') : '<p class="vacio">Nada pendiente hoy.</p>';
+  const f = new Date(D.generado.replace(' ','T'));
+  $('#app').innerHTML = `
+  <div class="wrap">
+    <nav><div class="logo"><i></i>Torre de control</div>
+      <div class="marcas">${Object.keys(NOMBRES).map(k=>`<button class="${k===marca?'on':''}" data-m="${k}">${NOMBRES[k]}</button>`).join('')}</div></nav>
+    <header class="hero"><div class="orb"></div>
+      <div class="mono">${NOMBRES[marca]} · actualizado ${f.toLocaleString('es-CO',{weekday:'long',day:'numeric',month:'long',hour:'numeric',minute:'2-digit'})}</div>
+      <h1 style="margin-top:12px">¿Cómo vamos, Laura?</h1>
+      <div class="estado"><b style="background:${luz};box-shadow:0 0 10px ${luz}"></b>${estado}</div>
+      <p class="lead">${frase}</p></header>
+    <section class="panel"><div class="mono">Los 3 números</div><h2>${mesN[0].toUpperCase()+mesN.slice(1)} hasta hoy</h2>
+      <div class="tres">
+        <div class="dato"><div class="mono">Plata que entró</div><div class="v">${M(m.entro)}</div><div class="s">${m.meta?'Meta '+M(m.meta)+' · faltan '+M(Math.max(0,m.meta-m.entro)):'&nbsp;'}</div>${m.meta?`<div class="barra"><i style="width:${Math.min(100,m.entro/m.meta*100)}%"></i></div>`:''}${cmp(m.entro,m.entro_ant,'vs. mismo tramo de '+antN)}</div>
+        <div class="dato"><div class="mono">Citas pagadas</div><div class="v">${m.citas}</div><div class="s">Esta semana ${m.citas_sem}</div>${cmp(m.citas,m.citas_ant,'vs. mismo tramo de '+antN)}</div>
+        ${marca==='todas'?`<div class="dato"><div class="mono">Abonos grandes</div><div class="v">${M(m.mayores)}</div><div class="s">tratamientos y cirugías</div></div>`:tercero}
+      </div>${confirmar}</section>
+    <section class="panel"><div class="mono">El 80 % que corre solo</div><h2>Lo que hizo tu equipo de IA</h2>
+      <div class="agentes">${vig}${filas||'<p class="vacio">Sin envíos automáticos en las últimas 24 horas.</p>'}</div>
+      <p class="humano">Del chat a la caja (cuántos escribieron, eligieron fecha y pagaron) llega con el Laboratorio de ventas.</p></section>
+    <section class="panel"><div class="mono">El 20 % que es tuyo</div><h2>Lo que necesita tu ojo</h2>${pend}</section>
+    <p class="pie mono">Solo tú entras · se actualiza 7:30 a. m., 12 m. y 6 p. m.</p>
+  </div>`;
+  document.querySelectorAll('[data-m]').forEach(b=>b.onclick=()=>{marca=b.dataset.m; vista(D);});
+}
+
+async function abrir(clave){
+  const b64 = s => Uint8Array.from(atob(s), c=>c.charCodeAt(0));
+  const e = await (await fetch('datos.enc.json',{cache:'no-store'})).json();
+  const km = await crypto.subtle.importKey('raw', new TextEncoder().encode(clave), 'PBKDF2', false, ['deriveKey']);
+  const key = await crypto.subtle.deriveKey({name:'PBKDF2',salt:b64(e.salt),iterations:e.iter,hash:'SHA-256'}, km, {name:'AES-GCM',length:256}, false, ['decrypt']);
+  return JSON.parse(new TextDecoder().decode(await crypto.subtle.decrypt({name:'AES-GCM',iv:b64(e.iv)}, key, b64(e.data))));
+}
+if(DATOS){ vista(DATOS); }
+else {
+  $('#app').innerHTML = '<div class="gate"><div class="orb"></div><div class="mono">Torre de control</div><h1 style="font-size:34px;margin:10px 0 22px">Hola, Laura</h1><input id="k" type="password" inputmode="numeric" autocomplete="off" placeholder="•••"><div class="err" id="err"></div></div>';
+  const k = $('#k'); k.focus();
+  k.oninput = async () => { if(k.value.length < 3) return; try { vista(await abrir(k.value)); } catch(e){ $('#err').textContent = 'Esa no es la clave'; k.value=''; } };
+}
+</script>
+</body>
+</html>
