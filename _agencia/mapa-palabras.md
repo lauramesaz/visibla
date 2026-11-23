@@ -107,6 +107,7 @@
 | búsquedas cerca de mí | /blog/cerca-de-mi-clinica/ | informativa | — |
 | directorios médicos seo | /blog/directorios-medicos-seo/ | informativa | — |
 | aparecer en chatgpt clínica | /blog/aparecer-en-chatgpt-clinica/ | informativa | — |
+| geo para clínicas | /blog/geo-para-clinicas/ | informativa | — (publicada 23-nov-2026) |
 | que chatgpt recomiende mi clínica | /blog/aparecer-en-chatgpt-clinica/ | informativa | — |
 | contenido con ia google | /blog/contenido-ia-google/ | informativa | — |
 | ymyl salud | /blog/ymyl-salud/ | informativa | — |

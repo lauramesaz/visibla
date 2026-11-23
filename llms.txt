@@ -48,6 +48,7 @@ Visibla ofrece dos planes, los dos de 90 días y con precio fijo publicado en ht
 
 ## Guías
 
+- [GEO para clínicas: qué es y qué exigirle a quien lo vende](https://posicion-seo.com/blog/geo-para-clinicas/): Qué significa GEO, de dónde salió el término, lo que Google dice de venderlo como servicio aparte y seis preguntas para exigirle pruebas a quien promete que ChatGPT recomiende tu clínica.
 - [SEO para oftalmólogos: cómo llenar la agenda de tu clínica](https://posicion-seo.com/blog/seo-oftalmologos/): Una clínica de ojos vende servicios que el paciente busca con nombres distintos: examen de la vista, cirugía refractiva, catarata. Qué página necesita cada uno y qué cuidar en la ficha de Google.
 - [Cómo saber si tu agencia SEO funciona: el informe mensual](https://posicion-seo.com/blog/saber-si-agencia-seo-funciona/): Cuatro cifras de Search Console, una lista del trabajo hecho en el mes y el conteo de mensajes por WhatsApp: con eso sabes si la agencia que contrataste está moviendo algo. Incluye los números reales de la web de Visibla.
 - [Mapa de calor para la web de tu clínica, gratis](https://posicion-seo.com/blog/mapa-de-calor-web-clinica/): Microsoft Clarity es gratis, sin límite de tráfico, y arma el mapa en segundos con el tráfico que ya tienes. Con el ejemplo de una clínica dental en Manizales, inventada para esta guía, qué tres mapas revisar primero, cómo instalarlo sin programar y qué datos de un formulario no debe grabar.
