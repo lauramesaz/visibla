@@ -59,6 +59,63 @@ Revisadas una por una: todas tienen canonical a sí mismas, ninguna tiene noinde
 4. ¿Cuántas de las 12 páginas ya están en Google?
 5. Lo que no se arregla desde la web: el dominio es nuevo y casi ninguna otra web lo enlaza. Mientras eso no cambie, las búsquedas de compra seguirán lejos (puesto 60 a 90).
 
+## Foto del 2026-11-23 (últimos 28 días)
+
+**Totales:** 0 clics · 282 apariciones en Google · CTR 0.0% · posición media 42.2
+
+### Países (top 10)
+país | clics | impresiones | posición
+---|---|---|---
+COL | 0 | 122 | 30.1
+ESP | 0 | 48 | 68.9
+MEX | 0 | 27 | 62.8
+USA | 0 | 25 | 45.6
+CAN | 0 | 13 | 70.5
+CHL | 0 | 9 | 44.2
+ARG | 0 | 7 | 8.3
+GTM | 0 | 5 | 7.6
+AUT | 0 | 3 | 15.3
+BRA | 0 | 3 | 100.0
+
+### Top 10 búsquedas
+búsqueda | clics | impresiones | posición
+---|---|---|---
+seo para clínicas | 0 | 20 | 84.3
+seravena clinica | 0 | 15 | 7.3
+seo para clinicas oftalmologicas | 0 | 12 | 75.8
+seo para nutriologos | 0 | 11 | 32.5
+seo para nutricionistas | 0 | 10 | 74.2
+seo para cirujanos plasticos | 0 | 9 | 78.8
+servicio seo para clinicas medicas | 0 | 8 | 86.5
+seo para cirugia plastica | 0 | 7 | 80.1
+agencia seo pereira | 0 | 5 | 64.8
+agencia seo barranquilla | 0 | 4 | 93.8
+
+### Top 10 páginas
+página | clics | impresiones | posición
+---|---|---|---
+/blog/seo-para-clinicas/ | 0 | 40 | 85.7
+/casos/seravena/ | 0 | 38 | 6.9
+/blog/publicidad-servicios-salud-colombia/ | 0 | 28 | 7.5
+/blog/seo-nutricionista/ | 0 | 21 | 52.4
+/seo-cirujanos-plasticos/ | 0 | 21 | 77.1
+/blog/seo-oftalmologos/ | 0 | 20 | 50.1
+/blog/como-aparecer-en-google-maps-clinica/ | 0 | 18 | 12.4
+/agencia-seo-clinicas-medellin/ | 0 | 11 | 85.5
+/agencia-seo-clinicas-pereira/ | 0 | 11 | 77.5
+/diagnostico/ | 0 | 8 | 65.0
+
+### Salen pero casi nadie abre (puesto ≤ 20, ≥ 10 apariciones)
+- /casos/seravena/ · 38 apariciones · puesto 6.9
+- /blog/publicidad-servicios-salud-colombia/ · 28 · puesto 7.5
+- /blog/como-aparecer-en-google-maps-clinica/ · 18 · puesto 12.4
+
+### Indexación (58 páginas en el sitemap)
+- **47 en Google**, 11 todavía no (2 "Google no la reconoce", 7 "descubierta, sin indexar", 2 "rastreada, sin indexar").
+- Faltan: /blog/geo-para-clinicas/ y /seo-clinicas-capilares/ (no reconocidas); mapa-de-calor-web-clinica, seo-vs-google-ads-clinicas, aparecer-en-chatgpt-clinica, ideas-blog-clinicas, cuanto-tarda-el-seo, seo-clinicas-esteticas, /seo-medicos/ (descubiertas); instagram-vs-google-clinica, search-console-para-principiantes (rastreadas).
+
+**Lectura:** Frente a la foto del 16-nov: apariciones 292 → 282, clics 1 → 0 (el único clic fue de EE. UU. y ya salió de la ventana). Colombia subió de 102 a 122 apariciones y su puesto mejoró de 33,6 a 30,1; la posición media general mejoró de 49,7 a 42,2. Páginas en Google: 46 → 47 (seo-oftalmologos ya está y ya sale: 20 apariciones, puesto 50). Aún no llega el 4-dic: no se tocan títulos. Búsqueda a atacar: "seo para nutriólogos/nutricionistas" (puesto 32 y 74, dueños de consultorio) y "seo para clínicas oftalmológicas" (12 apariciones nuevas, puesto 76); "seo para clínicas" sigue lejos (puesto 84).
+
 ## Foto del 2026-11-16 (últimos 28 días)
 
 **Totales:** 1 clic · 292 apariciones en Google · CTR 0.3% · posición media 49.7
