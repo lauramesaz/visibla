@@ -23,7 +23,7 @@ Primero las que además tienen clínica inventada.
 3. [hecho 2026-11-12 · SEO 90 · humanidad 6→9 / 9] instagram-vs-google-clinica · Rastreada, sin indexar · clínica inventada.
 4. [hecho 2026-11-17 · SEO 89 · humanidad 7→9 / 9] seo-clinicas-bucaramanga · Descubierta, sin indexar · clínica inventada. Datos de la ciudad con fuente, no un cambio de nombre.
 5. [hecho 2026-11-24 · SEO 89 · humanidad 6→9 / 9] seo-vs-google-ads-clinicas · Google no reconoce la URL (publicada el 15-oct). Enlaces ya puestos el 13-nov desde el inicio, la pilar, como-elegir-agencia-seo-clinica y /seo-cirujanos-plasticos/: falta solo la mejora de contenido.
-6. [pendiente] aparecer-en-chatgpt-clinica · Descubierta, sin indexar. Sus búsquedas en el mapa: "aparecer en chatgpt clínica" y "que chatgpt recomiende mi clínica".
+6. [hecho 2026-11-26 · SEO 90 · humanidad 6→9 / 9] aparecer-en-chatgpt-clinica · Descubierta, sin indexar. Sus búsquedas en el mapa: "aparecer en chatgpt clínica" y "que chatgpt recomiende mi clínica".
 7. [pendiente] ideas-blog-clinicas · Descubierta, sin indexar.
 
 ## B. Fisioterapia frente a nutrición
